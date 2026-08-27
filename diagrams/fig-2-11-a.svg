@@ -1,0 +1,75 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', monospace">
+<rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+
+<!-- Title -->
+<text x="400" y="42" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B">ENGINE LAYOUT — TOP VIEW COMPARISON</text>
+<text x="400" y="64" text-anchor="middle" font-size="13" fill="#5A5748">THREE LAYOUTS · EQUIVALENT TOTAL DISPLACEMENT</text>
+
+<!-- Front orientation compass for V-twin panel -->
+<line x1="400" y1="118" x2="400" y2="96" stroke="#22252B" stroke-width="1.6"/>
+<polygon points="393,104 407,104 400,94" fill="#22252B"/>
+<text x="400" y="130" text-anchor="middle" font-size="11" fill="#5A5748">FRONT OF BIKE</text>
+
+<!-- ===================== PANEL 1: INLINE-FOUR ===================== -->
+<text x="150" y="195" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">INLINE-FOUR</text>
+
+<rect x="55" y="225" width="190" height="50" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+<circle cx="90" cy="250" r="17" fill="#EEE8DA" stroke="#22252B" stroke-width="2"/>
+<circle cx="130" cy="250" r="17" fill="#EEE8DA" stroke="#22252B" stroke-width="2"/>
+<circle cx="170" cy="250" r="17" fill="#EEE8DA" stroke="#22252B" stroke-width="2"/>
+<circle cx="210" cy="250" r="17" fill="#EEE8DA" stroke="#22252B" stroke-width="2"/>
+
+<!-- width guides -->
+<line x1="55" y1="275" x2="55" y2="385" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="245" y1="275" x2="245" y2="385" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="55" y1="385" x2="245" y2="385" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<polygon points="65,380 65,390 55,385" fill="#33505E"/>
+<polygon points="235,380 235,390 245,385" fill="#33505E"/>
+<text x="150" y="376" text-anchor="middle" font-size="15" font-weight="700" fill="#6B5A22">W₁</text>
+<text x="150" y="402" text-anchor="middle" font-size="12" fill="#5A5748">(WIDEST — 4 IN A ROW)</text>
+
+<!-- ===================== PANEL 2: V-TWIN 90° ===================== -->
+<text x="400" y="195" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">V-TWIN (90°)</text>
+
+<rect x="375" y="290" width="50" height="40" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+<line x1="400" y1="290" x2="336" y2="226" stroke="#22252B" stroke-width="9" stroke-linecap="round"/>
+<line x1="400" y1="290" x2="464" y2="226" stroke="#22252B" stroke-width="9" stroke-linecap="round"/>
+<circle cx="336" cy="226" r="15" fill="#EEE8DA" stroke="#22252B" stroke-width="2"/>
+<circle cx="464" cy="226" r="15" fill="#EEE8DA" stroke="#22252B" stroke-width="2"/>
+
+<!-- 90 degree arc annotation -->
+<path d="M 400 260 A 34 34 0 0 1 400 260" fill="none"/>
+<path d="M 378 268 A 40 40 0 0 1 422 268" fill="none" stroke="#33505E" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="400" y="255" text-anchor="middle" font-size="11" fill="#33505E">90°</text>
+
+<!-- width guides -->
+<line x1="321" y1="330" x2="321" y2="385" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="479" y1="330" x2="479" y2="385" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="321" y1="385" x2="479" y2="385" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<polygon points="331,380 331,390 321,385" fill="#33505E"/>
+<polygon points="469,380 469,390 479,385" fill="#33505E"/>
+<text x="400" y="376" text-anchor="middle" font-size="15" font-weight="700" fill="#6B5A22">W₂</text>
+<text x="400" y="402" text-anchor="middle" font-size="12" fill="#5A5748">(NARROWEST ACROSS FRONT)</text>
+
+<!-- ===================== PANEL 3: BOXER TWIN ===================== -->
+<text x="650" y="195" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">BOXER TWIN</text>
+
+<rect x="620" y="235" width="60" height="30" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+<rect x="545" y="240" width="75" height="20" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+<rect x="680" y="240" width="75" height="20" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+<circle cx="545" cy="250" r="16" fill="#EEE8DA" stroke="#22252B" stroke-width="2"/>
+<circle cx="755" cy="250" r="16" fill="#EEE8DA" stroke="#22252B" stroke-width="2"/>
+
+<!-- width guides -->
+<line x1="529" y1="266" x2="529" y2="385" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="771" y1="266" x2="771" y2="385" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="529" y1="385" x2="771" y2="385" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<polygon points="539,380 539,390 529,385" fill="#33505E"/>
+<polygon points="761,380 761,390 771,385" fill="#33505E"/>
+<text x="650" y="376" text-anchor="middle" font-size="15" font-weight="700" fill="#6B5A22">W₃</text>
+<text x="650" y="402" text-anchor="middle" font-size="12" fill="#5A5748">(WIDE, BUT LOW &amp; FLAT)</text>
+
+<!-- Summary -->
+<line x1="60" y1="430" x2="740" y2="430" stroke="#8C876F" stroke-width="1"/>
+<text x="400" y="460" text-anchor="middle" font-size="14" fill="#22252B" font-weight="600">W₁ (INLINE) &gt; W₃ (BOXER) &gt; W₂ (V-TWIN) — SAME DISPLACEMENT, THREE FOOTPRINTS</text>
+</svg>

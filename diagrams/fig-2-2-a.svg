@@ -1,0 +1,109 @@
+<svg viewBox="0 0 800 500" width="800" height="500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#22252B"/>
+    </marker>
+    <marker id="arrowSignal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#AE3527"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#33505E"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+
+  <text x="400" y="34" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B" letter-spacing="0.5">720&#176; = ONE FULL CYCLE</text>
+  <text x="400" y="55" text-anchor="middle" font-size="13.5" font-style="italic" fill="#5A5748">Two crankshaft revolutions for every intake-compression-power-exhaust sequence</text>
+
+  <!-- ===== PANEL 1: 0deg INTAKE BEGINS (TDC, IN open, EX closed) ===== -->
+  <g>
+    <text x="100" y="90" text-anchor="middle" font-size="18" font-weight="700" fill="#6B5A22">0&#176;</text>
+    <rect x="50" y="100" width="100" height="150" fill="none" stroke="#22252B" stroke-width="2"/>
+    <!-- head: intake open (left gap), exhaust closed (right, solid) -->
+    <line x1="50" y1="100" x2="83" y2="100" stroke="#22252B" stroke-width="2.5"/>
+    <line x1="117" y1="100" x2="150" y2="100" stroke="#22252B" stroke-width="2.5"/>
+    <line x1="100" y1="88" x2="100" y2="106" stroke="#22252B" stroke-width="3"/>
+    <polygon points="90,106 110,106 100,113" fill="#22252B"/>
+    <line x1="100" y1="78" x2="100" y2="118" stroke="#33505E" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrowBlue)"/>
+    <!-- piston at TDC -->
+    <rect x="55" y="106" width="90" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+    <text x="100" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#22252B">INTAKE BEGINS</text>
+    <text x="100" y="288" text-anchor="middle" font-size="11.5" fill="#5A5748">Piston at TDC</text>
+    <text x="100" y="303" text-anchor="middle" font-size="11.5" fill="#5A5748">IN open &#183; EX closed</text>
+  </g>
+
+  <!-- ===== PANEL 2: 180deg COMPRESSION BEGINS (BDC, both closed) ===== -->
+  <g>
+    <text x="300" y="90" text-anchor="middle" font-size="18" font-weight="700" fill="#6B5A22">180&#176;</text>
+    <rect x="250" y="100" width="100" height="150" fill="none" stroke="#22252B" stroke-width="2"/>
+    <line x1="250" y1="100" x2="350" y2="100" stroke="#22252B" stroke-width="2.5"/>
+    <!-- piston at BDC -->
+    <rect x="255" y="214" width="90" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+    <text x="300" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#22252B">COMPRESSION BEGINS</text>
+    <text x="300" y="288" text-anchor="middle" font-size="11.5" fill="#5A5748">Piston at BDC</text>
+    <text x="300" y="303" text-anchor="middle" font-size="11.5" fill="#5A5748">IN closed &#183; EX closed</text>
+  </g>
+
+  <!-- ===== PANEL 3: 360deg POWER BEGINS (TDC, spark fires, both closed) ===== -->
+  <g>
+    <rect x="440" y="80" width="120" height="230" fill="#AE3527" fill-opacity="0.06"/>
+    <text x="500" y="90" text-anchor="middle" font-size="18" font-weight="700" fill="#AE3527">360&#176;</text>
+    <rect x="450" y="100" width="100" height="150" fill="none" stroke="#22252B" stroke-width="2.5"/>
+    <line x1="450" y1="100" x2="550" y2="100" stroke="#22252B" stroke-width="3"/>
+    <!-- flame -->
+    <g stroke="#AE3527" stroke-width="2">
+      <line x1="500" y1="96" x2="500" y2="82"/>
+      <line x1="487" y1="100" x2="478" y2="90"/>
+      <line x1="513" y1="100" x2="522" y2="90"/>
+    </g>
+    <circle cx="500" cy="102" r="7" fill="#AE3527"/>
+    <!-- piston at TDC -->
+    <rect x="455" y="106" width="90" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+    <text x="500" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#AE3527">POWER BEGINS</text>
+    <text x="500" y="288" text-anchor="middle" font-size="11.5" fill="#5A5748">Spark fires near TDC</text>
+    <text x="500" y="303" text-anchor="middle" font-size="11.5" fill="#5A5748">IN closed &#183; EX closed</text>
+  </g>
+
+  <!-- ===== PANEL 4: 540deg EXHAUST BEGINS (BDC, EX open, IN closed) ===== -->
+  <g>
+    <text x="700" y="90" text-anchor="middle" font-size="18" font-weight="700" fill="#6B5A22">540&#176;</text>
+    <rect x="650" y="100" width="100" height="150" fill="none" stroke="#22252B" stroke-width="2"/>
+    <line x1="650" y1="100" x2="683" y2="100" stroke="#22252B" stroke-width="2.5"/>
+    <line x1="717" y1="100" x2="750" y2="100" stroke="#22252B" stroke-width="2.5"/>
+    <line x1="700" y1="88" x2="700" y2="106" stroke="#22252B" stroke-width="3"/>
+    <polygon points="690,106 710,106 700,113" fill="#22252B"/>
+    <line x1="700" y1="118" x2="700" y2="70" stroke="#33505E" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrowBlue)"/>
+    <!-- piston at BDC -->
+    <rect x="655" y="214" width="90" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+    <text x="700" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#22252B">EXHAUST BEGINS</text>
+    <text x="700" y="288" text-anchor="middle" font-size="11.5" fill="#5A5748">Piston at BDC</text>
+    <text x="700" y="303" text-anchor="middle" font-size="11.5" fill="#5A5748">IN closed &#183; EX open</text>
+  </g>
+
+  <!-- ===== crank-degree axis ===== -->
+  <line x1="40" y1="370" x2="760" y2="370" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <g fill="#33505E">
+    <line x1="100" y1="364" x2="100" y2="376" stroke="#33505E" stroke-width="2"/>
+    <line x1="300" y1="364" x2="300" y2="376" stroke="#33505E" stroke-width="2"/>
+    <line x1="500" y1="364" x2="500" y2="376" stroke="#33505E" stroke-width="2"/>
+    <line x1="700" y1="364" x2="700" y2="376" stroke="#33505E" stroke-width="2"/>
+  </g>
+  <line x1="100" y1="320" x2="100" y2="370" stroke="#33505E" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <line x1="300" y1="320" x2="300" y2="370" stroke="#33505E" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <line x1="500" y1="320" x2="500" y2="370" stroke="#33505E" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <line x1="700" y1="320" x2="700" y2="370" stroke="#33505E" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- revolution brackets -->
+  <line x1="100" y1="392" x2="500" y2="392" stroke="#8C876F" stroke-width="1.5"/>
+  <line x1="100" y1="386" x2="100" y2="392" stroke="#8C876F" stroke-width="1.5"/>
+  <line x1="500" y1="386" x2="500" y2="392" stroke="#8C876F" stroke-width="1.5"/>
+  <text x="300" y="408" text-anchor="middle" font-size="12.5" font-weight="600" fill="#5A5748">REVOLUTION 1 &#8212; CRANKSHAFT TURNS 360&#176;</text>
+
+  <line x1="500" y1="392" x2="760" y2="392" stroke="#8C876F" stroke-width="1.5"/>
+  <line x1="500" y1="386" x2="500" y2="392" stroke="#8C876F" stroke-width="1.5"/>
+  <line x1="760" y1="386" x2="760" y2="392" stroke="#8C876F" stroke-width="1.5"/>
+  <text x="630" y="408" text-anchor="middle" font-size="12.5" font-weight="600" fill="#5A5748">REVOLUTION 2</text>
+
+  <text x="400" y="470" text-anchor="middle" font-size="14" fill="#6B5A22" font-weight="600">4 STROKES &#183; 2 CRANK REVOLUTIONS &#183; 720&#176; TOTAL</text>
+</svg>

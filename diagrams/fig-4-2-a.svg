@@ -1,0 +1,72 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowSignal42" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#AE3527"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+
+  <text x="400" y="34" text-anchor="middle" font-weight="700" font-size="20" fill="#22252B" letter-spacing="0.5">THREE FRAME LAYOUTS, ONE JOB</text>
+  <text x="400" y="54" text-anchor="middle" font-size="13" font-style="italic" fill="#5A5748">Same load path — steering head to swingarm pivot — built three different ways</text>
+
+  <line x1="270" y1="70" x2="270" y2="450" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="530" y1="70" x2="530" y2="450" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ============ PANEL 1: TUBULAR STEEL CRADLE ============ -->
+  <g>
+    <text x="135" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#22252B">TUBULAR STEEL CRADLE</text>
+    <line x1="45" y1="410" x2="225" y2="410" stroke="#22252B" stroke-width="2"/>
+    <circle cx="70" cy="410" r="30" fill="none" stroke="#22252B" stroke-width="2.2"/>
+    <circle cx="200" cy="410" r="30" fill="none" stroke="#22252B" stroke-width="2.2"/>
+    <rect x="105" y="315" width="55" height="45" fill="#E2D9C3" stroke="#22252B" stroke-width="1.8"/>
+    <!-- cradle tube loops under the engine -->
+    <path d="M185,240 L185,300 L200,375 L95,375 L110,300 L110,275" fill="none" stroke="#22252B" stroke-width="3"/>
+    <!-- top tube -->
+    <path d="M185,240 L110,275" fill="none" stroke="#22252B" stroke-width="3"/>
+    <circle cx="110" cy="355" r="5" fill="#22252B"/>
+    <!-- load path highlight: steering head -> down front tube -> under cradle -> swingarm pivot -> rear axle, plus fork -->
+    <path d="M185,240 L185,300 L200,375 L110,355" fill="none" stroke="#AE3527" stroke-width="4" opacity="0.85"/>
+    <path d="M110,355 L70,410" fill="none" stroke="#AE3527" stroke-width="4" opacity="0.85" marker-end="url(#arrowSignal42)"/>
+    <path d="M185,240 L200,410" fill="none" stroke="#AE3527" stroke-width="4" opacity="0.85" marker-end="url(#arrowSignal42)"/>
+    <text x="135" y="440" text-anchor="middle" font-size="11.5" fill="#5A5748">tubes cage the engine —</text>
+    <text x="135" y="455" text-anchor="middle" font-size="11.5" fill="#5A5748">cheap, weldable, forgiving</text>
+  </g>
+
+  <!-- ============ PANEL 2: ALUMINIUM TWIN-SPAR ============ -->
+  <g>
+    <text x="400" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#22252B">ALUMINIUM TWIN-SPAR</text>
+    <line x1="310" y1="410" x2="490" y2="410" stroke="#22252B" stroke-width="2"/>
+    <circle cx="335" cy="410" r="30" fill="none" stroke="#22252B" stroke-width="2.2"/>
+    <circle cx="465" cy="410" r="30" fill="none" stroke="#22252B" stroke-width="2.2"/>
+    <rect x="370" y="315" width="55" height="45" fill="#E2D9C3" stroke="#22252B" stroke-width="1.8"/>
+    <!-- twin beam: two parallel short straight spars from head over engine to pivot -->
+    <path d="M450,240 L378,352" fill="none" stroke="#22252B" stroke-width="7"/>
+    <path d="M450,252 L390,360" fill="none" stroke="#22252B" stroke-width="7" opacity="0.35"/>
+    <circle cx="378" cy="352" r="5" fill="#22252B"/>
+    <!-- load path highlight -->
+    <path d="M450,240 L378,352 L335,410" fill="none" stroke="#AE3527" stroke-width="4" opacity="0.85" marker-end="url(#arrowSignal42)"/>
+    <path d="M450,240 L465,410" fill="none" stroke="#AE3527" stroke-width="4" opacity="0.85" marker-end="url(#arrowSignal42)"/>
+    <text x="400" y="440" text-anchor="middle" font-size="11.5" fill="#5A5748">direct beams, short path —</text>
+    <text x="400" y="455" text-anchor="middle" font-size="11.5" fill="#5A5748">stiff for its weight</text>
+  </g>
+
+  <!-- ============ PANEL 3: BACKBONE FRAME ============ -->
+  <g>
+    <text x="665" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#22252B">BACKBONE FRAME</text>
+    <line x1="575" y1="410" x2="755" y2="410" stroke="#22252B" stroke-width="2"/>
+    <circle cx="600" cy="410" r="30" fill="none" stroke="#22252B" stroke-width="2.2"/>
+    <circle cx="730" cy="410" r="30" fill="none" stroke="#22252B" stroke-width="2.2"/>
+    <rect x="635" y="320" width="55" height="40" fill="#E2D9C3" stroke="#22252B" stroke-width="1.8"/>
+    <!-- single spine tube, higher over the tank -->
+    <path d="M715,235 L643,350" fill="none" stroke="#22252B" stroke-width="8"/>
+    <circle cx="643" cy="350" r="5" fill="#22252B"/>
+    <!-- load path highlight -->
+    <path d="M715,235 L643,350 L600,410" fill="none" stroke="#AE3527" stroke-width="4" opacity="0.85" marker-end="url(#arrowSignal42)"/>
+    <path d="M715,235 L730,410" fill="none" stroke="#AE3527" stroke-width="4" opacity="0.85" marker-end="url(#arrowSignal42)"/>
+    <text x="665" y="440" text-anchor="middle" font-size="11.5" fill="#5A5748">single spine, low cost —</text>
+    <text x="665" y="455" text-anchor="middle" font-size="11.5" fill="#5A5748">simplicity over rigidity</text>
+  </g>
+
+  <text x="400" y="480" text-anchor="middle" font-size="12" fill="#8C876F" letter-spacing="0.5">FIG. 4.2-A — ANATOMY OF A MOTORCYCLE</text>
+</svg>

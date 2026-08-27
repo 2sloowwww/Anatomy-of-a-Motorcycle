@@ -1,0 +1,100 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', monospace">
+<defs>
+  <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#22252B"/>
+  </marker>
+  <marker id="arrowSignal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#AE3527"/>
+  </marker>
+</defs>
+
+<rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+
+<text x="400" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B" letter-spacing="0.5">THREE STATES OF THE PLATE STACK</text>
+<text x="400" y="59" text-anchor="middle" font-size="13" font-style="italic" fill="#5A5748">Friction plates (engine side) and steel plates (gearbox side)</text>
+
+<line x1="267" y1="90" x2="267" y2="430" stroke="#8C876F" stroke-width="1"/>
+<line x1="533" y1="90" x2="533" y2="430" stroke="#8C876F" stroke-width="1"/>
+
+<!-- ============ PANEL 1: FULLY SEPARATED ============ -->
+<g>
+  <text x="133" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">FULLY SEPARATED</text>
+
+  <!-- basket outline -->
+  <rect x="63" y="130" width="140" height="180" fill="none" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- friction plates (engine, ink) and steel plates (gearbox, faint) spread apart -->
+  <rect x="75" y="140" width="116" height="14" fill="#22252B"/>
+  <rect x="75" y="168" width="116" height="14" fill="#8C876F"/>
+  <rect x="75" y="196" width="116" height="14" fill="#22252B"/>
+  <rect x="75" y="224" width="116" height="14" fill="#8C876F"/>
+  <rect x="75" y="252" width="116" height="14" fill="#22252B"/>
+  <rect x="75" y="280" width="116" height="14" fill="#8C876F"/>
+
+  <!-- two independent rotation arrows, different speeds -->
+  <path d="M133,340 A26,26 0 1 1 133,392" fill="none" stroke="#AE3527" stroke-width="2.5" marker-end="url(#arrowSignal)"/>
+  <text x="133" y="416" text-anchor="middle" font-size="11.5" fill="#AE3527" font-weight="700">ENGINE SIDE SPINS</text>
+  <text x="133" y="431" text-anchor="middle" font-size="11.5" fill="#5A5748">GEARBOX SIDE — STILL</text>
+</g>
+
+<!-- ============ PANEL 2: PARTIAL ENGAGEMENT / SLIP ============ -->
+<g>
+  <text x="400" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">SLIPPING</text>
+
+  <rect x="330" y="130" width="140" height="180" fill="none" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- plates pressed closer together, partial pressure -->
+  <rect x="342" y="150" width="116" height="15" fill="#22252B"/>
+  <rect x="342" y="167" width="116" height="15" fill="#8C876F"/>
+  <rect x="342" y="184" width="116" height="15" fill="#22252B"/>
+  <rect x="342" y="201" width="116" height="15" fill="#8C876F"/>
+  <rect x="342" y="218" width="116" height="15" fill="#22252B"/>
+  <rect x="342" y="235" width="116" height="15" fill="#8C876F"/>
+
+  <!-- squeeze arrows -->
+  <line x1="400" y1="125" x2="400" y2="145" stroke="#33505E" stroke-width="2" marker-end="url(#arrowInk)"/>
+  <line x1="400" y1="270" x2="400" y2="250" stroke="#33505E" stroke-width="2" marker-end="url(#arrowInk)"/>
+  <text x="400" y="290" text-anchor="middle" font-size="10.5" fill="#33505E">PARTIAL SPRING PRESSURE</text>
+
+  <!-- heat marks at friction interface -->
+  <g stroke="#AE3527" stroke-width="1.6">
+    <line x1="330" y1="172" x2="322" y2="164"/>
+    <line x1="330" y1="188" x2="322" y2="196"/>
+    <line x1="470" y1="206" x2="478" y2="198"/>
+    <line x1="470" y1="222" x2="478" y2="230"/>
+  </g>
+
+  <!-- two rotation arrows, different arc lengths showing speed difference -->
+  <path d="M370,345 A26,26 0 1 1 370,391" fill="none" stroke="#AE3527" stroke-width="2.5" marker-end="url(#arrowSignal)"/>
+  <path d="M430,352 A18,18 0 1 1 430,388" fill="none" stroke="#33505E" stroke-width="2" marker-end="url(#arrowInk)"/>
+  <text x="400" y="416" text-anchor="middle" font-size="11.5" fill="#AE3527" font-weight="700">RELATIVE SLIP — SPEEDS DIFFER</text>
+  <text x="400" y="431" text-anchor="middle" font-size="11.5" fill="#5A5748">HEAT GENERATED AT INTERFACE</text>
+</g>
+
+<!-- ============ PANEL 3: FULLY LOCKED ============ -->
+<g>
+  <text x="667" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">FULLY LOCKED</text>
+
+  <rect x="597" y="130" width="140" height="180" fill="none" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <!-- plates fully clamped, no gaps -->
+  <rect x="609" y="153" width="116" height="16" fill="#22252B"/>
+  <rect x="609" y="169" width="116" height="16" fill="#8C876F"/>
+  <rect x="609" y="185" width="116" height="16" fill="#22252B"/>
+  <rect x="609" y="201" width="116" height="16" fill="#8C876F"/>
+  <rect x="609" y="217" width="116" height="16" fill="#22252B"/>
+  <rect x="609" y="233" width="116" height="16" fill="#8C876F"/>
+
+  <!-- full clamp arrows -->
+  <line x1="667" y1="122" x2="667" y2="148" stroke="#33505E" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+  <line x1="667" y1="273" x2="667" y2="253" stroke="#33505E" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+  <text x="667" y="290" text-anchor="middle" font-size="10.5" fill="#33505E">FULL SPRING PRESSURE</text>
+
+  <!-- single rotation arrow, one unit spinning -->
+  <path d="M667,345 A30,30 0 1 1 667,395" fill="none" stroke="#22252B" stroke-width="3" marker-end="url(#arrowInk)"/>
+  <text x="667" y="418" text-anchor="middle" font-size="11.5" fill="#22252B" font-weight="700">ZERO SLIP</text>
+  <text x="667" y="433" text-anchor="middle" font-size="11.5" fill="#5A5748">BOTH SIDES MATCHED</text>
+</g>
+
+<text x="400" y="470" text-anchor="middle" font-size="14" font-weight="600" fill="#6B5A22">SLIP IS THE FEATURE — IT LETS SPEED MATCH GRADUALLY, NOT INSTANTLY</text>
+</svg>

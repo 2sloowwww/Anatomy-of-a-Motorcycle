@@ -1,0 +1,68 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">SUSPENSION SETUP BY RIDING STYLE</text>
+  <line x1="80" y1="56" x2="720" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Column headers -->
+  <text x="220" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" font-weight="700" fill="#22252B">TOURING</text>
+  <text x="400" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" font-weight="700" fill="#AE3527">SPORT</text>
+  <text x="580" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" font-weight="700" fill="#22252B">OFF-ROAD</text>
+
+  <!-- column separators -->
+  <line x1="310" y1="70" x2="310" y2="460" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="490" y1="70" x2="490" y2="460" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Row labels -->
+  <text x="60" y="150" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#5A5748">SPRING</text>
+  <text x="60" y="167" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#5A5748">STIFFNESS</text>
+
+  <text x="60" y="270" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#5A5748">DAMPING</text>
+  <text x="60" y="287" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#5A5748">FIRMNESS</text>
+
+  <text x="60" y="390" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#5A5748">TRAVEL</text>
+  <text x="60" y="407" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#5A5748">LENGTH</text>
+
+  <!-- Scale bar template function via manual bars -->
+  <!-- Row 1: Spring Stiffness  scale baseline y=150, bar width max 200 centered per column -->
+  <!-- Touring: soft (short bar) -->
+  <rect x="140" y="140" width="160" height="16" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="140" y="140" width="60" height="16" fill="#22252B"/>
+  <!-- Sport: firm (long bar) -->
+  <rect x="320" y="140" width="160" height="16" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="320" y="140" width="130" height="16" fill="#AE3527"/>
+  <!-- Off-road: soft-progressive (medium, marked progressive) -->
+  <rect x="500" y="140" width="160" height="16" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="500" y="140" width="80" height="16" fill="#22252B"/>
+  <rect x="580" y="140" width="80" height="16" fill="#22252B" fill-opacity="0.35"/>
+
+  <!-- Row 2: Damping Firmness -->
+  <rect x="140" y="260" width="160" height="16" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="140" y="260" width="55" height="16" fill="#22252B"/>
+  <rect x="320" y="260" width="160" height="16" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="320" y="260" width="140" height="16" fill="#AE3527"/>
+  <rect x="500" y="260" width="160" height="16" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="500" y="260" width="95" height="16" fill="#22252B"/>
+
+  <!-- Row 3: Travel Length -->
+  <rect x="140" y="380" width="160" height="16" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="140" y="380" width="90" height="16" fill="#22252B"/>
+  <rect x="320" y="380" width="160" height="16" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="320" y="380" width="65" height="16" fill="#AE3527"/>
+  <rect x="500" y="380" width="160" height="16" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="500" y="380" width="150" height="16" fill="#22252B"/>
+
+  <!-- axis min/max labels under each triple of bars -->
+  <text x="140" y="180" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">LOW</text>
+  <text x="300" y="180" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">HIGH</text>
+  <text x="140" y="300" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">SOFT</text>
+  <text x="480" y="300" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">FIRM</text>
+  <text x="140" y="420" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">SHORT</text>
+  <text x="660" y="420" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">LONG</text>
+
+  <text x="500" y="180" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">PROGRESSIVE →</text>
+
+  <!-- Footer note -->
+  <line x1="80" y1="445" x2="720" y2="445" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="465" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">SAME COMPONENTS — SPRING, DAMPER, TRAVEL — TUNED TO DIFFERENT PRIORITIES</text>
+</svg>

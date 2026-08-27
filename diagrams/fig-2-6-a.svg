@@ -1,0 +1,52 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', monospace">
+<rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+
+<!-- Title -->
+<text x="400" y="40" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B">VALVE COUNT vs VALVE MASS</text>
+<text x="400" y="61" text-anchor="middle" font-size="13" fill="#5A5748">SAME BORE &#183; SIMILAR TOTAL FLOW AREA &#183; DIFFERENT PIECE COUNT</text>
+
+<!-- ============ LEFT: 2-VALVE HEAD ============ -->
+<text x="200" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">2-VALVE HEAD</text>
+
+<circle cx="200" cy="270" r="140" fill="none" stroke="#22252B" stroke-width="2.5"/>
+<circle cx="140" cy="270" r="55" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+<circle cx="260" cy="270" r="55" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+<text x="140" y="275" text-anchor="middle" font-size="11.5" font-weight="700" fill="#22252B">IN</text>
+<text x="260" y="275" text-anchor="middle" font-size="11.5" font-weight="700" fill="#22252B">EX</text>
+
+<!-- bore dimension left -->
+<line x1="60" y1="425" x2="340" y2="425" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="60" y1="416" x2="60" y2="434" stroke="#33505E" stroke-width="1.5"/>
+<line x1="340" y1="416" x2="340" y2="434" stroke="#33505E" stroke-width="1.5"/>
+<text x="200" y="447" text-anchor="middle" font-size="12" font-weight="600" fill="#6B5A22">BORE &#216;</text>
+
+<text x="200" y="470" text-anchor="middle" font-size="12.5" fill="#5A5748">2 LARGE VALVES &#8212; HEAVIER EACH</text>
+
+<!-- ============ RIGHT: 4-VALVE HEAD ============ -->
+<text x="600" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">4-VALVE HEAD</text>
+
+<circle cx="600" cy="270" r="140" fill="none" stroke="#22252B" stroke-width="2.5"/>
+<circle cx="560" cy="228" r="37" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+<circle cx="640" cy="228" r="37" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+<circle cx="560" cy="308" r="37" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+<circle cx="640" cy="308" r="37" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+<text x="560" y="232" text-anchor="middle" font-size="10" font-weight="700" fill="#22252B">IN</text>
+<text x="640" y="232" text-anchor="middle" font-size="10" font-weight="700" fill="#22252B">IN</text>
+<text x="560" y="312" text-anchor="middle" font-size="10" font-weight="700" fill="#22252B">EX</text>
+<text x="640" y="312" text-anchor="middle" font-size="10" font-weight="700" fill="#22252B">EX</text>
+
+<!-- bore dimension right -->
+<line x1="460" y1="425" x2="740" y2="425" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="460" y1="416" x2="460" y2="434" stroke="#33505E" stroke-width="1.5"/>
+<line x1="740" y1="416" x2="740" y2="434" stroke="#33505E" stroke-width="1.5"/>
+<text x="600" y="447" text-anchor="middle" font-size="12" font-weight="600" fill="#6B5A22">BORE &#216; (SAME)</text>
+
+<text x="600" y="470" text-anchor="middle" font-size="12.5" fill="#5A5748">4 SMALLER VALVES &#8212; LIGHTER EACH</text>
+
+<!-- Center callout -->
+<rect x="320" y="150" width="160" height="66" fill="#EEE8DA" stroke="#AE3527" stroke-width="1.8"/>
+<text x="400" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#AE3527">&#8776; SAME TOTAL</text>
+<text x="400" y="196" text-anchor="middle" font-size="13" font-weight="700" fill="#AE3527">FLOW AREA</text>
+<line x1="320" y1="183" x2="280" y2="270" stroke="#AE3527" stroke-width="1.3" stroke-dasharray="3 3"/>
+<line x1="480" y1="183" x2="520" y2="270" stroke="#AE3527" stroke-width="1.3" stroke-dasharray="3 3"/>
+</svg>

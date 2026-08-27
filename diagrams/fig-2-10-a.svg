@@ -1,0 +1,44 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', monospace">
+<rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+
+<!-- Title -->
+<text x="400" y="40" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B">FIRING INTERVALS ACROSS 720&#176;</text>
+<text x="400" y="61" text-anchor="middle" font-size="13" fill="#5A5748">MORE CYLINDERS &#8594; THE GAPS BETWEEN POWER PULSES SHRINK</text>
+
+<!-- ============ SINGLE ============ -->
+<circle cx="150" cy="290" r="110" fill="none" stroke="#33505E" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M 150 180 A 110 110 0 0 1 260 290" fill="none" stroke="#AE3527" stroke-width="11" stroke-linecap="butt"/>
+<circle cx="150" cy="290" r="4" fill="#22252B"/>
+<text x="150" y="145" text-anchor="middle" font-size="11" fill="#8C876F">0&#176;/720&#176;</text>
+<text x="275" y="294" text-anchor="middle" font-size="11" fill="#8C876F">180&#176;</text>
+<text x="150" y="418" text-anchor="middle" font-size="11" fill="#8C876F">360&#176;</text>
+<text x="30" y="294" text-anchor="middle" font-size="11" fill="#8C876F">540&#176;</text>
+<text x="150" y="440" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">SINGLE</text>
+<text x="150" y="461" text-anchor="middle" font-size="12" fill="#5A5748">1 pulse / 720&#176;</text>
+
+<!-- ============ TWIN ============ -->
+<circle cx="400" cy="290" r="110" fill="none" stroke="#33505E" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M 400 180 A 110 110 0 0 1 510 290" fill="none" stroke="#AE3527" stroke-width="11" stroke-linecap="butt"/>
+<path d="M 400 400 A 110 110 0 0 1 290 290" fill="none" stroke="#AE3527" stroke-width="11" stroke-linecap="butt"/>
+<circle cx="400" cy="290" r="4" fill="#22252B"/>
+<text x="400" y="440" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">TWIN (360&#176;)</text>
+<text x="400" y="461" text-anchor="middle" font-size="12" fill="#5A5748">2 pulses / 720&#176;</text>
+
+<!-- ============ INLINE FOUR ============ -->
+<circle cx="650" cy="290" r="110" fill="none" stroke="#33505E" stroke-width="2" stroke-dasharray="6 4"/>
+<circle cx="650" cy="290" r="110" fill="none" stroke="#AE3527" stroke-width="11"/>
+<circle cx="650" cy="290" r="4" fill="#22252B"/>
+<!-- boundary ticks at 0,90,180,270 -->
+<line x1="650" y1="166" x2="650" y2="194" stroke="#22252B" stroke-width="2.5"/>
+<line x1="746" y1="290" x2="774" y2="290" stroke="#22252B" stroke-width="2.5"/>
+<line x1="650" y1="386" x2="650" y2="414" stroke="#22252B" stroke-width="2.5"/>
+<line x1="526" y1="290" x2="554" y2="290" stroke="#22252B" stroke-width="2.5"/>
+<text x="650" y="440" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">INLINE-4</text>
+<text x="650" y="461" text-anchor="middle" font-size="12" fill="#5A5748">4 pulses / 720&#176; &#8212; no gap</text>
+
+<!-- Legend -->
+<rect x="330" y="475" width="18" height="12" fill="#AE3527"/>
+<text x="354" y="485" font-size="11.5" fill="#5A5748">power pulse</text>
+<line x1="450" y1="481" x2="472" y2="481" stroke="#33505E" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="478" y="485" font-size="11.5" fill="#5A5748">no power (gap)</text>
+</svg>

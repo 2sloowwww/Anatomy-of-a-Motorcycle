@@ -1,0 +1,80 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', monospace">
+<defs>
+  <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#22252B"/>
+  </marker>
+  <marker id="arrowSignal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#AE3527"/>
+  </marker>
+  <marker id="arrowFaint" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#8C876F"/>
+  </marker>
+</defs>
+
+<rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+
+<text x="400" y="34" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B" letter-spacing="0.5">CONSTANT MESH, ONE GEAR LOCKED</text>
+<text x="400" y="54" text-anchor="middle" font-size="13" font-style="italic" fill="#5A5748">Every pair stays meshed — only the dog-engaged pair actually carries torque</text>
+<text x="400" y="73" text-anchor="middle" font-size="11.5" fill="#6B5A22" font-weight="600">TOP SHAFT: MAINSHAFT (FROM CLUTCH) &#183; BOTTOM SHAFT: LAYSHAFT (TO FINAL DRIVE)</text>
+
+<!-- shafts -->
+<rect x="55" y="168" width="720" height="14" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+<rect x="55" y="318" width="720" height="14" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+<line x1="30" y1="175" x2="55" y2="175" stroke="#22252B" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+<line x1="775" y1="325" x2="800" y2="325" stroke="#22252B" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+
+<!-- ================= PAIR A: IDLE ================= -->
+<g>
+  <!-- mainshaft gear, free-spinning -->
+  <circle cx="190" cy="175" r="40" fill="#EEE8DA" stroke="#8C876F" stroke-width="2"/>
+  <circle cx="190" cy="175" r="10" fill="none" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <!-- layshaft gear, free-spinning -->
+  <circle cx="190" cy="325" r="110" fill="#EEE8DA" stroke="#8C876F" stroke-width="2"/>
+  <circle cx="190" cy="325" r="10" fill="none" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <!-- free-spin indicators -->
+  <path d="M170,148 A26,26 0 1 1 170,116" fill="none" stroke="#8C876F" stroke-width="1.6" stroke-dasharray="3 3" marker-end="url(#arrowFaint)"/>
+  <path d="M150,270 A55,55 0 1 1 150,180" fill="none" stroke="#8C876F" stroke-width="1.6" stroke-dasharray="3 3" marker-end="url(#arrowFaint)"/>
+  <text x="190" y="455" text-anchor="middle" font-size="12" font-weight="700" fill="#8C876F">IDLE &#8212; NO TORQUE</text>
+</g>
+
+<!-- ================= PAIR B: LOCKED (DOG ENGAGED) ================= -->
+<g>
+  <!-- mainshaft gear body + teeth -->
+  <circle cx="430" cy="175" r="64" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="430" cy="175" r="78" fill="none" stroke="#22252B" stroke-width="12" stroke-dasharray="12 8"/>
+  <!-- dog collar bridging gear to shaft -->
+  <rect x="410" y="163" width="40" height="24" fill="#AE3527" stroke="#22252B" stroke-width="1.5"/>
+  <path d="M413,163 L419,169 L425,163 L431,169 L437,163 L443,169 L449,163" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <!-- layshaft gear body + teeth -->
+  <circle cx="430" cy="325" r="58" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="430" cy="325" r="72" fill="none" stroke="#22252B" stroke-width="11" stroke-dasharray="11 7"/>
+
+  <!-- solid rotation arrows, matched speed / locked -->
+  <path d="M400,120 A64,64 0 0 1 458,127" fill="none" stroke="#AE3527" stroke-width="2.8" marker-end="url(#arrowSignal)"/>
+  <path d="M462,375 A58,58 0 0 1 402,368" fill="none" stroke="#AE3527" stroke-width="2.8" marker-end="url(#arrowSignal)"/>
+
+  <!-- torque transfer burst at mesh point -->
+  <g stroke="#AE3527" stroke-width="2.4">
+    <line x1="415" y1="240" x2="405" y2="252"/>
+    <line x1="430" y1="238" x2="430" y2="254"/>
+    <line x1="445" y1="240" x2="455" y2="252"/>
+  </g>
+
+  <text x="430" y="440" text-anchor="middle" font-size="14" font-weight="700" fill="#AE3527">LOCKED &#8212; DOG RING ENGAGED</text>
+  <text x="430" y="458" text-anchor="middle" font-size="11.5" fill="#5A5748">THIS PAIR CARRIES ALL THE TORQUE</text>
+</g>
+
+<!-- ================= PAIR C: IDLE ================= -->
+<g>
+  <circle cx="650" cy="175" r="55" fill="#EEE8DA" stroke="#8C876F" stroke-width="2"/>
+  <circle cx="650" cy="175" r="10" fill="none" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <circle cx="650" cy="325" r="95" fill="#EEE8DA" stroke="#8C876F" stroke-width="2"/>
+  <circle cx="650" cy="325" r="10" fill="none" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <path d="M626,138 A34,34 0 1 1 626,108" fill="none" stroke="#8C876F" stroke-width="1.6" stroke-dasharray="3 3" marker-end="url(#arrowFaint)"/>
+  <path d="M598,260 A48,48 0 1 1 598,190" fill="none" stroke="#8C876F" stroke-width="1.6" stroke-dasharray="3 3" marker-end="url(#arrowFaint)"/>
+  <text x="650" y="440" text-anchor="middle" font-size="12" font-weight="700" fill="#8C876F">IDLE &#8212; NO TORQUE</text>
+</g>
+
+<text x="400" y="485" text-anchor="middle" font-size="13" font-weight="600" fill="#6B5A22">EVERY GEAR PAIR MESHES ALWAYS &#8212; ONLY ONE PAIR IS EVER LOCKED TO ITS SHAFT</text>
+</svg>

@@ -1,0 +1,91 @@
+<svg viewBox="0 0 800 500" width="800" height="500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#22252B"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#33505E"/>
+    </marker>
+    <marker id="arrowFaint" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8C876F"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+
+  <text x="400" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#22252B">INTAKE TRACT LENGTH SHAPES THE TORQUE CURVE</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13" font-style="italic" fill="#5A5748">A reflected pressure wave times its boost to one end of the rev range, not both</text>
+
+  <!-- divider -->
+  <line x1="400" y1="70" x2="400" y2="440" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ============ LEFT: SHORT TRACT ============ -->
+  <text x="200" y="82" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B" letter-spacing="0.5">SHORT INTAKE TRACT</text>
+
+  <!-- funnel / filter -->
+  <polygon points="55,150 55,190 95,175 95,165" fill="none" stroke="#22252B" stroke-width="2"/>
+  <!-- pipe -->
+  <rect x="95" y="165" width="165" height="20" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+  <!-- cylinder head block -->
+  <rect x="260" y="135" width="80" height="80" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <line x1="260" y1="135" x2="288" y2="135" stroke="#22252B" stroke-width="2.5"/>
+  <line x1="312" y1="135" x2="340" y2="135" stroke="#22252B" stroke-width="2.5"/>
+  <line x1="300" y1="123" x2="300" y2="140" stroke="#22252B" stroke-width="3"/>
+  <polygon points="290,140 310,140 300,146" fill="#22252B"/>
+  <!-- airflow arrow through pipe -->
+  <line x1="105" y1="175" x2="245" y2="175" stroke="#33505E" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrowBlue)"/>
+
+  <!-- length dimension -->
+  <line x1="95" y1="205" x2="260" y2="205" stroke="#33505E" stroke-width="1.5"/>
+  <line x1="95" y1="199" x2="95" y2="211" stroke="#33505E" stroke-width="1.5"/>
+  <line x1="260" y1="199" x2="260" y2="211" stroke="#33505E" stroke-width="1.5"/>
+  <text x="177" y="222" text-anchor="middle" font-size="12" fill="#33505E" font-weight="600">SHORT</text>
+
+  <!-- graph left -->
+  <line x1="60" y1="260" x2="60" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="60" y1="420" x2="340" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrowBlue)"/>
+  <text x="345" y="424" font-size="11.5" fill="#33505E">RPM</text>
+  <text x="30" y="270" font-size="11.5" fill="#33505E" transform="rotate(-90 30 270)">TORQUE</text>
+
+  <path d="M60,405 C140,400 200,380 240,340 C270,310 285,280 300,268 C315,278 330,285 340,290" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="300" cy="268" r="5" fill="#AE3527"/>
+  <line x1="300" y1="268" x2="300" y2="420" stroke="#AE3527" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="300" y="255" text-anchor="middle" font-size="12.5" font-weight="700" fill="#AE3527">PEAKS HIGH</text>
+
+  <text x="60" y="436" font-size="11" fill="#8C876F">LOW</text>
+  <text x="325" y="436" font-size="11" fill="#8C876F">HIGH</text>
+  <text x="200" y="452" text-anchor="middle" font-size="12.5" font-weight="600" fill="#6B5A22">FAVORS HIGH-RPM FILLING</text>
+
+  <!-- ============ RIGHT: LONG TRACT ============ -->
+  <text x="600" y="82" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B" letter-spacing="0.5">LONG INTAKE TRACT</text>
+
+  <polygon points="430,150 430,190 460,175 460,165" fill="none" stroke="#22252B" stroke-width="2"/>
+  <rect x="460" y="165" width="230" height="20" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+  <rect x="690" y="135" width="65" height="80" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <line x1="690" y1="135" x2="712" y2="135" stroke="#22252B" stroke-width="2.5"/>
+  <line x1="736" y1="135" x2="755" y2="135" stroke="#22252B" stroke-width="2.5"/>
+  <line x1="723" y1="123" x2="723" y2="140" stroke="#22252B" stroke-width="3"/>
+  <polygon points="713,140 733,140 723,146" fill="#22252B"/>
+  <line x1="470" y1="175" x2="675" y2="175" stroke="#33505E" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrowBlue)"/>
+
+  <line x1="460" y1="205" x2="690" y2="205" stroke="#33505E" stroke-width="1.5"/>
+  <line x1="460" y1="199" x2="460" y2="211" stroke="#33505E" stroke-width="1.5"/>
+  <line x1="690" y1="199" x2="690" y2="211" stroke="#33505E" stroke-width="1.5"/>
+  <text x="575" y="222" text-anchor="middle" font-size="12" fill="#33505E" font-weight="600">LONG</text>
+
+  <!-- graph right -->
+  <line x1="430" y1="260" x2="430" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="430" y1="420" x2="755" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrowBlue)"/>
+  <text x="760" y="424" font-size="11.5" fill="#33505E">RPM</text>
+  <text x="400" y="270" font-size="11.5" fill="#33505E" transform="rotate(-90 400 270)">TORQUE</text>
+
+  <path d="M430,345 C450,305 470,278 505,268 C545,260 590,278 640,318 C685,352 720,375 755,392" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="505" cy="268" r="5" fill="#AE3527"/>
+  <line x1="505" y1="268" x2="505" y2="420" stroke="#AE3527" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="505" y="255" text-anchor="middle" font-size="12.5" font-weight="700" fill="#AE3527">PEAKS LOW</text>
+
+  <text x="430" y="436" font-size="11" fill="#8C876F">LOW</text>
+  <text x="737" y="436" font-size="11" fill="#8C876F">HIGH</text>
+  <text x="592" y="452" text-anchor="middle" font-size="12.5" font-weight="600" fill="#6B5A22">FAVORS LOW-RPM FILLING</text>
+
+</svg>
