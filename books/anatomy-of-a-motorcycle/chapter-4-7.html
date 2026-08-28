@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>4.7 — Lean Angle and Cornering Clearance | Anatomy of a Motorcycle</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-iv">Part IV — Chassis</a>
+    <span class="sep">/</span>
+    <span class="current">4.7</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">Anatomy of a Motorcycle</a>
+      <span class="vol">Vol. I — The Machine</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">4.7</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Four, Section Seven</div>
+        <h1>Lean Angle and Cornering Clearance</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">IV of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Physics / Practical</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">041 / 150</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv"><a class="fv" href="chapter-4-6.html">Ch. 4.6</a></span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~8 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">A skilled rider on a cruiser with low-slung floorboards will drag a peg on the pavement at a lean angle that a mediocre rider on a modern sportbike could clear without a second thought. That isn't a verdict on either rider's skill. It's a hardware limit, built into the motorcycle before either of them ever threw a leg over it, and this chapter is about exactly what that limit actually is and why it varies so dramatically between different kinds of motorcycles.</p>
+
+    <p>Chapters 4.4 through 4.6 explained why and how a motorcycle leans and turns. None of them addressed the practical ceiling on that lean — what actually stops it, and what happens to the tyre doing all the work once the bike gets close to that ceiling.</p>
+
+    <h2 class="section">How Much Lean a Corner Actually Demands</h2>
+
+    <p>Chapter 1.2 established that leaning is the mechanical answer to combining cornering force and gravity through a motorcycle's narrow line of contact, and promised the full vector treatment for later in this book. The short version, without the full derivation Part VIII will eventually supply: the tighter the corner and the faster the speed, the greater the cornering force, and the more the bike has to lean to keep that combined force lined up through the contact patch. This is a real, calculable relationship, not a rough feeling — a given speed and corner radius genuinely demand a specific lean angle, and a rider either provides it or the bike runs wide.</p>
+
+    <h2 class="section">What Actually Touches Down First</h2>
+
+    <p>Lean angle has a hard physical ceiling: eventually, something on the motorcycle other than the tyres reaches the ground. What touches down first, and at what lean angle, depends entirely on what protrudes lowest and furthest from the bike's centreline — footpegs, exhaust pipes, a centrestand, fairing lowers, or in some cases the frame itself. This is precisely why different categories of motorcycle have such wildly different maximum lean angles despite all obeying the identical physics from the previous section: a cruiser's low-slung floorboards and pipes, chosen for a relaxed riding position and styling, ground out at a comparatively shallow lean angle, while a sportbike's tucked-in components and higher ground clearance, chosen specifically to chase cornering performance, allow dramatically more lean before anything touches down.</p>
+
+    <p>This connects directly back to Chapter 2.11's discussion of engine layout: a boxer engine's cylinders, protruding to either side of the bike for the excellent primary balance that chapter described, are a real, physical example of exactly the kind of protrusion this chapter is describing — a design choice made for one good reason, engine smoothness, that directly costs cornering clearance as an unavoidable side effect.</p>
+
+    <div class="pull"><p>Maximum lean angle isn't a single universal number a motorcycle either has or doesn't. It's set by whatever component happens to hang lowest and furthest out — and that component is usually there for a completely unrelated reason, from styling to engine balance to riding position.</p></div>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 4.7-A</span>
+      <img src="diagrams/fig-4-7-a.svg" alt="Three motorcycles leaned to their respective maximum angles — a cruiser, a standard, and a sportbike — each shown touching down on a different component, with the actual lean angle achieved varying significantly between them." class="diagram-img">
+      <p>Three motorcycles leaned to their respective maximum angles — a cruiser, a standard, and a sportbike — each shown touching down on a different component, with the actual lean angle achieved varying significantly between them.</p>
+    </div>
+
+    <h2 class="section">The Tyre Is Doing Something Different at Full Lean</h2>
+
+    <p>As a motorcycle leans further from upright, the contact patch — the actual area of tyre touching the road — doesn't stay in the same place on the tyre's surface. It migrates across the tyre's rounded profile, moving from the centre tread used while riding upright toward the shoulder of the tyre as lean angle increases. This is exactly why motorcycle tyres are shaped with a deliberately rounded, rather than flat, cross-section: a flat profile would produce an awkward, shrinking contact patch as the bike leaned, while a properly rounded profile maintains a usable contact patch shape across the full range of lean angles a rider might actually use. Part VI will cover exactly how that contact patch generates grip in full, but it's worth noting here plainly: riding at maximum lean means riding on a genuinely different part of the tyre than cruising upright, with different rubber, different wear history, and potentially different temperature than the centre tread sees.</p>
+
+    <p>This is also the mechanical reason behind "chicken strips" — the unworn band of tread sometimes visible at the very edge of a tyre, informal evidence of how much of that tyre's shoulder a rider has actually used, or hasn't.</p>
+
+    <h2 class="section">A Common Misconception, Cleared Up Early</h2>
+
+    <p>It's tempting to treat maximum lean angle purely as a measure of rider skill or bravery — dragging a knee, or a peg, framed as an act of pure nerve. Skill and available grip both genuinely matter, but this chapter's whole point is that a motorcycle's hardware sets a real, physical ceiling that skill alone cannot exceed: a highly skilled rider on a bike with limited cornering clearance will ground out a peg or pipe at a shallower lean angle than a considerably less skilled rider on a sportbike built with generous clearance, regardless of either rider's actual talent. Achieved lean angle is a joint function of rider skill, available tyre grip, and the hardware's mechanical limits together — treating it as a pure skill statistic, detached from what the specific motorcycle underneath the rider actually allows, misses most of the story.</p>
+
+    <h2 class="section">Where This Leads</h2>
+
+    <p>This chapter covered how far a motorcycle can lean and what stops it. What it hasn't addressed is a related dimensional question: how wheelbase and swingarm design shape a motorcycle's stability, agility, and how weight transfers under acceleration. Chapter 4.8 turns to exactly that.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Required lean angle is set by a real, calculable relationship between cornering force and gravity, not a rough feeling — tighter corners and higher speeds genuinely demand more lean.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Maximum achievable lean angle is set by whichever component protrudes lowest and furthest from the bike's centreline — pegs, pipes, fairings, or in some cases the frame — and this varies dramatically between motorcycle categories built for different priorities.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Design choices made for unrelated reasons, like a boxer engine's width from Chapter 2.11, directly cost cornering clearance as a side effect, independent of anything to do with lean angle itself.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          As lean angle increases, the tyre's contact patch migrates from the centre tread toward the shoulder, which is why motorcycle tyres use a rounded rather than flat profile.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Achieved lean angle depends jointly on rider skill, available tyre grip, and the motorcycle's hardware limits — it is not a pure measure of rider bravery detached from what the specific bike allows.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-1-2.html">← Ch. 1.2</a></td>
+          <td class="note">Established the physics relationship between cornering force, gravity, and required lean, promising the full derivation for Part VIII.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-2-11.html">← Ch. 2.11</a></td>
+          <td class="note">Described a boxer engine's protruding cylinders as a trade for primary balance; this chapter identifies that same protrusion as a direct cornering-clearance cost.</td>
+        </tr>
+        <tr>
+          <td class="code"><span class="ref-disabled">→ Pt. VI</span></td>
+          <td class="note">Tyres & Wheels will cover contact patch grip generation in full, building on this chapter's introduction of contact patch migration under lean. <em>(Not yet published.)</em></td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-4-8.html">→ Ch. 4.8</a></td>
+          <td class="note">Covers wheelbase and swingarm design, the next chassis dimension shaping stability and weight transfer.</td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a href="chapter-4-6.html">
+      <span class="dir">← Previous Chapter</span>
+      <span class="ttl">4.6 — Gyroscopic Effects and Wheel Spin</span>
+    </a>
+    <a class="next" href="chapter-4-8.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">4.8 — Wheelbase and Swingarm Design</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">Anatomy of a Motorcycle — Sheet 041 / 150</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">WEIGHT TRANSFER UNDER HARD BRAKING</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ground -->
+  <line x1="80" y1="360" x2="720" y2="360" stroke="#33505E" stroke-width="2"/>
+
+  <!-- motorcycle side profile, nose-down, tail-up under braking -->
+  <!-- front wheel compressed (smaller radius shown lower), rear extended (higher) -->
+  <circle cx="230" cy="345" r="52" fill="none" stroke="#22252B" stroke-width="3"/>
+  <circle cx="590" cy="330" r="52" fill="none" stroke="#22252B" stroke-width="3"/>
+
+  <!-- frame tilted nose-down -->
+  <path d="M 230 300 L 340 200 L 480 195 L 590 278" fill="none" stroke="#22252B" stroke-width="3"/>
+  <path d="M 340 200 L 335 300" stroke="#22252B" stroke-width="2.2"/>
+  <path d="M 480 195 L 560 285" stroke="#22252B" stroke-width="2.2"/>
+
+  <!-- CG marker -->
+  <circle cx="420" cy="230" r="6" fill="#6B5A22"/>
+  <text x="420" y="215" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#6B5A22">CG</text>
+
+  <!-- deceleration force arrow (rearward, at CG height) -->
+  <line x1="480" y1="230" x2="540" y2="230" stroke="#AE3527" stroke-width="2.5"/>
+  <polygon points="540,230 528,224 528,236" fill="#AE3527"/>
+  <text x="545" y="234" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#AE3527">DECEL.</text>
+
+  <!-- pitching moment arc -->
+  <path d="M 300 250 A 90 90 0 0 1 380 175" stroke="#33505E" stroke-width="2" fill="none" stroke-dasharray="4 3"/>
+  <polygon points="380,175 366,178 372,190" fill="#33505E"/>
+  <text x="300" y="200" font-family="JetBrains Mono, monospace" font-size="11" fill="#33505E">PITCH MOMENT</text>
+
+  <!-- front contact patch enlarged / more grip -->
+  <ellipse cx="230" cy="360" rx="34" ry="8" fill="#AE3527" fill-opacity="0.8"/>
+  <line x1="230" y1="360" x2="230" y2="405" stroke="#AE3527" stroke-width="2.2"/>
+  <polygon points="230,405 223,391 237,391" fill="#AE3527"/>
+  <text x="230" y="425" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#AE3527">MORE LOAD</text>
+  <text x="230" y="441" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">MORE GRIP</text>
+
+  <!-- rear contact patch shrunk / less grip -->
+  <ellipse cx="590" cy="360" rx="16" ry="4" fill="#33505E" fill-opacity="0.6"/>
+  <line x1="590" y1="360" x2="590" y2="395" stroke="#33505E" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <polygon points="590,395 585,384 595,384" fill="#33505E" fill-opacity="0.7"/>
+  <text x="590" y="415" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#33505E">LESS LOAD</text>
+  <text x="590" y="431" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">LESS GRIP</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">BRAKING ACTIVELY REDISTRIBUTES GRIP FROM REAR TO FRONT</text>
+</svg>

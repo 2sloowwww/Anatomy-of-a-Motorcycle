@@ -1,0 +1,61 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">WON'T START: DOES THE ENGINE CRANK?</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <rect x="310" y="65" width="180" height="38" rx="6" fill="#22252B"/>
+  <text x="400" y="89" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#EEE8DA">PRESS STARTER</text>
+
+  <line x1="400" y1="103" x2="400" y2="128" stroke="#8C876F" stroke-width="1.4"/>
+  <polygon points="400,138 200,168 600,168" fill="none" stroke="#33505E" stroke-width="1.5"/>
+  <text x="400" y="150" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#33505E">CRANKS?</text>
+
+  <!-- NO branch (left) -->
+  <line x1="330" y1="168" x2="180" y2="200" stroke="#8C876F" stroke-width="1.4"/>
+  <text x="230" y="188" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">NO</text>
+  <rect x="90" y="200" width="180" height="34" rx="5" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.3"/>
+  <text x="180" y="221" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#22252B">ELECTRICAL PATH</text>
+
+  <line x1="180" y1="234" x2="180" y2="256" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+  <text x="180" y="270" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#33505E">TERMINAL CHECK</text>
+  <circle cx="180" cy="300" r="14" fill="none" stroke="#AE3527" stroke-width="2.5"/>
+  <text x="180" y="304" text-anchor="middle" fill="#AE3527" font-weight="700" font-family="JetBrains Mono, monospace">✓</text>
+  <line x1="180" y1="314" x2="180" y2="345" stroke="#AE3527" stroke-width="2.2"/>
+  <polygon points="180,345 173,331 187,331" fill="#AE3527"/>
+  <rect x="95" y="350" width="170" height="38" rx="7" fill="#AE3527"/>
+  <text x="180" y="374" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#EEE8DA">CLEAN &amp; RETIGHTEN</text>
+
+  <line x1="90" y1="234" x2="60" y2="256" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+  <text x="70" y="270" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#33505E">BATTERY TEST</text>
+  <line x1="45" y1="256" x2="95" y2="286" stroke="#8C876F" stroke-width="2"/>
+  <line x1="95" y1="256" x2="45" y2="286" stroke="#8C876F" stroke-width="2"/>
+
+  <!-- YES branch (right) -->
+  <line x1="470" y1="168" x2="620" y2="200" stroke="#8C876F" stroke-width="1.4"/>
+  <text x="570" y="188" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">YES</text>
+  <rect x="530" y="200" width="180" height="34" rx="5" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.3"/>
+  <text x="620" y="221" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#22252B">IGNITION PATH</text>
+
+  <line x1="620" y1="234" x2="620" y2="256" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+  <text x="620" y="270" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#33505E">SPARK TEST</text>
+  <circle cx="620" cy="300" r="14" fill="none" stroke="#AE3527" stroke-width="2.5"/>
+  <text x="620" y="304" text-anchor="middle" fill="#AE3527" font-weight="700" font-family="JetBrains Mono, monospace">✓</text>
+  <line x1="620" y1="314" x2="620" y2="345" stroke="#AE3527" stroke-width="2.2"/>
+  <polygon points="620,345 613,331 627,331" fill="#AE3527"/>
+  <rect x="530" y="350" width="180" height="38" rx="7" fill="#AE3527"/>
+  <text x="620" y="374" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#EEE8DA">REPLACE SPARK PLUG</text>
+
+  <line x1="710" y1="234" x2="740" y2="256" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+  <text x="730" y="270" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#33505E">FUEL CHECK</text>
+  <line x1="715" y1="256" x2="765" y2="286" stroke="#8C876F" stroke-width="2"/>
+  <line x1="765" y1="256" x2="715" y2="286" stroke="#8C876F" stroke-width="2"/>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">ONE TEST — DOES IT CRANK — SPLITS THE ENTIRE FAULT DOMAIN IN HALF</text>
+</svg>

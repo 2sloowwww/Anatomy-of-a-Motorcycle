@@ -1,0 +1,42 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" font-weight="700" fill="#22252B">BRAKE FLUID MOISTURE AND PAD WEAR VS. LEVER TRAVEL</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- LEFT: fluid moisture graph -->
+  <text x="200" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#22252B">MOISTURE CONTENT OVER TIME</text>
+  <line x1="90" y1="230" x2="90" y2="110" stroke="#33505E" stroke-width="1.4"/>
+  <line x1="90" y1="230" x2="330" y2="230" stroke="#33505E" stroke-width="1.4"/>
+  <path d="M 90 225 Q 200 200 330 130" fill="none" stroke="#AE3527" stroke-width="3"/>
+  <text x="330" y="248" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">TIME →</text>
+  <text x="200" y="120" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#AE3527" font-weight="600">RISING MOISTURE</text>
+  <text x="200" y="270" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">FLUID LOOKS CLEAN THE WHOLE TIME</text>
+
+  <!-- divider -->
+  <line x1="400" y1="65" x2="400" y2="410" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- RIGHT: pad wear / piston travel -->
+  <text x="600" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#22252B">PAD WEAR → PISTON TRAVEL</text>
+
+  <!-- new pad -->
+  <rect x="480" y="130" width="30" height="60" fill="#5A5748"/>
+  <rect x="510" y="130" width="12" height="60" fill="#22252B"/>
+  <text x="495" y="205" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">NEW PAD</text>
+
+  <!-- worn pad, piston extended -->
+  <rect x="600" y="150" width="14" height="40" fill="#5A5748"/>
+  <rect x="614" y="150" width="12" height="40" fill="#22252B"/>
+  <line x1="560" y1="170" x2="600" y2="170" stroke="#AE3527" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="600,170 590,165 590,175" fill="#AE3527"/>
+  <text x="605" y="205" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">WORN PAD</text>
+  <text x="605" y="218" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#AE3527">PISTON EXTENDS</text>
+
+  <line x1="50" y1="440" x2="750" y2="440" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="460" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">NEITHER PROBLEM ANNOUNCES ITSELF UNTIL A SCHEDULED CHECK CATCHES IT</text>
+</svg>

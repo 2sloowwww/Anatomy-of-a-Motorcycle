@@ -1,0 +1,54 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">CORNERING LOAD TRANSFER: MORE EFFECTIVE WEIGHT</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- LEFT: upright -->
+  <text x="200" y="88" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">UPRIGHT</text>
+
+  <line x1="200" y1="350" x2="200" y2="150" stroke="#22252B" stroke-width="4"/>
+  <circle cx="200" cy="140" r="8" fill="#6B5A22"/>
+  <ellipse cx="200" cy="360" rx="22" ry="7" fill="#33505E"/>
+
+  <line x1="200" y1="140" x2="200" y2="230" stroke="#8C876F" stroke-width="3"/>
+  <polygon points="200,230 193,216 207,216" fill="#8C876F"/>
+  <text x="215" y="200" font-family="JetBrains Mono, monospace" font-size="12" fill="#8C876F">GRAVITY ONLY</text>
+
+  <text x="200" y="400" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">NORMAL LOAD = WEIGHT</text>
+
+  <!-- divider -->
+  <line x1="400" y1="70" x2="400" y2="460" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- RIGHT: leaned -->
+  <text x="600" y="88" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">LEANED IN A CORNER</text>
+
+  <g transform="rotate(-30 600 360)">
+    <line x1="600" y1="360" x2="600" y2="160" stroke="#22252B" stroke-width="4"/>
+    <circle cx="600" cy="150" r="8" fill="#6B5A22"/>
+  </g>
+  <ellipse cx="600" cy="360" rx="22" ry="7" fill="#33505E"/>
+
+  <!-- gravity component -->
+  <line x1="600" y1="150" x2="600" y2="230" stroke="#8C876F" stroke-width="2.5" transform="translate(-26,13)"/>
+  <!-- centripetal component -->
+  <line x1="600" y1="360" x2="520" y2="360" stroke="#AE3527" stroke-width="2.5"/>
+  <polygon points="520,360 534,353 534,367" fill="#AE3527"/>
+  <text x="470" y="382" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#AE3527">CENTRIPETAL</text>
+
+  <!-- combined resultant vector, larger, along the lean axis -->
+  <line x1="600" y1="360" x2="640" y2="230" stroke="#22252B" stroke-width="3.5"/>
+  <polygon points="640,230 626,238 634,222" fill="#22252B"/>
+  <text x="665" y="270" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">COMBINED</text>
+  <text x="665" y="286" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">(LARGER)</text>
+
+  <text x="600" y="400" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">NORMAL LOAD &gt; WEIGHT</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">LEAN ADDS CENTRIPETAL FORCE TO GRAVITY — INCREASING LOAD AND GRIP TOGETHER</text>
+</svg>

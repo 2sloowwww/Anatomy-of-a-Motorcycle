@@ -1,0 +1,91 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowBrass54" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#6B5A22"/>
+    </marker>
+    <marker id="arrowSignal54" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#AE3527"/>
+    </marker>
+    <marker id="arrowInk54" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#22252B"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="26" text-anchor="middle" font-weight="700" font-size="20" fill="#22252B" letter-spacing="0.4">SUSPENSION SAG: THREE REFERENCE POINTS</text>
+  <text x="400" y="44" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5A5748">MEASURED AS COMPRESSION FROM FULL EXTENSION, DOWN TOWARD THE COMPRESSION LIMIT</text>
+
+  <!-- ============================================================ -->
+  <!-- fixed damper body (reference: bolted near the axle) -->
+  <!-- ============================================================ -->
+  <rect x="355" y="230" width="90" height="130" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+  <rect x="362" y="238" width="76" height="14" fill="#22252B"/>
+  <text x="400" y="272" text-anchor="middle" font-size="10" fill="#5A5748">DAMPER BODY</text>
+  <text x="400" y="284" text-anchor="middle" font-size="10" fill="#5A5748">(FIXED NEAR AXLE)</text>
+
+  <!-- rod, solid, drawn to the RIDER SAG position (the illustrated "current" state) -->
+  <line x1="400" y1="186" x2="400" y2="230" stroke="#22252B" stroke-width="4.5"/>
+  <circle cx="400" cy="178" r="8" fill="#EEE8DA" stroke="#AE3527" stroke-width="2.6"/>
+
+  <!-- bottom: body to axle to wheel -->
+  <line x1="400" y1="360" x2="400" y2="378" stroke="#22252B" stroke-width="4"/>
+  <circle cx="400" cy="385" r="7" fill="#EEE8DA" stroke="#22252B" stroke-width="2.2"/>
+  <line x1="400" y1="392" x2="400" y2="406" stroke="#22252B" stroke-width="3"/>
+  <circle cx="400" cy="428" r="26" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+  <circle cx="400" cy="428" r="4" fill="#22252B"/>
+  <line x1="300" y1="454" x2="500" y2="454" stroke="#22252B" stroke-width="2"/>
+
+  <!-- ============================================================ -->
+  <!-- ghost reference lines -->
+  <!-- ============================================================ -->
+  <!-- full extension -->
+  <line x1="330" y1="90" x2="470" y2="90" stroke="#8C876F" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="326" y="86" text-anchor="end" font-size="13.5" font-weight="700" fill="#8C876F">FULL EXTENSION</text>
+  <text x="326" y="100" text-anchor="end" font-size="10" fill="#8C876F">rod fully out, no load</text>
+
+  <!-- static sag -->
+  <line x1="330" y1="145" x2="470" y2="145" stroke="#6B5A22" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="326" y="135" text-anchor="end" font-size="13.5" font-weight="700" fill="#6B5A22">STATIC SAG</text>
+  <text x="326" y="149" text-anchor="end" font-size="10" fill="#6B5A22">bike's own weight only</text>
+
+  <!-- rider sag (matches the solid eyelet at y=178) -->
+  <text x="326" y="168" text-anchor="end" font-size="13.5" font-weight="700" fill="#AE3527">RIDER SAG</text>
+  <text x="326" y="182" text-anchor="end" font-size="10" fill="#AE3527">with rider aboard</text>
+  <line x1="330" y1="178" x2="392" y2="178" stroke="#AE3527" stroke-width="1.4"/>
+
+  <!-- fully compressed limit -->
+  <line x1="330" y1="230" x2="470" y2="230" stroke="#8C876F" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="326" y="226" text-anchor="end" font-size="13.5" font-weight="700" fill="#8C876F">FULLY COMPRESSED</text>
+  <text x="326" y="240" text-anchor="end" font-size="10" fill="#8C876F">travel limit — bottomed out</text>
+
+  <!-- small above/below emphasis arrows at the rider-sag point -->
+  <line x1="418" y1="171" x2="418" y2="94" stroke="#AE3527" stroke-width="1.8" marker-end="url(#arrowSignal54)"/>
+  <text x="424" y="130" font-size="10.5" font-weight="700" fill="#AE3527">TRAVEL ABOVE</text>
+  <line x1="418" y1="185" x2="418" y2="226" stroke="#AE3527" stroke-width="1.8" marker-end="url(#arrowSignal54)"/>
+  <text x="424" y="209" font-size="10.5" font-weight="700" fill="#AE3527">TRAVEL BELOW</text>
+
+  <!-- ============================================================ -->
+  <!-- dimension bracket column, quantifying each segment -->
+  <!-- ============================================================ -->
+  <line x1="500" y1="90" x2="500" y2="145" stroke="#6B5A22" stroke-width="2" marker-start="url(#arrowBrass54)" marker-end="url(#arrowBrass54)"/>
+  <text x="510" y="112" font-size="12.5" font-weight="700" fill="#6B5A22">STATIC SAG</text>
+  <text x="510" y="126" font-size="10" fill="#6B5A22">travel used by bike weight</text>
+
+  <line x1="500" y1="145" x2="500" y2="178" stroke="#AE3527" stroke-width="2" marker-start="url(#arrowSignal54)" marker-end="url(#arrowSignal54)"/>
+  <text x="510" y="157" font-size="12.5" font-weight="700" fill="#AE3527">RIDER SAG (ADD'L)</text>
+  <text x="510" y="171" font-size="10" fill="#AE3527">extra travel used by rider</text>
+
+  <line x1="500" y1="178" x2="500" y2="230" stroke="#22252B" stroke-width="2.2" marker-start="url(#arrowInk54)" marker-end="url(#arrowInk54)"/>
+  <text x="510" y="197" font-size="13.5" font-weight="700" fill="#22252B">REMAINING TRAVEL</text>
+  <text x="510" y="211" font-size="10" fill="#5A5748">left before bottoming out —</text>
+  <text x="510" y="224" font-size="10" fill="#5A5748">must still absorb real bumps</text>
+
+  <text x="400" y="474" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">TOO LITTLE SAG STARVES TRAVEL ONE WAY; TOO MUCH STARVES IT THE OTHER</text>
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 5.4-A</text>
+</svg>

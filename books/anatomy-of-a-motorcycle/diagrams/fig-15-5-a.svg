@@ -1,0 +1,43 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">USED MOTORCYCLE INSPECTION CHECKLIST</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- tyre wear -->
+  <text x="150" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">TYRE WEAR</text>
+  <circle cx="150" cy="140" r="45" fill="none" stroke="#22252B" stroke-width="3"/>
+  <path d="M 115 130 Q 150 115 185 130" stroke="#AE3527" stroke-width="4" fill="none"/>
+  <text x="150" y="200" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">PRESSURE / ALIGNMENT</text>
+  <text x="150" y="213" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">STORY (CH. 6.7)</text>
+
+  <!-- fluids -->
+  <text x="400" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">FLUIDS &amp; CORROSION</text>
+  <rect x="370" y="105" width="60" height="70" rx="6" fill="#E2D9C3" stroke="#33505E" stroke-width="1.5"/>
+  <rect x="378" y="140" width="44" height="30" fill="#8C876F" opacity="0.6"/>
+  <circle cx="400" cy="185" r="3" fill="#AE3527"/>
+  <text x="400" y="200" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">BRAKE FLUID CLARITY</text>
+  <text x="400" y="213" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">TERMINAL CORROSION</text>
+
+  <!-- cold start -->
+  <text x="650" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">COLD START</text>
+  <circle cx="650" cy="140" r="40" fill="none" stroke="#22252B" stroke-width="3"/>
+  <path d="M 650 118 L 650 140 L 668 150" stroke="#AE3527" stroke-width="3" fill="none"/>
+  <text x="650" y="200" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">BEFORE SELLER WARMS IT</text>
+  <text x="650" y="213" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">LISTEN — CORRELATE (CH. 11.9)</text>
+
+  <line x1="270" y1="70" x2="270" y2="230" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="530" y1="70" x2="530" y2="230" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <rect x="130" y="260" width="540" height="60" rx="8" fill="none" stroke="#6B5A22" stroke-width="1.6"/>
+  <text x="400" y="285" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">NONE OF THIS IS NEW — IT'S KNOWLEDGE</text>
+  <text x="400" y="303" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">THIS BOOK ALREADY BUILT, APPLIED HERE</text>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A DETAILED APPEARANCE DOESN'T ANSWER ANY OF THESE THREE QUESTIONS</text>
+</svg>

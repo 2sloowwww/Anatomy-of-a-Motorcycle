@@ -1,0 +1,57 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowSignal46" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#AE3527"/>
+    </marker>
+    <marker id="arrowInk46" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#22252B"/>
+    </marker>
+    <marker id="arrowFaint46" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#8C876F"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-weight="700" font-size="20" fill="#22252B" letter-spacing="0.5">PRECESSION — A SPINNING WHEEL RESPONDS SIDEWAYS</text>
+  <text x="400" y="54" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5A5748">Push down on one end of the axle; the axis swings sideways instead of tipping down</text>
+
+  <!-- spinning wheel, edge-on schematic -->
+  <ellipse cx="370" cy="270" rx="155" ry="115" fill="none" stroke="#22252B" stroke-width="2.6"/>
+  <ellipse cx="370" cy="270" rx="80" ry="58" fill="none" stroke="#8C876F" stroke-width="1" stroke-dasharray="2 4"/>
+
+  <!-- spin direction arrows -->
+  <path d="M370,155 A115,115 0 0 1 480,235" fill="none" stroke="#22252B" stroke-width="2" marker-end="url(#arrowInk46)"/>
+  <path d="M480,305 A115,115 0 0 1 370,385" fill="none" stroke="#22252B" stroke-width="2" marker-end="url(#arrowInk46)"/>
+  <text x="500" y="185" font-size="13" font-weight="700" fill="#22252B">SPIN</text>
+  <text x="500" y="200" font-size="13" font-weight="700" fill="#22252B">DIRECTION</text>
+
+  <!-- axle -->
+  <line x1="145" y1="270" x2="595" y2="270" stroke="#22252B" stroke-width="5.5"/>
+  <line x1="145" y1="255" x2="145" y2="285" stroke="#22252B" stroke-width="5"/>
+  <line x1="595" y1="255" x2="595" y2="285" stroke="#22252B" stroke-width="5"/>
+
+  <!-- ghost / expected wrong response -->
+  <g opacity="0.55" transform="rotate(10 370 270)">
+    <line x1="145" y1="270" x2="595" y2="270" stroke="#8C876F" stroke-width="2.5" stroke-dasharray="5 4"/>
+  </g>
+  <text x="612" y="222" font-size="13" font-weight="700" fill="#8C876F">NOT A SIMPLE TIP</text>
+  <line x1="610" y1="228" x2="594" y2="300" stroke="#8C876F" stroke-width="1.6" marker-end="url(#arrowFaint46)"/>
+
+  <!-- applied tipping force -->
+  <line x1="595" y1="270" x2="595" y2="330" stroke="#AE3527" stroke-width="3" marker-end="url(#arrowSignal46)"/>
+  <text x="612" y="358" font-size="14" font-weight="700" fill="#AE3527">TIPPING FORCE</text>
+  <text x="612" y="374" font-size="14" font-weight="700" fill="#AE3527">APPLIED HERE</text>
+
+  <!-- actual precession response: axle end swings sideways -->
+  <path d="M595,270 C 600,335 545,385 465,392" fill="none" stroke="#22252B" stroke-width="3.4" marker-end="url(#arrowInk46)"/>
+  <text x="180" y="430" font-size="15" font-weight="700" fill="#22252B">PRECESSION — AXIS SWINGS SIDEWAYS,</text>
+  <text x="180" y="450" font-size="15" font-weight="700" fill="#22252B">NOT DOWN IN THE DIRECTION PUSHED</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 4.6-A</text>
+</svg>

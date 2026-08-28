@@ -1,0 +1,91 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowBrass" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#6B5A22"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">ONE PROJECT — SEVEN PAGES</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <!-- shared database bar -->
+  <rect x="60" y="90" width="680" height="34" fill="none" stroke="#33505E" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="400" y="112" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#33505E" letter-spacing="1">ONE PROJECT DATABASE — MEDIA, TIMELINE, AND METADATA SHARED BY EVERY PAGE</text>
+
+  <!-- seven page boxes -->
+  <g font-family="JetBrains Mono, monospace">
+    <!-- Media -->
+    <rect x="42" y="200" width="80" height="64" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="82" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">MEDIA</text>
+    <text x="82" y="246" text-anchor="middle" font-size="10.5" fill="#5A5748">organize</text>
+
+    <line x1="122" y1="232" x2="146" y2="232" stroke="#6B5A22" stroke-width="1.8" marker-end="url(#arrowBrass)"/>
+
+    <!-- Cut -->
+    <rect x="150" y="200" width="80" height="64" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="190" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">CUT</text>
+    <text x="190" y="246" text-anchor="middle" font-size="10.5" fill="#5A5748">rough in</text>
+
+    <line x1="230" y1="232" x2="254" y2="232" stroke="#6B5A22" stroke-width="1.8" marker-end="url(#arrowBrass)"/>
+
+    <!-- Edit -->
+    <rect x="258" y="200" width="80" height="64" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="298" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">EDIT</text>
+    <text x="298" y="246" text-anchor="middle" font-size="10.5" fill="#5A5748">build</text>
+
+    <line x1="338" y1="232" x2="362" y2="232" stroke="#6B5A22" stroke-width="1.8" marker-end="url(#arrowBrass)"/>
+
+    <!-- Fusion -->
+    <rect x="366" y="200" width="80" height="64" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="406" y="222" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">FUSION</text>
+    <text x="406" y="240" text-anchor="middle" font-size="10.5" fill="#5A5748">composite</text>
+    <text x="406" y="253" text-anchor="middle" font-size="9.5" fill="#8C876F">(optional)</text>
+
+    <line x1="446" y1="232" x2="470" y2="232" stroke="#6B5A22" stroke-width="1.8" marker-end="url(#arrowBrass)"/>
+
+    <!-- Color -->
+    <rect x="474" y="200" width="80" height="64" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="514" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">COLOR</text>
+    <text x="514" y="246" text-anchor="middle" font-size="10.5" fill="#5A5748">grade</text>
+
+    <line x1="554" y1="232" x2="578" y2="232" stroke="#6B5A22" stroke-width="1.8" marker-end="url(#arrowBrass)"/>
+
+    <!-- Fairlight -->
+    <rect x="582" y="200" width="86" height="64" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="625" y="222" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">FAIRLIGHT</text>
+    <text x="625" y="240" text-anchor="middle" font-size="10.5" fill="#5A5748">mix audio</text>
+
+    <line x1="668" y1="232" x2="692" y2="232" stroke="#6B5A22" stroke-width="1.8" marker-end="url(#arrowBrass)"/>
+
+    <!-- Deliver -->
+    <rect x="696" y="200" width="66" height="64" fill="#AE3527" fill-opacity="0.14" stroke="#AE3527" stroke-width="1.8"/>
+    <text x="729" y="228" text-anchor="middle" font-size="12.5" font-weight="700" fill="#AE3527">DELIVER</text>
+    <text x="729" y="246" text-anchor="middle" font-size="10" fill="#8C4A40">render</text>
+  </g>
+
+  <!-- connecting lines up to the shared database -->
+  <g stroke="#33505E" stroke-width="1.1" stroke-dasharray="3 3" opacity="0.65">
+    <line x1="82" y1="200" x2="82" y2="124"/>
+    <line x1="190" y1="200" x2="190" y2="124"/>
+    <line x1="298" y1="200" x2="298" y2="124"/>
+    <line x1="406" y1="200" x2="406" y2="124"/>
+    <line x1="514" y1="200" x2="514" y2="124"/>
+    <line x1="625" y1="200" x2="625" y2="124"/>
+    <line x1="729" y1="200" x2="729" y2="124"/>
+  </g>
+
+  <text x="400" y="310" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" fill="#22252B" font-weight="600">EACH PAGE IS A SPECIALIZED WORKSTATION —</text>
+  <text x="400" y="330" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" fill="#22252B" font-weight="600">NOT A SEPARATE COPY OF THE PROJECT</text>
+
+  <text x="400" y="370" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12.5" fill="#5A5748">A trim made on Edit is visible instantly on Color and Fairlight.</text>
+  <text x="400" y="390" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12.5" fill="#5A5748">A grade made on Color is visible instantly back on Edit and Deliver.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 1.2-A</text>
+</svg>

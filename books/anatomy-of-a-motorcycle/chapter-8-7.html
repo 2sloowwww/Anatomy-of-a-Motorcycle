@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>8.7 — Aerodynamics: Drag and Lift at Speed | Anatomy of a Motorcycle</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-viii">Part VIII — Motorcycle Physics</a>
+    <span class="sep">/</span>
+    <span class="current">8.7</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">Anatomy of a Motorcycle</a>
+      <span class="vol">Vol. I — The Machine</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">8.7</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Eight, Section Seven</div>
+        <h1>Aerodynamics: Drag and Lift at Speed</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">VIII of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Physics</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">077 / 150</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv"><a class="fv" href="chapter-8-6.html">Ch. 8.6</a></span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~6 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">Every chapter in this part so far has treated the motorcycle and rider as if they existed in a vacuum, with only the tyres and gravity involved. That approximation quietly breaks down as speed climbs, because air isn't nothing — it's a fluid the motorcycle is constantly pushing out of the way, and that pushing costs real, measurable force that grows dramatically as speed increases.</p>
+
+    <p>Chapter 8.6 closed by naming aerodynamics as the next force category this part hasn't yet accounted for. This chapter is that accounting.</p>
+
+    <h2 class="section">Drag: The Force That Grows With the Square of Speed</h2>
+
+    <p>Aerodynamic drag is the resistance force air exerts opposing a motorcycle's forward motion, and it grows with the square of speed — doubling speed doesn't double drag, it roughly quadruples it, which is why high-speed fuel consumption and the engine power needed just to maintain speed both rise so steeply at higher velocities. Drag depends on the motorcycle and rider's frontal area and shape, which is exactly why a sportbike's fairing and a rider's tucked riding position exist: reducing frontal area and smoothing airflow directly reduces the drag force the engine has to overcome, a genuine, physical performance factor rather than a cosmetic styling choice.</p>
+
+    <h2 class="section">Lift: An Unwanted Consequence of the Same Airflow</h2>
+
+    <p>Air flowing over and under a motorcycle's bodywork at speed can generate lift, the same aerodynamic principle that keeps an aircraft wing airborne, and on a motorcycle, that lift is almost always unwanted — it reduces the normal load pressing the tyres into the road, directly shrinking the friction circle Chapter 6.4 established governs available grip, at precisely the high speeds where stability matters most. This is why some sport and touring motorcycles incorporate small aerodynamic elements, sometimes called winglets, specifically designed to generate downforce instead — a deliberately reversed use of the same lift-generating airflow, aimed at increasing tyre load rather than reducing it.</p>
+
+    <div class="pull"><p>Drag and lift are two consequences of the same airflow a motorcycle and rider push through at speed — one costs engine power directly, the other quietly reduces the tyre load and grip this entire book has spent seven parts building up.</p></div>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 8.7-A</span>
+      <img src="diagrams/fig-8-7-a.svg" alt="A motorcycle and rider shown at speed with drag force opposing forward motion labeled proportional to speed squared, and lift force shown reducing the normal load pressing the tyres into the road." class="diagram-img">
+      <p>A motorcycle and rider shown at speed with drag force opposing forward motion labeled proportional to speed squared, and lift force shown reducing the normal load pressing the tyres into the road.</p>
+    </div>
+
+    <h2 class="section">A Common Misconception, Cleared Up Early</h2>
+
+    <p>It's easy to assume aerodynamics only matters for racing motorcycles chasing outright top speed, since drag and lift both sound like extreme-speed concerns. Drag's speed-squared relationship means it becomes a genuinely significant force well below racing speeds, meaningfully affecting fuel consumption, engine load, and rider fatigue from wind pressure on any motorcycle sustaining highway speed for extended periods — this is a real factor in ordinary touring, not just a racetrack consideration. Lift becomes significant later, at speeds most riders rarely sustain, but drag has been quietly working against every motorcycle on every highway ride all along.</p>
+
+    <h2 class="section">Where This Leads</h2>
+
+    <p>Drag and lift explain steady aerodynamic forces at constant speed, but air can also act on a motorcycle unevenly — gusts, passing trucks, and turbulence disturb that airflow in ways that directly affect stability. Chapter 8.8 turns to that next.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Aerodynamic drag grows with the square of speed, meaning doubling speed roughly quadruples the resistance force the engine must overcome.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Aerodynamic lift reduces tyre normal load at speed, shrinking the friction circle exactly when high-speed stability matters most.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Fairings, tucked riding positions, and winglets are genuine aerodynamic engineering responses to drag and lift, not purely cosmetic design choices.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-8-6.html">← Ch. 8.6</a></td>
+          <td class="note">Closed by naming aerodynamics as the next unaccounted force category; this chapter delivers that accounting through drag and lift.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-6-4.html">← Ch. 6.4</a></td>
+          <td class="note">Established the friction circle's dependence on normal load; this chapter shows aerodynamic lift directly reducing that load at speed.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-8-8.html">→ Ch. 8.8</a></td>
+          <td class="note">Covers aerodynamic stability and buffeting from gusts and turbulence, extending this chapter's steady-state drag and lift discussion.</td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a href="chapter-8-6.html">
+      <span class="dir">← Previous Chapter</span>
+      <span class="ttl">8.6 — Combined Load Transfer: Braking and Cornering Together</span>
+    </a>
+    <a href="chapter-8-8.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">8.8 — Aerodynamics: Stability and Buffeting</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">Anatomy of a Motorcycle — Sheet 077 / 150</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

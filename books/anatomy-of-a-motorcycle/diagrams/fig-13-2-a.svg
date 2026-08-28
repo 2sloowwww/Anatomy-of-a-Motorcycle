@@ -1,0 +1,42 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">SLIP-ON VS. FULL SYSTEM</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- slip-on -->
+  <text x="200" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">SLIP-ON</text>
+  <rect x="90" y="100" width="130" height="16" fill="#8C876F"/>
+  <rect x="220" y="100" width="90" height="16" fill="#AE3527"/>
+  <text x="155" y="130" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">STOCK HEADER</text>
+  <text x="265" y="130" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">NEW MUFFLER</text>
+  <text x="200" y="160" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">CHANGES SOUND</text>
+  <text x="200" y="173" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">WAVE-LENGTH ~UNCHANGED</text>
+  <rect x="130" y="190" width="140" height="30" rx="5" fill="none" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="200" y="209" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">NO RE-TUNE NEEDED</text>
+
+  <!-- full system -->
+  <text x="600" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">FULL SYSTEM</text>
+  <rect x="490" y="100" width="130" height="16" fill="#AE3527"/>
+  <rect x="620" y="100" width="90" height="16" fill="#AE3527"/>
+  <text x="555" y="130" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">NEW HEADER</text>
+  <text x="665" y="130" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">NEW MUFFLER</text>
+  <text x="600" y="160" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">CHANGES SOUND</text>
+  <text x="600" y="173" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">AND WAVE-TUNING</text>
+  <rect x="520" y="190" width="160" height="30" rx="5" fill="none" stroke="#AE3527" stroke-width="2"/>
+  <text x="600" y="209" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" font-weight="700" fill="#AE3527">RE-TUNE REQUIRED</text>
+
+  <line x1="400" y1="70" x2="400" y2="240" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- motive matching -->
+  <text x="200" y="260" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">MATCHES: SOUND / IDENTITY</text>
+  <text x="600" y="260" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">MATCHES: VERIFIED PERFORMANCE</text>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">SKIPPING THE RE-TUNE IS WHY A FULL SYSTEM UNDERPERFORMS ITS MARKETING</text>
+</svg>

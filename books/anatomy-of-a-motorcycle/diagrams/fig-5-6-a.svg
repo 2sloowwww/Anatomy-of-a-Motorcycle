@@ -1,0 +1,93 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="26" text-anchor="middle" font-weight="700" font-size="20" fill="#22252B" letter-spacing="0.4">CONVENTIONAL VS. UPSIDE-DOWN FORK</text>
+  <text x="400" y="44" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5A5748">SAME TWO TUBES, MASS AND RIGIDITY IN REVERSED POSITIONS</text>
+
+  <!-- divider -->
+  <line x1="400" y1="58" x2="400" y2="452" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 4"/>
+
+  <!-- ============================================================ -->
+  <!-- LEFT: CONVENTIONAL FORK -->
+  <!-- ============================================================ -->
+  <text x="200" y="72" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B" letter-spacing="0.3">CONVENTIONAL FORK</text>
+  <text x="200" y="88" text-anchor="middle" font-size="10.5" font-style="italic" fill="#8C876F">larger tube at the bottom, near the wheel</text>
+
+  <!-- triple clamp -->
+  <rect x="165" y="98" width="70" height="18" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+  <line x1="235" y1="107" x2="262" y2="100" stroke="#5A5748" stroke-width="1.1"/>
+  <text x="266" y="98" font-size="10" fill="#5A5748">TRIPLE CLAMP</text>
+  <text x="266" y="110" font-size="10" fill="#5A5748">(FIXED TO FRAME)</text>
+
+  <!-- stanchion: slender, fixed -->
+  <rect x="185" y="116" width="30" height="136" fill="#EEE8DA" stroke="#22252B" stroke-width="2.2"/>
+  <line x1="215" y1="170" x2="240" y2="158" stroke="#6B5A22" stroke-width="1.1"/>
+  <text x="244" y="150" font-size="12.5" font-weight="700" fill="#6B5A22">STANCHION</text>
+  <text x="244" y="164" font-size="10" fill="#6B5A22">slender, clamped</text>
+  <text x="244" y="176" font-size="10" fill="#6B5A22">rigidly to the frame</text>
+
+  <!-- sliding interface -->
+  <line x1="178" y1="252" x2="222" y2="252" stroke="#33505E" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <line x1="130" y1="252" x2="174" y2="252" stroke="#33505E" stroke-width="1.2"/>
+  <text x="126" y="240" text-anchor="end" font-size="12" font-weight="700" fill="#33505E">SLIDING INTERFACE</text>
+  <text x="126" y="254" text-anchor="end" font-size="10" fill="#33505E">sheltered, high up</text>
+
+  <!-- slider: larger diameter, highlighted (heavier, moves with wheel) -->
+  <rect x="163" y="252" width="74" height="168" fill="#6B5A22" fill-opacity="0.22" stroke="#22252B" stroke-width="2.4"/>
+  <line x1="237" y1="320" x2="262" y2="308" stroke="#AE3527" stroke-width="1.1"/>
+  <text x="266" y="300" font-size="12.5" font-weight="700" fill="#AE3527">SLIDER</text>
+  <text x="266" y="314" font-size="10" fill="#AE3527">larger diameter —</text>
+  <text x="266" y="326" font-size="10" fill="#AE3527">contains internals,</text>
+  <text x="266" y="338" font-size="10" fill="#AE3527">moves with the wheel</text>
+
+  <!-- axle / wheel -->
+  <line x1="200" y1="420" x2="200" y2="438" stroke="#22252B" stroke-width="3.5"/>
+  <circle cx="200" cy="466" r="30" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+  <circle cx="200" cy="466" r="4.5" fill="#22252B"/>
+
+  <!-- ============================================================ -->
+  <!-- RIGHT: UPSIDE-DOWN FORK -->
+  <!-- ============================================================ -->
+  <text x="600" y="72" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B" letter-spacing="0.3">UPSIDE-DOWN FORK</text>
+  <text x="600" y="88" text-anchor="middle" font-size="10.5" font-style="italic" fill="#8C876F">larger tube at the top, fixed to the frame</text>
+
+  <!-- triple clamp -->
+  <rect x="565" y="98" width="70" height="18" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+  <line x1="565" y1="107" x2="538" y2="100" stroke="#5A5748" stroke-width="1.1"/>
+  <text x="534" y="98" text-anchor="end" font-size="10" fill="#5A5748">TRIPLE CLAMP</text>
+  <text x="534" y="110" text-anchor="end" font-size="10" fill="#5A5748">(FIXED TO FRAME)</text>
+
+  <!-- large tube: larger diameter, highlighted, now fixed at top -->
+  <rect x="563" y="116" width="74" height="216" fill="#6B5A22" fill-opacity="0.22" stroke="#22252B" stroke-width="2.4"/>
+  <line x1="563" y1="200" x2="538" y2="188" stroke="#AE3527" stroke-width="1.1"/>
+  <text x="534" y="168" text-anchor="end" font-size="12.5" font-weight="700" fill="#AE3527">LARGE TUBE</text>
+  <text x="534" y="182" text-anchor="end" font-size="10" fill="#AE3527">contains internals —</text>
+  <text x="534" y="194" text-anchor="end" font-size="10" fill="#AE3527">now fixed to the frame,</text>
+  <text x="534" y="206" text-anchor="end" font-size="10" fill="#AE3527">mass off the wheel</text>
+
+  <!-- sliding interface, now low near the wheel -->
+  <line x1="578" y1="332" x2="622" y2="332" stroke="#33505E" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <line x1="626" y1="332" x2="670" y2="332" stroke="#33505E" stroke-width="1.2"/>
+  <text x="674" y="326" font-size="12" font-weight="700" fill="#33505E">SLIDING INTERFACE</text>
+  <text x="674" y="340" font-size="10" fill="#33505E">low, near the wheel —</text>
+  <text x="674" y="352" font-size="10" fill="#33505E">more exposed</text>
+
+  <!-- slender sliding tube -->
+  <rect x="585" y="332" width="30" height="88" fill="#EEE8DA" stroke="#22252B" stroke-width="2.2"/>
+  <line x1="615" y1="380" x2="646" y2="392" stroke="#6B5A22" stroke-width="1.1"/>
+  <text x="650" y="384" font-size="12.5" font-weight="700" fill="#6B5A22">SLIDER</text>
+  <text x="650" y="398" font-size="10" fill="#6B5A22">slender, lighter —</text>
+  <text x="650" y="410" font-size="10" fill="#6B5A22">moves with the wheel</text>
+
+  <!-- axle / wheel -->
+  <line x1="600" y1="420" x2="600" y2="438" stroke="#22252B" stroke-width="3.5"/>
+  <circle cx="600" cy="466" r="30" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+  <circle cx="600" cy="466" r="4.5" fill="#22252B"/>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 5.6-A</text>
+</svg>

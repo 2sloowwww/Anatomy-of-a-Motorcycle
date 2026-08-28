@@ -1,0 +1,64 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" font-weight="700" fill="#22252B">AIR FILTER RESTRICTION AND FIN FOULING</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- LEFT: air filter clean vs clogged -->
+  <text x="200" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#22252B">AIR FILTER</text>
+
+  <rect x="90" y="110" width="90" height="110" rx="6" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.5"/>
+  <g stroke="#8C876F" stroke-width="1.2">
+    <line x1="100" y1="125" x2="170" y2="125"/>
+    <line x1="100" y1="140" x2="170" y2="140"/>
+    <line x1="100" y1="155" x2="170" y2="155"/>
+    <line x1="100" y1="170" x2="170" y2="170"/>
+    <line x1="100" y1="185" x2="170" y2="185"/>
+    <line x1="100" y1="200" x2="170" y2="200"/>
+  </g>
+  <text x="135" y="238" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">CLEAN</text>
+
+  <rect x="220" y="110" width="90" height="110" rx="6" fill="#6B5A22" fill-opacity="0.3" stroke="#8C876F" stroke-width="1.5"/>
+  <g stroke="#5A5748" stroke-width="2.5">
+    <line x1="230" y1="125" x2="300" y2="125"/>
+    <line x1="230" y1="140" x2="300" y2="140"/>
+    <line x1="230" y1="155" x2="300" y2="155"/>
+    <line x1="230" y1="170" x2="300" y2="170"/>
+    <line x1="230" y1="185" x2="300" y2="185"/>
+    <line x1="230" y1="200" x2="300" y2="200"/>
+  </g>
+  <text x="265" y="238" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">CLOGGED</text>
+  <text x="265" y="252" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#AE3527">→ RICHER MIXTURE</text>
+
+  <!-- divider -->
+  <line x1="400" y1="65" x2="400" y2="410" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- RIGHT: cooling fins clean vs fouled -->
+  <text x="600" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#22252B">COOLING FINS</text>
+
+  <g>
+    <rect x="460" y="110" width="14" height="90" fill="#22252B"/>
+    <rect x="484" y="110" width="14" height="90" fill="#22252B"/>
+    <rect x="508" y="110" width="14" height="90" fill="#22252B"/>
+    <rect x="532" y="110" width="14" height="90" fill="#22252B"/>
+  </g>
+  <text x="497" y="220" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">CLEAN, FULL AIRFLOW</text>
+
+  <g>
+    <rect x="580" y="110" width="14" height="90" fill="#22252B"/>
+    <rect x="604" y="110" width="14" height="90" fill="#22252B"/>
+    <rect x="628" y="110" width="14" height="90" fill="#22252B"/>
+    <rect x="652" y="110" width="14" height="90" fill="#22252B"/>
+    <rect x="575" y="150" width="96" height="30" fill="#6B5A22" fill-opacity="0.5"/>
+  </g>
+  <text x="623" y="220" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">DEBRIS-CAKED</text>
+  <text x="623" y="234" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#AE3527">→ LESS SURFACE AREA</text>
+
+  <line x1="50" y1="450" x2="750" y2="450" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="470" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">NEITHER PROBLEM ANNOUNCES ITSELF WITH A SUDDEN FAILURE</text>
+</svg>

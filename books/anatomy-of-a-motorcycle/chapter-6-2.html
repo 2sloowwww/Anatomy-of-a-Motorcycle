@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>6.2 — Tyre Construction: Bias-Ply and Radial | Anatomy of a Motorcycle</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-vi">Part VI — Tyres &amp; Wheels</a>
+    <span class="sep">/</span>
+    <span class="current">6.2</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">Anatomy of a Motorcycle</a>
+      <span class="vol">Vol. I — The Machine</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">6.2</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Six, Section Two</div>
+        <h1>Tyre Construction: Bias-Ply and Radial</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">VI of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Engineering</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">057 / 150</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv"><a class="fv" href="chapter-6-1.html">Ch. 6.1</a></span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~7 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">Cut a tyre in half and the rubber tread is only the part you'd notice first. Underneath it is a carcass of textile and steel cords, arranged in one of two fundamentally different geometric patterns, and that arrangement — not the tread pattern, not the compound — is what actually decides how the tyre flexes, generates heat, and holds its shape at speed. Bias-ply and radial construction are not two marketing tiers of the same idea. They are two different structural answers to the same problem.</p>
+
+    <p>Chapter 6.1 named grip, load-carrying, and shock absorption as a tyre's three simultaneous jobs, and closed by promising that pressure, flex, heat, and wear all behave differently depending on the construction underneath them. This chapter is where that construction gets explained.</p>
+
+    <h2 class="section">What the Cords Are Actually Doing</h2>
+
+    <p>A tyre carcass is built from layers of cord — historically textile, now often steel or synthetic composites in the belt — embedded in rubber and laid down at specific angles between the two beads that seat the tyre on the wheel rim. Those cords are what actually carry the tyre's structural load; the rubber around them provides the sealed air chamber, the tread surface, and the flexible matrix holding the cords in position, but the cords themselves are doing the mechanical work of holding the tyre's shape against internal air pressure and external cornering, braking, and load forces.</p>
+
+    <p>The angle at which those cords are laid relative to the direction of travel is the entire distinction between bias-ply and radial construction, and that single geometric choice cascades into nearly every practical difference the rest of this part will describe.</p>
+
+    <h2 class="section">Bias-Ply: Cords on the Diagonal</h2>
+
+    <p>A bias-ply tyre lays its cords diagonally across the carcass, crossing from bead to bead at an angle — typically somewhere in the range of 30 to 40 degrees to the direction of travel — with successive layers crossing in alternating directions, like the plies in plywood. This diagonal, cross-layered structure makes the entire carcass, sidewall and tread included, flex together as one relatively stiff, unified unit. That stiffness gives a bias-ply tyre strong load-carrying capacity and good resistance to cuts and punctures from the side, which is part of why bias-ply construction remains common on cruisers, some touring bikes, and off-road tyres that face harsh, unpredictable terrain. The trade-off is that the sidewall and tread can't flex independently of each other, which limits how precisely the tyre can maintain a consistent, wide contact patch as the bike leans into a corner.</p>
+
+    <div class="pull"><p>Bias-ply cords cross diagonally so the whole carcass flexes as one stiff unit; radial cords run straight across so the tread and sidewall are free to flex independently. That one geometric choice is the real difference between the two constructions — everything else follows from it.</p></div>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 6.2-A</span>
+      <img src="diagrams/fig-6-2-a.svg" alt="A bias-ply tyre carcass shown with cords crossing diagonally bead to bead, compared against a radial tyre carcass shown with cords running straight across at ninety degrees plus a separate reinforcing belt under the tread." class="diagram-img">
+      <p>A bias-ply tyre carcass shown with cords crossing diagonally bead to bead, compared against a radial tyre carcass shown with cords running straight across at ninety degrees plus a separate reinforcing belt under the tread.</p>
+    </div>
+
+    <h2 class="section">Radial: Cords Straight Across, Belt on Top</h2>
+
+    <p>A radial tyre instead lays its main carcass cords running straight across, roughly perpendicular to the direction of travel — radiating out from the center the way spokes on a wheel do, which is where the name comes from — with a separate, stiffer belt of steel or aramid cords laid underneath the tread to control tread rigidity independently of the sidewall. This separation is the key structural advantage: the sidewall can flex to absorb bumps and maintain contact under lean, while the belt keeps the tread itself relatively stable and flat against the road, which helps the contact patch stay wider and more consistent through a corner than a bias-ply carcass typically allows. Radial construction also runs cooler at sustained high speed, since the independent sidewall flex generates less internal friction heat than a bias-ply carcass's unified flex does — a meaningful factor at the speeds sport and touring motorcycles sustain for extended periods.</p>
+
+    <h2 class="section">A Common Misconception, Cleared Up Early</h2>
+
+    <p>It's easy to assume radial construction is simply the "better," more modern version of bias-ply, the way radial car tyres largely replaced bias-ply ones decades ago. Motorcycle tyres don't map onto that same story cleanly. Radial construction's independent sidewall flex is a genuine advantage for sustained cornering grip and heat management, which is why it dominates sport and sport-touring applications — but that same flexibility can be a liability on a heavily loaded touring bike or an off-road machine facing sidewall impacts, where bias-ply's unified stiffness and puncture resistance are still the better engineering fit. Neither construction is universally superior; each is a correct answer to a different set of structural demands, the same pattern this book has now applied to nearly every design choice a motorcycle makes.</p>
+
+    <h2 class="section">Where This Leads</h2>
+
+    <p>Construction determines how a tyre can flex, but flex only matters because of what it does to the contact patch actually touching the road. Chapter 6.3 turns to that contact patch directly: its size, its shape, and why both change constantly as the bike leans, brakes, and accelerates.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          A tyre's structural strength comes from cord layers embedded in the rubber carcass; the angle those cords are laid at is the fundamental distinction between bias-ply and radial construction.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Bias-ply cords cross diagonally bead to bead, making the whole carcass flex as one stiff unit — strong load capacity and puncture resistance, but less precise contact-patch control under lean.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Radial cords run straight across with a separate belt under the tread, letting the sidewall flex independently of the tread — better sustained cornering grip and heat management.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Neither construction is universally better; each suits different demands — radial for sustained sport and touring cornering, bias-ply for heavy loads and puncture resistance.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-6-1.html">← Ch. 6.1</a></td>
+          <td class="note">Named grip, load-carrying, and shock absorption as a tyre's three jobs and promised that construction determines how well each is performed; this chapter delivers that explanation.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-6-3.html">→ Ch. 6.3</a></td>
+          <td class="note">Covers the contact patch directly — its size, shape, and how both change under lean, braking, and acceleration.</td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a href="chapter-6-1.html">
+      <span class="dir">← Previous Chapter</span>
+      <span class="ttl">6.1 — What a Tyre Actually Does</span>
+    </a>
+    <a href="chapter-6-3.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">6.3 — The Contact Patch</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">Anatomy of a Motorcycle — Sheet 057 / 150</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

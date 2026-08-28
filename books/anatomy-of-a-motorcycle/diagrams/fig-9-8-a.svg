@@ -1,0 +1,40 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="36" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="19" font-weight="700" fill="#22252B">TIGHT U-TURN: FOUR CONTROL INPUTS</text>
+  <line x1="50" y1="52" x2="750" y2="52" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- U-turn path -->
+  <path d="M 200 400 Q 200 150 400 150 Q 600 150 600 400" fill="none" stroke="#8C876F" stroke-width="90" stroke-linecap="round"/>
+  <path d="M 200 400 Q 200 150 400 150 Q 600 150 600 400" fill="none" stroke="#EEE8DA" stroke-width="82" stroke-linecap="round"/>
+  <path d="M 200 400 Q 200 150 400 150 Q 600 150 600 400" fill="none" stroke="#33505E" stroke-width="2.5" stroke-dasharray="6 4"/>
+
+  <!-- rider/bike icon mid-turn, leaned toward inside slightly with rider weight opposite -->
+  <g transform="translate(400,150)">
+    <ellipse cx="0" cy="0" rx="24" ry="10" fill="none" stroke="#22252B" stroke-width="2.5" transform="rotate(-15)"/>
+    <circle cx="10" cy="-18" r="10" fill="#8C876F" stroke="#22252B" stroke-width="1.8"/>
+  </g>
+
+  <!-- callouts -->
+  <g font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">
+    <line x1="450" y1="150" x2="540" y2="90" stroke="#AE3527" stroke-width="1.4"/>
+    <text x="545" y="86" fill="#AE3527" font-weight="700">CLUTCH FRICTION ZONE</text>
+
+    <line x1="440" y1="170" x2="540" y2="220" stroke="#33505E" stroke-width="1.4"/>
+    <text x="545" y="224" fill="#33505E" font-weight="700">LIGHT REAR BRAKE</text>
+
+    <line x1="380" y1="130" x2="290" y2="70" stroke="#6B5A22" stroke-width="1.4"/>
+    <text x="140" y="66" fill="#6B5A22" font-weight="700">HEAD/EYES LEAD THROUGH TURN</text>
+
+    <line x1="410" y1="132" x2="330" y2="260" stroke="#22252B" stroke-width="1.4"/>
+    <text x="200" y="280" fill="#22252B" font-weight="700">WEIGHT SHIFT, OUTSIDE</text>
+  </g>
+
+  <line x1="50" y1="450" x2="750" y2="450" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="470" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">CLUTCH, BRAKE, VISION, AND WEIGHT REPLACE THE MOMENTUM THAT'S MISSING</text>
+</svg>

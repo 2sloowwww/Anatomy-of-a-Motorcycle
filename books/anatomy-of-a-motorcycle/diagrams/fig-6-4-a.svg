@@ -1,0 +1,42 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">THE FRICTION CIRCLE</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- axes -->
+  <line x1="300" y1="90" x2="300" y2="410" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="130" y1="250" x2="470" y2="250" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <text x="300" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">BRAKING</text>
+  <text x="300" y="428" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">ACCELERATING</text>
+  <text x="120" y="254" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">CORNERING (L)</text>
+  <text x="480" y="254" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">CORNERING (R)</text>
+
+  <!-- friction circle -- total available grip -->
+  <circle cx="300" cy="250" r="160" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <text x="300" y="115" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#8C876F">MAX AVAILABLE GRIP</text>
+
+  <!-- valid combined force vector (inside circle) -->
+  <line x1="300" y1="250" x2="410" y2="175" stroke="#33505E" stroke-width="3"/>
+  <polygon points="410,175 396,180 402,192" fill="#33505E"/>
+  <text x="425" y="165" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#33505E">WITHIN LIMIT</text>
+  <text x="425" y="182" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">(cornering + braking)</text>
+
+  <!-- exceeded vector (outside circle) -->
+  <line x1="300" y1="250" x2="440" y2="360" stroke="#AE3527" stroke-width="3"/>
+  <polygon points="440,360 424,352 428,368" fill="#AE3527"/>
+  <text x="452" y="378" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#AE3527">EXCEEDS LIMIT</text>
+  <text x="452" y="395" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">→ tyre slides</text>
+
+  <!-- center point -->
+  <circle cx="300" cy="250" r="4" fill="#22252B"/>
+
+  <line x1="60" y1="450" x2="740" y2="450" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="470" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">CORNERING AND BRAKING/ACCELERATING SHARE ONE FIXED TOTAL GRIP BUDGET</text>
+</svg>

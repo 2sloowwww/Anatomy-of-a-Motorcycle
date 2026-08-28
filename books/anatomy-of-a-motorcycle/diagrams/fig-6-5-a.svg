@@ -1,0 +1,47 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">TYRE PRESSURE AND CONTACT PATCH SHAPE</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ground line spans all three -->
+  <line x1="40" y1="330" x2="760" y2="330" stroke="#33505E" stroke-width="2"/>
+
+  <!-- UNDERINFLATED -->
+  <text x="150" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700" fill="#AE3527">UNDERINFLATED</text>
+  <path d="M 90 320 Q 90 190 150 175 Q 210 190 210 320" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <!-- excess bulge/flatten -->
+  <path d="M 100 320 Q 150 340 200 320" fill="none" stroke="#AE3527" stroke-width="2.5"/>
+  <ellipse cx="150" cy="331" rx="42" ry="7" fill="#AE3527" fill-opacity="0.75"/>
+  <text x="150" y="365" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">WIDE, BULGING PATCH</text>
+  <text x="150" y="382" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">EXCESS FLEX, HEAT BUILDS</text>
+
+  <!-- divider -->
+  <line x1="290" y1="70" x2="290" y2="410" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="510" y1="70" x2="510" y2="410" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- CORRECT -->
+  <text x="400" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700" fill="#22252B">CORRECT PRESSURE</text>
+  <path d="M 340 320 Q 340 185 400 168 Q 460 185 460 320" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <path d="M 352 320 Q 400 332 448 320" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <ellipse cx="400" cy="330" rx="30" ry="6" fill="#33505E" fill-opacity="0.8"/>
+  <text x="400" y="365" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">FLAT, EVEN PATCH</text>
+  <text x="400" y="382" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">BALANCED FLEX AND GRIP</text>
+
+  <!-- OVERINFLATED -->
+  <text x="650" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700" fill="#6B5A22">OVERINFLATED</text>
+  <path d="M 595 320 Q 595 175 650 155 Q 705 175 705 320" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <!-- crowned center -->
+  <path d="M 615 318 Q 650 322 685 318" fill="none" stroke="#6B5A22" stroke-width="2.5"/>
+  <ellipse cx="650" cy="328" rx="16" ry="5" fill="#6B5A22" fill-opacity="0.8"/>
+  <text x="650" y="365" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">SMALL, CROWNED PATCH</text>
+  <text x="650" y="382" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">LESS CONTACT, HARSHER RIDE</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">PRESSURE SETS CONTACT PATCH SIZE, SHAPE, AND HEAT — ALL AT ONCE</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">PRECESSION: SIDEWAYS RESPONSE TO A TILT</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- spinning wheel shown as ellipse in perspective -->
+  <ellipse cx="400" cy="260" rx="150" ry="60" fill="none" stroke="#22252B" stroke-width="3"/>
+  <ellipse cx="400" cy="260" rx="150" ry="60" fill="none" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- axle through center -->
+  <line x1="400" y1="260" x2="400" y2="260" stroke="#22252B" stroke-width="2"/>
+  <circle cx="400" cy="260" r="6" fill="#22252B"/>
+
+  <!-- spin direction arrows around the rim -->
+  <g stroke="#8C876F" stroke-width="2" fill="none">
+    <path d="M 540 240 A 150 60 0 0 1 500 305"/>
+    <polygon points="500,305 512,296 517,309" fill="#8C876F"/>
+  </g>
+  <text x="560" y="220" font-family="JetBrains Mono, monospace" font-size="12" fill="#8C876F">SPIN DIRECTION</text>
+
+  <!-- applied torque arrow, pushing down on near edge (front) -->
+  <line x1="400" y1="200" x2="400" y2="150" stroke="#AE3527" stroke-width="3"/>
+  <polygon points="400,150 393,164 407,164" fill="#AE3527"/>
+  <text x="400" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#AE3527">APPLIED TORQUE</text>
+  <text x="400" y="118" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">(PUSH DOWN HERE)</text>
+
+  <!-- precession response arrow, sideways at ~90 degrees -->
+  <line x1="550" y1="260" x2="620" y2="260" stroke="#33505E" stroke-width="3"/>
+  <polygon points="620,260 606,253 606,267" fill="#33505E"/>
+  <text x="670" y="255" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#33505E">PRECESSION</text>
+  <text x="670" y="272" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">(ACTUAL RESPONSE)</text>
+
+  <!-- 90 degree arc indicator -->
+  <path d="M 400 220 A 60 60 0 0 1 460 260" stroke="#8C876F" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/>
+  <text x="440" y="215" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">~90°</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">A SPINNING WHEEL RESPONDS TO A TILTING FORCE SIDEWAYS, NOT DIRECTLY</text>
+</svg>

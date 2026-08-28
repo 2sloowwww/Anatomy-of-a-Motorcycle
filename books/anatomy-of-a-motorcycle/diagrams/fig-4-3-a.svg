@@ -1,0 +1,65 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowBlue43" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#33505E"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="36" text-anchor="middle" font-weight="700" font-size="21" fill="#22252B" letter-spacing="0.5">STEERING HEAD — TWO NUMBERS, ONE HINGE</text>
+  <text x="400" y="57" text-anchor="middle" font-size="13" font-style="italic" fill="#5A5748">Head angle sets the hinge; fork offset sets where the wheel sits relative to it</text>
+
+  <!-- ground -->
+  <line x1="470" y1="452" x2="700" y2="452" stroke="#22252B" stroke-width="2"/>
+  <text x="660" y="475" font-size="12" fill="#5A5748">ground</text>
+
+  <!-- headstock tube along axis (drawn first so reference lines/labels stay on top) -->
+  <g transform="rotate(24.4 380 90)">
+    <rect x="393" y="90" width="30" height="105" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+  </g>
+
+  <!-- true vertical reference -->
+  <line x1="380" y1="90" x2="380" y2="250" stroke="#8C876F" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="278" y="100" font-size="12" fill="#8C876F">TRUE</text>
+  <text x="278" y="114" font-size="12" fill="#8C876F">VERTICAL</text>
+  <line x1="312" y1="104" x2="378" y2="110" stroke="#8C876F" stroke-width="1"/>
+
+  <!-- steering axis (dashed, imaginary pivot line) -->
+  <line x1="380" y1="90" x2="538" y2="430" stroke="#33505E" stroke-width="2" stroke-dasharray="7 5"/>
+
+  <!-- head angle arc + label -->
+  <path d="M380,150 A60,60 0 0 1 402,144" fill="none" stroke="#33505E" stroke-width="1.8"/>
+  <text x="445" y="90" font-size="15" font-weight="700" fill="#33505E">HEAD ANGLE</text>
+  <line x1="450" y1="97" x2="400" y2="146" stroke="#33505E" stroke-width="1.2"/>
+
+  <!-- upper triple clamp -->
+  <line x1="411.6" y1="158" x2="449.6" y2="140.3" stroke="#22252B" stroke-width="6"/>
+  <!-- lower triple clamp -->
+  <line x1="498.5" y1="345" x2="536.5" y2="327.3" stroke="#22252B" stroke-width="6"/>
+
+  <!-- fork tube, offset forward and parallel to axis, solid physical part -->
+  <line x1="449.6" y1="140.3" x2="576" y2="412.3" stroke="#22252B" stroke-width="5"/>
+
+  <!-- fork offset dimension -->
+  <line x1="459" y1="260" x2="497" y2="242.3" stroke="#6B5A22" stroke-width="1.8" marker-start="url(#arrowBlue43)" marker-end="url(#arrowBlue43)"/>
+  <text x="545" y="243" font-size="15" font-weight="700" fill="#6B5A22">FORK OFFSET</text>
+  <line x1="540" y1="238" x2="500" y2="248" stroke="#6B5A22" stroke-width="1.2"/>
+
+  <!-- front wheel -->
+  <circle cx="576" cy="412" r="40" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="576" cy="412" r="5" fill="#22252B"/>
+  <text x="576" y="480" text-anchor="middle" font-size="12" fill="#5A5748">front wheel</text>
+
+  <!-- steering stem label -->
+  <text x="180" y="200" font-size="14" font-weight="700" fill="#22252B">STEERING STEM</text>
+  <text x="180" y="216" font-size="14" font-weight="700" fill="#22252B">IN HEADSTOCK</text>
+  <line x1="230" y1="196" x2="393" y2="150" stroke="#22252B" stroke-width="1.2"/>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 4.3-A</text>
+</svg>

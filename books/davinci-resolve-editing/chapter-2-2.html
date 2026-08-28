@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>2.2 — The Media Pool: Bins, Not Just Folders | The Resolve Field Manual</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-ii">Part II — Project &amp; Media Management</a>
+    <span class="sep">/</span>
+    <span class="current">2.2</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">The Resolve Field Manual</a>
+      <span class="vol">Vol. I — The Pages</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">2.2</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Two, Section Two</div>
+        <h1>The Media Pool: Bins, Not Just Folders</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">II of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Practical</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">008 / 095</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv">2.1</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~8 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">The Media Pool is the single most-used panel in the entire application — it's visible on nearly every page, as Chapter 1.5 mentioned, and it's where every clip in your project lives, organized into bins. It's tempting to treat bins as just folders with a different name, and for the simplest projects, that mental model won't get you into much trouble. But bins can do things a filesystem folder structure fundamentally can't, and understanding that difference is what separates an editor who's merely storing footage from one who can actually find anything on a busy project, fast, under deadline pressure.</p>
+
+    <h2 class="section">A Bin Is an Organizational View, Not a Storage Location</h2>
+
+    <p>On your operating system, a file lives in exactly one folder at a time — that folder is a physical location, and the file's path describes where it actually sits on disk. A Media Pool bin isn't that. A bin is an organizational container inside the project database from Chapter 2.1, holding references to clips, not the clips themselves. The clip's actual video file still sits wherever it sits on your storage — the bin is simply how your project chooses to present and group a reference to it.</p>
+
+    <p>This distinction matters immediately in one practical way: reorganizing bins, renaming them, or moving a clip from one bin to another inside Resolve never touches the underlying file on disk. You're rearranging the view, not the footage. This is the same non-destructive principle from Chapter 1.1 showing up again at the organizational level — you can restructure your entire Media Pool as many times as a project needs without any risk to the actual camera files.</p>
+
+    <h2 class="section">Master Bins Versus Smart Bins</h2>
+
+    <p>Most of your organizing happens in what are sometimes called master bins — the manually created, manually populated bins where you decide a clip belongs, typically mirroring something like shoot day, camera, or scene. This is the straightforward, folder-like use of bins, and it's a fine default for smaller projects: a bin per day, a sub-bin per camera, done.</p>
+
+    <p>Smart bins are where the "not just folders" idea becomes concrete. A smart bin isn't a location you manually place clips into — it's a saved search, built from criteria like keywords, camera metadata, flags, or clip color labels, that automatically populates with every clip in the project matching those criteria, updating live as new footage comes in or gets tagged. A smart bin called "Flagged — Selects" doesn't contain clips in the way a master bin does; it continuously shows you whichever clips currently carry a "select" flag, wherever their master bin location actually is.</p>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 2.2-A</span>
+      <img src="diagrams/fig-2-2-a.svg" alt="Diagram showing a single clip stored in one master bin, while several smart bins built from saved searches surface that same clip through different filtered views." class="diagram-img">
+      <p>One clip, one master bin location — seen through several smart bin searches at once.</p>
+    </div>
+
+    <div class="pull"><p>A folder can only ask "what's physically inside me." A smart bin can ask "what in this entire project currently matches these criteria" — and keep asking, automatically, as the project changes.</p></div>
+
+    <p>This is a genuinely different capability than nested folders offer. A single clip can be physically organized in "Day 03 / Camera A," and simultaneously show up, automatically and without being copied or moved, inside "Camera A — All Days," "Flagged — Selects," and "Needs Sound Sync" — three completely different smart bins built from three different questions about the footage. Chapter 2.4 covers exactly how to build the metadata and flags that smart bins search against; this chapter's job is just to establish why the capability is worth building toward.</p>
+
+    <h2 class="section">Power Bins: Organization That Survives Across Projects</h2>
+
+    <p>One more bin variant worth knowing early: Power Bins. A standard bin, master or smart, belongs to one project and disappears from view when you close it. Power Bins are shared across every project you open on that system — useful for a recurring library of assets you don't want to re-import each time, like a studio's logo bumper, a set of licensed music beds, or a title template you reuse across every job. Power Bins won't matter for your first few projects, but it's worth knowing the concept exists once you notice yourself importing the same handful of assets into a new project every single time.</p>
+
+    <h2 class="section">Deleting From a Bin Versus Deleting From Disk</h2>
+
+    <p>There's exactly one place this chapter's non-destructive theme has a real exception, and it's worth flagging clearly rather than letting you discover it by accident. Removing a clip from a bin — even every bin it appears in — only removes the project's reference to it. The file on disk is untouched, exactly as Chapter 2.1 described. Resolve also offers a separate, explicit "Delete from disk" action, which does what it says: it deletes the actual file. That option exists for legitimate cleanup work, but it's the one place in ordinary bin management where you're no longer just rearranging a view — you're taking an action Chapter 1.1's whole non-destructive premise doesn't apply to. Treat it accordingly, and don't reach for it out of habit the way you might reach for "remove from bin."</p>
+
+    <p>With bins understood as flexible, searchable views rather than rigid storage locations, Chapter 2.3 moves on to the practical work of actually getting footage into the project in the first place — importing, and organizing it well from the moment it arrives, so the bin structure you build actually holds up as a project grows.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          A bin is an organizational view inside the project database, not a physical storage location — moving clips between bins never touches the file on disk.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Smart bins are saved searches, not storage — a clip can appear in several smart bins at once without being duplicated or moved.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Power Bins persist across every project on a system — useful for recurring assets like logos, music beds, or title templates.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          "Remove from bin" is safe and non-destructive; "Delete from disk" is a genuine exception that actually deletes the file — know the difference before you click.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References Forward</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-2-3.html">→ Ch. 2.3</a></td>
+          <td class="note">Covers importing footage and setting up a bin structure that stays usable as a project grows.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-2-4.html">→ Ch. 2.4</a></td>
+          <td class="note">Shows how to build the metadata, flags, and keywords that smart bins search against.</td>
+        </tr>
+        <tr>
+          <td class="code"><span class="ref-disabled">→ Pt. XV</span></td>
+          <td class="note">Troubleshooting & Diagnosis — covers relinking and recovering media when a bin's references can't resolve. <em>(Not yet published.)</em></td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a class="prev" href="chapter-2-1.html">
+      <span class="dir">← Previous</span>
+      <span class="ttl">2.1 — What a Project Actually Is</span>
+    </a>
+    <a class="next" href="chapter-2-3.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">2.3 — Importing and Organizing Footage</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">The Resolve Field Manual — Sheet 008 / 095</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

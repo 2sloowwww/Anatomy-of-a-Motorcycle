@@ -1,0 +1,48 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">HYDRAULIC BRAKE FORCE PATH</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- lever -->
+  <text x="120" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#22252B">LEVER</text>
+  <line x1="60" y1="150" x2="150" y2="120" stroke="#22252B" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="150" cy="120" r="5" fill="#22252B"/>
+  <line x1="150" y1="120" x2="150" y2="190" stroke="#5A5748" stroke-width="3"/>
+
+  <!-- master cylinder -->
+  <rect x="130" y="190" width="60" height="70" rx="6" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+  <text x="160" y="215" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">MASTER</text>
+  <text x="160" y="228" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">CYLINDER</text>
+  <rect x="150" y="240" width="20" height="14" fill="#33505E"/>
+
+  <text x="160" y="285" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">FORCE → PRESSURE</text>
+
+  <!-- brake line -->
+  <path d="M 190 250 Q 400 250 400 250 L 560 250" stroke="#33505E" stroke-width="5" fill="none"/>
+  <text x="380" y="230" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#33505E">INCOMPRESSIBLE FLUID</text>
+  <text x="380" y="278" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">(PRESSURE TRANSMITTED)</text>
+
+  <!-- pressure arrows along line -->
+  <polygon points="330,250 320,244 320,256" fill="#AE3527"/>
+  <polygon points="470,250 460,244 460,256" fill="#AE3527"/>
+
+  <!-- caliper + disc -->
+  <circle cx="640" cy="290" r="90" fill="none" stroke="#22252B" stroke-width="3"/>
+  <circle cx="640" cy="290" r="50" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="560" y="235" width="42" height="40" rx="6" fill="#5A5748"/>
+  <text x="581" y="220" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">CALIPER</text>
+
+  <!-- piston + clamp arrows -->
+  <line x1="602" y1="255" x2="625" y2="255" stroke="#AE3527" stroke-width="2.5"/>
+  <polygon points="625,255 615,249 615,261" fill="#AE3527"/>
+  <text x="605" y="200" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#AE3527">CLAMPING FORCE</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">LEVER FORCE → FLUID PRESSURE → PISTON FORCE → CLAMPING FORCE</text>
+</svg>

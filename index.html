@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="landing-page">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jitendra Kulkarni">
-<title>Anatomy of a Motorcycle</title>
+<title>Knowbase</title>
+<meta name="description" content="Knowbase — a growing shelf of technical field manuals, including Anatomy of a Motorcycle and The Resolve Field Manual.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/styles.css">
 <script>
 (function(){
   var theme = "light";
@@ -33,580 +34,168 @@ function toggleTheme(){
 }
 </script>
 </head>
-<body>
-<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
-  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
-  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
-</button>
-<div class="page">
-
-  <div class="hero">
-    <div class="eyebrow">A Field Manual For Understanding The Machine</div>
-    <h1>Anatomy of a Motorcycle</h1>
-    <p class="sub">A motorcycle only makes sense when you stop looking at its parts and start looking at how they talk to each other. This is the book built to teach it that way.</p>
-    <div class="byline">Written by Jitendra Kulkarni</div>
-    <div class="hero-meta">
-      <div>
-        <span class="fk">Structure</span>
-        <span class="fv">16 Parts</span>
-      </div>
-      <div>
-        <span class="fk">Total Sheets</span>
-        <span class="fv">150 Chapters</span>
-      </div>
-      <div>
-        <span class="fk">Published</span>
-        <span class="fv">54 of 150</span>
-      </div>
-      <div>
-        <span class="fk">Current Volume</span>
-        <span class="fv">I — The Machine</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="toc-part" id="part-i">
-    <div class="toc-part-head">
-      <h2>Part I — Understanding the Machine</h2>
-      <span class="count">6 Chapters · Complete</span>
-    </div>
-
-    <a class="toc-row is-live" href="chapter-1-1.html">
-      <span class="sheet">Sheet 001</span>
-      <span class="code">1.1</span>
-      <span class="title">What Is a Motorcycle, Really?</span>
-      <span class="tag">Foundational</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-1-2.html">
-      <span class="sheet">Sheet 002</span>
-      <span class="code">1.2</span>
-      <span class="title">Two Wheels vs. Four</span>
-      <span class="tag">Engineering / Physics</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-1-3.html">
-      <span class="sheet">Sheet 003</span>
-      <span class="code">1.3</span>
-      <span class="title">The Motorcycle as a System</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-1-4.html">
-      <span class="sheet">Sheet 004</span>
-      <span class="code">1.4</span>
-      <span class="title">The Rider as Part of the Machine</span>
-      <span class="tag">Physics / Riding</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-1-5.html">
-      <span class="sheet">Sheet 005</span>
-      <span class="code">1.5</span>
-      <span class="title">Speaking the Language</span>
-      <span class="tag">Practical</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-1-6.html">
-      <span class="sheet">Sheet 006</span>
-      <span class="code">1.6</span>
-      <span class="title">Reading a Spec Sheet Without Being Fooled</span>
-      <span class="tag">Practical</span>
-      <span class="status live">Published</span>
-    </a>
-  </div>
-
-  <div class="toc-part" id="part-ii">
-    <div class="toc-part-head">
-      <h2>Part II — Engine Fundamentals</h2>
-      <span class="count">21 Chapters · Complete</span>
-    </div>
-
-    <a class="toc-row is-live" href="chapter-2-1.html">
-      <span class="sheet">Sheet 007</span>
-      <span class="code">2.1</span>
-      <span class="title">What an Engine Actually Does</span>
-      <span class="tag">Foundational</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-2.html">
-      <span class="sheet">Sheet 008</span>
-      <span class="code">2.2</span>
-      <span class="title">The Four-Stroke Cycle</span>
-      <span class="tag">Foundational</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-3.html">
-      <span class="sheet">Sheet 009</span>
-      <span class="code">2.3</span>
-      <span class="title">Intake: Getting Air and Fuel In</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-4.html">
-      <span class="sheet">Sheet 010</span>
-      <span class="code">2.4</span>
-      <span class="title">Ignition and Combustion</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-5.html">
-      <span class="sheet">Sheet 011</span>
-      <span class="code">2.5</span>
-      <span class="title">The Bottom End: Crankshaft, Con-Rods, Pistons</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-6.html">
-      <span class="sheet">Sheet 012</span>
-      <span class="code">2.6</span>
-      <span class="title">The Top End: Cylinder Head and Valves</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-7.html">
-      <span class="sheet">Sheet 013</span>
-      <span class="code">2.7</span>
-      <span class="title">Camshafts and Valve Timing</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-8.html">
-      <span class="sheet">Sheet 014</span>
-      <span class="code">2.8</span>
-      <span class="title">Bore, Stroke, and Displacement</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-9.html">
-      <span class="sheet">Sheet 015</span>
-      <span class="code">2.9</span>
-      <span class="title">Compression Ratio</span>
-      <span class="tag">Engineering / Physics</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-10.html">
-      <span class="sheet">Sheet 016</span>
-      <span class="code">2.10</span>
-      <span class="title">Cylinder Count and Configuration</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-11.html">
-      <span class="sheet">Sheet 017</span>
-      <span class="code">2.11</span>
-      <span class="title">Engine Layout: Inline, V, and Boxer</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-12.html">
-      <span class="sheet">Sheet 018</span>
-      <span class="code">2.12</span>
-      <span class="title">Torque and Power Curves</span>
-      <span class="tag">Physics</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-13.html">
-      <span class="sheet">Sheet 019</span>
-      <span class="code">2.13</span>
-      <span class="title">Fuel Delivery: Carburetors vs. Fuel Injection</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-14.html">
-      <span class="sheet">Sheet 020</span>
-      <span class="code">2.14</span>
-      <span class="title">The Exhaust System</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-15.html">
-      <span class="sheet">Sheet 021</span>
-      <span class="code">2.15</span>
-      <span class="title">Cooling Systems</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-16.html">
-      <span class="sheet">Sheet 022</span>
-      <span class="code">2.16</span>
-      <span class="title">Lubrication and Oil</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-17.html">
-      <span class="sheet">Sheet 023</span>
-      <span class="code">2.17</span>
-      <span class="title">Engine Balance and Vibration</span>
-      <span class="tag">Physics</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-18.html">
-      <span class="sheet">Sheet 024</span>
-      <span class="code">2.18</span>
-      <span class="title">Two-Stroke vs. Four-Stroke</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-19.html">
-      <span class="sheet">Sheet 025</span>
-      <span class="code">2.19</span>
-      <span class="title">Where the Energy Actually Goes</span>
-      <span class="tag">Efficiency</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-20.html">
-      <span class="sheet">Sheet 026</span>
-      <span class="code">2.20</span>
-      <span class="title">How Engines Fail</span>
-      <span class="tag">Diagnosis</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-2-21.html">
-      <span class="sheet">Sheet 027</span>
-      <span class="code">2.21</span>
-      <span class="title">The Engine as Part of the System</span>
-      <span class="tag">Foundational</span>
-      <span class="status live">Published</span>
-    </a>
-  </div>
-
-  <div class="toc-part" id="part-iii">
-    <div class="toc-part-head">
-      <h2>Part III — Transmission</h2>
-      <span class="count">7 Chapters · Complete</span>
-    </div>
-
-    <a class="toc-row is-live" href="chapter-3-1.html">
-      <span class="sheet">Sheet 028</span>
-      <span class="code">3.1</span>
-      <span class="title">What the Transmission Actually Does</span>
-      <span class="tag">Foundational</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-3-2.html">
-      <span class="sheet">Sheet 029</span>
-      <span class="code">3.2</span>
-      <span class="title">The Clutch: Engaging and Disengaging Power</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-3-3.html">
-      <span class="sheet">Sheet 030</span>
-      <span class="code">3.3</span>
-      <span class="title">Gearbox Architecture</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-3-4.html">
-      <span class="sheet">Sheet 031</span>
-      <span class="code">3.4</span>
-      <span class="title">Gear Ratios and Why They Matter</span>
-      <span class="tag">Physics</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-3-5.html">
-      <span class="sheet">Sheet 032</span>
-      <span class="code">3.5</span>
-      <span class="title">Shifting: How Sequential Gearboxes Work</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-3-6.html">
-      <span class="sheet">Sheet 033</span>
-      <span class="code">3.6</span>
-      <span class="title">Final Drive: Chain, Belt, and Shaft</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-3-7.html">
-      <span class="sheet">Sheet 034</span>
-      <span class="code">3.7</span>
-      <span class="title">The Transmission as Part of the System</span>
-      <span class="tag">Foundational</span>
-      <span class="status live">Published</span>
-    </a>
-  </div>
-
-  <div class="toc-part" id="part-iv">
-    <div class="toc-part-head">
-      <h2>Part IV — Chassis</h2>
-      <span class="count">10 Chapters · Complete</span>
-    </div>
-
-    <a class="toc-row is-live" href="chapter-4-1.html">
-      <span class="sheet">Sheet 035</span>
-      <span class="code">4.1</span>
-      <span class="title">What the Chassis Actually Does</span>
-      <span class="tag">Foundational</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-4-2.html">
-      <span class="sheet">Sheet 036</span>
-      <span class="code">4.2</span>
-      <span class="title">Frame Types and Materials</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-4-3.html">
-      <span class="sheet">Sheet 037</span>
-      <span class="code">4.3</span>
-      <span class="title">The Steering Head and Front End Geometry</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-4-4.html">
-      <span class="sheet">Sheet 038</span>
-      <span class="code">4.4</span>
-      <span class="title">Rake and Trail</span>
-      <span class="tag">Physics / Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-4-5.html">
-      <span class="sheet">Sheet 039</span>
-      <span class="code">4.5</span>
-      <span class="title">Countersteering</span>
-      <span class="tag">Physics</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-4-6.html">
-      <span class="sheet">Sheet 040</span>
-      <span class="code">4.6</span>
-      <span class="title">Gyroscopic Effects and Wheel Spin</span>
-      <span class="tag">Physics</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-4-7.html">
-      <span class="sheet">Sheet 041</span>
-      <span class="code">4.7</span>
-      <span class="title">Lean Angle and Cornering Clearance</span>
-      <span class="tag">Physics / Practical</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-4-8.html">
-      <span class="sheet">Sheet 042</span>
-      <span class="code">4.8</span>
-      <span class="title">Wheelbase and Swingarm Design</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-4-9.html">
-      <span class="sheet">Sheet 043</span>
-      <span class="code">4.9</span>
-      <span class="title">Chassis Flex and Rigidity</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-4-10.html">
-      <span class="sheet">Sheet 044</span>
-      <span class="code">4.10</span>
-      <span class="title">The Chassis as Part of the System</span>
-      <span class="tag">Foundational</span>
-      <span class="status live">Published</span>
-    </a>
-  </div>
-
-  <div class="toc-part" id="part-v">
-    <div class="toc-part-head">
-      <h2>Part V — Suspension</h2>
-      <span class="count">11 Chapters · In Progress</span>
-    </div>
-
-    <a class="toc-row is-live" href="chapter-5-1.html">
-      <span class="sheet">Sheet 045</span>
-      <span class="code">5.1</span>
-      <span class="title">What Suspension Actually Does</span>
-      <span class="tag">Foundational</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-5-2.html">
-      <span class="sheet">Sheet 046</span>
-      <span class="code">5.2</span>
-      <span class="title">Springs: Storing and Returning Energy</span>
-      <span class="tag">Physics / Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-5-3.html">
-      <span class="sheet">Sheet 047</span>
-      <span class="code">5.3</span>
-      <span class="title">Damping: Controlling Spring Motion</span>
-      <span class="tag">Physics / Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-5-4.html">
-      <span class="sheet">Sheet 048</span>
-      <span class="code">5.4</span>
-      <span class="title">Sag and Static Setup</span>
-      <span class="tag">Practical</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-5-5.html">
-      <span class="sheet">Sheet 049</span>
-      <span class="code">5.5</span>
-      <span class="title">Suspension Travel</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-5-6.html">
-      <span class="sheet">Sheet 050</span>
-      <span class="code">5.6</span>
-      <span class="title">Fork Construction and Types</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-5-7.html">
-      <span class="sheet">Sheet 051</span>
-      <span class="code">5.7</span>
-      <span class="title">Rear Shock and Linkage Design</span>
-      <span class="tag">Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-5-8.html">
-      <span class="sheet">Sheet 052</span>
-      <span class="code">5.8</span>
-      <span class="title">Compression and Rebound Adjustment</span>
-      <span class="tag">Practical / Engineering</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-5-9.html">
-      <span class="sheet">Sheet 053</span>
-      <span class="code">5.9</span>
-      <span class="title">Unsprung vs. Sprung Mass</span>
-      <span class="tag">Physics</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <a class="toc-row is-live" href="chapter-5-10.html">
-      <span class="sheet">Sheet 054</span>
-      <span class="code">5.10</span>
-      <span class="title">Setting Up Suspension for Different Riding</span>
-      <span class="tag">Practical</span>
-      <span class="status live">Published</span>
-    </a>
-
-    <div class="toc-row is-upcoming">
-      <span class="sheet">Sheet 055</span>
-      <span class="code">5.11</span>
-      <span class="title">Suspension as Part of the System</span>
-      <span class="tag">Foundational</span>
-      <span class="status upcoming">Upcoming</span>
-    </div>
-  </div>
-
-  <div class="toc-part">
-    <div class="toc-part-head">
-      <h2>Full Series</h2>
-      <span class="count">Parts VI – XVI · 95 Chapters</span>
-    </div>
-
-    <details class="part-collapsed">
-      <summary>Part VI — Tyres &amp; Wheels <span class="count">8 Chapters</span></summary>
-      <p class="part-desc">Construction, contact patch, grip, pressure, wear, compounds, and behaviour across surfaces.</p>
-    </details>
-
-    <details class="part-collapsed">
-      <summary>Part VII — Braking <span class="count">7 Chapters</span></summary>
-      <p class="part-desc">Brake force and torque, system anatomy, weight transfer, brake balance, and ABS.</p>
-    </details>
-
-    <details class="part-collapsed">
-      <summary>Part VIII — Motorcycle Physics <span class="count">12 Chapters</span></summary>
-      <p class="part-desc">The unifying part. Friction, cornering forces, load transfer, aerodynamics, gyroscopic effects, and instability — with the full mechanics behind Parts II–VII.</p>
-    </details>
-
-    <details class="part-collapsed">
-      <summary>Part IX — How to Ride <span class="count">17 Chapters</span></summary>
-      <p class="part-desc">Real control technique — braking, cornering, body position, traffic, off-road, and why each technique works mechanically.</p>
-    </details>
-
-    <details class="part-collapsed">
-      <summary>Part X — Maintenance <span class="count">10 Chapters</span></summary>
-      <p class="part-desc">Building a real maintenance system, from pre-ride checks to a personal maintenance log.</p>
-    </details>
-
-    <details class="part-collapsed">
-      <summary>Part XI — Diagnosis &amp; Repair <span class="count">11 Chapters</span></summary>
-      <p class="part-desc">Thinking like a mechanic — symptom, cause, test, confirm, repair — across every major system.</p>
-    </details>
-
-    <details class="part-collapsed">
-      <summary>Part XII — Tools &amp; Workshop <span class="count">5 Chapters</span></summary>
-      <p class="part-desc">Essential tools, reading a service manual, and safe workshop practice.</p>
-    </details>
-
-    <details class="part-collapsed">
-      <summary>Part XIII — Modifications <span class="count">8 Chapters</span></summary>
-      <p class="part-desc">Evaluating modifications honestly — what problem it solves, what it costs, and whether it's necessary at all.</p>
-    </details>
-
-    <details class="part-collapsed">
-      <summary>Part XIV — Types of Motorcycles <span class="count">9 Chapters</span></summary>
-      <p class="part-desc">Why each category exists, as an engineering answer to a different problem — not just a difference in appearance.</p>
-    </details>
-
-    <details class="part-collapsed">
-      <summary>Part XV — How to Choose a Motorcycle <span class="count">5 Chapters</span></summary>
-      <p class="part-desc">Choosing by actual use, ergonomics, running costs, and how to inspect a used bike properly.</p>
-    </details>
-
-    <details class="part-collapsed">
-      <summary>Part XVI — Engineering Trade-Offs <span class="count">3 Chapters</span></summary>
-      <p class="part-desc">The closing argument: there is no perfect motorcycle, only a map of the compromises each design makes.</p>
-    </details>
-  </div>
-
-  <div class="sheet-footer">
-    <span>Anatomy of a Motorcycle</span>
-    <span>150 Sheets — 54 Published</span>
-  </div>
-
+<body class="landing-page">
+
+<div class="ambient-bg" aria-hidden="true">
+  <span class="blob blob-a"></span>
+  <span class="blob blob-b"></span>
+  <span class="blob blob-c"></span>
 </div>
+
+<header class="glass-nav">
+  <a class="glass-nav-brand" href="/index.html">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-word">Know<span class="brand-accent">base</span></span>
+  </a>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+  </button>
+</header>
+
+<main class="landing">
+
+  <section class="landing-hero">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">Workshop Manuals &amp; Field Guides</span>
+      <h1>Understand<br>the Machine.</h1>
+      <p class="hero-lede">A growing shelf of technical field manuals, each built the same way: understand the parts, then understand how they talk to each other.</p>
+      <div class="hero-cta-row">
+        <a class="hero-cta" href="/books/anatomy-of-a-motorcycle/index.html">Start Reading &rarr;</a>
+        <div class="hero-stats">
+          <div>
+            <span class="hs-num">150</span>
+            <span class="hs-label">Chapters</span>
+          </div>
+          <div>
+            <span class="hs-num">16</span>
+            <span class="hs-label">Parts</span>
+          </div>
+          <div>
+            <span class="hs-num">2</span>
+            <span class="hs-label">Books on Shelf</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-cover-stage">
+      <div class="cover-tilt" id="coverTilt">
+        <img src="/books/anatomy-of-a-motorcycle/cover.webp" alt="Anatomy of a Motorcycle — book cover, showing a sportbike and a dirt bike in blueprint line art. By Jitendra Kulkarni.">
+      </div>
+    </div>
+  </section>
+
+  <div class="continue-banner glass-panel" id="continueBanner">
+    <div class="cb-text">
+      <span class="cb-label">Continue Reading</span>
+      <span class="cb-title" id="continueTitle"></span>
+    </div>
+    <a class="cb-btn" id="continueLink" href="#">Resume &rarr;</a>
+  </div>
+
+  <section class="shelf-section">
+    <h2 class="shelf-heading reveal">The Shelf</h2>
+    <p class="shelf-sub reveal" style="transition-delay:0.05s">Two titles on the shelf. More on the way.</p>
+
+    <div class="library-shelf">
+
+      <a class="book-card reveal" href="/books/anatomy-of-a-motorcycle/index.html" data-book="anatomy-of-a-motorcycle" style="transition-delay:0.1s">
+        <img src="/books/anatomy-of-a-motorcycle/cover.webp" alt="Anatomy of a Motorcycle — book cover, showing a sportbike and a dirt bike in blueprint line art. By Jitendra Kulkarni.">
+        <span class="spine"></span>
+        <span class="jacket">
+          <span class="book-status">150 of 150 · Complete</span>
+        </span>
+      </a>
+
+      <a class="book-card reveal" href="/books/davinci-resolve-editing/index.html" data-book="davinci-resolve-editing" style="transition-delay:0.18s">
+        <img src="/books/davinci-resolve-editing/cover.svg" alt="The Resolve Field Manual — book cover, showing a timeline, node graph, and color wheels in blueprint line art. By Jitendra Kulkarni.">
+        <span class="spine"></span>
+        <span class="jacket">
+          <span class="book-status">33 of 95 · In Progress</span>
+        </span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="peek-section">
+    <h2 class="shelf-heading reveal">A Look Inside</h2>
+    <p class="shelf-sub reveal" style="transition-delay:0.05s">Three pages, pulled straight from the manual.</p>
+
+    <div class="peek-grid">
+
+      <a class="peek-card reveal" href="/books/anatomy-of-a-motorcycle/chapter-4-4.html" style="transition-delay:0.1s">
+        <span class="peek-media peek-media-diagram">
+          <img src="/books/anatomy-of-a-motorcycle/diagrams/fig-4-4-a.svg" alt="Diagram of a motorcycle's front-end geometry showing steering axis, rake angle, and trail.">
+        </span>
+        <span class="peek-body">
+          <span class="peek-tag">Ch. 4.4 — Rake and Trail</span>
+          <span class="peek-teaser">Why a leaned motorcycle steers itself straight, explained in one diagram.</span>
+        </span>
+      </a>
+
+      <a class="peek-card reveal" href="/books/anatomy-of-a-motorcycle/chapter-9-12.html" style="transition-delay:0.18s">
+        <span class="peek-media">
+          <img src="/books/anatomy-of-a-motorcycle/diagrams/fig-9-12-a.webp" alt="A motorcycle headlight cutting through darkness on a night road.">
+        </span>
+        <span class="peek-body">
+          <span class="peek-tag">Ch. 9.12 — Riding at Night</span>
+          <span class="peek-teaser">When the road ends exactly where your headlight does.</span>
+        </span>
+      </a>
+
+      <a class="peek-card reveal" href="/books/anatomy-of-a-motorcycle/chapter-12-1.html" style="transition-delay:0.26s">
+        <span class="peek-media">
+          <img src="/books/anatomy-of-a-motorcycle/diagrams/fig-12-1-a.webp" alt="A basic motorcycle mechanic's tool kit laid out on a workbench.">
+        </span>
+        <span class="peek-body">
+          <span class="peek-tag">Ch. 12.1 — The Basic Tool Kit</span>
+          <span class="peek-teaser">The tools a motorcycle's fasteners actually call for.</span>
+        </span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="landing-footer">Curated by Jitendra Kulkarni</footer>
+
+<script src="/reader-aids.js" defer></script>
+<script>
+(function(){
+  // 3D cover tilt following the pointer, disabled for reduced-motion users
+  var stage = document.querySelector(".hero-cover-stage");
+  var tilt = document.getElementById("coverTilt");
+  var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(stage && tilt && !reduced && window.matchMedia("(pointer: fine)").matches){
+    stage.addEventListener("mousemove", function(e){
+      var r = stage.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - 0.5;
+      var py = (e.clientY - r.top) / r.height - 0.5;
+      tilt.style.transform = "rotateY(" + (-14 + px * 22) + "deg) rotateX(" + (4 - py * 16) + "deg)";
+    });
+    stage.addEventListener("mouseleave", function(){
+      tilt.style.transform = "";
+    });
+  }
+
+  // scroll reveal
+  var targets = document.querySelectorAll(".reveal");
+  if("IntersectionObserver" in window && targets.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add("in-view");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    targets.forEach(function(t){ io.observe(t); });
+  } else {
+    targets.forEach(function(t){ t.classList.add("in-view"); });
+  }
+})();
+</script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">INSERT VS. OVERWRITE</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">BEFORE</text>
+    <rect x="70" y="100" width="160" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="150" y="122" text-anchor="middle" font-size="10.5" fill="#22252B">CLIP A</text>
+    <rect x="230" y="100" width="160" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="310" y="122" text-anchor="middle" font-size="10.5" fill="#22252B">CLIP B</text>
+    <line x1="150" y1="100" x2="150" y2="70" stroke="#AE3527" stroke-width="1.6" stroke-dasharray="3 3"/>
+    <text x="150" y="66" text-anchor="middle" font-size="9.5" fill="#AE3527">edit point ↓</text>
+  </g>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="176" font-size="12.5" fill="#33505E" letter-spacing="1">INSERT — pushes B later</text>
+    <rect x="70" y="188" width="90" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="115" y="210" text-anchor="middle" font-size="9.5" fill="#22252B">A part 1</text>
+    <rect x="160" y="188" width="70" height="34" fill="#33505E" fill-opacity="0.18" stroke="#33505E" stroke-width="1.6"/>
+    <text x="195" y="210" text-anchor="middle" font-size="9" fill="#33505E">NEW</text>
+    <rect x="230" y="188" width="80" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="270" y="210" text-anchor="middle" font-size="9.5" fill="#22252B">A part 2</text>
+    <rect x="310" y="188" width="160" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="390" y="210" text-anchor="middle" font-size="10.5" fill="#22252B">CLIP B — shifted right</text>
+    <text x="470" y="240" font-size="9.5" fill="#AE3527">total duration grows →</text>
+  </g>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="290" font-size="12.5" fill="#6B5A22" letter-spacing="1">OVERWRITE — replaces frames only</text>
+    <rect x="70" y="302" width="90" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="115" y="324" text-anchor="middle" font-size="9.5" fill="#22252B">A part 1</text>
+    <rect x="160" y="302" width="70" height="34" fill="#6B5A22" fill-opacity="0.18" stroke="#6B5A22" stroke-width="1.6"/>
+    <text x="195" y="324" text-anchor="middle" font-size="9" fill="#6B5A22">NEW</text>
+    <rect x="230" y="302" width="160" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="310" y="324" text-anchor="middle" font-size="10.5" fill="#22252B">CLIP B — stayed put</text>
+    <text x="150" y="356" text-anchor="middle" font-size="9.5" fill="#5A5748">frames underneath the new clip are simply replaced</text>
+    <text x="470" y="324" font-size="9.5" fill="#6B5A22">total duration unchanged</text>
+  </g>
+
+  <text x="400" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">SAME ACTION — PLACING A CLIP — TWO DIFFERENT EFFECTS DOWNSTREAM</text>
+  <text x="400" y="430" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">Insert ripples everything after it. Overwrite touches only the frames it covers.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 4.4-A</text>
+</svg>

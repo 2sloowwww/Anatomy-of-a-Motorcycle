@@ -1,0 +1,32 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="36" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="19" font-weight="700" fill="#22252B">OIL FILM DECLINE VS. FILTER SATURATION</text>
+  <line x1="50" y1="52" x2="750" y2="52" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- axes -->
+  <line x1="100" y1="380" x2="100" y2="90" stroke="#33505E" stroke-width="1.5"/>
+  <line x1="100" y1="380" x2="700" y2="380" stroke="#33505E" stroke-width="1.5"/>
+  <text x="400" y="408" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">MILEAGE / HEAT CYCLES →</text>
+  <text x="70" y="235" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748" transform="rotate(-90 70 235)">PROTECTIVE CAPABILITY</text>
+
+  <!-- oil film effectiveness declining -->
+  <path d="M 100 130 Q 350 160 690 340" fill="none" stroke="#33505E" stroke-width="3"/>
+  <text x="500" y="270" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#33505E">OIL FILM EFFECTIVENESS</text>
+
+  <!-- filter capacity remaining, also declining -->
+  <path d="M 100 140 Q 350 220 690 370" fill="none" stroke="#AE3527" stroke-width="3" stroke-dasharray="7 5"/>
+  <text x="500" y="345" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#AE3527">FILTER CAPACITY REMAINING</text>
+
+  <!-- service interval marker -->
+  <line x1="600" y1="90" x2="600" y2="380" stroke="#6B5A22" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="600" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#6B5A22">SERVICE INTERVAL</text>
+
+  <line x1="50" y1="440" x2="750" y2="440" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="460" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">BOTH DECLINE GRADUALLY, TOGETHER — NEITHER FAILS SUDDENLY OR ALONE</text>
+</svg>

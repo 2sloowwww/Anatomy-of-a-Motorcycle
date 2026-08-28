@@ -1,0 +1,50 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="36" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="19" font-weight="700" fill="#22252B">SOLO VS. LOADED: SAG AND CENTER OF MASS</text>
+  <line x1="50" y1="52" x2="750" y2="52" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- LEFT: solo -->
+  <text x="200" y="82" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700" fill="#22252B">SOLO</text>
+
+  <line x1="100" y1="380" x2="320" y2="380" stroke="#33505E" stroke-width="2"/>
+  <circle cx="150" cy="380" r="28" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="270" cy="380" r="28" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <path d="M 150 355 L 210 260 L 260 258 L 270 355" fill="none" stroke="#22252B" stroke-width="3"/>
+  <circle cx="220" cy="240" r="16" fill="#8C876F" stroke="#22252B" stroke-width="2"/>
+  <circle cx="220" cy="270" r="6" fill="#AE3527"/>
+  <text x="220" y="220" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#AE3527">CG</text>
+
+  <!-- sag indicator -->
+  <line x1="330" y1="355" x2="330" y2="378" stroke="#33505E" stroke-width="1.4" stroke-dasharray="3 3"/>
+  <text x="345" y="370" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">NORMAL SAG</text>
+
+  <!-- divider -->
+  <line x1="400" y1="70" x2="400" y2="460" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- RIGHT: loaded -->
+  <text x="600" y="82" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700" fill="#22252B">PASSENGER + LUGGAGE</text>
+
+  <line x1="500" y1="390" x2="720" y2="390" stroke="#33505E" stroke-width="2"/>
+  <circle cx="550" cy="390" r="26" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="670" cy="390" r="26" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <path d="M 550 367 L 610 272 L 660 270 L 670 367" fill="none" stroke="#22252B" stroke-width="3"/>
+  <circle cx="620" cy="252" r="16" fill="#8C876F" stroke="#22252B" stroke-width="2"/>
+  <circle cx="655" cy="280" r="14" fill="#6B5A22" stroke="#22252B" stroke-width="2"/>
+  <rect x="672" y="345" width="26" height="26" rx="4" fill="#5A5748" stroke="#22252B" stroke-width="1.5"/>
+  <circle cx="635" cy="285" r="6" fill="#AE3527"/>
+  <text x="635" y="305" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#AE3527">CG (RAISED, SHIFTED)</text>
+
+  <!-- increased sag indicator -->
+  <line x1="730" y1="367" x2="730" y2="388" stroke="#AE3527" stroke-width="1.6" stroke-dasharray="3 3"/>
+  <text x="745" y="382" font-family="JetBrains Mono, monospace" font-size="11" fill="#AE3527" font-weight="600">MORE SAG</text>
+  <text x="745" y="397" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">(NEEDS PRELOAD)</text>
+
+  <line x1="50" y1="450" x2="750" y2="450" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="470" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">RE-CHECK SAG AND RECALIBRATE COUNTERSTEERING FEEL WHEN LOADED</text>
+</svg>

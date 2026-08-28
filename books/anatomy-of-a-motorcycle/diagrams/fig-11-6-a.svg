@@ -1,0 +1,38 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">DAMPING FAULT VS. SPRING FAULT</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Left: damping fault, oscillation continues -->
+  <text x="220" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">DAMPING FAULT: KEEPS BOUNCING</text>
+  <line x1="70" y1="200" x2="370" y2="200" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 2"/>
+  <path d="M 70 200 Q 100 130 130 200 Q 160 150 190 200 Q 210 165 230 200 Q 245 178 260 200 Q 272 185 285 200" fill="none" stroke="#AE3527" stroke-width="2.2"/>
+  <text x="220" y="225" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">OSCILLATION DECAYS SLOWLY</text>
+  <text x="220" y="240" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">— DAMPER NOT CONTROLLING SPRING</text>
+
+  <!-- Right: spring fault, bottoms out -->
+  <text x="580" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">SPRING FAULT: BOTTOMS OUT</text>
+  <line x1="430" y1="200" x2="730" y2="200" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 2"/>
+  <path d="M 430 200 L 480 200 Q 530 130 560 260 L 620 260 L 730 200" fill="none" stroke="#AE3527" stroke-width="2.2"/>
+  <line x1="560" y1="260" x2="620" y2="260" stroke="#AE3527" stroke-width="3"/>
+  <text x="580" y="285" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#AE3527" font-weight="700">HITS END STOP</text>
+  <text x="580" y="310" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">NO OSCILLATION — TRAVEL</text>
+  <text x="580" y="325" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">JUST RUNS OUT TOO EASILY</text>
+
+  <line x1="400" y1="70" x2="400" y2="350" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- fork oil detail -->
+  <rect x="330" y="360" width="140" height="70" rx="6" fill="#22252B"/>
+  <text x="400" y="382" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#EEE8DA">FORK TUBE</text>
+  <rect x="345" y="392" width="110" height="8" fill="#6B5A22"/>
+  <text x="400" y="415" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#EEE8DA">OIL FILM BELOW SEAL</text>
+
+  <line x1="50" y1="450" x2="750" y2="450" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="470" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">TWO SEPARATE JOBS, TWO SEPARATE FAILURE PATTERNS</text>
+</svg>

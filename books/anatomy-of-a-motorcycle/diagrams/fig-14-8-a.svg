@@ -1,0 +1,38 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">DIFFERENT PROBLEMS, NOT JUST DIFFERENT SOLUTIONS</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <text x="200" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">INTERNAL COMBUSTION</text>
+  <text x="600" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">ELECTRIC</text>
+  <line x1="400" y1="70" x2="400" y2="380" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <g font-family="JetBrains Mono, monospace" font-size="9">
+    <text x="90" y="115" fill="#5A5748">TRANSMISSION</text>
+    <rect x="200" y="105" width="180" height="16" fill="#8C876F"/>
+    <text x="290" y="117" text-anchor="middle" fill="#EEE8DA">MULTI-GEAR NEEDED</text>
+    <rect x="600" y="105" width="180" height="16" fill="#AE3527"/>
+    <text x="690" y="117" text-anchor="middle" fill="#EEE8DA">SINGLE RATIO</text>
+
+    <text x="90" y="165" fill="#5A5748">VIBRATION</text>
+    <rect x="200" y="155" width="180" height="16" fill="#8C876F"/>
+    <text x="290" y="167" text-anchor="middle" fill="#EEE8DA">BALANCE SHAFT NEEDED</text>
+    <rect x="600" y="155" width="180" height="16" fill="#AE3527"/>
+    <text x="690" y="167" text-anchor="middle" fill="#EEE8DA">NO IMBALANCE AT ALL</text>
+
+    <text x="90" y="215" fill="#5A5748">MASS OVER A RIDE</text>
+    <rect x="200" y="205" width="180" height="16" fill="#8C876F"/>
+    <text x="290" y="217" text-anchor="middle" fill="#EEE8DA">SHRINKS AS FUEL BURNS</text>
+    <rect x="600" y="205" width="180" height="16" fill="#AE3527"/>
+    <text x="690" y="217" text-anchor="middle" fill="#EEE8DA">STAYS CONSTANT</text>
+  </g>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">SOME PROBLEMS DISAPPEAR ENTIRELY; NEW ONES TAKE THEIR PLACE</text>
+</svg>

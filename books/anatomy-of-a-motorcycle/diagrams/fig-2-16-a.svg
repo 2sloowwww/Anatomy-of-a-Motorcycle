@@ -1,0 +1,80 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', monospace">
+<defs>
+  <marker id="arrInk16" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#22252B"/>
+  </marker>
+  <marker id="arrBp16" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#33505E"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+<!-- Title -->
+<text x="400" y="40" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B">OIL FILM &amp; MULTI-GRADE VISCOSITY</text>
+<text x="400" y="61" text-anchor="middle" font-size="13" fill="#5A5748">A THIN FILM KEEPS METAL APART &#8212; ACROSS THE WHOLE TEMPERATURE RANGE</text>
+
+<!-- divider -->
+<line x1="400" y1="82" x2="400" y2="460" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 5"/>
+
+<!-- ============ LEFT: MAGNIFIED OIL FILM ============ -->
+<text x="200" y="105" text-anchor="middle" font-size="14.5" font-weight="700" fill="#22252B">OIL FILM, MAGNIFIED</text>
+
+<circle cx="195" cy="245" r="115" fill="#33505E" fill-opacity="0.20" stroke="#22252B" stroke-width="2.5"/>
+<circle cx="195" cy="245" r="76" fill="#8C876F" stroke="#22252B" stroke-width="2.5"/>
+<text x="195" y="241" text-anchor="middle" font-size="12" font-weight="700" fill="#22252B">CRANK</text>
+<text x="195" y="257" text-anchor="middle" font-size="12" font-weight="700" fill="#22252B">JOURNAL</text>
+
+<text x="300" y="150" font-size="12.5" font-weight="700" fill="#33505E">BEARING</text>
+<text x="300" y="166" font-size="12.5" font-weight="700" fill="#33505E">SURFACE</text>
+<line x1="296" y1="171" x2="286" y2="174" stroke="#33505E" stroke-width="1.3"/>
+
+<!-- rotation arrow on journal -->
+<path d="M 155 205 A 55 55 0 0 1 235 205" fill="none" stroke="#22252B" stroke-width="2" marker-end="url(#arrInk16)"/>
+
+<!-- Zoom leader lines from the film ring down to the magnified inset -->
+<line x1="160" y1="342" x2="115" y2="400" stroke="#8C876F" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="235" y1="335" x2="285" y2="400" stroke="#8C876F" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+<!-- Inset magnified film cross-section -->
+<rect x="55" y="400" width="290" height="80" fill="#EEE8DA" stroke="#33505E" stroke-width="1.5" stroke-dasharray="5 3"/>
+<line x1="70" y1="413" x2="330" y2="413" stroke="#22252B" stroke-width="4"/>
+<line x1="70" y1="463" x2="330" y2="463" stroke="#22252B" stroke-width="4"/>
+<rect x="70" y="413" width="260" height="50" fill="#33505E" fill-opacity="0.22"/>
+<circle cx="130" cy="438" r="3.5" fill="#5A5748"/>
+<circle cx="180" cy="433" r="3.5" fill="#5A5748"/>
+<circle cx="230" cy="443" r="3.5" fill="#5A5748"/>
+<circle cx="280" cy="435" r="3.5" fill="#5A5748"/>
+<text x="200" y="492" text-anchor="middle" font-size="11" fill="#5A5748">surfaces never touch while the film holds</text>
+<text x="352" y="442" font-size="12" font-weight="700" fill="#6B5A22">FILM</text>
+
+<!-- ============ RIGHT: VISCOSITY vs TEMPERATURE ============ -->
+<text x="600" y="105" text-anchor="middle" font-size="14.5" font-weight="700" fill="#22252B">VISCOSITY vs TEMPERATURE</text>
+
+<!-- protective band -->
+<rect x="450" y="195" width="300" height="95" fill="#6B5A22" fill-opacity="0.14"/>
+<text x="600" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#6B5A22">PROTECTIVE RANGE</text>
+
+<!-- axes -->
+<line x1="450" y1="415" x2="760" y2="415" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrBp16)"/>
+<line x1="450" y1="415" x2="450" y2="140" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrBp16)"/>
+
+<text x="470" y="435" font-size="11.5" fill="#5A5748">COLD (START-UP)</text>
+<text x="700" y="435" text-anchor="middle" font-size="11.5" fill="#5A5748">HOT (OPERATING)</text>
+
+<!-- single-grade reference (dashed) -->
+<path d="M 470 160 C 560 175, 620 280, 730 390" fill="none" stroke="#8C876F" stroke-width="2.5" stroke-dasharray="6 4"/>
+
+<!-- multi-grade oil (solid, emphasized) -->
+<path d="M 470 260 C 560 245, 620 220, 730 210" fill="none" stroke="#AE3527" stroke-width="3.5"/>
+
+<!-- legend -->
+<line x1="465" y1="463" x2="495" y2="463" stroke="#AE3527" stroke-width="3.5"/>
+<text x="502" y="467" font-size="12" fill="#22252B" font-weight="600">MULTI-GRADE (10W-40)</text>
+<line x1="465" y1="483" x2="495" y2="483" stroke="#8C876F" stroke-width="2.5" stroke-dasharray="6 4"/>
+<text x="502" y="487" font-size="12" fill="#5A5748">SINGLE-GRADE (REFERENCE)</text>
+</svg>

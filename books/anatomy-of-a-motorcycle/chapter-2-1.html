@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>2.1 — What an Engine Actually Does | Anatomy of a Motorcycle</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-ii">Part II — Engine Fundamentals</a>
+    <span class="sep">/</span>
+    <span class="current">2.1</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">Anatomy of a Motorcycle</a>
+      <span class="vol">Vol. I — The Machine</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">2.1</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Two, Section One</div>
+        <h1>What an Engine Actually Does</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">II of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Foundational</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">007 / 150</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv"><a class="fv" href="chapter-1-6.html">Ch. 1.6</a></span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~8 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">A modern motorcycle engine spinning at 9,000rpm is setting off a controlled explosion inside each cylinder 75 times a second. Do that continuously, thousands of times a minute, for years, without the whole assembly tearing itself apart, and you've built one of the most reliable machines humans make. Strip away everything else on a motorcycle — the wheels, the chassis, the rider — and ask the most basic possible question: what is this thing in the middle of the frame actually for?</p>
+
+    <p>Part I spent six chapters establishing how to think about a motorcycle as a system, and closed by handing you a vocabulary for talking about that system's parts precisely. This chapter opens Part II by turning to the first of those parts in detail, and it starts, deliberately, at the widest possible altitude: not with valves or camshafts yet, but with the single job every other component in this engine exists to serve.</p>
+
+    <h2 class="section">The Engine's One Job</h2>
+
+    <p>Strip away every technical detail and an engine does exactly one thing: it converts the chemical energy stored in fuel into rotational motion at a shaft. That's the entire job description. Everything else — the four strokes, the valves, the crankshaft, the cooling system, the twelve chapters still ahead in this part — exists purely in service of doing that one conversion efficiently, reliably, and repeatedly, thousands of times a minute, for years.</p>
+
+    <p>The conversion happens in two steps, and it's worth holding them separately in your head because later chapters will treat them as genuinely distinct problems. First, burning a precise mixture of fuel and air inside a sealed chamber releases energy as rapidly expanding, high-pressure gas — this is combustion, and Chapter 2.4 covers exactly how it's triggered and controlled. Second, that expanding gas pushes on a piston, and a mechanical linkage converts the piston's straight-line motion into the crankshaft's rotation — this is the part sometimes overlooked entirely, and Chapter 2.5 covers it as its own topic. Combustion makes the push. The bottom end turns the push into spin. An engine needs both, and neither one is "the engine" on its own.</p>
+
+    <div class="pull"><p>An engine isn't a box that makes power. It's a box that turns one very specific kind of chemical energy into one very specific kind of motion — and every part inside it is there to make that single conversion happen cleanly.</p></div>
+
+    <h2 class="section">Four Strokes, One Power Stroke</h2>
+
+    <p>You don't need the full mechanical detail yet — that's Chapter 2.2's job entirely — but it's worth previewing the shape of the cycle here, because it changes how the "one job" above actually gets delivered in practice. A conventional four-stroke engine only produces its useful push during one of every two crankshaft rotations. The piston draws in the air-fuel mixture, squeezes it, only then does combustion actually push the piston down and deliver power, and finally the piston pushes the spent gas back out — four distinct motions, one of which is doing the job this chapter just described, and three of which exist purely to set that one moment up and clean up after it.</p>
+
+    <p>This is a strange ratio when you say it plainly: three-quarters of what a four-stroke engine's piston is doing, at any moment, is preparation and cleanup, not power delivery. It's also exactly why multi-cylinder engines exist at all, which the next section gets into, and exactly why the shape of that single power stroke — not just that it happens, but how forcefully and over what portion of the crankshaft's rotation — is what Chapter 2.12 will show actually determines a motorcycle's torque and power curves.</p>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 2.1-A</span>
+      <img src="diagrams/fig-2-1-a.svg" alt="A single cylinder shown across its four strokes — intake, compression, power, exhaust — with only the power stroke highlighted to show how small a fraction of the cycle is actually doing useful work." class="diagram-img">
+      <p>A single cylinder shown across its four strokes — intake, compression, power, exhaust — with only the power stroke highlighted to show how small a fraction of the cycle is actually doing useful work.</p>
+    </div>
+
+    <h2 class="section">Everything Else Is Support Infrastructure</h2>
+
+    <p>Chapter 1.3 introduced the idea that a component's job is defined by its relationship to the rest of the system, and an engine is a smaller, self-contained version of exactly that principle. Once you accept that an engine's one job is converting chemical energy into rotation, nearly every other component inside it reveals itself as infrastructure built to protect, enable, or refine that one conversion — not a separate function competing for attention alongside it.</p>
+
+    <p>The cooling system, covered in Chapter 2.15, exists because combustion generates far more heat than the metal around it can tolerate unmanaged — it's not adding a function, it's protecting the one the engine already has. The lubrication system in Chapter 2.16 exists because a crankshaft and pistons moving thousands of times a minute would destroy themselves through friction alone without it — again, protection, not a separate job. The fuel delivery system in Chapter 2.13 and the ignition system in Chapter 2.4 exist to make sure the right amount of fuel and air arrive at the right time, and get ignited at the right instant, for combustion to do its job efficiently rather than wastefully or destructively. None of these systems make power. They all exist so the one system that does make power can keep doing so.</p>
+
+    <h2 class="section">From One Piston to a Whole Engine</h2>
+
+    <p>If a single piston moving through its four strokes only delivers power on one stroke out of four, an engine built around a single cylinder is going to feel exactly like that ratio suggests: a hard shove followed by three strokes of comparative silence, repeating. That's a real, valid engine design — plenty of motorcycles use exactly one cylinder — but it explains why most engines above a certain size use more than one.</p>
+
+    <p>Stagger multiple cylinders so their power strokes land at different points in the crank's rotation, and the gaps in one cylinder's power delivery get filled by another cylinder's power stroke instead. Two, three, four, or more cylinders working out of phase with each other turn a single harsh pulse of power into something progressively smoother, and this single idea — overlapping power strokes to smooth out delivery — is the reason cylinder count and configuration matter as much as they do. Chapter 2.10 and Chapter 2.11 take this idea and build the case for why a single, a twin, and a four-cylinder engine of identical total displacement can feel, sound, and perform in completely different ways, despite doing conceptually the same job described in this chapter.</p>
+
+    <h2 class="section">A Common Misconception, Cleared Up Early</h2>
+
+    <p>It's tempting to picture combustion as a violent, chaotic explosion, and to assume that a more powerful engine is simply one that "explodes" more forcefully. Combustion is genuinely fast and genuinely powerful, but calling it an uncontrolled explosion undersells exactly what makes an engine work at all: the burn is timed, shaped, and repeated with extraordinary precision, tens of times a second, for years, without the engine tearing itself apart. An engine that actually detonated its fuel-air mixture the way the word "explosion" suggests would destroy itself within seconds — Chapter 2.4 covers exactly this failure mode, called knock, and why engineers spend enormous effort preventing it.</p>
+
+    <p>The better mental model isn't violence. It's control. A well-designed engine isn't the one that burns fuel most aggressively — it's the one that converts the most of that chemical energy into useful rotation, as smoothly and as many times per minute as its design allows, without ever losing control of the burn itself.</p>
+
+    <h2 class="section">Where This Leads</h2>
+
+    <p>This chapter deliberately stayed at the altitude of "what is this box for," because everything from here forward in Part II is really just an increasingly detailed answer to that one question. Chapter 2.2 opens with the four-stroke cycle this chapter only previewed, walking through intake, compression, power, and exhaust in full mechanical detail — the actual choreography behind the "one job" this chapter described.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          An engine has exactly one job: converting the chemical energy in fuel into rotational motion at a shaft. Every component inside it exists to serve that one conversion.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          That conversion happens in two distinct steps — combustion creates expanding gas pressure, and the bottom end converts that pressure into rotation — and neither step alone is "the engine."
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          In a four-stroke engine, only one of four strokes actually delivers power; the other three exist purely to prepare for and clean up after that one moment.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Cooling, lubrication, fuel delivery, and ignition are all support infrastructure protecting or enabling the core combustion-to-rotation conversion, not separate functions of their own.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Multiple cylinders exist primarily to overlap power strokes and smooth out delivery — the same underlying job as a single cylinder, made smoother by staggering it across several.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-1-3.html">← Ch. 1.3</a></td>
+          <td class="note">Introduced the idea that a component's function is defined by its relationship to the rest of the system; this chapter applies that principle inside the engine itself.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-1-5.html">← Ch. 1.5</a></td>
+          <td class="note">Introduced the vocabulary — displacement, bore, stroke, compression ratio, torque, power — this chapter and the rest of Part II give full mechanical grounding to.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-2-2.html">→ Ch. 2.2</a></td>
+          <td class="note">Walks through the four-stroke cycle previewed here in full mechanical detail.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-2-4.html">→ Ch. 2.4</a></td>
+          <td class="note">Gives combustion control, introduced in passing here, a full chapter.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-2-5.html">→ Ch. 2.5</a></td>
+          <td class="note">Gives the bottom end, introduced in passing here, a full chapter.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-2-10.html">→ Ch. 2.10–2.11</a></td>
+          <td class="note">Gives cylinder configuration, introduced in passing here, a full chapter.</td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a href="chapter-1-6.html">
+      <span class="dir">← Previous Chapter</span>
+      <span class="ttl">1.6 — Reading a Spec Sheet Without Being Fooled</span>
+    </a>
+    <a class="next" href="chapter-2-2.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">2.2 — The Four-Stroke Cycle</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">Anatomy of a Motorcycle — Sheet 007 / 150</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

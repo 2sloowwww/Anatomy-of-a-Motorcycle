@@ -1,0 +1,138 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowSignal53" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#AE3527"/>
+    </marker>
+    <marker id="arrowBlue53" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#33505E"/>
+    </marker>
+    <marker id="arrowInk53" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#22252B"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="30" text-anchor="middle" font-weight="700" font-size="20" fill="#22252B" letter-spacing="0.4">DAMPING: OIL FORCED THROUGH VALVING</text>
+  <text x="400" y="50" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5A5748">COMPRESSION AND REBOUND ARE SEPARATE, INDEPENDENTLY ADJUSTABLE RESISTANCES</text>
+
+  <!-- divider -->
+  <line x1="400" y1="66" x2="400" y2="452" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 4"/>
+
+  <!-- ============================================================ -->
+  <!-- LEFT PANEL: COMPRESSION STROKE -->
+  <!-- ============================================================ -->
+  <text x="200" y="80" text-anchor="middle" font-size="14.5" font-weight="700" fill="#6B5A22" letter-spacing="0.3">COMPRESSION STROKE</text>
+  <text x="200" y="96" text-anchor="middle" font-size="11" font-style="italic" fill="#8C876F">wheel moving up into a bump</text>
+
+  <!-- frame mount -->
+  <line x1="170" y1="112" x2="230" y2="112" stroke="#22252B" stroke-width="3"/>
+  <line x1="176" y1="112" x2="168" y2="122" stroke="#22252B" stroke-width="1.6"/>
+  <line x1="188" y1="112" x2="180" y2="122" stroke="#22252B" stroke-width="1.6"/>
+  <line x1="200" y1="112" x2="192" y2="122" stroke="#22252B" stroke-width="1.6"/>
+  <line x1="212" y1="112" x2="204" y2="122" stroke="#22252B" stroke-width="1.6"/>
+  <line x1="224" y1="112" x2="216" y2="122" stroke="#22252B" stroke-width="1.6"/>
+  <text x="242" y="117" font-size="10.5" fill="#8C876F">FRAME</text>
+  <circle cx="200" cy="126" r="7" fill="#EEE8DA" stroke="#22252B" stroke-width="2.2"/>
+
+  <!-- rod (short: piston travelling down INTO body) -->
+  <line x1="200" y1="133" x2="200" y2="168" stroke="#22252B" stroke-width="4"/>
+
+  <!-- cylinder body -->
+  <rect x="158" y="168" width="84" height="170" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+
+  <!-- piston head with valve ports, mid-stroke -->
+  <rect x="163" y="222" width="74" height="16" fill="#22252B" stroke="#22252B" stroke-width="1.5"/>
+  <circle cx="182" cy="230" r="4.5" fill="#E2D9C3"/>
+  <circle cx="218" cy="230" r="4.5" fill="#E2D9C3"/>
+
+  <!-- oil flow through ports: pushed from BELOW piston to ABOVE as piston descends -->
+  <line x1="182" y1="258" x2="182" y2="242" stroke="#33505E" stroke-width="2.2" marker-end="url(#arrowBlue53)"/>
+  <line x1="218" y1="258" x2="218" y2="242" stroke="#33505E" stroke-width="2.2" marker-end="url(#arrowBlue53)"/>
+  <text x="200" y="278" text-anchor="middle" font-size="10.5" fill="#33505E" font-weight="600">OIL FORCED</text>
+  <text x="200" y="291" text-anchor="middle" font-size="10.5" fill="#33505E" font-weight="600">THROUGH PORTS</text>
+
+  <!-- big motion arrow beside rod, showing piston/rod driving down -->
+  <line x1="272" y1="145" x2="272" y2="215" stroke="#AE3527" stroke-width="2.6" marker-end="url(#arrowSignal53)"/>
+  <text x="282" y="170" font-size="12.5" font-weight="700" fill="#AE3527">WHEEL</text>
+  <text x="282" y="184" font-size="12.5" font-weight="700" fill="#AE3527">DRIVES UP</text>
+
+  <!-- resistance label -->
+  <line x1="106" y1="230" x2="152" y2="230" stroke="#6B5A22" stroke-width="1.4"/>
+  <text x="26" y="220" font-size="13" font-weight="700" fill="#6B5A22">COMPRESSION</text>
+  <text x="26" y="234" font-size="13" font-weight="700" fill="#6B5A22">DAMPING</text>
+  <text x="26" y="248" font-size="10" fill="#5A5748">resists fast collapse</text>
+
+  <!-- bottom of body to axle -->
+  <line x1="200" y1="338" x2="200" y2="364" stroke="#22252B" stroke-width="4"/>
+  <circle cx="200" cy="371" r="7" fill="#EEE8DA" stroke="#22252B" stroke-width="2.2"/>
+  <line x1="200" y1="378" x2="200" y2="398" stroke="#22252B" stroke-width="3"/>
+  <circle cx="200" cy="422" r="26" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+  <circle cx="200" cy="422" r="4" fill="#22252B"/>
+
+  <!-- bump under wheel -->
+  <path d="M 60 448 L 150 448 Q 175 400 200 396 Q 225 400 250 448 L 340 448" fill="none" stroke="#22252B" stroke-width="2.2"/>
+  <text x="200" y="440" text-anchor="middle" font-size="0" fill="#5A5748"> </text>
+
+  <!-- ============================================================ -->
+  <!-- RIGHT PANEL: REBOUND STROKE -->
+  <!-- ============================================================ -->
+  <text x="600" y="80" text-anchor="middle" font-size="14.5" font-weight="700" fill="#AE3527" letter-spacing="0.3">REBOUND STROKE</text>
+  <text x="600" y="96" text-anchor="middle" font-size="11" font-style="italic" fill="#8C876F">spring extending back out after the bump</text>
+
+  <!-- frame mount -->
+  <line x1="570" y1="112" x2="630" y2="112" stroke="#22252B" stroke-width="3"/>
+  <line x1="576" y1="112" x2="568" y2="122" stroke="#22252B" stroke-width="1.6"/>
+  <line x1="588" y1="112" x2="580" y2="122" stroke="#22252B" stroke-width="1.6"/>
+  <line x1="600" y1="112" x2="592" y2="122" stroke="#22252B" stroke-width="1.6"/>
+  <line x1="612" y1="112" x2="604" y2="122" stroke="#22252B" stroke-width="1.6"/>
+  <line x1="624" y1="112" x2="616" y2="122" stroke="#22252B" stroke-width="1.6"/>
+  <text x="642" y="117" font-size="10.5" fill="#8C876F">FRAME</text>
+  <circle cx="600" cy="126" r="7" fill="#EEE8DA" stroke="#22252B" stroke-width="2.2"/>
+
+  <!-- rod, extended further out (rebound = rod extends) -->
+  <line x1="600" y1="133" x2="600" y2="196" stroke="#22252B" stroke-width="4"/>
+
+  <!-- cylinder body -->
+  <rect x="558" y="196" width="84" height="142" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+
+  <!-- piston head near top of body (rod pulled out) -->
+  <rect x="563" y="206" width="74" height="16" fill="#22252B" stroke="#22252B" stroke-width="1.5"/>
+  <circle cx="582" cy="214" r="4.5" fill="#E2D9C3"/>
+  <circle cx="618" cy="214" r="4.5" fill="#E2D9C3"/>
+
+  <!-- oil flow through ports: pushed from ABOVE piston to BELOW as piston rises -->
+  <line x1="582" y1="230" x2="582" y2="246" stroke="#33505E" stroke-width="2.2" marker-end="url(#arrowBlue53)"/>
+  <line x1="618" y1="230" x2="618" y2="246" stroke="#33505E" stroke-width="2.2" marker-end="url(#arrowBlue53)"/>
+  <text x="600" y="266" text-anchor="middle" font-size="10.5" fill="#33505E" font-weight="600">OIL FORCED</text>
+  <text x="600" y="279" text-anchor="middle" font-size="10.5" fill="#33505E" font-weight="600">THROUGH PORTS</text>
+
+  <!-- big motion arrow beside rod, showing rod extending up/out -->
+  <line x1="672" y1="200" x2="672" y2="140" stroke="#AE3527" stroke-width="2.6" marker-end="url(#arrowSignal53)"/>
+  <text x="682" y="160" font-size="12.5" font-weight="700" fill="#AE3527">SPRING</text>
+  <text x="682" y="174" font-size="12.5" font-weight="700" fill="#AE3527">EXTENDS</text>
+
+  <!-- resistance label -->
+  <line x1="506" y1="240" x2="552" y2="240" stroke="#6B5A22" stroke-width="1.4"/>
+  <text x="426" y="230" font-size="13" font-weight="700" fill="#6B5A22">REBOUND</text>
+  <text x="426" y="244" font-size="13" font-weight="700" fill="#6B5A22">DAMPING</text>
+  <text x="426" y="258" font-size="10" fill="#5A5748">resists fast return</text>
+
+  <!-- bottom of body to axle -->
+  <line x1="600" y1="338" x2="600" y2="364" stroke="#22252B" stroke-width="4"/>
+  <circle cx="600" cy="371" r="7" fill="#EEE8DA" stroke="#22252B" stroke-width="2.2"/>
+  <line x1="600" y1="378" x2="600" y2="398" stroke="#22252B" stroke-width="3"/>
+  <circle cx="600" cy="422" r="26" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+  <circle cx="600" cy="422" r="4" fill="#22252B"/>
+
+  <!-- flat ground, past the bump -->
+  <line x1="460" y1="448" x2="740" y2="448" stroke="#22252B" stroke-width="2.2"/>
+
+  <text x="400" y="479" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">SAME OIL, SAME VALVING — TWO INDEPENDENT RESISTANCES, TUNED SEPARATELY</text>
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 5.3-A</text>
+</svg>

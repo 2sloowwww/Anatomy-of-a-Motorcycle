@@ -1,0 +1,68 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">BIAS-PLY VS. RADIAL CARCASS CONSTRUCTION</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- LEFT: Bias-ply -->
+  <text x="200" y="88" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" font-weight="700" fill="#22252B">BIAS-PLY</text>
+
+  <!-- tyre cross-section outline (simplified torus side view as an arc) -->
+  <path d="M 90 350 Q 90 160 200 130 Q 310 160 310 350" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <path d="M 110 345 Q 110 190 200 165 Q 290 190 290 345" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+
+  <!-- diagonal cords crossing -->
+  <g stroke="#AE3527" stroke-width="1.6">
+    <line x1="115" y1="330" x2="180" y2="180"/>
+    <line x1="140" y1="340" x2="215" y2="175"/>
+    <line x1="170" y1="345" x2="245" y2="180"/>
+    <line x1="200" y1="347" x2="270" y2="195"/>
+  </g>
+  <g stroke="#33505E" stroke-width="1.6">
+    <line x1="285" y1="330" x2="220" y2="180"/>
+    <line x1="260" y1="340" x2="185" y2="175"/>
+    <line x1="230" y1="345" x2="155" y2="180"/>
+    <line x1="200" y1="347" x2="130" y2="195"/>
+  </g>
+
+  <text x="200" y="375" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">CORDS CROSS DIAGONALLY</text>
+  <text x="200" y="392" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">BEAD TO BEAD (~30-40°)</text>
+  <text x="200" y="418" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#22252B">WHOLE CARCASS FLEXES</text>
+  <text x="200" y="435" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#22252B">AS ONE STIFF UNIT</text>
+
+  <!-- divider -->
+  <line x1="400" y1="70" x2="400" y2="460" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- RIGHT: Radial -->
+  <text x="600" y="88" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" font-weight="700" fill="#22252B">RADIAL</text>
+
+  <path d="M 490 350 Q 490 160 600 130 Q 710 160 710 350" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <path d="M 510 345 Q 510 190 600 165 Q 690 190 690 345" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+
+  <!-- radial cords straight across (perpendicular, "spoke-like") -->
+  <g stroke="#AE3527" stroke-width="1.6">
+    <line x1="515" y1="335" x2="518" y2="185"/>
+    <line x1="545" y1="348" x2="552" y2="172"/>
+    <line x1="580" y1="352" x2="588" y2="166"/>
+    <line x1="620" y1="352" x2="612" y2="166"/>
+    <line x1="655" y1="348" x2="648" y2="172"/>
+    <line x1="685" y1="335" x2="682" y2="185"/>
+  </g>
+
+  <!-- reinforcing belt under tread -->
+  <path d="M 505 178 Q 600 148 695 178" fill="none" stroke="#33505E" stroke-width="3.5"/>
+  <text x="600" y="152" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#33505E">BELT</text>
+
+  <text x="600" y="375" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">CORDS RUN STRAIGHT ACROSS (~90°)</text>
+  <text x="600" y="392" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">+ SEPARATE BELT UNDER TREAD</text>
+  <text x="600" y="418" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#22252B">SIDEWALL FLEXES</text>
+  <text x="600" y="435" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#22252B">INDEPENDENTLY OF TREAD</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">SAME MATERIALS — DIFFERENT CORD GEOMETRY — DIFFERENT FLEX BEHAVIOUR</text>
+</svg>

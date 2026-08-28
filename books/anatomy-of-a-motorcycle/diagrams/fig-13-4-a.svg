@@ -1,0 +1,45 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">THREE ERGONOMIC MODIFICATION POINTS</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- simple motorcycle silhouette -->
+  <ellipse cx="400" cy="330" rx="90" ry="16" fill="#8C876F" opacity="0.25"/>
+  <circle cx="300" cy="300" r="32" fill="none" stroke="#22252B" stroke-width="3"/>
+  <circle cx="500" cy="300" r="32" fill="none" stroke="#22252B" stroke-width="3"/>
+  <path d="M 300 300 L 380 220 L 460 220 L 500 300" fill="none" stroke="#22252B" stroke-width="3"/>
+  <rect x="360" y="200" width="80" height="20" rx="6" fill="#6B5A22"/>
+
+  <!-- handlebar callout -->
+  <line x1="380" y1="220" x2="380" y2="160" stroke="#AE3527" stroke-width="2.5"/>
+  <line x1="360" y1="150" x2="400" y2="150" stroke="#AE3527" stroke-width="4"/>
+  <rect x="230" y="100" width="150" height="55" rx="6" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.6"/>
+  <text x="305" y="120" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">BARS</text>
+  <text x="305" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">RISK: HYDRAULIC LINE</text>
+  <text x="305" y="147" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">LENGTH AT FULL LOCK</text>
+  <line x1="380" y1="155" x2="330" y2="130" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <!-- peg callout -->
+  <circle cx="420" cy="290" r="5" fill="#AE3527"/>
+  <rect x="500" y="230" width="160" height="55" rx="6" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.6"/>
+  <text x="580" y="250" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">PEGS</text>
+  <text x="580" y="265" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">RISK: REDUCED</text>
+  <text x="580" y="277" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">CORNERING CLEARANCE</text>
+  <line x1="500" y1="257" x2="425" y2="290" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <!-- seat callout -->
+  <rect x="230" y="330" width="150" height="55" rx="6" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.6"/>
+  <text x="305" y="350" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">SEAT</text>
+  <text x="305" y="365" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">RISK: REDUCED</text>
+  <text x="305" y="377" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">GROUND REACH</text>
+  <line x1="380" y1="357" x2="395" y2="215" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">EACH CLOSES A FIT GAP AND CARRIES ITS OWN, DIFFERENT TRADE-OFF</text>
+</svg>

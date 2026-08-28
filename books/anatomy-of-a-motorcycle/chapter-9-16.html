@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>9.16 — Carrying a Passenger or Load | Anatomy of a Motorcycle</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-ix">Part IX — How to Ride</a>
+    <span class="sep">/</span>
+    <span class="current">9.16</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">Anatomy of a Motorcycle</a>
+      <span class="vol">Vol. I — The Machine</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">9.16</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Nine, Section Sixteen</div>
+        <h1>Carrying a Passenger or Load</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">IX of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Practical</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">098 / 150</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv"><a class="fv" href="chapter-9-15.html">Ch. 9.15</a></span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~6 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">Chapter 5.10 already established that a touring bike's laden weight changes so much between riding solo and riding two-up with bags that suspension set up correctly empty can be badly wrong once loaded. Every technique this part has covered so far was learned, consciously or not, against a particular combined mass and center of gravity — adding a passenger or a significant load changes both, and several of this part's techniques need deliberate re-calibration as a result.</p>
+
+    <p>Chapter 9.15 closed by naming passenger and load carrying as this chapter's subject, directly changing the mass and handling this book has assumed throughout. This chapter covers it.</p>
+
+    <h2 class="section">Sag Changes, and Suspension Should Change With It</h2>
+
+    <p>Chapter 5.4 established sag as the measurement of how much a loaded motorcycle compresses its suspension under its own weight, and Chapter 5.10 flagged laden sag as changing significantly with a passenger and luggage. Re-checking and adjusting preload for two-up or loaded riding, using the same sag procedure Chapter 5.4 described, restores the suspension's intended working range rather than leaving it sitting deeper in its travel than designed — a motorcycle loaded without this adjustment reaches full compression, and the harsh bottoming Chapter 5.4 warned against, considerably sooner than the same suspension would empty.</p>
+
+    <h2 class="section">Combined Center of Mass Shifts, Changing Countersteering Feel</h2>
+
+    <p>Chapter 9.1 and Chapter 9.7 established that a rider's own body position measurably shifts the combined center of mass Chapter 8.3's lean-angle math depends on; a passenger adds a second body whose position and movement do the same thing, generally raising the combined center of mass and adding mass a rider's own body position can no longer fully control through hanging off alone. Chapter 8.4's quantified relationship between required lean angle and speed-and-radius still holds, but the countersteering input needed to reach that same lean angle changes with the added mass and altered mass distribution, meaning a rider's well-practiced solo countersteering feel needs conscious recalibration rather than assuming it transfers unchanged.</p>
+
+    <div class="pull"><p>Adding a passenger doesn't just add weight — it adds a second, independently moving mass to the combined center of gravity every lean-angle and countersteering calculation in this book depends on, which is exactly why solo riding feel doesn't automatically transfer to riding two-up.</p></div>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 9.16-A</span>
+      <img src="diagrams/fig-9-16-a.svg" alt="A motorcycle shown solo versus loaded with a passenger and luggage, with sag measurements compared before and after preload adjustment, and the combined center of mass shown raised and shifted rearward with the added load." class="diagram-img">
+      <p>A motorcycle shown solo versus loaded with a passenger and luggage, with sag measurements compared before and after preload adjustment, and the combined center of mass shown raised and shifted rearward with the added load.</p>
+    </div>
+
+    <h2 class="section">Braking Distance Grows With Combined Mass</h2>
+
+    <p>Chapter 7.5's weight-transfer physics and the friction circle Chapter 6.4 established both still apply exactly the same way with a passenger and load aboard, but the combined mass being decelerated is now genuinely larger, meaning the actual stopping distance from Chapter 9.4's threshold braking technique is longer for the same brake input, even though the friction circle at each tyre hasn't necessarily shrunk the way it does in the rain. Following distance from Chapter 9.9 should be recalculated the same way Chapter 9.10 recalculated it for highway speed, this time against the loaded motorcycle's actual, longer stopping distance rather than the solo figure a rider may be used to.</p>
+
+    <h2 class="section">A Common Misconception, Cleared Up Early</h2>
+
+    <p>It's a common assumption that carrying a passenger or load mainly affects acceleration and top speed, since the extra weight is most noticeable when pulling away or climbing a grade. Suspension sag, cornering lean-angle feel, and braking distance are all measurably affected too, in ways this chapter has traced directly back to specific physics established earlier in this book — treating loaded riding as "the same bike, just a bit slower" undersells how many of this book's earlier calculations actually shift with the added mass.</p>
+
+    <h2 class="section">Where This Leads</h2>
+
+    <p>This part has now covered how an individual rider handles a motorcycle across environments, with others, and loaded. Chapter 9.17 closes this part by placing all of these techniques back into the whole system this book has built, one chapter at a time, since Part I.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Sag should be re-checked and preload adjusted for a passenger or load, restoring the suspension's intended working range rather than leaving it deeper in its travel.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          A passenger adds an independently moving mass to the combined center of gravity, changing countersteering feel even though the required lean-angle relationship stays the same.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Braking distance grows with the loaded motorcycle's larger combined mass, requiring following distance to be recalculated rather than carried over from solo riding.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-5-4.html">← Ch. 5.4</a></td>
+          <td class="note">Established sag measurement and its relationship to suspension travel; this chapter shows re-checking sag as the direct response to a passenger or load.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-8-3.html">← Ch. 8.3</a></td>
+          <td class="note">Established the combined center of mass in the lean-angle relationship; this chapter shows a passenger's own mass and movement altering that combination.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-9-9.html">← Ch. 9.9</a></td>
+          <td class="note">Established following distance sized to stopping distance; this chapter shows that distance needing recalculation for a loaded motorcycle's greater mass.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-9-17.html">→ Ch. 9.17</a></td>
+          <td class="note">Closes Part IX by placing all of this part's riding technique back into the whole system this book has built.</td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a href="chapter-9-15.html">
+      <span class="dir">← Previous Chapter</span>
+      <span class="ttl">9.15 — Group Riding</span>
+    </a>
+    <a href="chapter-9-17.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">9.17 — How to Ride as a Complete System</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">Anatomy of a Motorcycle — Sheet 098 / 150</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

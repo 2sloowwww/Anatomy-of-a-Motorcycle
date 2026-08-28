@@ -1,0 +1,42 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">THREE BRAKE FEELS, THREE DIFFERENT CAUSES</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Column 1: pulling to one side -->
+  <text x="150" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">PULLS TO ONE SIDE</text>
+  <circle cx="110" cy="140" r="30" fill="none" stroke="#22252B" stroke-width="2"/>
+  <circle cx="190" cy="140" r="30" fill="none" stroke="#AE3527" stroke-width="3"/>
+  <text x="190" y="145" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527" font-weight="700">DRAG</text>
+  <path d="M 150 220 L 150 260" stroke="#8C876F" stroke-width="2"/>
+  <path d="M 145 255 L 150 265 L 155 255" fill="none" stroke="#AE3527" stroke-width="2"/>
+  <text x="150" y="280" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">SEIZED CALIPER PISTON</text>
+  <text x="150" y="293" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">— MECHANICAL, NOT FLUID</text>
+
+  <!-- Column 2: pulsating lever -->
+  <text x="400" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">PULSATING LEVER</text>
+  <ellipse cx="400" cy="140" rx="34" ry="30" fill="none" stroke="#AE3527" stroke-width="2.5" stroke-dasharray="8 3"/>
+  <ellipse cx="400" cy="140" rx="30" ry="30" fill="none" stroke="#22252B" stroke-width="1.3" stroke-dasharray="2 2"/>
+  <text x="400" y="200" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">WARPED DISC — UNEVEN</text>
+  <text x="400" y="213" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">THICKNESS, RHYTHMIC PULSE</text>
+
+  <!-- Column 3: hard lever, weak stop -->
+  <text x="650" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">HARD LEVER, WEAK STOP</text>
+  <rect x="610" y="115" width="80" height="18" rx="4" fill="#22252B"/>
+  <rect x="610" y="140" width="80" height="14" rx="3" fill="#6B5A22" opacity="0.7"/>
+  <text x="650" y="152" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#EEE8DA">GLAZED / CONTAMINATED</text>
+  <text x="650" y="200" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">PADS LOSE FRICTION —</text>
+  <text x="650" y="213" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">HYDRAULICS STAY HEALTHY</text>
+
+  <line x1="270" y1="70" x2="270" y2="230" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="530" y1="70" x2="530" y2="230" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">EACH FEEL AT THE LEVER POINTS TO A DIFFERENT PART OF THE SYSTEM</text>
+</svg>

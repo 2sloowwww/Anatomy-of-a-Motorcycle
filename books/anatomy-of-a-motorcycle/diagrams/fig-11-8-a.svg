@@ -1,0 +1,36 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">WHEEL BALANCE VS. WHEEL BEARING</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Left: balance fault, vibration graph -->
+  <text x="220" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">BALANCE FAULT</text>
+  <circle cx="220" cy="160" r="55" fill="none" stroke="#22252B" stroke-width="2"/>
+  <circle cx="255" cy="140" r="10" fill="#AE3527"/>
+  <text x="255" y="120" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">MISSING WEIGHT</text>
+  <line x1="80" y1="260" x2="360" y2="260" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 2"/>
+  <path d="M 80 258 Q 150 255 200 240 Q 260 220 320 170 Q 340 150 360 120" fill="none" stroke="#AE3527" stroke-width="2.2"/>
+  <text x="220" y="280" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">VIBRATION GROWS WITH SPEED</text>
+  <text x="220" y="293" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">(SCALES WITH SPEED SQUARED)</text>
+
+  <!-- Right: bearing fault, rocking test -->
+  <text x="580" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">BEARING FAULT</text>
+  <circle cx="580" cy="160" r="55" fill="none" stroke="#22252B" stroke-width="2"/>
+  <circle cx="580" cy="160" r="7" fill="#22252B"/>
+  <path d="M 540 130 A 60 60 0 0 1 545 200" fill="none" stroke="#AE3527" stroke-width="2.5" stroke-dasharray="5 3"/>
+  <path d="M 545 200 L 538 192 M 545 200 L 552 195" stroke="#AE3527" stroke-width="2"/>
+  <path d="M 540 130 L 533 138 M 540 130 L 548 135" stroke="#AE3527" stroke-width="2"/>
+  <text x="580" y="280" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">WHEEL ROCKS AT AXLE</text>
+  <text x="580" y="293" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">(TESTED WITH WHEEL RAISED)</text>
+
+  <line x1="400" y1="70" x2="400" y2="310" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">CHECK TREAD WEAR FIRST — IT CAN MIMIC EITHER FAULT</text>
+</svg>

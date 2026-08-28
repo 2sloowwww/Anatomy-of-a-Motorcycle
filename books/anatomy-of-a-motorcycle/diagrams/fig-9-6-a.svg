@@ -1,0 +1,42 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="36" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="19" font-weight="700" fill="#22252B">TRAIL BRAKING: RELEASE MATCHED TO LEAN</text>
+  <line x1="50" y1="52" x2="750" y2="52" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- three friction-circle snapshots across the sequence -->
+  <!-- STAGE 1: straight-line braking -->
+  <text x="150" y="85" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#22252B">1. STRAIGHT-LINE BRAKE</text>
+  <circle cx="150" cy="210" r="70" fill="none" stroke="#8C876F" stroke-width="1.6"/>
+  <line x1="150" y1="210" x2="150" y2="150" stroke="#AE3527" stroke-width="3"/>
+  <polygon points="150,150 144,162 156,162" fill="#AE3527"/>
+  <text x="150" y="300" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">FULL BRAKE, NO LEAN</text>
+
+  <!-- STAGE 2: turn-in, partial release -->
+  <text x="400" y="85" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#22252B">2. TURN-IN, EASING OFF</text>
+  <circle cx="400" cy="210" r="70" fill="none" stroke="#8C876F" stroke-width="1.6"/>
+  <line x1="400" y1="210" x2="440" y2="155" stroke="#AE3527" stroke-width="3"/>
+  <polygon points="440,155 427,158 434,169" fill="#AE3527"/>
+  <text x="400" y="300" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">PARTIAL BRAKE + PARTIAL LEAN</text>
+
+  <!-- STAGE 3: full lean, brake released -->
+  <text x="650" y="85" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#22252B">3. FULL LEAN, RELEASED</text>
+  <circle cx="650" cy="210" r="70" fill="none" stroke="#8C876F" stroke-width="1.6"/>
+  <line x1="650" y1="210" x2="700" y2="200" stroke="#33505E" stroke-width="3"/>
+  <polygon points="700,200 688,196 690,208" fill="#33505E"/>
+  <text x="650" y="300" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">CORNERING ONLY, NO BRAKE</text>
+
+  <!-- connecting arrow showing progression -->
+  <line x1="230" y1="210" x2="320" y2="210" stroke="#6B5A22" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="320,210 308,204 308,216" fill="#6B5A22"/>
+  <line x1="480" y1="210" x2="570" y2="210" stroke="#6B5A22" stroke-width="2" stroke-dasharray="5 4"/>
+  <polygon points="570,210 558,204 558,216" fill="#6B5A22"/>
+
+  <line x1="50" y1="440" x2="750" y2="440" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="460" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">FORCE VECTOR ROTATES FROM BRAKING TO CORNERING, STAYING INSIDE THE CIRCLE</text>
+</svg>

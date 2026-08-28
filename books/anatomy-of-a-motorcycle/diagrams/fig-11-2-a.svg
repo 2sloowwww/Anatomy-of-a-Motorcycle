@@ -1,0 +1,65 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">ROUGH RUNNING / POWER LOSS: FOUR CANDIDATE CAUSES</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <rect x="300" y="65" width="200" height="38" rx="6" fill="#22252B"/>
+  <text x="400" y="89" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#EEE8DA">ROUGH RUNNING / POWER LOSS</text>
+
+  <!-- four branches -->
+  <line x1="400" y1="103" x2="120" y2="140" stroke="#8C876F" stroke-width="1.4"/>
+  <line x1="400" y1="103" x2="290" y2="140" stroke="#8C876F" stroke-width="1.4"/>
+  <line x1="400" y1="103" x2="510" y2="140" stroke="#8C876F" stroke-width="1.4"/>
+  <line x1="400" y1="103" x2="680" y2="140" stroke="#8C876F" stroke-width="1.4"/>
+
+  <g font-family="JetBrains Mono, monospace" font-size="10">
+    <rect x="60" y="140" width="120" height="34" rx="5" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.3"/>
+    <text x="120" y="161" text-anchor="middle" fill="#22252B">DIRTY FILTER</text>
+
+    <rect x="230" y="140" width="120" height="34" rx="5" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.3"/>
+    <text x="290" y="161" text-anchor="middle" fill="#22252B">IGNITION TIMING</text>
+
+    <rect x="450" y="140" width="120" height="34" rx="5" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.3"/>
+    <text x="510" y="161" text-anchor="middle" fill="#22252B">DEGRADED FUEL</text>
+
+    <rect x="620" y="140" width="120" height="34" rx="5" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.3"/>
+    <text x="680" y="161" text-anchor="middle" fill="#22252B">VACUUM LEAK</text>
+  </g>
+
+  <!-- tests below each, with one confirmed -->
+  <g font-family="JetBrains Mono, monospace" font-size="9" fill="#33505E">
+    <line x1="120" y1="174" x2="120" y2="200" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+    <text x="120" y="215" text-anchor="middle">VISUAL CHECK</text>
+    <line x1="90" y1="200" x2="150" y2="230" stroke="#AE3527" stroke-width="2"/>
+    <line x1="150" y1="200" x2="90" y2="230" stroke="#AE3527" stroke-width="2"/>
+
+    <line x1="290" y1="174" x2="290" y2="200" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+    <text x="290" y="215" text-anchor="middle">FAULT CODE READ</text>
+    <circle cx="290" cy="245" r="14" fill="none" stroke="#AE3527" stroke-width="2.5"/>
+    <text x="290" y="249" text-anchor="middle" fill="#AE3527" font-weight="700">✓</text>
+
+    <line x1="510" y1="174" x2="510" y2="200" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+    <text x="510" y="215" text-anchor="middle">FUEL AGE CHECK</text>
+    <line x1="480" y1="200" x2="540" y2="230" stroke="#AE3527" stroke-width="2"/>
+    <line x1="540" y1="200" x2="480" y2="230" stroke="#AE3527" stroke-width="2"/>
+
+    <line x1="680" y1="174" x2="680" y2="200" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+    <text x="680" y="215" text-anchor="middle">HOSE INSPECTION</text>
+    <line x1="650" y1="200" x2="710" y2="230" stroke="#AE3527" stroke-width="2"/>
+    <line x1="710" y1="200" x2="650" y2="230" stroke="#AE3527" stroke-width="2"/>
+  </g>
+
+  <line x1="290" y1="259" x2="290" y2="320" stroke="#AE3527" stroke-width="2.2"/>
+  <polygon points="290,320 283,306 297,306" fill="#AE3527"/>
+  <rect x="200" y="325" width="180" height="42" rx="8" fill="#AE3527"/>
+  <text x="290" y="352" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#EEE8DA">CONFIRMED → ADJUST TIMING</text>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">EACH TEST RULES A CAUSE IN OR OUT — REPAIR FOLLOWS ONLY THE CONFIRMED ONE</text>
+</svg>

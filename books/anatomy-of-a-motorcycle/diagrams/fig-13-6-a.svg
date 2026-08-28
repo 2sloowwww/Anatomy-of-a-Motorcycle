@@ -1,0 +1,41 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">"COSMETIC" CHANGES WITH HIDDEN CONSEQUENCES</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- fairing -->
+  <text x="150" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">FAIRING REMOVED</text>
+  <path d="M 100 140 Q 150 110 200 140 L 190 180 Q 150 165 110 180 Z" fill="none" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <path d="M 90 200 L 210 200" stroke="#AE3527" stroke-width="2.5"/>
+  <path d="M 200 195 L 210 200 L 200 205" fill="none" stroke="#AE3527" stroke-width="2"/>
+  <text x="150" y="225" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">MORE DRAG</text>
+  <text x="150" y="238" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">MORE WIND FATIGUE</text>
+
+  <!-- lightweight panel -->
+  <text x="400" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">LIGHTWEIGHT PANEL</text>
+  <rect x="350" y="120" width="100" height="60" rx="6" fill="#22252B"/>
+  <text x="400" y="155" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#EEE8DA">CARBON</text>
+  <path d="M 370 195 L 385 210 M 385 195 L 370 210" stroke="#AE3527" stroke-width="2.5"/>
+  <text x="400" y="225" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">LESS IMPACT</text>
+  <text x="400" y="238" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">RESISTANCE</text>
+
+  <!-- ducting panel -->
+  <text x="650" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">STYLED PANEL</text>
+  <rect x="600" y="120" width="100" height="60" rx="6" fill="#8C876F"/>
+  <line x1="615" y1="140" x2="685" y2="140" stroke="#22252B" stroke-width="1.5"/>
+  <line x1="615" y1="155" x2="685" y2="155" stroke="#22252B" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="650" y="200" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">BLOCKS COOLING</text>
+  <text x="650" y="213" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">DUCT AIRFLOW</text>
+
+  <line x1="270" y1="70" x2="270" y2="250" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="530" y1="70" x2="530" y2="250" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">"PURELY COSMETIC" RARELY MEANS NO PHYSICAL CONSEQUENCE AT ALL</text>
+</svg>

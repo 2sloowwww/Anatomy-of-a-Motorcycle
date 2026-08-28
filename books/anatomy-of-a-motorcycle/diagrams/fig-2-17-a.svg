@@ -1,0 +1,64 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', monospace">
+<defs>
+  <marker id="arrSig17" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#AE3527"/>
+  </marker>
+  <marker id="arrInk17" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#22252B"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+<!-- Title -->
+<text x="400" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B">PRIMARY IMBALANCE vs BALANCE SHAFT</text>
+<text x="400" y="59" text-anchor="middle" font-size="13" fill="#5A5748">AN EQUAL, OPPOSITE FORCE CANCELS THE SHAKE AT THE MOUNTS</text>
+
+<!-- Cylinder / piston block -->
+<rect x="330" y="72" width="140" height="150" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+<rect x="360" y="105" width="80" height="40" fill="#EEE8DA" stroke="#22252B" stroke-width="2.5"/>
+<text x="400" y="130" text-anchor="middle" font-size="11.5" font-weight="700" fill="#22252B">PISTON</text>
+
+<!-- Oscillating primary force arrow -->
+<line x1="400" y1="90" x2="400" y2="205" stroke="#AE3527" stroke-width="4" marker-start="url(#arrSig17)" marker-end="url(#arrSig17)"/>
+<text x="470" y="82" font-size="13" font-weight="700" fill="#AE3527">PRIMARY IMBALANCE</text>
+<text x="470" y="99" font-size="12" fill="#5A5748">force reverses every stroke</text>
+
+<!-- Crankshaft -->
+<circle cx="400" cy="272" r="17" fill="none" stroke="#22252B" stroke-width="2.5"/>
+<circle cx="411" cy="264" r="6" fill="#22252B"/>
+<path d="M 378 258 A 26 26 0 0 1 420 250" fill="none" stroke="#22252B" stroke-width="2" marker-end="url(#arrInk17)"/>
+<text x="330" y="277" text-anchor="end" font-size="13" font-weight="700" fill="#22252B">CRANKSHAFT</text>
+
+<!-- Gear link -->
+<line x1="400" y1="289" x2="400" y2="333" stroke="#33505E" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="470" y="315" font-size="11.5" fill="#6B5A22">geared 1:1,</text>
+<text x="470" y="330" font-size="11.5" fill="#6B5A22">opposite direction</text>
+
+<!-- Balance shaft -->
+<circle cx="400" cy="350" r="17" fill="none" stroke="#22252B" stroke-width="2.5"/>
+<circle cx="389" cy="358" r="6" fill="#22252B"/>
+<path d="M 422 336 A 26 26 0 0 0 380 344" fill="none" stroke="#22252B" stroke-width="2" marker-end="url(#arrInk17)"/>
+<text x="330" y="355" text-anchor="end" font-size="13" font-weight="700" fill="#22252B">BALANCE SHAFT</text>
+
+<!-- Opposing force arrow -->
+<line x1="400" y1="367" x2="400" y2="410" stroke="#AE3527" stroke-width="4" marker-end="url(#arrSig17)"/>
+<text x="470" y="392" font-size="13" font-weight="700" fill="#AE3527">EQUAL &amp; OPPOSITE</text>
+<text x="470" y="409" font-size="12" fill="#5A5748">cancels piston's force</text>
+
+<!-- Engine housing sides, connecting block down to the mounts -->
+<line x1="345" y1="222" x2="345" y2="430" stroke="#8C876F" stroke-width="1.3" stroke-dasharray="5 4"/>
+<line x1="455" y1="222" x2="455" y2="430" stroke="#8C876F" stroke-width="1.3" stroke-dasharray="5 4"/>
+
+<!-- Frame rail -->
+<line x1="220" y1="455" x2="580" y2="455" stroke="#22252B" stroke-width="4"/>
+<polygon points="330,430 360,430 345,455" fill="none" stroke="#22252B" stroke-width="2"/>
+<polygon points="440,430 470,430 455,455" fill="none" stroke="#22252B" stroke-width="2"/>
+<text x="345" y="424" text-anchor="middle" font-size="10" fill="#5A5748">MOUNT</text>
+<text x="455" y="424" text-anchor="middle" font-size="10" fill="#5A5748">MOUNT</text>
+<text x="400" y="480" text-anchor="middle" font-size="13" font-weight="700" fill="#6B5A22">NET FORCE AT MOUNT &#8776; 0</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowSignal41" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#AE3527"/>
+    </marker>
+    <marker id="arrowBrass41" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#6B5A22"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="36" text-anchor="middle" font-weight="700" font-size="21" fill="#22252B" letter-spacing="0.5">THE CHASSIS'S THREE JOBS</text>
+  <text x="400" y="57" text-anchor="middle" font-size="13" font-style="italic" fill="#5A5748">Structure, geometry, and mass distribution — one physical frame, three simultaneous roles</text>
+
+  <!-- ground -->
+  <line x1="70" y1="400" x2="730" y2="400" stroke="#22252B" stroke-width="2"/>
+
+  <!-- wheels -->
+  <circle cx="250" cy="400" r="48" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="250" cy="400" r="5" fill="#22252B"/>
+  <circle cx="590" cy="400" r="48" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="590" cy="400" r="5" fill="#22252B"/>
+
+  <!-- structural load path highlight (drawn first, underneath frame) -->
+  <path d="M496,207 L350,335 L250,400" fill="none" stroke="#AE3527" stroke-width="6" stroke-linejoin="round" opacity="0.85" marker-start="url(#arrowSignal41)" marker-end="url(#arrowSignal41)"/>
+  <path d="M496,207 L590,400" fill="none" stroke="#AE3527" stroke-width="6" opacity="0.85" marker-end="url(#arrowSignal41)"/>
+
+  <!-- frame -->
+  <line x1="496" y1="207" x2="350" y2="335" stroke="#22252B" stroke-width="2.5" opacity="0"/>
+  <line x1="496" y1="207" x2="590" y2="400" stroke="#22252B" stroke-width="0" opacity="0"/>
+  <line x1="350" y1="335" x2="250" y2="400" stroke="#22252B" stroke-width="0" opacity="0"/>
+  <circle cx="350" cy="335" r="6" fill="#22252B"/>
+
+  <!-- engine block -->
+  <rect x="360" y="285" width="95" height="60" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+  <text x="407" y="320" text-anchor="middle" font-size="11" font-weight="700" fill="#5A5748">ENGINE</text>
+
+  <!-- fuel tank -->
+  <path d="M428,203 Q468,183 503,203 L503,224 Q465,214 428,224 Z" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+  <!-- seat -->
+  <path d="M328,300 L408,289 L408,304 L328,315 Z" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+  <!-- handlebar -->
+  <line x1="496" y1="207" x2="470" y2="179" stroke="#22252B" stroke-width="3.5"/>
+
+  <!-- steering head geometry indicator -->
+  <line x1="496" y1="207" x2="496" y2="150" stroke="#33505E" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <path d="M496,180 A30,30 0 0 1 517,197" fill="none" stroke="#33505E" stroke-width="1.6"/>
+  <text x="533" y="165" font-size="13" font-weight="700" fill="#33505E">STEERING HEAD</text>
+  <text x="533" y="181" font-size="13" font-weight="700" fill="#33505E">GEOMETRY</text>
+  <line x1="530" y1="172" x2="500" y2="192" stroke="#33505E" stroke-width="1.4"/>
+
+  <!-- structural load path label -->
+  <text x="120" y="150" font-size="13" font-weight="700" fill="#AE3527">STRUCTURAL</text>
+  <text x="120" y="166" font-size="13" font-weight="700" fill="#AE3527">LOAD PATH</text>
+  <line x1="150" y1="172" x2="270" y2="255" stroke="#AE3527" stroke-width="1.4"/>
+
+  <!-- wheelbase / engine position dimension -->
+  <line x1="250" y1="452" x2="590" y2="452" stroke="#6B5A22" stroke-width="1.6" marker-start="url(#arrowBrass41)" marker-end="url(#arrowBrass41)"/>
+  <line x1="250" y1="402" x2="250" y2="458" stroke="#6B5A22" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="590" y1="402" x2="590" y2="458" stroke="#6B5A22" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="420" y="475" text-anchor="middle" font-size="14" font-weight="700" fill="#6B5A22">WHEELBASE — ENGINE POSITIONED WITHIN IT</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 4.1-A</text>
+</svg>

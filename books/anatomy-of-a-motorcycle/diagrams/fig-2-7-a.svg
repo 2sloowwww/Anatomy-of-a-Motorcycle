@@ -1,0 +1,54 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', monospace">
+<rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+<!-- Title -->
+<text x="400" y="40" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B">VALVE LIFT vs CRANKSHAFT ANGLE</text>
+<text x="400" y="61" text-anchor="middle" font-size="13" fill="#5A5748">INTAKE AND EXHAUST LOBES OVERLAP BRIEFLY AROUND TDC</text>
+
+<defs>
+  <marker id="arrBp7" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#33505E"/>
+  </marker>
+</defs>
+
+<!-- Axes -->
+<line x1="80" y1="400" x2="770" y2="400" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrBp7)"/>
+<line x1="80" y1="400" x2="80" y2="100" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrBp7)"/>
+<text x="765" y="404" text-anchor="end" font-size="12.5" font-weight="600" fill="#5A5748">CRANK DEGREES</text>
+<text x="30" y="250" text-anchor="middle" font-size="12.5" font-weight="600" fill="#5A5748" transform="rotate(-90 30 250)">VALVE LIFT</text>
+
+<!-- TDC reference line -->
+<line x1="425" y1="400" x2="425" y2="115" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="3 4"/>
+<text x="425" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">TDC (0&#176;)</text>
+
+<!-- Overlap highlight: window where BOTH curves are above baseline -->
+<rect x="380" y="115" width="90" height="285" fill="#AE3527" fill-opacity="0.12"/>
+<line x1="380" y1="400" x2="380" y2="115" stroke="#AE3527" stroke-width="1.3" stroke-dasharray="3 3"/>
+<line x1="470" y1="400" x2="470" y2="115" stroke="#AE3527" stroke-width="1.3" stroke-dasharray="3 3"/>
+<text x="425" y="140" text-anchor="middle" font-size="13" font-weight="700" fill="#AE3527">OVERLAP</text>
+
+<!-- Exhaust lobe: high on the left, closes just AFTER TDC (zero at x=470) -->
+<path d="M 120 400 C 170 400, 200 150, 270 150 C 350 150, 430 200, 470 400"
+      fill="none" stroke="#33505E" stroke-width="3"/>
+<text x="200" y="185" font-size="14" font-weight="700" fill="#33505E">EXHAUST</text>
+
+<!-- Intake lobe: opens just BEFORE TDC (zero at x=380), rises to the right -->
+<path d="M 380 400 C 420 400, 440 145, 560 145 C 650 145, 690 300, 730 400"
+      fill="none" stroke="#6B5A22" stroke-width="3"/>
+<text x="565" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#6B5A22">INTAKE</text>
+
+<!-- Baseline zero -->
+<text x="70" y="404" text-anchor="end" font-size="12" fill="#8C876F">0</text>
+<text x="70" y="150" text-anchor="end" font-size="12" fill="#8C876F">MAX LIFT</text>
+
+<!-- Legend -->
+<line x1="560" y1="440" x2="590" y2="440" stroke="#33505E" stroke-width="3"/>
+<text x="598" y="444" font-size="12" fill="#5A5748">EXHAUST LOBE</text>
+<line x1="560" y1="462" x2="590" y2="462" stroke="#6B5A22" stroke-width="3"/>
+<text x="598" y="466" font-size="12" fill="#5A5748">INTAKE LOBE</text>
+</svg>

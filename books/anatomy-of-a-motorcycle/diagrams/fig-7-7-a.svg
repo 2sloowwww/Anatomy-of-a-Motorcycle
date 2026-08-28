@@ -1,0 +1,44 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">ABS: CYCLING PRESSURE TO PREVENT LOCKUP</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- axes -->
+  <line x1="100" y1="380" x2="100" y2="100" stroke="#33505E" stroke-width="1.5"/>
+  <line x1="100" y1="380" x2="700" y2="380" stroke="#33505E" stroke-width="1.5"/>
+  <text x="400" y="405" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">TIME →</text>
+  <text x="70" y="240" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748" transform="rotate(-90 70 240)">WHEEL SPEED</text>
+
+  <!-- road speed reference (declining smoothly) -->
+  <path d="M 100 130 Q 400 200 700 300" fill="none" stroke="#8C876F" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="560" y="285" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">ROAD SPEED</text>
+
+  <!-- wheel speed sawtooth staying just above lock threshold -->
+  <path d="M 100 135 L 160 175 L 175 155 L 230 210 L 245 190 L 300 235 L 315 218 L 370 255 L 385 240 L 440 275 L 455 260 L 510 290 L 525 278 L 580 305 L 595 292 L 650 315" fill="none" stroke="#AE3527" stroke-width="2.5"/>
+  <text x="230" y="130" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#AE3527">WHEEL SPEED (ABS-MODULATED)</text>
+
+  <!-- lock threshold zone -->
+  <path d="M 100 145 Q 400 215 700 320" fill="none" stroke="#33505E" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <text x="480" y="345" font-family="JetBrains Mono, monospace" font-size="11" fill="#33505E">LOCK THRESHOLD</text>
+
+  <!-- pressure cycle indicator strip below -->
+  <text x="100" y="440" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#5A5748">BRAKE PRESSURE:</text>
+  <g stroke="#22252B" stroke-width="3">
+    <line x1="230" y1="440" x2="245" y2="440"/>
+    <line x1="300" y1="440" x2="315" y2="440"/>
+    <line x1="370" y1="440" x2="385" y2="440"/>
+    <line x1="440" y1="440" x2="455" y2="440"/>
+    <line x1="510" y1="440" x2="525" y2="440"/>
+    <line x1="580" y1="440" x2="595" y2="440"/>
+  </g>
+  <text x="650" y="444" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">RELEASE / REAPPLY, MANY TIMES/SEC</text>
+
+  <line x1="60" y1="463" x2="740" y2="463" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="481" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">ABS HOLDS BRAKING RIGHT AT THE EDGE OF THE FRICTION CIRCLE, NOT PAST IT</text>
+</svg>

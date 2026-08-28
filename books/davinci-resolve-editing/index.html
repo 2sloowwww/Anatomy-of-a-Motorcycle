@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>The Resolve Field Manual</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<div class="page">
+
+  <div class="hero book-cover">
+    <a class="library-back" href="/index.html">&larr; Knowbase</a>
+    <div class="cover-art">
+      <img src="cover.svg" alt="The Resolve Field Manual — book cover, showing a timeline, node graph, and color wheels in blueprint line art. By Jitendra Kulkarni.">
+    </div>
+    <div class="hero-text">
+      <div class="eyebrow">A Field Manual For Editors Cutting In DaVinci Resolve</div>
+      <h1 class="visually-hidden">The Resolve Field Manual</h1>
+      <p class="sub">DaVinci Resolve only makes sense once you stop treating it as one program and start seeing it as seven connected workstations — media, cut, edit, Fusion, color, Fairlight, and deliver. This is the book built to teach it that way.</p>
+      <div class="byline">Written by Jitendra Kulkarni</div>
+      <div class="hero-meta">
+        <div>
+          <span class="fk">Structure</span>
+          <span class="fv">16 Parts</span>
+        </div>
+        <div>
+          <span class="fk">Total Sheets</span>
+          <span class="fv">95 Chapters</span>
+        </div>
+        <div>
+          <span class="fk">Status</span>
+          <span class="fv">33 of 95 — In Progress</span>
+        </div>
+        <div>
+          <span class="fk">Current Volume</span>
+          <span class="fv">I — The Pages</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="continue-banner" id="continueBanner">
+    <div class="cb-text">
+      <span class="cb-label">Continue Reading</span>
+      <span class="cb-title" id="continueTitle"></span>
+    </div>
+    <a class="cb-btn" id="continueLink" href="#">Resume &rarr;</a>
+  </div>
+
+  <div class="bookmarks-panel" id="bookmarksPanel">
+    <h3>Your Bookmarks</h3>
+    <ul id="bookmarksList"></ul>
+  </div>
+
+  <div class="toc-part" id="part-i">
+    <div class="toc-part-head">
+      <h2>Part I — Understanding Resolve</h2>
+      <span class="count">6 Chapters · Complete</span>
+    </div>
+
+    <a class="toc-row is-live" href="chapter-1-1.html"><span class="sheet">Sheet 001</span><span class="code">1.1</span><span class="title">What Nonlinear Editing Actually Is</span><span class="tag">Foundational</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-1-2.html"><span class="sheet">Sheet 002</span><span class="code">1.2</span><span class="title">Why Resolve Is Built as Seven Pages, Not One</span><span class="tag">Foundational</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-1-3.html"><span class="sheet">Sheet 003</span><span class="code">1.3</span><span class="title">The Node-Based Idea That Runs Through Everything</span><span class="tag">Conceptual</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-1-4.html"><span class="sheet">Sheet 004</span><span class="code">1.4</span><span class="title">Color Management: The Concept Before the Tool</span><span class="tag">Conceptual</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-1-5.html"><span class="sheet">Sheet 005</span><span class="code">1.5</span><span class="title">Reading the Interface Without Getting Lost</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-1-6.html"><span class="sheet">Sheet 006</span><span class="code">1.6</span><span class="title">Setting Up Resolve for the First Time</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+  </div>
+
+  <div class="toc-part" id="part-ii">
+    <div class="toc-part-head">
+      <h2>Part II — Project &amp; Media Management</h2>
+      <span class="count">8 Chapters · Complete</span>
+    </div>
+
+    <a class="toc-row is-live" href="chapter-2-1.html"><span class="sheet">Sheet 007</span><span class="code">2.1</span><span class="title">What a Project Actually Is</span><span class="tag">Foundational</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-2-2.html"><span class="sheet">Sheet 008</span><span class="code">2.2</span><span class="title">The Media Pool: Bins, Not Just Folders</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-2-3.html"><span class="sheet">Sheet 009</span><span class="code">2.3</span><span class="title">Importing and Organizing Footage</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-2-4.html"><span class="sheet">Sheet 010</span><span class="code">2.4</span><span class="title">Metadata, Clip Attributes, and Smart Bins</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-2-5.html"><span class="sheet">Sheet 011</span><span class="code">2.5</span><span class="title">Proxies and Optimized Media</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-2-6.html"><span class="sheet">Sheet 012</span><span class="code">2.6</span><span class="title">Camera Formats and Codecs, Explained for Editors</span><span class="tag">Technical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-2-7.html"><span class="sheet">Sheet 013</span><span class="code">2.7</span><span class="title">Project Settings That Actually Matter</span><span class="tag">Technical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-2-8.html"><span class="sheet">Sheet 014</span><span class="code">2.8</span><span class="title">Backing Up and Archiving a Project</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+  </div>
+
+  <div class="toc-part" id="part-iii">
+    <div class="toc-part-head">
+      <h2>Part III — The Cut Page</h2>
+      <span class="count">5 Chapters · Complete</span>
+    </div>
+
+    <a class="toc-row is-live" href="chapter-3-1.html"><span class="sheet">Sheet 015</span><span class="code">3.1</span><span class="title">Why the Cut Page Exists</span><span class="tag">Foundational</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-3-2.html"><span class="sheet">Sheet 016</span><span class="code">3.2</span><span class="title">Source Tape and Finding Footage Fast</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-3-3.html"><span class="sheet">Sheet 017</span><span class="code">3.3</span><span class="title">The Sync Bin</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-3-4.html"><span class="sheet">Sheet 018</span><span class="code">3.4</span><span class="title">Fast Trims on the Cut Page</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-3-5.html"><span class="sheet">Sheet 019</span><span class="code">3.5</span><span class="title">When to Use Cut vs. Edit</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+  </div>
+
+  <div class="toc-part" id="part-iv">
+    <div class="toc-part-head">
+      <h2>Part IV — The Edit Page: Timeline Fundamentals</h2>
+      <span class="count">7 Chapters · Complete</span>
+    </div>
+
+    <a class="toc-row is-live" href="chapter-4-1.html"><span class="sheet">Sheet 020</span><span class="code">4.1</span><span class="title">Anatomy of the Timeline</span><span class="tag">Foundational</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-4-2.html"><span class="sheet">Sheet 021</span><span class="code">4.2</span><span class="title">Tracks, Clips, and Stacking Order</span><span class="tag">Foundational</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-4-3.html"><span class="sheet">Sheet 022</span><span class="code">4.3</span><span class="title">The Toolbar: Selection, Trim, Blade, and More</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-4-4.html"><span class="sheet">Sheet 023</span><span class="code">4.4</span><span class="title">Basic Editing: Insert, Overwrite, Append, Replace</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-4-5.html"><span class="sheet">Sheet 024</span><span class="code">4.5</span><span class="title">Markers and Timeline Navigation</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-4-6.html"><span class="sheet">Sheet 025</span><span class="code">4.6</span><span class="title">Linking, Grouping, and Compound Clips</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-4-7.html"><span class="sheet">Sheet 026</span><span class="code">4.7</span><span class="title">Nested Timelines</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+  </div>
+
+  <div class="toc-part" id="part-v">
+    <div class="toc-part-head">
+      <h2>Part V — Trimming &amp; Precision Editing</h2>
+      <span class="count">7 Chapters · Complete</span>
+    </div>
+
+    <a class="toc-row is-live" href="chapter-5-1.html"><span class="sheet">Sheet 027</span><span class="code">5.1</span><span class="title">Why Trimming Is the Real Skill of Editing</span><span class="tag">Foundational</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-5-2.html"><span class="sheet">Sheet 028</span><span class="code">5.2</span><span class="title">JKL and the Logic of Playback Control</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-5-3.html"><span class="sheet">Sheet 029</span><span class="code">5.3</span><span class="title">Ripple, Roll, Slip, and Slide</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-5-4.html"><span class="sheet">Sheet 030</span><span class="code">5.4</span><span class="title">Match Frame and Finding Context</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-5-5.html"><span class="sheet">Sheet 031</span><span class="code">5.5</span><span class="title">Three-Point and Four-Point Editing</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-5-6.html"><span class="sheet">Sheet 032</span><span class="code">5.6</span><span class="title">Dynamic Trim Mode</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+    <a class="toc-row is-live" href="chapter-5-7.html"><span class="sheet">Sheet 033</span><span class="code">5.7</span><span class="title">Building Speed: An Editor's Keyboard Habits</span><span class="tag">Practical</span><span class="status live">Published</span></a>
+  </div>
+
+  <div class="toc-part" id="part-vi">
+    <div class="toc-part-head">
+      <h2>Part VI — Multicam &amp; Group Editing</h2>
+      <span class="count">5 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 034</span><span class="code">6.1</span><span class="title">What Multicam Editing Solves</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 035</span><span class="code">6.2</span><span class="title">Syncing Angles: Timecode, Audio, and Waveform</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 036</span><span class="code">6.3</span><span class="title">Cutting a Multicam Timeline</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 037</span><span class="code">6.4</span><span class="title">Multicam Audio Strategy</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 038</span><span class="code">6.5</span><span class="title">Group Clips as an Alternative to Multicam</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="toc-part" id="part-vii">
+    <div class="toc-part-head">
+      <h2>Part VII — Transitions, Titles &amp; Motion Graphics</h2>
+      <span class="count">5 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 039</span><span class="code">7.1</span><span class="title">Transitions: What They're Actually Doing</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 040</span><span class="code">7.2</span><span class="title">Cross Dissolves, Cuts, and When Not to Use Either</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 041</span><span class="code">7.3</span><span class="title">Titles: Text+, Templates, and Fusion Titles</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 042</span><span class="code">7.4</span><span class="title">Generators and Fusion Effects on the Edit Page</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 043</span><span class="code">7.5</span><span class="title">Keyframing Basic Motion</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="toc-part" id="part-viii">
+    <div class="toc-part-head">
+      <h2>Part VIII — Audio Editing &amp; Fairlight</h2>
+      <span class="count">8 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 044</span><span class="code">8.1</span><span class="title">Audio Basics on the Edit Page</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 045</span><span class="code">8.2</span><span class="title">Why Fairlight Is a Full DAW, Not a Feature</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 046</span><span class="code">8.3</span><span class="title">The Fairlight Mixer: Busses, Tracks, and Routing</span><span class="tag">Technical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 047</span><span class="code">8.4</span><span class="title">Levels, Loudness, and Broadcast Standards</span><span class="tag">Technical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 048</span><span class="code">8.5</span><span class="title">Cleaning Dialogue: Noise Reduction and EQ</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 049</span><span class="code">8.6</span><span class="title">ADR, Foley, and Sound Replacement Workflow</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 050</span><span class="code">8.7</span><span class="title">Music and Sound Design Layering</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 051</span><span class="code">8.8</span><span class="title">Delivering a Final Mix</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="toc-part" id="part-ix">
+    <div class="toc-part-head">
+      <h2>Part IX — The Color Page</h2>
+      <span class="count">8 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 052</span><span class="code">9.1</span><span class="title">What Color Grading Actually Does for an Edit</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 053</span><span class="code">9.2</span><span class="title">Scopes: Reading Waveform, Vectorscope, and Histogram</span><span class="tag">Technical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 054</span><span class="code">9.3</span><span class="title">The Node Graph: Building a Grade in Layers</span><span class="tag">Conceptual</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 055</span><span class="code">9.4</span><span class="title">Primary Correction: Lift, Gamma, Gain</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 056</span><span class="code">9.5</span><span class="title">Secondary Correction: Qualifiers and Power Windows</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 057</span><span class="code">9.6</span><span class="title">Color Matching Across Cameras and Shots</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 058</span><span class="code">9.7</span><span class="title">LUTs, Color Space, and Delivering the Right Look</span><span class="tag">Technical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 059</span><span class="code">9.8</span><span class="title">A Basic Grading Workflow, Start to Finish</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="toc-part" id="part-x">
+    <div class="toc-part-head">
+      <h2>Part X — The Fusion Page</h2>
+      <span class="count">6 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 060</span><span class="code">10.1</span><span class="title">What Compositing Adds That Editing Can't</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 061</span><span class="code">10.2</span><span class="title">Nodes vs. Layers: Thinking in Fusion</span><span class="tag">Conceptual</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 062</span><span class="code">10.3</span><span class="title">Keying and Green Screen Basics</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 063</span><span class="code">10.4</span><span class="title">Tracking and Stabilization</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 064</span><span class="code">10.5</span><span class="title">Building a Simple Title or Graphic in Fusion</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 065</span><span class="code">10.6</span><span class="title">When to Use Fusion vs. When to Use Edit Page Tools</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="toc-part" id="part-xi">
+    <div class="toc-part-head">
+      <h2>Part XI — The Deliver Page</h2>
+      <span class="count">6 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 066</span><span class="code">11.1</span><span class="title">What "Delivering" a Project Actually Means</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 067</span><span class="code">11.2</span><span class="title">Render Settings: Codecs, Containers, and Why They Matter</span><span class="tag">Technical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 068</span><span class="code">11.3</span><span class="title">Presets for Common Destinations</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 069</span><span class="code">11.4</span><span class="title">Render-in-Place and Individual Clip Delivery</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 070</span><span class="code">11.5</span><span class="title">Delivering for Broadcast, Streaming, and Social</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 071</span><span class="code">11.6</span><span class="title">Handing Off a Project to Someone Else</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="toc-part" id="part-xii">
+    <div class="toc-part-head">
+      <h2>Part XII — Collaboration &amp; Studio Workflow</h2>
+      <span class="count">5 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 072</span><span class="code">12.1</span><span class="title">Why Resolve Was Built for Teams, Not Just Editors</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 073</span><span class="code">12.2</span><span class="title">Collaboration Mode and the Shared Database</span><span class="tag">Technical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 074</span><span class="code">12.3</span><span class="title">Bins, Locking, and Avoiding Conflicts</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 075</span><span class="code">12.4</span><span class="title">Remote Grading and Review Workflows</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 076</span><span class="code">12.5</span><span class="title">Working Across Editorial, Color, and Sound Teams</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="toc-part" id="part-xiii">
+    <div class="toc-part-head">
+      <h2>Part XIII — Performance &amp; System Optimization</h2>
+      <span class="count">5 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 077</span><span class="code">13.1</span><span class="title">Why Resolve Performance Is a System Problem</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 078</span><span class="code">13.2</span><span class="title">GPU, Storage, and the Real Bottlenecks</span><span class="tag">Technical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 079</span><span class="code">13.3</span><span class="title">Cache, Proxies, and Optimized Media Revisited</span><span class="tag">Technical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 080</span><span class="code">13.4</span><span class="title">Timeline and Project Settings for Speed</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 081</span><span class="code">13.5</span><span class="title">Troubleshooting Playback Stutters</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="toc-part" id="part-xiv">
+    <div class="toc-part-head">
+      <h2>Part XIV — Genre &amp; Format Workflows</h2>
+      <span class="count">5 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 082</span><span class="code">14.1</span><span class="title">Narrative and Scripted Editing Workflow</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 083</span><span class="code">14.2</span><span class="title">Documentary Editing at Scale</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 084</span><span class="code">14.3</span><span class="title">Social Media and Vertical-Format Editing</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 085</span><span class="code">14.4</span><span class="title">Broadcast and Long-Form Delivery Workflow</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 086</span><span class="code">14.5</span><span class="title">Music Video and Rhythm-Driven Editing</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="toc-part" id="part-xv">
+    <div class="toc-part-head">
+      <h2>Part XV — Troubleshooting &amp; Diagnosis</h2>
+      <span class="count">5 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 087</span><span class="code">15.1</span><span class="title">The Diagnostic Method for Editing Software</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 088</span><span class="code">15.2</span><span class="title">Sync Drift and Audio Problems</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 089</span><span class="code">15.3</span><span class="title">Conform and Relink Issues</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 090</span><span class="code">15.4</span><span class="title">Crashes, Corruption, and Recovery</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 091</span><span class="code">15.5</span><span class="title">Common Beginner Mistakes and How to Avoid Them</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="toc-part" id="part-xvi">
+    <div class="toc-part-head">
+      <h2>Part XVI — Becoming a Faster, Better Editor</h2>
+      <span class="count">4 Chapters · Planned</span>
+    </div>
+
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 092</span><span class="code">16.1</span><span class="title">Every Workflow Choice Is a Trade-Off</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 093</span><span class="code">16.2</span><span class="title">Building Muscle Memory and Custom Keyboard Layouts</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 094</span><span class="code">16.3</span><span class="title">Reading Someone Else's Timeline</span><span class="tag">Practical</span><span class="status upcoming">Upcoming</span></span>
+    <span class="toc-row is-upcoming"><span class="sheet">Sheet 095</span><span class="code">16.4</span><span class="title">Resolve as Part of a Complete Post-Production System</span><span class="tag">Foundational</span><span class="status upcoming">Upcoming</span></span>
+  </div>
+
+  <div class="sheet-footer">
+    <span>The Resolve Field Manual</span>
+    <span>95 Sheets — 33 Published · In Progress</span>
+  </div>
+
+</div>
+</body>
+</html>

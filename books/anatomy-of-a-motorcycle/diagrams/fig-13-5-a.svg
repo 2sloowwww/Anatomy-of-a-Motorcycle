@@ -1,0 +1,39 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">EACH COMPONENT HAS ITS OWN MARGIN</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- bar chart of margins -->
+  <line x1="100" y1="360" x2="700" y2="360" stroke="#22252B" stroke-width="2"/>
+
+  <rect x="140" y="200" width="70" height="160" fill="#8C876F"/>
+  <text x="175" y="380" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">PISTON</text>
+
+  <rect x="250" y="150" width="70" height="210" fill="#8C876F"/>
+  <text x="285" y="380" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">COOLING</text>
+
+  <rect x="360" y="260" width="70" height="100" fill="#AE3527"/>
+  <text x="395" y="380" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#AE3527" font-weight="700">CON-ROD</text>
+
+  <rect x="470" y="180" width="70" height="180" fill="#8C876F"/>
+  <text x="505" y="380" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">CRANKSHAFT</text>
+
+  <rect x="580" y="230" width="70" height="130" fill="#8C876F"/>
+  <text x="615" y="380" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">HEAD GASKET</text>
+
+  <!-- stress line raised across all -->
+  <line x1="120" y1="255" x2="680" y2="255" stroke="#22252B" stroke-width="2" stroke-dasharray="6 3"/>
+  <text x="400" y="245" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#22252B">RAISED CYLINDER PRESSURE</text>
+
+  <circle cx="395" cy="260" r="14" fill="none" stroke="#AE3527" stroke-width="2.5"/>
+  <text x="395" y="150" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#AE3527">LEAST MARGIN — FAILS FIRST</text>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">THE WEAKEST LINK IS RARELY THE PART YOU ACTUALLY MODIFIED</text>
+</svg>

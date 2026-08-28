@@ -1,0 +1,44 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">CLAMPING FORCE VS. APPLIED TORQUE</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- axes -->
+  <line x1="100" y1="380" x2="720" y2="380" stroke="#22252B" stroke-width="2"/>
+  <line x1="100" y1="380" x2="100" y2="90" stroke="#22252B" stroke-width="2"/>
+  <text x="410" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">APPLIED TORQUE →</text>
+  <text x="70" y="230" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748" transform="rotate(-90 70 230)">CLAMPING FORCE →</text>
+
+  <!-- zones -->
+  <rect x="100" y="90" width="150" height="290" fill="#8C876F" opacity="0.25"/>
+  <rect x="250" y="90" width="120" height="290" fill="#33505E" opacity="0.2"/>
+  <rect x="370" y="90" width="350" height="290" fill="#AE3527" opacity="0.18"/>
+
+  <text x="175" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#5A5748">UNDER-</text>
+  <text x="175" y="122" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#5A5748">TIGHTENED</text>
+  <text x="310" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#33505E">CORRECT</text>
+  <text x="310" y="122" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#33505E">(SPEC)</text>
+  <text x="545" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#AE3527">OVER-</text>
+  <text x="545" y="122" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#AE3527">TIGHTENED</text>
+
+  <!-- curve: linear rise then plateau/drop past yield -->
+  <path d="M 100 380 L 370 150 Q 400 130 430 150 Q 480 190 550 260 Q 620 320 720 340" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="310" cy="160" r="6" fill="#33505E"/>
+  <text x="310" y="145" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#33505E">SPEC CLICK</text>
+
+  <circle cx="430" cy="150" r="6" fill="#AE3527"/>
+  <text x="460" y="140" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">YIELD POINT —</text>
+  <text x="460" y="152" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">PERMANENT STRETCH</text>
+
+  <text x="175" y="360" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">VIBRATES LOOSE</text>
+  <text x="545" y="360" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">WEAKENED / STRIPPED</text>
+
+  <line x1="50" y1="440" x2="750" y2="440" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="460" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A TORQUE WRENCH TARGETS THE ONE CORRECT ZONE, NOT "AS TIGHT AS POSSIBLE"</text>
+</svg>

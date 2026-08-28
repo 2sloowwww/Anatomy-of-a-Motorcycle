@@ -1,0 +1,44 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">MODERATE POINT ON THREE TRADE CURVES AT ONCE</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- three spectrums -->
+  <text x="150" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">SUSPENSION TRAVEL</text>
+  <line x1="70" y1="115" x2="230" y2="115" stroke="#33505E" stroke-width="2"/>
+  <text x="70" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">SHORT</text>
+  <text x="230" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">LONG</text>
+  <circle cx="170" cy="115" r="8" fill="#AE3527"/>
+
+  <text x="400" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">TYRE COMPOUND</text>
+  <line x1="320" y1="115" x2="480" y2="115" stroke="#33505E" stroke-width="2"/>
+  <text x="320" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">ROAD</text>
+  <text x="480" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">OFF-ROAD</text>
+  <circle cx="400" cy="115" r="8" fill="#AE3527"/>
+
+  <text x="650" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">FRONT WHEEL / CLEARANCE</text>
+  <line x1="570" y1="115" x2="730" y2="115" stroke="#33505E" stroke-width="2"/>
+  <text x="570" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">QUICK STEER</text>
+  <text x="730" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">OBSTACLE-READY</text>
+  <circle cx="650" cy="115" r="8" fill="#AE3527"/>
+
+  <!-- sportbike/dirtbike endpoint comparisons -->
+  <line x1="170" y1="123" x2="170" y2="180" stroke="#33505E" stroke-width="1" stroke-dasharray="3 2"/>
+  <line x1="400" y1="123" x2="400" y2="180" stroke="#33505E" stroke-width="1" stroke-dasharray="3 2"/>
+  <line x1="650" y1="123" x2="650" y2="180" stroke="#33505E" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <rect x="90" y="200" width="620" height="120" rx="8" fill="none" stroke="#8C876F" stroke-width="1.6" stroke-dasharray="4 2"/>
+  <text x="400" y="230" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">GENUINELY CAPABLE ACROSS A WIDE RANGE</text>
+  <text x="400" y="255" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">BUT OUTPERFORMED ON PAVEMENT BY THE SPORTBIKE</text>
+  <text x="400" y="270" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">AND OUTPERFORMED OFF-ROAD BY THE DIRT BIKE</text>
+  <text x="400" y="295" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#AE3527">NO ESCAPE FROM THE TRADE — JUST A DIFFERENT POINT ON IT</text>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">MODERATE ON THREE CURVES, NOT AN ESCAPE FROM ANY OF THEM</text>
+</svg>

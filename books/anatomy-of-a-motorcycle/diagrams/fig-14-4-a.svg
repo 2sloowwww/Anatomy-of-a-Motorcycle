@@ -1,0 +1,36 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">ENGINEERED FOR DISTANCE, NOT JUST COMFORT</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- fairing -->
+  <text x="220" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">FULL FAIRING</text>
+  <path d="M 130 130 Q 220 90 310 130 L 290 200 Q 220 175 150 200 Z" fill="#8C876F" opacity="0.4" stroke="#22252B" stroke-width="1.6"/>
+  <path d="M 90 220 L 340 220" stroke="#AE3527" stroke-width="2.2"/>
+  <path d="M 330 215 L 340 220 L 330 225" fill="none" stroke="#AE3527" stroke-width="2"/>
+  <text x="220" y="245" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">DRAG DEFLECTED AROUND RIDER</text>
+  <text x="220" y="258" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">REDUCES WIND FATIGUE</text>
+
+  <!-- reinforced subframe with luggage -->
+  <text x="600" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">REINFORCED SUBFRAME</text>
+  <rect x="540" y="150" width="20" height="70" fill="#22252B"/>
+  <rect x="480" y="160" width="55" height="50" rx="6" fill="#AE3527"/>
+  <text x="507" y="190" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#EEE8DA">PANNIER</text>
+  <rect x="565" y="160" width="55" height="50" rx="6" fill="#AE3527"/>
+  <text x="592" y="190" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#EEE8DA">PANNIER</text>
+  <rect x="530" y="120" width="40" height="30" rx="5" fill="#6B5A22"/>
+  <text x="550" y="140" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="6" fill="#EEE8DA">TOP BOX</text>
+  <text x="550" y="245" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">LOAD CARRIED WITHOUT</text>
+  <text x="550" y="258" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">UNPREDICTABLE HANDLING</text>
+
+  <line x1="400" y1="70" x2="400" y2="270" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A DISTINCT ENGINEERING ANSWER TO DISTANCE, NOT AN ACCESSORIZED CRUISER</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">LEAN BALANCES GRAVITY AND CENTRIPETAL FORCE</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ground -->
+  <line x1="150" y1="400" x2="650" y2="400" stroke="#33505E" stroke-width="2"/>
+
+  <!-- contact patch pivot point -->
+  <circle cx="400" cy="400" r="5" fill="#22252B"/>
+
+  <!-- leaned motorcycle silhouette (from behind), rotated around contact patch -->
+  <g transform="rotate(-32 400 400)">
+    <!-- wheel -->
+    <ellipse cx="400" cy="400" rx="46" ry="18" fill="none" stroke="#22252B" stroke-width="3"/>
+    <!-- body/frame rising up -->
+    <rect x="385" y="180" width="30" height="220" rx="10" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+    <!-- CG marker -->
+    <circle cx="400" cy="230" r="7" fill="#6B5A22"/>
+  </g>
+
+  <!-- gravity arrow straight down from CG's actual (rotated) position -->
+  <!-- compute approx rotated CG position for arrow anchor -->
+  <line x1="335" y1="255" x2="335" y2="340" stroke="#8C876F" stroke-width="2.5"/>
+  <polygon points="335,340 328,326 342,326" fill="#8C876F"/>
+  <text x="345" y="300" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#8C876F">GRAVITY (mg)</text>
+
+  <!-- centripetal force arrow, horizontal from contact patch toward corner center (left) -->
+  <line x1="400" y1="400" x2="300" y2="400" stroke="#AE3527" stroke-width="3"/>
+  <polygon points="300,400 314,393 314,407" fill="#AE3527"/>
+  <text x="270" y="422" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#AE3527">CENTRIPETAL FORCE</text>
+  <text x="270" y="438" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">(STATIC FRICTION)</text>
+
+  <!-- lean angle arc -->
+  <path d="M 400 340 A 60 60 0 0 0 355 380" stroke="#33505E" stroke-width="1.4" fill="none" stroke-dasharray="4 3"/>
+  <text x="420" y="350" font-family="JetBrains Mono, monospace" font-size="12" fill="#33505E">LEAN ANGLE</text>
+
+  <!-- vertical reference dashed -->
+  <line x1="400" y1="400" x2="400" y2="180" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">LEAN ANGLE IS WHAT BALANCES THESE TWO FORCES AROUND THE CONTACT PATCH</text>
+</svg>

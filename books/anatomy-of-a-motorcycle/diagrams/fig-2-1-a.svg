@@ -1,0 +1,105 @@
+<svg viewBox="0 0 800 500" width="800" height="500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#22252B"/>
+    </marker>
+    <marker id="arrowSignal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#AE3527"/>
+    </marker>
+    <marker id="arrowFaint" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8C876F"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B" letter-spacing="0.5">ONE CYLINDER, FOUR STROKES</text>
+  <text x="400" y="60" text-anchor="middle" font-size="13.5" font-style="italic" fill="#5A5748">Only one stroke in four actually delivers power</text>
+
+  <!-- Baseline -->
+  <line x1="40" y1="440" x2="760" y2="440" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ===================== PANEL TEMPLATE DATA =====================
+       Panel centers: 130, 320, 510, 700 ; cylinder half-width 55
+       Cylinder head (top) y=120 ; base y=380 ; piston height 42
+  -->
+
+  <!-- ============ PANEL 1: INTAKE ============ -->
+  <g>
+    <!-- cylinder body -->
+    <rect x="75" y="120" width="110" height="260" fill="none" stroke="#8C876F" stroke-width="2"/>
+    <!-- head line with intake valve open (gap) -->
+    <line x1="75" y1="120" x2="112" y2="120" stroke="#8C876F" stroke-width="2.5"/>
+    <line x1="150" y1="120" x2="185" y2="120" stroke="#8C876F" stroke-width="2.5"/>
+    <!-- valve stem lifted -->
+    <line x1="131" y1="108" x2="131" y2="126" stroke="#8C876F" stroke-width="3"/>
+    <polygon points="121,126 141,126 131,133" fill="#8C876F"/>
+    <!-- incoming charge arrow -->
+    <line x1="131" y1="95" x2="131" y2="150" stroke="#8C876F" stroke-width="2" marker-end="url(#arrowFaint)" stroke-dasharray="4 3"/>
+    <!-- piston mid-down -->
+    <rect x="80" y="230" width="100" height="40" fill="#E2D9C3" stroke="#8C876F" stroke-width="2"/>
+    <line x1="130" y1="272" x2="130" y2="340" stroke="#8C876F" stroke-width="2" marker-end="url(#arrowFaint)"/>
+    <text x="130" y="405" text-anchor="middle" font-size="15" font-weight="700" fill="#5A5748">INTAKE</text>
+    <text x="130" y="423" text-anchor="middle" font-size="12" fill="#8C876F">0&#176;&#8211;180&#176;</text>
+  </g>
+
+  <!-- ============ PANEL 2: COMPRESSION ============ -->
+  <g>
+    <rect x="265" y="120" width="110" height="260" fill="none" stroke="#8C876F" stroke-width="2"/>
+    <!-- head line, valves closed (continuous) -->
+    <line x1="265" y1="120" x2="375" y2="120" stroke="#8C876F" stroke-width="2.5"/>
+    <!-- piston mid-up -->
+    <rect x="270" y="180" width="100" height="40" fill="#E2D9C3" stroke="#8C876F" stroke-width="2"/>
+    <line x1="320" y1="222" x2="320" y2="150" stroke="#8C876F" stroke-width="2" marker-end="url(#arrowFaint)"/>
+    <text x="320" y="405" text-anchor="middle" font-size="15" font-weight="700" fill="#5A5748">COMPRESSION</text>
+    <text x="320" y="423" text-anchor="middle" font-size="12" fill="#8C876F">180&#176;&#8211;360&#176;</text>
+  </g>
+
+  <!-- ============ PANEL 3: POWER (highlighted) ============ -->
+  <g>
+    <!-- highlight backdrop -->
+    <rect x="440" y="100" width="150" height="300" fill="#AE3527" fill-opacity="0.07"/>
+    <rect x="455" y="120" width="110" height="260" fill="none" stroke="#22252B" stroke-width="2.5"/>
+    <!-- head line, valves closed -->
+    <line x1="455" y1="120" x2="565" y2="120" stroke="#22252B" stroke-width="3"/>
+    <!-- flame burst -->
+    <g stroke="#AE3527" stroke-width="2">
+      <line x1="510" y1="132" x2="510" y2="118"/>
+      <line x1="497" y1="136" x2="488" y2="126"/>
+      <line x1="523" y1="136" x2="532" y2="126"/>
+      <line x1="490" y1="146" x2="478" y2="140"/>
+      <line x1="530" y1="146" x2="542" y2="140"/>
+    </g>
+    <circle cx="510" cy="140" r="8" fill="#AE3527" fill-opacity="0.85"/>
+    <!-- piston near TDC, forceful downward arrow -->
+    <rect x="460" y="150" width="100" height="40" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+    <line x1="510" y1="192" x2="510" y2="330" stroke="#AE3527" stroke-width="4" marker-end="url(#arrowSignal)"/>
+    <text x="510" y="405" text-anchor="middle" font-size="17" font-weight="700" fill="#AE3527">POWER</text>
+    <text x="510" y="423" text-anchor="middle" font-size="12.5" font-weight="600" fill="#22252B">360&#176;&#8211;540&#176;</text>
+  </g>
+
+  <!-- ============ PANEL 4: EXHAUST ============ -->
+  <g>
+    <rect x="645" y="120" width="110" height="260" fill="none" stroke="#8C876F" stroke-width="2"/>
+    <!-- head line with exhaust valve open on right side -->
+    <line x1="645" y1="120" x2="680" y2="120" stroke="#8C876F" stroke-width="2.5"/>
+    <line x1="718" y1="120" x2="755" y2="120" stroke="#8C876F" stroke-width="2.5"/>
+    <line x1="699" y1="108" x2="699" y2="126" stroke="#8C876F" stroke-width="3"/>
+    <polygon points="689,126 709,126 699,133" fill="#8C876F"/>
+    <line x1="699" y1="150" x2="699" y2="95" stroke="#8C876F" stroke-width="2" marker-end="url(#arrowFaint)" stroke-dasharray="4 3"/>
+    <!-- piston mid-up -->
+    <rect x="650" y="200" width="100" height="40" fill="#E2D9C3" stroke="#8C876F" stroke-width="2"/>
+    <line x1="700" y1="242" x2="700" y2="150" stroke="#8C876F" stroke-width="2" marker-end="url(#arrowFaint)"/>
+    <text x="700" y="405" text-anchor="middle" font-size="15" font-weight="700" fill="#5A5748">EXHAUST</text>
+    <text x="700" y="423" text-anchor="middle" font-size="12" fill="#8C876F">540&#176;&#8211;720&#176;</text>
+  </g>
+
+  <!-- Bottom annotation -->
+  <text x="400" y="470" text-anchor="middle" font-size="14" fill="#6B5A22" font-weight="600">1 OF 4 STROKES PRODUCES USEFUL WORK</text>
+</svg>

@@ -1,0 +1,94 @@
+<svg viewBox="0 0 1410 2250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Resolve Field Manual — book cover, showing a timeline, node graph, and color wheels in blueprint line art.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A31"/>
+      <stop offset="100%" stop-color="#101A1F"/>
+    </linearGradient>
+    <pattern id="grid" width="47" height="47" patternUnits="userSpaceOnUse">
+      <path d="M47 0H0V47" fill="none" stroke="#7FA6B8" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1410" height="2250" fill="url(#bg)"/>
+  <rect width="1410" height="2250" fill="url(#grid)"/>
+
+  <rect x="56" y="56" width="1298" height="2138" fill="none" stroke="#7FA6B8" stroke-opacity="0.35" stroke-width="2"/>
+  <g stroke="#D2AC3E" stroke-width="2" opacity="0.9">
+    <path d="M56 110 H110 M56 56 V110" fill="none"/>
+    <path d="M1354 110 H1300 M1354 56 V110" fill="none"/>
+    <path d="M56 2140 H110 M56 2194 V2140" fill="none"/>
+    <path d="M1354 2140 H1300 M1354 2194 V2140" fill="none"/>
+  </g>
+
+  <text x="705" y="215" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="26" letter-spacing="7" fill="#7FA6B8">A FIELD MANUAL FOR EDITORS</text>
+
+  <text x="705" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="118" fill="#EDE7D8">THE RESOLVE</text>
+  <text x="705" y="450" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="118" fill="#EDE7D8">FIELD MANUAL</text>
+
+  <line x1="330" y1="510" x2="1080" y2="510" stroke="#D2AC3E" stroke-width="2" opacity="0.7"/>
+
+  <!-- Timeline -->
+  <g transform="translate(180,760)">
+    <rect x="0" y="0" width="1050" height="150" fill="none" stroke="#7FA6B8" stroke-width="2"/>
+    <g stroke="#7FA6B8" stroke-opacity="0.5" stroke-width="1.5">
+      <line x1="230" y1="0" x2="230" y2="150"/>
+      <line x1="470" y1="0" x2="470" y2="150"/>
+      <line x1="690" y1="0" x2="690" y2="150"/>
+      <line x1="880" y1="0" x2="880" y2="150"/>
+    </g>
+    <rect x="8" y="8" width="214" height="134" fill="none" stroke="#E2574A" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.7"/>
+    <line x1="470" y1="-30" x2="470" y2="180" stroke="#E2574A" stroke-width="3"/>
+    <path d="M470 -30 L452 -54 L488 -54 Z" fill="#E2574A"/>
+    <text x="0" y="-24" font-family="'JetBrains Mono', monospace" font-size="20" fill="#7FA6B8" letter-spacing="3">TIMELINE — EDIT PAGE</text>
+  </g>
+
+  <!-- Node graph -->
+  <g transform="translate(180,1010)" stroke="#D2AC3E" stroke-width="2" fill="none">
+    <text x="0" y="-24" font-family="'JetBrains Mono', monospace" font-size="20" fill="#7FA6B8" letter-spacing="3">NODE GRAPH — COLOR PAGE</text>
+    <line x1="55" y1="60" x2="215" y2="60"/>
+    <line x1="270" y1="60" x2="430" y2="60"/>
+    <line x1="430" y1="60" x2="430" y2="150"/>
+    <line x1="430" y1="150" x2="590" y2="150"/>
+    <circle cx="55" cy="60" r="30"/>
+    <circle cx="240" cy="60" r="30"/>
+    <circle cx="430" cy="60" r="30"/>
+    <circle cx="430" cy="180" r="30"/>
+    <circle cx="620" cy="150" r="30"/>
+  </g>
+
+  <!-- Three color wheels -->
+  <g transform="translate(180,1290)" stroke="#EDE7D8" stroke-width="2" fill="none">
+    <text x="0" y="-24" font-family="'JetBrains Mono', monospace" font-size="20" fill="#7FA6B8" letter-spacing="3">LIFT — GAMMA — GAIN</text>
+    <g transform="translate(85,90)">
+      <circle r="80"/>
+      <circle r="80" stroke="#7FA6B8" stroke-opacity="0.4"/>
+      <line x1="0" y1="0" x2="24" y2="-46" stroke="#E2574A" stroke-width="3"/>
+      <circle cx="24" cy="-46" r="5" fill="#E2574A" stroke="none"/>
+    </g>
+    <g transform="translate(365,90)">
+      <circle r="80"/>
+      <circle r="80" stroke="#7FA6B8" stroke-opacity="0.4"/>
+      <line x1="0" y1="0" x2="-32" y2="-38" stroke="#D2AC3E" stroke-width="3"/>
+      <circle cx="-32" cy="-38" r="5" fill="#D2AC3E" stroke="none"/>
+    </g>
+    <g transform="translate(645,90)">
+      <circle r="80"/>
+      <circle r="80" stroke="#7FA6B8" stroke-opacity="0.4"/>
+      <line x1="0" y1="0" x2="10" y2="48" stroke="#7FA6B8" stroke-width="3"/>
+      <circle cx="10" cy="48" r="5" fill="#7FA6B8" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Waveform -->
+  <g transform="translate(180,1560)">
+    <text x="0" y="-24" font-family="'JetBrains Mono', monospace" font-size="20" fill="#7FA6B8" letter-spacing="3">FAIRLIGHT — AUDIO</text>
+    <path d="M0 40 L40 40 L60 8 L90 76 L120 -10 L150 90 L180 20 L210 60 L240 40 L280 40 L310 4 L340 74 L370 26 L400 54 L430 40 L470 40 L500 10 L530 70 L560 40 L1050 40" fill="none" stroke="#7FA6B8" stroke-width="2"/>
+  </g>
+
+  <line x1="330" y1="1720" x2="1080" y2="1720" stroke="#D2AC3E" stroke-width="2" opacity="0.7"/>
+
+  <text x="705" y="1790" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="22" letter-spacing="5" fill="#B9B3A0">MEDIA · CUT · EDIT · FUSION</text>
+  <text x="705" y="1826" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="22" letter-spacing="5" fill="#B9B3A0">COLOR · FAIRLIGHT · DELIVER</text>
+
+  <text x="705" y="2110" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#EDE7D8">Jitendra Kulkarni</text>
+</svg>

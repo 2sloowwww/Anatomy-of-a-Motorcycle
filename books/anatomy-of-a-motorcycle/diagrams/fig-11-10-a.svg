@@ -1,0 +1,52 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">THREE BASIC REPAIRS A RIDER CAN PERFORM</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Column 1: bleeding brakes -->
+  <text x="150" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">BLEED BRAKE LINE</text>
+  <rect x="120" y="100" width="20" height="60" fill="#22252B"/>
+  <line x1="130" y1="160" x2="130" y2="200" stroke="#33505E" stroke-width="3"/>
+  <rect x="115" y="200" width="30" height="20" rx="3" fill="#8C876F"/>
+  <circle cx="185" cy="230" r="16" fill="none" stroke="#33505E" stroke-width="2"/>
+  <circle cx="182" cy="225" r="2.5" fill="#AE3527"/>
+  <circle cx="190" cy="235" r="2" fill="#AE3527"/>
+  <circle cx="180" cy="238" r="1.8" fill="#AE3527"/>
+  <text x="150" y="260" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">BUBBLES OUT INTO</text>
+  <text x="150" y="272" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">CATCH BOTTLE</text>
+
+  <!-- Column 2: chain adjustment -->
+  <text x="400" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">ADJUST CHAIN SLACK</text>
+  <circle cx="350" cy="140" r="22" fill="none" stroke="#22252B" stroke-width="2"/>
+  <circle cx="450" cy="140" r="22" fill="none" stroke="#22252B" stroke-width="2"/>
+  <path d="M 372 128 Q 400 110 428 128" fill="none" stroke="#AE3527" stroke-width="2.2"/>
+  <path d="M 372 152 Q 400 175 428 152" fill="none" stroke="#8C876F" stroke-width="2.2"/>
+  <line x1="330" y1="162" x2="330" y2="180" stroke="#33505E" stroke-width="2"/>
+  <line x1="470" y1="162" x2="470" y2="180" stroke="#33505E" stroke-width="2"/>
+  <text x="330" y="196" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">EQUAL</text>
+  <text x="470" y="196" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">EQUAL</text>
+  <text x="400" y="255" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">BOTH ADJUSTERS MOVED</text>
+  <text x="400" y="267" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">TOGETHER — KEEPS ALIGNMENT</text>
+
+  <!-- Column 3: fuse replacement -->
+  <text x="650" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#22252B">REPLACE BLOWN FUSE</text>
+  <rect x="615" y="105" width="30" height="55" rx="4" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.5"/>
+  <line x1="630" y1="118" x2="630" y2="132" stroke="#AE3527" stroke-width="2"/>
+  <line x1="626" y1="122" x2="634" y2="128" stroke="#AE3527" stroke-width="1.5"/>
+  <text x="630" y="150" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="6" fill="#AE3527">BLOWN</text>
+  <line x1="655" y1="132" x2="675" y2="132" stroke="#33505E" stroke-width="1.5"/>
+  <path d="M 670 128 L 675 132 L 670 136" fill="none" stroke="#33505E" stroke-width="1.5"/>
+  <rect x="685" y="105" width="30" height="55" rx="4" fill="#E2D9C3" stroke="#33505E" stroke-width="1.5"/>
+  <line x1="700" y1="118" x2="700" y2="147" stroke="#22252B" stroke-width="2"/>
+  <text x="700" y="150" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="6" fill="#5A5748">SAME</text>
+  <text x="700" y="160" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="6" fill="#5A5748">RATING</text>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">SIMPLE, SAFE, AND COMMON ENOUGH FOR ANY RIDER TO PERFORM</text>
+</svg>

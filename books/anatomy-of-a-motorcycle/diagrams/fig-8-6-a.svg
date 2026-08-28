@@ -1,0 +1,40 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">TRAIL BRAKING: COMBINED FORCE IN A GROWING CIRCLE</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- axes -->
+  <line x1="400" y1="90" x2="400" y2="410" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="230" y1="250" x2="570" y2="250" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#5A5748">BRAKING</text>
+  <text x="400" y="428" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#5A5748">ACCELERATING</text>
+  <text x="220" y="254" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#5A5748">CORNERING</text>
+
+  <!-- smaller baseline circle (no added load) -->
+  <circle cx="400" cy="250" r="110" fill="none" stroke="#8C876F" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="400" y="130" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">BASELINE CIRCLE</text>
+
+  <!-- larger enlarged circle from combined load -->
+  <circle cx="400" cy="250" r="150" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <text x="400" y="95" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">ENLARGED CIRCLE (BRAKING + LEAN LOAD)</text>
+
+  <!-- combined diagonal force vector -->
+  <line x1="400" y1="250" x2="500" y2="155" stroke="#AE3527" stroke-width="3"/>
+  <polygon points="500,155 486,161 492,173" fill="#AE3527"/>
+  <text x="510" y="140" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#AE3527">COMBINED FORCE</text>
+
+  <!-- component breakdown -->
+  <line x1="400" y1="250" x2="500" y2="250" stroke="#33505E" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <line x1="500" y1="250" x2="500" y2="155" stroke="#33505E" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="450" y="268" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#33505E">CORNERING COMPONENT</text>
+  <text x="520" y="205" font-family="JetBrains Mono, monospace" font-size="11" fill="#33505E">BRAKING COMPONENT</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">THE CIRCLE GROWS WITH LOAD — BUT THE COMBINED VECTOR MUST STILL STAY INSIDE IT</text>
+</svg>

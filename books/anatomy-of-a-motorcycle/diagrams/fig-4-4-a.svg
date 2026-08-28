@@ -1,0 +1,93 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowBrass" viewBox="0 0 10 10" refX="8.2" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#6B5A22"/>
+    </marker>
+    <marker id="arrowSignal" viewBox="0 0 10 10" refX="8.2" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#AE3527"/>
+    </marker>
+    <marker id="arrowInk" viewBox="0 0 10 10" refX="8.2" refY="5" markerWidth="5.6" markerHeight="5.6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#22252B"/>
+    </marker>
+    <marker id="arrowMuted" viewBox="0 0 10 10" refX="8.2" refY="5" markerWidth="5.4" markerHeight="5.4" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#8C876F"/>
+    </marker>
+    <linearGradient id="wheelShade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22252B" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#22252B" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="42" text-anchor="middle" font-weight="700" font-size="19" fill="#22252B" letter-spacing="0.4">TRAIL — WHY THE FRONT WHEEL WANTS TO GO STRAIGHT</text>
+  <text x="400" y="61" text-anchor="middle" font-size="12" font-style="italic" fill="#5A5748">The contact patch trails behind where the steering axis meets the ground</text>
+  <line x1="60" y1="76" x2="740" y2="76" stroke="#8C876F" stroke-width="1" stroke-dasharray="1 3" stroke-linecap="round"/>
+
+  <!-- direction of travel -->
+  <line x1="305" y1="112" x2="385" y2="112" stroke="#8C876F" stroke-width="1.6" marker-end="url(#arrowMuted)"/>
+  <text x="238" y="116" font-size="11.5" fill="#8C876F" letter-spacing="0.3">TRAVEL</text>
+
+  <!-- ground -->
+  <line x1="200" y1="426" x2="600" y2="426" stroke="#22252B" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="200" y1="432" x2="600" y2="432" stroke="#22252B" stroke-width="1" opacity="0.25"/>
+
+  <!-- steering axis extended (dashed, imaginary) -->
+  <line x1="305" y1="116" x2="518" y2="426" stroke="#33505E" stroke-width="2.2" stroke-dasharray="8 5" stroke-linecap="round"/>
+  <text x="150" y="164" font-size="13" font-weight="700" fill="#33505E" letter-spacing="0.2">STEERING AXIS</text>
+  <text x="150" y="180" font-size="13" font-weight="700" fill="#33505E" letter-spacing="0.2">EXTENDED TO GROUND</text>
+  <path d="M258,171 Q300,182 342,208" fill="none" stroke="#33505E" stroke-width="1.1" stroke-dasharray="2 3"/>
+
+  <!-- front wheel / tyre -->
+  <circle cx="452" cy="342" r="78" fill="url(#wheelShade)" stroke="#22252B" stroke-width="2.8"/>
+  <circle cx="452" cy="342" r="78" fill="none" stroke="#22252B" stroke-width="0.6" opacity="0.3" transform="translate(-2,-2)"/>
+  <circle cx="452" cy="342" r="5.5" fill="#22252B"/>
+  <circle cx="452" cy="342" r="2" fill="#EEE8DA"/>
+
+  <!-- axis ground point A -->
+  <circle cx="518" cy="426" r="6" fill="#33505E" stroke="#EEE8DA" stroke-width="1.2"/>
+  <!-- contact patch -->
+  <rect x="433" y="420" width="38" height="11" rx="3.5" fill="#AE3527"/>
+  <text x="452" y="472" text-anchor="middle" font-size="13" font-weight="700" fill="#AE3527" letter-spacing="0.3">CONTACT PATCH</text>
+  <text x="452" y="487" text-anchor="middle" font-size="11" fill="#5A5748">(actual tyre footprint)</text>
+
+  <!-- trail dimension -->
+  <line x1="452" y1="452" x2="518" y2="452" stroke="#6B5A22" stroke-width="1.7" marker-start="url(#arrowBrass)" marker-end="url(#arrowBrass)"/>
+  <line x1="452" y1="431" x2="452" y2="457" stroke="#6B5A22" stroke-width="1" stroke-dasharray="2 3"/>
+  <line x1="518" y1="431" x2="518" y2="457" stroke="#6B5A22" stroke-width="1" stroke-dasharray="2 3"/>
+  <text x="565" y="448" font-size="14" font-weight="700" fill="#6B5A22" letter-spacing="0.3">TRAIL</text>
+
+  <!-- inset: plan view showing self-correcting torque -->
+  <rect x="588" y="98" width="192" height="300" fill="#E2D9C3" stroke="#22252B" stroke-width="1.5"/>
+  <rect x="588" y="98" width="192" height="26" fill="#22252B"/>
+  <text x="684" y="115" text-anchor="middle" font-size="11.5" font-weight="700" fill="#EEE8DA" letter-spacing="0.6">VIEWED FROM ABOVE</text>
+
+  <line x1="684" y1="150" x2="684" y2="368" stroke="#8C876F" stroke-width="1.3" marker-end="url(#arrowMuted)"/>
+  <text x="684" y="145" text-anchor="middle" font-size="10" fill="#8C876F">travel</text>
+
+  <!-- axis point A in plan view -->
+  <circle cx="684" cy="182" r="6" fill="#33505E" stroke="#E2D9C3" stroke-width="1.2"/>
+  <text x="696" y="179" font-size="10.5" fill="#33505E">axis point</text>
+  <!-- neutral contact patch behind axis -->
+  <line x1="684" y1="182" x2="684" y2="258" stroke="#33505E" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <circle cx="684" cy="258" r="7" fill="#AE3527" opacity="0.3"/>
+  <!-- disturbed contact patch, pushed sideways -->
+  <circle cx="722" cy="258" r="7" fill="#AE3527" stroke="#E2D9C3" stroke-width="1"/>
+  <line x1="695" y1="258" x2="714" y2="258" stroke="#AE3527" stroke-width="2.1" marker-end="url(#arrowSignal)"/>
+  <text x="628" y="245" font-size="10.5" font-weight="700" fill="#AE3527" letter-spacing="0.2">SIDEWAYS PUSH</text>
+
+  <!-- corrective torque arrow, curving contact patch back in line behind axis -->
+  <path d="M722,265 A60,60 0 0 1 693,290" fill="none" stroke="#22252B" stroke-width="2.2" marker-end="url(#arrowInk)"/>
+  <text x="612" y="315" font-size="12" font-weight="700" fill="#22252B" letter-spacing="0.2">SELF-CORRECTING</text>
+  <text x="612" y="331" font-size="12" font-weight="700" fill="#22252B" letter-spacing="0.2">TORQUE</text>
+  <line x1="612" y1="340" x2="756" y2="340" stroke="#8C876F" stroke-width="0.7" opacity="0.5"/>
+  <text x="612" y="356" font-size="10" fill="#5A5748">steers wheel back</text>
+  <text x="612" y="370" font-size="10" fill="#5A5748">toward straight line</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 4.4-A</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">OWNER'S MANUAL VS. SERVICE MANUAL</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- owner's manual -->
+  <rect x="100" y="80" width="220" height="280" rx="8" fill="#E2D9C3" stroke="#8C876F" stroke-width="2"/>
+  <text x="210" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">OWNER'S MANUAL</text>
+  <line x1="120" y1="125" x2="300" y2="125" stroke="#8C876F" stroke-width="1"/>
+  <text x="130" y="150" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">• Basic controls</text>
+  <text x="130" y="170" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">• Light maintenance</text>
+  <text x="130" y="190" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">• Intervals</text>
+  <text x="130" y="210" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">• Safety info</text>
+  <text x="210" y="250" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#5A5748">WRITTEN FOR</text>
+  <text x="210" y="264" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#5A5748">A RIDER</text>
+
+  <!-- service manual -->
+  <rect x="480" y="80" width="220" height="280" rx="8" fill="#22252B"/>
+  <text x="590" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#EEE8DA">SERVICE MANUAL</text>
+  <line x1="500" y1="125" x2="680" y2="125" stroke="#6B5A22" stroke-width="1"/>
+  <text x="510" y="150" font-family="JetBrains Mono, monospace" font-size="9" fill="#E2D9C3">• Torque specs</text>
+  <text x="510" y="170" font-family="JetBrains Mono, monospace" font-size="9" fill="#E2D9C3">• Exploded diagrams</text>
+  <text x="510" y="190" font-family="JetBrains Mono, monospace" font-size="9" fill="#E2D9C3">• Wear limits</text>
+  <text x="510" y="210" font-family="JetBrains Mono, monospace" font-size="9" fill="#E2D9C3">• Teardown steps</text>
+  <text x="590" y="250" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#E2D9C3">WRITTEN FOR</text>
+  <text x="590" y="264" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" fill="#E2D9C3">A MECHANIC</text>
+
+  <!-- wear limit callout -->
+  <rect x="140" y="290" width="140" height="50" rx="5" fill="none" stroke="#AE3527" stroke-width="1.6" stroke-dasharray="4 2"/>
+  <text x="210" y="310" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">NOT HERE:</text>
+  <text x="210" y="324" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">MIN. TREAD DEPTH</text>
+
+  <rect x="520" y="290" width="140" height="50" rx="5" fill="none" stroke="#6B5A22" stroke-width="1.6"/>
+  <text x="590" y="310" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#E2D9C3">HERE:</text>
+  <text x="590" y="324" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#E2D9C3">MIN. TREAD DEPTH</text>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">TWO DIFFERENT DOCUMENTS, ANSWERING TWO DIFFERENT QUESTIONS</text>
+</svg>

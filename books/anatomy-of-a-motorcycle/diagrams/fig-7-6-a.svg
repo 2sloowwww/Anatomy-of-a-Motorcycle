@@ -1,0 +1,42 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">IDEAL BRAKE FORCE SPLIT VS. DECELERATION</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- axes -->
+  <line x1="110" y1="400" x2="110" y2="90" stroke="#33505E" stroke-width="1.5"/>
+  <line x1="110" y1="400" x2="700" y2="400" stroke="#33505E" stroke-width="1.5"/>
+
+  <text x="80" y="90" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">100%</text>
+  <text x="80" y="248" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">50%</text>
+  <text x="80" y="404" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">0%</text>
+  <text x="60" y="245" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748" transform="rotate(-90 60 245)">SHARE OF TOTAL BRAKE FORCE</text>
+
+  <text x="400" y="428" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">DECELERATION INTENSITY →</text>
+  <text x="130" y="418" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">LIGHT</text>
+  <text x="660" y="418" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">HARD</text>
+
+  <!-- 50% reference line -->
+  <line x1="110" y1="245" x2="700" y2="245" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- front brake curve (rising) -->
+  <path d="M 110 250 Q 300 210 700 105" fill="none" stroke="#AE3527" stroke-width="3"/>
+  <text x="560" y="140" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#AE3527">FRONT BRAKE SHARE</text>
+
+  <!-- rear brake curve (falling) -->
+  <path d="M 110 240 Q 300 280 700 380" fill="none" stroke="#33505E" stroke-width="3"/>
+  <text x="500" y="360" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#33505E">REAR BRAKE SHARE</text>
+
+  <!-- annotation at hard end -->
+  <line x1="660" y1="112" x2="660" y2="90" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="660" y="82" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">~70-90% FRONT</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">THE CORRECT SPLIT TRACKS WEIGHT TRANSFER, NOT A FIXED RATIO</text>
+</svg>

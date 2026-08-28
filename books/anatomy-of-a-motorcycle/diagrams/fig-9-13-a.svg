@@ -1,0 +1,50 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="36" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="19" font-weight="700" fill="#22252B">STANDING POSITION AND VARYING TERRAIN GRIP</text>
+  <line x1="50" y1="52" x2="750" y2="52" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- LEFT: seated vs standing -->
+  <text x="130" y="82" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#22252B">SEATED</text>
+  <ellipse cx="130" cy="330" rx="45" ry="14" fill="none" stroke="#8C876F" stroke-width="2"/>
+  <rect x="115" y="220" width="30" height="110" rx="10" fill="#E2D9C3" stroke="#8C876F" stroke-width="2"/>
+  <circle cx="130" cy="205" r="14" fill="#8C876F" stroke="#8C876F" stroke-width="1.5"/>
+  <circle cx="130" cy="260" r="5" fill="#8C876F"/>
+  <text x="130" y="360" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#8C876F">HIGHER CG</text>
+
+  <text x="270" y="82" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#22252B">STANDING</text>
+  <ellipse cx="270" cy="330" rx="45" ry="14" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <line x1="255" y1="330" x2="255" y2="230" stroke="#22252B" stroke-width="4"/>
+  <line x1="285" y1="330" x2="285" y2="230" stroke="#22252B" stroke-width="4"/>
+  <rect x="255" y="180" width="30" height="55" rx="8" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="270" cy="165" r="14" fill="#AE3527" stroke="#22252B" stroke-width="1.5"/>
+  <circle cx="270" cy="220" r="5" fill="#AE3527"/>
+  <text x="270" y="360" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#AE3527">LOWER CG, LEGS = SUSPENSION</text>
+
+  <!-- divider -->
+  <line x1="400" y1="70" x2="400" y2="440" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- RIGHT: varying terrain strip -->
+  <text x="600" y="82" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#22252B">GRIP VARIES WITHIN METERS</text>
+
+  <rect x="440" y="330" width="80" height="30" fill="#8C876F" fill-opacity="0.5"/>
+  <text x="480" y="378" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">HARD-PACKED</text>
+
+  <rect x="520" y="330" width="80" height="30" fill="#6B5A22" fill-opacity="0.4"/>
+  <text x="560" y="378" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">LOOSE GRAVEL</text>
+
+  <rect x="600" y="330" width="80" height="30" fill="#AE3527" fill-opacity="0.25"/>
+  <text x="640" y="378" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5748">SOFT MUD</text>
+
+  <path d="M 440 345 L 680 345" stroke="#22252B" stroke-width="2" fill="none" marker-end="none"/>
+  <polygon points="680,345 668,339 668,351" fill="#22252B"/>
+  <text x="560" y="315" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#22252B">SAME TYRE, SAME SECOND</text>
+
+  <line x1="50" y1="450" x2="750" y2="450" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="470" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">THE FRICTION CIRCLE CHANGES SIZE CONTINUOUSLY, NOT JUST BETWEEN CONDITIONS</text>
+</svg>

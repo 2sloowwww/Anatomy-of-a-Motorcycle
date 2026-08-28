@@ -1,0 +1,70 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="32" text-anchor="middle" font-weight="700" font-size="20" fill="#22252B" letter-spacing="0.5">MAXIMUM LEAN — SET BY WHATEVER HANGS LOWEST</text>
+  <text x="400" y="52" text-anchor="middle" font-size="12.5" font-style="italic" fill="#5A5748">Three bikes, three different components touching down, three very different lean angles</text>
+
+  <line x1="270" y1="66" x2="270" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="530" y1="66" x2="530" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ============ PANEL 1: CRUISER ~28 DEG ============ -->
+  <g>
+    <text x="140" y="86" text-anchor="middle" font-size="14.5" font-weight="700" fill="#22252B">CRUISER</text>
+    <line x1="45" y1="400" x2="235" y2="400" stroke="#22252B" stroke-width="2"/>
+    <line x1="140" y1="400" x2="140" y2="330" stroke="#8C876F" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <g transform="rotate(28 140 400)">
+      <circle cx="140" cy="355" r="42" fill="none" stroke="#22252B" stroke-width="2.4"/>
+      <rect x="124" y="270" width="32" height="85" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+      <line x1="156" y1="355" x2="224.6" y2="355" stroke="#22252B" stroke-width="4.5"/>
+    </g>
+    <path d="M140,370 A30,30 0 0 1 165.6,384.1" fill="none" stroke="#6B5A22" stroke-width="2"/>
+    <text x="182" y="374" font-size="15" font-weight="700" fill="#6B5A22">~28&#176;</text>
+    <circle cx="235.8" cy="400" r="6" fill="#AE3527"/>
+    <path d="M235.8,394 l4,-10 l4,10 l-4,-4 z" fill="#AE3527"/>
+    <text x="70" y="440" font-size="13" font-weight="700" fill="#AE3527">FLOORBOARD DRAGS</text>
+    <line x1="150" y1="435" x2="232" y2="404" stroke="#AE3527" stroke-width="1.2"/>
+  </g>
+
+  <!-- ============ PANEL 2: STANDARD ~40 DEG ============ -->
+  <g>
+    <text x="400" y="86" text-anchor="middle" font-size="14.5" font-weight="700" fill="#22252B">STANDARD</text>
+    <line x1="305" y1="400" x2="495" y2="400" stroke="#22252B" stroke-width="2"/>
+    <line x1="400" y1="400" x2="400" y2="320" stroke="#8C876F" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <g transform="rotate(40 400 400)">
+      <circle cx="400" cy="355" r="42" fill="none" stroke="#22252B" stroke-width="2.4"/>
+      <rect x="384" y="265" width="32" height="90" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+      <line x1="416" y1="345" x2="465.6" y2="345" stroke="#22252B" stroke-width="4.5"/>
+    </g>
+    <path d="M400,350 A50,50 0 0 1 432,381.9" fill="none" stroke="#6B5A22" stroke-width="2"/>
+    <text x="448" y="360" font-size="15" font-weight="700" fill="#6B5A22">~40&#176;</text>
+    <circle cx="485.6" cy="400" r="6" fill="#AE3527"/>
+    <path d="M485.6,394 l4,-10 l4,10 l-4,-4 z" fill="#AE3527"/>
+    <text x="450" y="437" font-size="13" font-weight="700" fill="#AE3527">PEG DRAGS</text>
+    <line x1="470" y1="432" x2="483" y2="404" stroke="#AE3527" stroke-width="1.2"/>
+  </g>
+
+  <!-- ============ PANEL 3: SPORTBIKE ~55 DEG ============ -->
+  <g>
+    <text x="660" y="86" text-anchor="middle" font-size="14.5" font-weight="700" fill="#22252B">SPORTBIKE</text>
+    <line x1="565" y1="400" x2="755" y2="400" stroke="#22252B" stroke-width="2"/>
+    <line x1="660" y1="400" x2="660" y2="300" stroke="#8C876F" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <g transform="rotate(55 660 400)">
+      <circle cx="660" cy="355" r="42" fill="none" stroke="#22252B" stroke-width="2.4"/>
+      <rect x="644" y="255" width="32" height="100" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+      <line x1="676" y1="335" x2="705.5" y2="335" stroke="#22252B" stroke-width="4.5"/>
+    </g>
+    <path d="M660,330 A70,70 0 0 1 700.1,357.8" fill="none" stroke="#6B5A22" stroke-width="2"/>
+    <text x="714" y="340" font-size="15" font-weight="700" fill="#6B5A22">~55&#176;</text>
+    <circle cx="739" cy="400" r="6" fill="#AE3527"/>
+    <path d="M739,394 l4,-10 l4,10 l-4,-4 z" fill="#AE3527"/>
+    <text x="640" y="440" font-size="13" font-weight="700" fill="#AE3527">KNEE / FAIRING DRAGS</text>
+    <line x1="700" y1="435" x2="737" y2="404" stroke="#AE3527" stroke-width="1.2"/>
+  </g>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 4.7-A</text>
+</svg>

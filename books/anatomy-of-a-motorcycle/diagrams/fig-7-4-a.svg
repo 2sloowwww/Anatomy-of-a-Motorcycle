@@ -1,0 +1,43 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">ONE PRESSURE, MULTIPLE PISTONS</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- master cylinder on left -->
+  <rect x="70" y="220" width="70" height="80" rx="6" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+  <text x="105" y="250" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">MASTER</text>
+  <text x="105" y="263" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">CYLINDER</text>
+  <rect x="130" y="252" width="16" height="16" fill="#33505E"/>
+
+  <!-- pressure lines splitting -->
+  <path d="M 146 260 L 260 260" stroke="#33505E" stroke-width="5" fill="none"/>
+  <path d="M 260 260 L 400 140 L 560 140" stroke="#33505E" stroke-width="4" fill="none"/>
+  <path d="M 260 260 L 400 260 L 560 260" stroke="#33505E" stroke-width="4" fill="none"/>
+  <path d="M 260 260 L 400 380 L 560 380" stroke="#33505E" stroke-width="4" fill="none" stroke-dasharray="8 5"/>
+
+  <text x="150" y="290" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#33505E">SAME PRESSURE, EVERY BRANCH</text>
+
+  <!-- caliper pistons at top and mid (front) -->
+  <rect x="560" y="118" width="34" height="44" rx="5" fill="#5A5748"/>
+  <circle cx="640" cy="140" r="48" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <text x="640" y="95" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">FRONT CALIPER 1</text>
+
+  <rect x="560" y="238" width="34" height="44" rx="5" fill="#5A5748"/>
+  <circle cx="640" cy="260" r="48" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <text x="640" y="215" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">FRONT CALIPER 2</text>
+
+  <!-- rear caliper via linked (dashed) circuit -->
+  <rect x="560" y="358" width="34" height="44" rx="5" fill="#5A5748"/>
+  <circle cx="640" cy="380" r="48" fill="none" stroke="#8C876F" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <text x="640" y="335" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">REAR (LINKED)</text>
+  <text x="640" y="450" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#8C876F">PROPORTIONAL ASSIST</text>
+
+  <line x1="60" y1="465" x2="740" y2="465" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="483" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">PASCAL'S PRINCIPLE: EQUAL PRESSURE, EVERY CONNECTED POINT, AT ONCE</text>
+</svg>

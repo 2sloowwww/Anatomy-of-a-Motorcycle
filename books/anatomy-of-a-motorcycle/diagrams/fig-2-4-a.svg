@@ -1,0 +1,103 @@
+<svg viewBox="0 0 800 500" width="800" height="500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowSignal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#AE3527"/>
+    </marker>
+    <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#22252B"/>
+    </marker>
+    <clipPath id="clip1"><rect x="65" y="110" width="150" height="90"/></clipPath>
+    <clipPath id="clip2"><rect x="325" y="110" width="150" height="90"/></clipPath>
+    <clipPath id="clip3"><rect x="585" y="110" width="150" height="90"/></clipPath>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#22252B">WHY THE SPARK FIRES BEFORE TDC</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13" font-style="italic" fill="#5A5748">Flame-front travel time means ignition must lead the piston to the top</text>
+
+  <line x1="270" y1="72" x2="270" y2="440" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="530" y1="72" x2="530" y2="440" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ============ PANEL 1: SPARK FIRES (20 BTDC) ============ -->
+  <g>
+    <text x="140" y="86" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B">SPARK FIRES</text>
+    <text x="140" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#6B5A22">~20&#176; BTDC</text>
+
+    <rect x="65" y="110" width="150" height="90" fill="none" stroke="#22252B" stroke-width="2.5"/>
+    <line x1="65" y1="110" x2="215" y2="110" stroke="#22252B" stroke-width="3"/>
+    <!-- spark plug -->
+    <line x1="140" y1="94" x2="140" y2="118" stroke="#5A5748" stroke-width="3"/>
+    <circle cx="140" cy="118" r="5" fill="#AE3527"/>
+    <line x1="150" y1="108" x2="160" y2="98" stroke="#AE3527" stroke-width="1.5"/>
+    <line x1="150" y1="98" x2="160" y2="108" stroke="#AE3527" stroke-width="1.5"/>
+    <!-- piston still rising -->
+    <rect x="75" y="142" width="130" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+    <line x1="140" y1="178" x2="140" y2="204" stroke="#8C876F" stroke-width="2" marker-end="url(#arrowInk)"/>
+    <text x="140" y="222" text-anchor="middle" font-size="11" fill="#5A5748">piston still rising</text>
+
+    <!-- mini crank circle -->
+    <circle cx="140" cy="345" r="28" fill="none" stroke="#33505E" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <line x1="140" y1="317" x2="140" y2="323" stroke="#5A5748" stroke-width="1.5"/>
+    <text x="140" y="311" text-anchor="middle" font-size="10" fill="#8C876F">TDC</text>
+    <line x1="140" y1="345" x2="130.4" y2="318.7" stroke="#22252B" stroke-width="2"/>
+    <circle cx="130.4" cy="318.7" r="4.5" fill="#AE3527"/>
+    <text x="140" y="400" text-anchor="middle" font-size="12" fill="#5A5748">ignites a small</text>
+    <text x="140" y="416" text-anchor="middle" font-size="12" fill="#5A5748">pocket at the plug</text>
+  </g>
+
+  <!-- ============ PANEL 2: FLAME SPREADS (TDC) ============ -->
+  <g>
+    <text x="400" y="86" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B">FLAME FRONT SPREADS</text>
+    <text x="400" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#6B5A22">TDC (0&#176;)</text>
+
+    <rect x="325" y="110" width="150" height="90" fill="none" stroke="#22252B" stroke-width="2.5"/>
+    <line x1="325" y1="110" x2="475" y2="110" stroke="#22252B" stroke-width="3"/>
+    <line x1="400" y1="94" x2="400" y2="118" stroke="#5A5748" stroke-width="3"/>
+    <g clip-path="url(#clip2)">
+      <circle cx="400" cy="118" r="34" fill="#AE3527" fill-opacity="0.35" stroke="#AE3527" stroke-width="1.5" stroke-dasharray="3 3"/>
+    </g>
+    <!-- piston at TDC -->
+    <rect x="335" y="124" width="130" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
+    <text x="400" y="222" text-anchor="middle" font-size="11" fill="#5A5748">piston at the top</text>
+
+    <circle cx="400" cy="345" r="28" fill="none" stroke="#33505E" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <line x1="400" y1="317" x2="400" y2="323" stroke="#5A5748" stroke-width="1.5"/>
+    <text x="400" y="311" text-anchor="middle" font-size="10" fill="#8C876F">TDC</text>
+    <line x1="400" y1="345" x2="400" y2="317" stroke="#22252B" stroke-width="2"/>
+    <circle cx="400" cy="317" r="4.5" fill="#AE3527"/>
+    <path d="M420,335 A28,28 0 0 1 415,318" fill="none" stroke="#8C876F" stroke-width="1.5" marker-end="url(#arrowInk)"/>
+    <text x="400" y="400" text-anchor="middle" font-size="12" fill="#5A5748">burn races outward,</text>
+    <text x="400" y="416" text-anchor="middle" font-size="12" fill="#5A5748">building pressure</text>
+  </g>
+
+  <!-- ============ PANEL 3: PEAK PRESSURE (15 ATDC) ============ -->
+  <g>
+    <rect x="580" y="65" width="180" height="255" fill="#AE3527" fill-opacity="0.06"/>
+    <text x="660" y="86" text-anchor="middle" font-size="15" font-weight="700" fill="#AE3527">PEAK PRESSURE</text>
+    <text x="660" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#6B5A22">~15&#176; ATDC</text>
+
+    <rect x="585" y="110" width="150" height="90" fill="none" stroke="#22252B" stroke-width="2.5"/>
+    <line x1="585" y1="110" x2="735" y2="110" stroke="#22252B" stroke-width="3"/>
+    <line x1="660" y1="94" x2="660" y2="118" stroke="#5A5748" stroke-width="3"/>
+    <g clip-path="url(#clip3)">
+      <circle cx="660" cy="118" r="70" fill="#AE3527" fill-opacity="0.55"/>
+    </g>
+    <!-- piston just starting descent -->
+    <rect x="595" y="140" width="130" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+    <line x1="660" y1="176" x2="660" y2="230" stroke="#AE3527" stroke-width="4" marker-end="url(#arrowSignal)"/>
+    <text x="660" y="248" text-anchor="middle" font-size="11.5" font-weight="600" fill="#AE3527">peak push lands here</text>
+
+    <circle cx="660" cy="345" r="28" fill="none" stroke="#33505E" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <line x1="660" y1="317" x2="660" y2="323" stroke="#5A5748" stroke-width="1.5"/>
+    <text x="660" y="311" text-anchor="middle" font-size="10" fill="#8C876F">TDC</text>
+    <line x1="660" y1="345" x2="667.2" y2="318" stroke="#22252B" stroke-width="2"/>
+    <circle cx="667.2" cy="318" r="4.5" fill="#AE3527"/>
+  </g>
+
+</svg>

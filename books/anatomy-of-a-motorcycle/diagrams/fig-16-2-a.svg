@@ -1,0 +1,34 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">A SPEC SHEET, READ AS CONNECTED PAIRS</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- spec sheet frame -->
+  <rect x="100" y="80" width="600" height="300" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.6"/>
+
+  <text x="200" y="115" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">POWER</text>
+  <text x="600" y="115" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">WEIGHT</text>
+  <line x1="240" y1="112" x2="560" y2="112" stroke="#AE3527" stroke-width="1.6" stroke-dasharray="4 2"/>
+  <text x="400" y="105" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">RATIO NEEDS CATEGORY CONTEXT</text>
+
+  <text x="200" y="205" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">SEAT HEIGHT</text>
+  <text x="600" y="205" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">SUSPENSION TRAVEL</text>
+  <line x1="270" y1="202" x2="530" y2="202" stroke="#AE3527" stroke-width="1.6" stroke-dasharray="4 2"/>
+  <text x="400" y="195" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">DIRECT CAUSAL LINK (CH. 5.5)</text>
+
+  <text x="200" y="295" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">TRAIL</text>
+  <text x="600" y="295" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">WHEELBASE</text>
+  <line x1="230" y1="292" x2="570" y2="292" stroke="#AE3527" stroke-width="1.6" stroke-dasharray="4 2"/>
+  <text x="400" y="285" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">PREDICTS STEERING CHARACTER (CH. 4.3/4.4)</text>
+
+  <text x="400" y="355" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">EACH PAIR, READ TOGETHER, REVEALS A SPECIFIC TRADE-OFF</text>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A MAP OF COMPROMISES, NOT A RANKED SCORECARD</text>
+</svg>

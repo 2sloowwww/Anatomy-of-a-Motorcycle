@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>5.4 — Sag and Static Setup | Anatomy of a Motorcycle</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-v">Part V — Suspension</a>
+    <span class="sep">/</span>
+    <span class="current">5.4</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">Anatomy of a Motorcycle</a>
+      <span class="vol">Vol. I — The Machine</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">5.4</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Five, Section Four</div>
+        <h1>Sag and Static Setup</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">V of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Practical</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">048 / 150</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv"><a class="fv" href="chapter-5-3.html">Ch. 5.3</a></span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~8 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">Two riders of noticeably different weight, on the exact same motorcycle with the exact same spring, can both end up with correctly set-up suspension — or both end up with badly set-up suspension — depending entirely on one adjustment neither of them may have ever touched. Sag is the measurement that reveals which is actually true, and it's the practical bridge between everything Chapter 5.2 and Chapter 5.3 explained and a suspension that actually does its job on the specific bike and rider combination in front of you.</p>
+
+    <h2 class="section">Two Measurements, One Purpose</h2>
+
+    <p>Sag is measured in two stages. Static sag, sometimes called free sag, is how much the suspension compresses under the weight of the motorcycle alone, measured from the suspension's fully extended length with no rider aboard. Rider sag, sometimes called race sag, is measured the same way but with the rider seated aboard in a normal riding position. Both numbers, along with the suspension's total available travel, tell you whether the spring's preload — introduced back in Chapter 5.2 as an adjustment that shifts where the spring starts without changing its rate — is actually set correctly for this specific bike and rider.</p>
+
+    <p>The reasoning connects directly back to Chapter 5.1's account of suspension's real job. Too little sag means the suspension sits too high at rest, near full extension, leaving too little downward travel available to keep the wheel in contact with the road as it drops away into a dip — a direct failure of the contact-maintenance job Chapter 5.1 identified as suspension's actual priority. Too much sag means the suspension sits too low, already using up a large share of its travel just supporting static weight, leaving too little upward travel before the first real bump bottoms it out — exactly the failure Chapter 5.2 described a too-soft spring rate risking, except here caused by incorrect preload rather than the spring itself.</p>
+
+    <div class="pull"><p>Sag isn't a comfort setting or a cosmetic ride-height adjustment. It's the practical, measurable proxy for whether a suspension actually has a sensible share of its travel available in both directions — up into a bump, and down into a dip — for the specific rider sitting on it.</p></div>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 5.4-A</span>
+      <img src="diagrams/fig-5-4-a.svg" alt="A suspension unit shown at full extension, at static sag under the bike's own weight, and at rider sag with a rider aboard, with the remaining travel above and below each point labeled." class="diagram-img">
+      <p>A suspension unit shown at full extension, at static sag under the bike's own weight, and at rider sag with a rider aboard, with the remaining travel above and below each point labeled.</p>
+    </div>
+
+    <h2 class="section">A Common Practical Starting Point</h2>
+
+    <p>A frequently used general guideline for street motorcycles targets rider sag somewhere around a quarter to a third of the suspension's total travel, front and rear, as a reasonable starting point before fine-tuning further for a specific bike, rider, and riding style. This figure isn't a universal law — different bikes, riding disciplines, and manufacturer specifications vary meaningfully around it — but it's a useful, honest starting point precisely because it tends to leave a workable share of travel available in both directions at once, matching the balance Chapter 5.1's two suspension jobs both depend on.</p>
+
+    <p>Measuring it in practice is straightforward in principle: measure the suspension fully extended, unweighted, with the wheel just barely off the ground; measure it again with the bike resting under its own weight; measure it a third time with the rider aboard normally; the differences between these three figures give static sag and rider sag directly.</p>
+
+    <h2 class="section">When Preload Alone Isn't Enough</h2>
+
+    <p>Preload has a limited range of adjustment, and that limit matters. If a rider's weight is genuinely mismatched to the spring rate installed — a heavier rider on a spring meant for a much lighter one, or the reverse — winding preload all the way to its maximum or minimum may still fail to bring sag into a sensible range. When that happens, the honest diagnosis isn't "adjust preload further." It's that the spring rate itself, the subject of Chapter 5.2, is wrong for this rider, and no amount of preload adjustment can substitute for a spring that was never suited to the load it's actually carrying. This is worth stating plainly because it's a common point of confusion: preload fine-tunes sag within a spring's working range, but it cannot fix a fundamentally mismatched spring rate.</p>
+
+    <h2 class="section">A Common Misconception, Cleared Up Early</h2>
+
+    <p>It's easy to treat sag setup as a minor comfort adjustment, or worse, a purely cosmetic ride-height tweak — sitting a bike slightly higher or lower to suit appearance or reach to the ground. Chapter 5.1 already made the case that suspension exists primarily to maintain tyre contact, not primarily for comfort, and sag is the practical, measurable check that this actual job can be done at all for the rider currently on the bike. It's also worth separating sag from spring rate directly: sag is a measured symptom, while spring rate and preload are the causes behind it — the same figure can result from a correctly chosen spring with the wrong preload, or an incorrectly chosen spring that no preload adjustment can fix, and only checking sag in the first place reveals which situation you're actually in.</p>
+
+    <h2 class="section">Where This Leads</h2>
+
+    <p>Sag tells you whether the travel a suspension has is being used sensibly. It doesn't address how much total travel a given motorcycle has to work with in the first place, or why that figure differs so much between an off-road bike and a sportbike. Chapter 5.5 turns to suspension travel directly.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Static sag measures suspension compression under the bike's own weight; rider sag measures it with the rider aboard — both are checked against total available travel.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Correct sag ensures a sensible share of travel is available in both directions: upward into a bump, and downward into a dip, directly supporting the contact-maintenance job Chapter 5.1 described.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          A commonly used starting guideline targets rider sag around a quarter to a third of total travel, though this varies by bike, discipline, and manufacturer specification rather than being a fixed rule.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Preload can only fine-tune sag within a spring's working range — if adjusting preload to its limits still can't bring sag into range, the spring rate itself, not the preload, is mismatched to the rider.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Sag is a measured symptom, not a cause; spring rate and preload are the actual causes behind whatever sag figure results.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-5-1.html">← Ch. 5.1</a></td>
+          <td class="note">Established suspension's contact-maintenance job as its true priority over comfort; this chapter shows sag as the practical, measurable check on whether that job is achievable.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-5-2.html">← Ch. 5.2</a></td>
+          <td class="note">Introduced preload and spring rate; this chapter shows exactly how both interact to produce a measured sag figure, and where preload's adjustment range runs out.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-5-5.html">→ Ch. 5.5</a></td>
+          <td class="note">Covers suspension travel directly, the total figure sag is measured against.</td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a href="chapter-5-3.html">
+      <span class="dir">← Previous Chapter</span>
+      <span class="ttl">5.3 — Damping: Controlling Spring Motion</span>
+    </a>
+    <a class="next" href="chapter-5-5.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">5.5 — Suspension Travel</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">Anatomy of a Motorcycle — Sheet 048 / 150</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">SLICK VS. GROOVED TREAD</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- LEFT: slick -->
+  <text x="200" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" font-weight="700" fill="#22252B">SLICK — DRY ONLY</text>
+
+  <!-- tyre top-down contact patch view, plain rectangle rubber -->
+  <rect x="110" y="130" width="180" height="240" rx="18" fill="#22252B"/>
+  <rect x="120" y="140" width="160" height="220" rx="12" fill="#5A5748"/>
+
+  <text x="200" y="400" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">100% RUBBER CONTACT</text>
+  <text x="200" y="417" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">NO PATH FOR WATER</text>
+
+  <!-- divider -->
+  <line x1="400" y1="70" x2="400" y2="460" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- RIGHT: grooved -->
+  <text x="600" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" font-weight="700" fill="#22252B">GROOVED — WET CAPABLE</text>
+
+  <rect x="510" y="130" width="180" height="240" rx="18" fill="#22252B"/>
+  <rect x="520" y="140" width="160" height="220" rx="12" fill="#5A5748"/>
+
+  <!-- grooves as paper-colored channels -->
+  <g stroke="#EEE8DA" stroke-width="10" stroke-linecap="round">
+    <path d="M 540 160 L 560 340" />
+    <path d="M 600 150 L 600 350" />
+    <path d="M 660 160 L 640 340" />
+  </g>
+  <g stroke="#EEE8DA" stroke-width="7" stroke-linecap="round">
+    <path d="M 530 200 L 670 210"/>
+    <path d="M 530 270 L 670 280"/>
+    <path d="M 530 320 L 670 330"/>
+  </g>
+
+  <!-- water arrows pushed out sideways -->
+  <g stroke="#33505E" stroke-width="2" fill="none">
+    <line x1="530" y1="220" x2="495" y2="220"/>
+    <polygon points="495,220 505,214 505,226" fill="#33505E"/>
+    <line x1="670" y1="220" x2="705" y2="220"/>
+    <polygon points="705,220 695,214 695,226" fill="#33505E"/>
+  </g>
+  <text x="600" y="400" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">GROOVES CHANNEL WATER</text>
+  <text x="600" y="417" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">AWAY FROM CONTACT AREA</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">EVERY GROOVE IS RUBBER TRADED AWAY FOR WATER DISPLACEMENT</text>
+</svg>

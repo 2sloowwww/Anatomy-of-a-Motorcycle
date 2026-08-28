@@ -1,0 +1,166 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
+  <defs>
+    <marker id="arrowSignal57" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#AE3527"/>
+    </marker>
+    <marker id="arrowInk57" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#22252B"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="26" text-anchor="middle" font-weight="700" font-size="19.5" fill="#22252B" letter-spacing="0.3">RISING-RATE LINKAGE: LEVERAGE CHANGES THROUGH THE STROKE</text>
+  <text x="400" y="44" text-anchor="middle" font-size="12" font-style="italic" fill="#5A5748">SAME LINEAR SPRING INSIDE THE SHOCK AT EVERY STAGE — ONLY THE LEVERAGE CHANGES</text>
+
+  <!-- panel dividers -->
+  <line x1="283" y1="58" x2="283" y2="430" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 4"/>
+  <line x1="517" y1="58" x2="517" y2="430" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 4"/>
+
+  <!-- shared frame-reference height -->
+  <line x1="45" y1="368" x2="755" y2="368" stroke="#33505E" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.55"/>
+  <text x="50" y="362" font-size="9.5" fill="#33505E">FRAME REFERENCE HEIGHT (CONSTANT)</text>
+
+  <!-- ============================================================ -->
+  <!-- PANEL A: EARLY TRAVEL -->
+  <!-- ============================================================ -->
+  <text x="165" y="66" text-anchor="middle" font-size="14" font-weight="700" fill="#6B5A22" letter-spacing="0.3">EARLY TRAVEL</text>
+
+  <rect x="45" y="118" width="56" height="24" fill="#E2D9C3" stroke="#22252B" stroke-width="1.8"/>
+  <line x1="51" y1="118" x2="45" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="63" y1="118" x2="57" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="75" y1="118" x2="69" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="87" y1="118" x2="81" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="99" y1="118" x2="93" y2="128" stroke="#22252B" stroke-width="1"/>
+  <text x="73" y="152" text-anchor="middle" font-size="9.5" fill="#8C876F">FRAME</text>
+
+  <circle cx="95" cy="170" r="5.5" fill="#22252B"/>
+  <line x1="93" y1="162" x2="60" y2="150" stroke="#5A5748" stroke-width="1"/>
+  <text x="56" y="148" text-anchor="end" font-size="10" font-weight="700" fill="#5A5748">PIVOT</text>
+
+  <!-- swingarm -->
+  <line x1="95" y1="170" x2="255" y2="340" stroke="#22252B" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- wheel -->
+  <circle cx="255" cy="340" r="22" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+  <circle cx="255" cy="340" r="4" fill="#22252B"/>
+
+  <!-- linkage point + rocker -->
+  <polygon points="175,255 190,268 160,268" fill="#22252B"/>
+  <line x1="178" y1="255" x2="150" y2="235" stroke="#5A5748" stroke-width="1"/>
+  <text x="146" y="230" text-anchor="end" font-size="10" font-weight="700" fill="#5A5748">LINKAGE</text>
+
+  <!-- shock: frame mount to linkage point -->
+  <circle cx="155" cy="105" r="5" fill="#22252B"/>
+  <line x1="155" y1="105" x2="175" y2="150" stroke="#22252B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M172,150 l-10,5 l14,6 l-14,6 l14,6 l-10,5" fill="none" stroke="#22252B" stroke-width="2.6" stroke-linejoin="round"/>
+  <line x1="176" y1="178" x2="175" y2="255" stroke="#22252B" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- wheel movement arrow -->
+  <line x1="292" y1="322" x2="292" y2="280" stroke="#AE3527" stroke-width="2.2" marker-end="url(#arrowSignal57)"/>
+  <text x="298" y="304" font-size="10.5" font-weight="700" fill="#AE3527">WHEEL</text>
+  <text x="298" y="317" font-size="10.5" font-weight="700" fill="#AE3527">RISES</text>
+
+  <!-- shock compression arrow -->
+  <line x1="120" y1="200" x2="120" y2="150" stroke="#33505E" stroke-width="2" marker-end="url(#arrowInk57)"/>
+  <text x="60" y="178" text-anchor="end" font-size="9.5" fill="#33505E">SHOCK</text>
+  <text x="60" y="190" text-anchor="end" font-size="9.5" fill="#33505E">COMPRESSES</text>
+  <text x="60" y="202" text-anchor="end" font-size="9.5" fill="#33505E">A LITTLE</text>
+
+  <!-- ratio box -->
+  <rect x="115" y="395" width="100" height="34" fill="#E2D9C3" stroke="#6B5A22" stroke-width="1.8"/>
+  <text x="165" y="412" text-anchor="middle" font-size="15" font-weight="700" fill="#6B5A22">3.0 : 1</text>
+  <text x="165" y="424" text-anchor="middle" font-size="8.5" fill="#6B5A22">WHEEL : SHOCK</text>
+
+  <!-- ============================================================ -->
+  <!-- PANEL B: MID TRAVEL -->
+  <!-- ============================================================ -->
+  <text x="400" y="66" text-anchor="middle" font-size="14" font-weight="700" fill="#6B5A22" letter-spacing="0.3">MID TRAVEL</text>
+
+  <rect x="280" y="118" width="56" height="24" fill="#E2D9C3" stroke="#22252B" stroke-width="1.8"/>
+  <line x1="286" y1="118" x2="280" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="298" y1="118" x2="292" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="310" y1="118" x2="304" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="322" y1="118" x2="316" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="334" y1="118" x2="328" y2="128" stroke="#22252B" stroke-width="1"/>
+
+  <circle cx="330" cy="170" r="5.5" fill="#22252B"/>
+
+  <!-- swingarm, rotated up further -->
+  <line x1="330" y1="170" x2="495" y2="290" stroke="#22252B" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="495" cy="290" r="22" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+  <circle cx="495" cy="290" r="4" fill="#22252B"/>
+
+  <polygon points="421,236 436,249 406,249" fill="#22252B"/>
+
+  <circle cx="390" cy="105" r="5" fill="#22252B"/>
+  <line x1="390" y1="105" x2="410" y2="148" stroke="#22252B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M407,148 l-10,5 l14,6 l-14,6 l14,5" fill="none" stroke="#22252B" stroke-width="2.6" stroke-linejoin="round"/>
+  <line x1="411" y1="170" x2="421" y2="236" stroke="#22252B" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- wheel movement arrow -->
+  <line x1="530" y1="272" x2="530" y2="232" stroke="#AE3527" stroke-width="2.2" marker-end="url(#arrowSignal57)"/>
+  <text x="536" y="255" font-size="10.5" font-weight="700" fill="#AE3527">WHEEL</text>
+  <text x="536" y="268" font-size="10.5" font-weight="700" fill="#AE3527">RISES</text>
+
+  <!-- shock compression arrow -->
+  <line x1="358" y1="195" x2="358" y2="150" stroke="#33505E" stroke-width="2" marker-end="url(#arrowInk57)"/>
+  <text x="358" y="212" text-anchor="middle" font-size="9.5" fill="#33505E">SHOCK COMPRESSES</text>
+  <text x="358" y="224" text-anchor="middle" font-size="9.5" fill="#33505E">MORE THIS TIME</text>
+
+  <rect x="350" y="395" width="100" height="34" fill="#E2D9C3" stroke="#6B5A22" stroke-width="1.8"/>
+  <text x="400" y="412" text-anchor="middle" font-size="15" font-weight="700" fill="#6B5A22">2.5 : 1</text>
+  <text x="400" y="424" text-anchor="middle" font-size="8.5" fill="#6B5A22">WHEEL : SHOCK</text>
+
+  <!-- ============================================================ -->
+  <!-- PANEL C: LATE TRAVEL -->
+  <!-- ============================================================ -->
+  <text x="635" y="66" text-anchor="middle" font-size="14" font-weight="700" fill="#AE3527" letter-spacing="0.3">LATE TRAVEL</text>
+
+  <rect x="515" y="118" width="56" height="24" fill="#E2D9C3" stroke="#22252B" stroke-width="1.8"/>
+  <line x1="521" y1="118" x2="515" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="533" y1="118" x2="527" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="545" y1="118" x2="539" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="557" y1="118" x2="551" y2="128" stroke="#22252B" stroke-width="1"/>
+  <line x1="569" y1="118" x2="563" y2="128" stroke="#22252B" stroke-width="1"/>
+
+  <circle cx="565" cy="170" r="5.5" fill="#22252B"/>
+
+  <!-- swingarm, steepest angle -->
+  <line x1="565" y1="170" x2="725" y2="240" stroke="#22252B" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="725" cy="240" r="22" fill="#E2D9C3" stroke="#22252B" stroke-width="2.4"/>
+  <circle cx="725" cy="240" r="4" fill="#22252B"/>
+
+  <polygon points="661,212 676,225 646,225" fill="#22252B"/>
+
+  <circle cx="625" cy="105" r="5" fill="#22252B"/>
+  <line x1="625" y1="105" x2="640" y2="140" stroke="#22252B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M638,140 l-9,4 l13,5 l-13,5 l13,5" fill="none" stroke="#22252B" stroke-width="2.6" stroke-linejoin="round"/>
+  <line x1="642" y1="159" x2="661" y2="212" stroke="#22252B" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- wheel movement arrow -->
+  <line x1="758" y1="222" x2="758" y2="184" stroke="#AE3527" stroke-width="2.2" marker-end="url(#arrowSignal57)"/>
+  <text x="764" y="197" font-size="10.5" font-weight="700" fill="#AE3527">WHEEL</text>
+  <text x="764" y="210" font-size="10.5" font-weight="700" fill="#AE3527">RISES</text>
+
+  <!-- shock compression arrow -->
+  <line x1="592" y1="185" x2="592" y2="145" stroke="#33505E" stroke-width="2" marker-end="url(#arrowInk57)"/>
+  <text x="592" y="202" text-anchor="middle" font-size="9.5" fill="#33505E">SHOCK COMPRESSES</text>
+  <text x="592" y="214" text-anchor="middle" font-size="9.5" fill="#33505E">MOST NOW</text>
+
+  <rect x="585" y="395" width="100" height="34" fill="#AE3527" fill-opacity="0.15" stroke="#AE3527" stroke-width="1.8"/>
+  <text x="635" y="412" text-anchor="middle" font-size="15" font-weight="700" fill="#AE3527">2.0 : 1</text>
+  <text x="635" y="424" text-anchor="middle" font-size="8.5" fill="#AE3527">WHEEL : SHOCK</text>
+
+  <!-- trend -->
+  <line x1="220" y1="412" x2="345" y2="412" stroke="#22252B" stroke-width="1.6" marker-end="url(#arrowInk57)"/>
+  <line x1="455" y1="412" x2="580" y2="412" stroke="#22252B" stroke-width="1.6" marker-end="url(#arrowInk57)"/>
+
+  <text x="400" y="450" text-anchor="middle" font-size="13.5" font-weight="700" fill="#22252B">RATIO FALLS THROUGH THE STROKE — EFFECTIVE RATE AT THE WHEEL RISES</text>
+  <text x="400" y="466" text-anchor="middle" font-size="11" fill="#8C876F">no progressive coil spring required — the linkage geometry does the work</text>
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 5.7-A</text>
+</svg>

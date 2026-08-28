@@ -1,0 +1,33 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">CUMULATIVE FATIGUE OVER SUSTAINED HIGHWAY TIME</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- axes -->
+  <line x1="110" y1="400" x2="110" y2="90" stroke="#33505E" stroke-width="1.5"/>
+  <line x1="110" y1="400" x2="700" y2="400" stroke="#33505E" stroke-width="1.5"/>
+  <text x="400" y="428" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">TIME ON HIGHWAY →</text>
+  <text x="60" y="245" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748" transform="rotate(-90 60 245)">CUMULATIVE FATIGUE</text>
+
+  <!-- steady drag baseline, rising linearly-ish -->
+  <path d="M 110 380 L 690 160" fill="none" stroke="#AE3527" stroke-width="3"/>
+  <text x="560" y="190" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#AE3527">STEADY WIND DRAG LOAD</text>
+
+  <!-- spikes for turbulence events -->
+  <g stroke="#33505E" stroke-width="2.5" fill="none">
+    <path d="M 220 340 L 220 300 L 240 300 L 240 340"/>
+    <path d="M 350 300 L 350 255 L 370 255 L 370 300"/>
+    <path d="M 480 250 L 480 200 L 500 200 L 500 250"/>
+    <path d="M 600 210 L 600 155 L 620 155 L 620 210"/>
+  </g>
+  <text x="420" y="150" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#33505E">REPEATED TURBULENCE / CROSSWIND EVENTS</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">FATIGUE COMPOUNDS FROM BOTH A STEADY FORCE AND REPEATED DISTURBANCES</text>
+</svg>

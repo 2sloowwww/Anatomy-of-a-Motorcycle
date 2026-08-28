@@ -1,0 +1,55 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">VIDEO STACKS. AUDIO SUMS.</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <line x1="400" y1="80" x2="400" y2="440" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="200" y="78" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#8C876F" letter-spacing="1">VIDEO TRACKS</text>
+  <text x="600" y="78" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#8C876F" letter-spacing="1">AUDIO TRACKS</text>
+
+  <g font-family="JetBrains Mono, monospace">
+    <rect x="110" y="110" width="180" height="50" fill="#E2D9C3" stroke="#22252B" stroke-width="1.5"/>
+    <text x="200" y="132" text-anchor="middle" font-size="11" fill="#22252B">V2 — TITLE CARD</text>
+    <text x="200" y="150" text-anchor="middle" font-size="9" fill="#5A5748">rendered on top</text>
+
+    <line x1="200" y1="160" x2="200" y2="176" stroke="#AE3527" stroke-width="1.6" stroke-dasharray="3 3"/>
+    <text x="255" y="171" font-size="9" fill="#AE3527">composites over</text>
+
+    <rect x="110" y="180" width="180" height="50" fill="#E2D9C3" stroke="#22252B" stroke-width="1.5"/>
+    <text x="200" y="202" text-anchor="middle" font-size="11" fill="#22252B">V1 — INTERVIEW</text>
+    <text x="200" y="220" text-anchor="middle" font-size="9" fill="#5A5748">base image</text>
+
+    <text x="200" y="270" text-anchor="middle" font-size="12.5" fill="#22252B" font-weight="600">ONE VISIBLE RESULT</text>
+    <text x="200" y="288" text-anchor="middle" font-size="10.5" fill="#5A5748">higher track wins unless made</text>
+    <text x="200" y="304" text-anchor="middle" font-size="10.5" fill="#5A5748">transparent or blended</text>
+  </g>
+
+  <g font-family="JetBrains Mono, monospace">
+    <rect x="490" y="110" width="220" height="40" fill="#E2D9C3" stroke="#33505E" stroke-width="1.5"/>
+    <path d="M500,130 L510,120 L520,138 L530,124 L540,134 L550,118 L560,140 L570,130 L580,122 L590,136 L600,130 L610,124 L620,138 L630,130 L640,120 L650,140 L660,130" fill="none" stroke="#33505E" stroke-width="1"/>
+    <text x="600" y="102" text-anchor="middle" font-size="10.5" fill="#22252B">A1 — DIALOGUE</text>
+
+    <rect x="490" y="158" width="220" height="40" fill="#E2D9C3" stroke="#33505E" stroke-width="1.5"/>
+    <path d="M500,178 L515,172 L530,182 L545,170 L560,184 L575,174 L590,180 L605,172 L620,182 L635,176 L650,180 L665,174" fill="none" stroke="#33505E" stroke-width="1"/>
+    <text x="600" y="150" text-anchor="middle" font-size="10.5" fill="#22252B">A2 — MUSIC</text>
+
+    <rect x="490" y="206" width="220" height="40" fill="#E2D9C3" stroke="#33505E" stroke-width="1.5"/>
+    <path d="M500,224 L512,222 L524,226 L536,220 L548,228 L560,222 L572,226 L584,220 L596,228 L608,222 L620,226 L632,220 L644,228" fill="none" stroke="#33505E" stroke-width="1"/>
+    <text x="600" y="198" text-anchor="middle" font-size="10.5" fill="#22252B">A3 — AMBIENCE</text>
+
+    <text x="600" y="270" text-anchor="middle" font-size="12.5" fill="#22252B" font-weight="600">ALL TRACKS HEARD AT ONCE</text>
+    <text x="600" y="288" text-anchor="middle" font-size="10.5" fill="#5A5748">no track "wins" — levels and</text>
+    <text x="600" y="304" text-anchor="middle" font-size="10.5" fill="#5A5748">panning control the mix, not stacking order</text>
+  </g>
+
+  <text x="400" y="400" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">SAME TIMELINE, TWO DIFFERENT RULES</text>
+  <text x="400" y="420" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">Video is about visibility and order. Audio is about balance and blend.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 4.2-A</text>
+</svg>

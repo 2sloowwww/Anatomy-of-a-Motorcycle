@@ -1,0 +1,47 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">SAME TRADE CURVES, OPPOSITE END</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- three spectrums with sportbike/cruiser markers -->
+  <text x="150" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">TRAIL</text>
+  <line x1="80" y1="115" x2="220" y2="115" stroke="#33505E" stroke-width="2"/>
+  <circle cx="100" cy="115" r="7" fill="#8C876F"/>
+  <text x="100" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">SPORTBIKE</text>
+  <circle cx="200" cy="115" r="7" fill="#AE3527"/>
+  <text x="200" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#AE3527">CRUISER</text>
+
+  <text x="400" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">ENGINE CHARACTER</text>
+  <line x1="330" y1="115" x2="470" y2="115" stroke="#33505E" stroke-width="2"/>
+  <circle cx="350" cy="115" r="7" fill="#8C876F"/>
+  <text x="350" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">SMOOTH/HIGH-REV</text>
+  <circle cx="450" cy="115" r="7" fill="#AE3527"/>
+  <text x="450" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#AE3527">LUMPY/LOW-RPM</text>
+
+  <text x="650" y="90" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">LEAN ANGLE</text>
+  <line x1="580" y1="115" x2="720" y2="115" stroke="#33505E" stroke-width="2"/>
+  <circle cx="600" cy="115" r="7" fill="#8C876F"/>
+  <text x="600" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">MAXIMIZED</text>
+  <circle cx="700" cy="115" r="7" fill="#AE3527"/>
+  <text x="700" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#AE3527">TRADED AWAY</text>
+
+  <!-- cruiser silhouette -->
+  <ellipse cx="400" cy="300" rx="120" ry="16" fill="#8C876F" opacity="0.25"/>
+  <circle cx="290" cy="270" r="30" fill="none" stroke="#22252B" stroke-width="3"/>
+  <circle cx="510" cy="270" r="30" fill="none" stroke="#22252B" stroke-width="3"/>
+  <path d="M 290 270 Q 350 200 420 230 L 480 220 L 510 270" fill="none" stroke="#22252B" stroke-width="3"/>
+  <rect x="330" y="240" width="60" height="25" rx="6" fill="#AE3527"/>
+  <text x="360" y="257" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="#EEE8DA">V-TWIN</text>
+  <line x1="460" y1="255" x2="500" y2="230" stroke="#22252B" stroke-width="3"/>
+  <text x="510" y="220" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">LOW BARS,</text>
+  <text x="510" y="232" font-family="JetBrains Mono, monospace" font-size="7" fill="#5A5748">FEET FORWARD</text>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A DIFFERENT TARGET, NOT A LESSER MOTORCYCLE</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">EVERY FORCE CONVERGES AT THE CONTACT PATCH</text>
+  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- simplified motorcycle side profile -->
+  <!-- wheels -->
+  <circle cx="230" cy="340" r="58" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="570" cy="340" r="58" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="230" cy="340" r="6" fill="#22252B"/>
+  <circle cx="570" cy="340" r="6" fill="#22252B"/>
+
+  <!-- frame / body block -->
+  <path d="M 230 300 L 340 220 L 480 220 L 570 300" fill="none" stroke="#22252B" stroke-width="3"/>
+  <path d="M 340 220 L 340 300" stroke="#22252B" stroke-width="2.5"/>
+  <path d="M 480 220 L 480 300" stroke="#22252B" stroke-width="2.5"/>
+  <!-- seat / rider block -->
+  <rect x="360" y="175" width="110" height="45" rx="6" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.5"/>
+  <text x="415" y="202" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">ENGINE / FRAME / RIDER</text>
+
+  <!-- ground line -->
+  <line x1="80" y1="398" x2="720" y2="398" stroke="#33505E" stroke-width="2"/>
+
+  <!-- contact patches -->
+  <ellipse cx="230" cy="398" rx="22" ry="6" fill="#AE3527"/>
+  <ellipse cx="570" cy="398" rx="22" ry="6" fill="#AE3527"/>
+
+  <!-- force arrows converging -->
+  <!-- drive force from engine down to rear contact patch -->
+  <line x1="415" y1="220" x2="560" y2="380" stroke="#AE3527" stroke-width="2.2"/>
+  <polygon points="570,398 553,388 561,378" fill="#AE3527"/>
+  <text x="490" y="270" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#AE3527" transform="rotate(35 490 270)">DRIVE FORCE</text>
+
+  <!-- braking force down to front contact patch -->
+  <line x1="415" y1="220" x2="245" y2="380" stroke="#33505E" stroke-width="2.2"/>
+  <polygon points="230,398 240,382 250,390" fill="#33505E"/>
+  <text x="300" y="270" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#33505E" transform="rotate(-35 300 270)">BRAKING FORCE</text>
+
+  <!-- cornering force, shown as lateral arrow down to a patch -->
+  <line x1="415" y1="220" x2="415" y2="380" stroke="#6B5A22" stroke-width="2.2" stroke-dasharray="7 4"/>
+  <polygon points="415,398 407,382 423,382" fill="#6B5A22"/>
+  <text x="425" y="310" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="#6B5A22">CORNERING FORCE</text>
+
+  <!-- contact patch labels -->
+  <text x="230" y="425" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">FRONT PATCH</text>
+  <text x="570" y="425" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">REAR PATCH</text>
+
+  <line x1="60" y1="452" x2="740" y2="452" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">NOTHING UPSTREAM MATTERS MORE THAN WHAT THE CONTACT PATCH CAN DO WITH IT</text>
+</svg>

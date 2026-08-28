@@ -1,0 +1,102 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', monospace">
+<defs>
+  <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#22252B"/>
+  </marker>
+  <marker id="arrowSignal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#AE3527"/>
+  </marker>
+</defs>
+
+<rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+<text x="400" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B" letter-spacing="0.5">CRANKSHAFT TO ROAD</text>
+<text x="400" y="59" text-anchor="middle" font-size="13" font-style="italic" fill="#5A5748">Four stages reshape the same torque curve, in sequence</text>
+
+<!-- ===== Chain of 5 stations along a spine ===== -->
+<!-- Stations: ENGINE(90) CLUTCH(255) GEARBOX(420) FINAL DRIVE(585) REAR WHEEL(730) -->
+
+<!-- connecting spine (dashed reference axis) -->
+<line x1="70" y1="220" x2="760" y2="220" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+<!-- ENGINE -->
+<g>
+  <circle cx="90" cy="220" r="46" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="90" cy="220" r="10" fill="#22252B"/>
+  <path d="M90,178 A42,42 0 0 1 128,198" fill="none" stroke="#AE3527" stroke-width="2.5" marker-end="url(#arrowSignal)"/>
+  <text x="90" y="288" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B">ENGINE</text>
+  <text x="90" y="306" text-anchor="middle" font-size="11" fill="#5A5748">HIGH RPM</text>
+  <text x="90" y="320" text-anchor="middle" font-size="11" fill="#5A5748">LOW TORQUE</text>
+</g>
+
+<line x1="140" y1="220" x2="205" y2="220" stroke="#22252B" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+
+<!-- CLUTCH -->
+<g>
+  <rect x="215" y="185" width="80" height="70" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+  <line x1="225" y1="198" x2="285" y2="198" stroke="#22252B" stroke-width="3"/>
+  <line x1="225" y1="212" x2="285" y2="212" stroke="#8C876F" stroke-width="3"/>
+  <line x1="225" y1="226" x2="285" y2="226" stroke="#22252B" stroke-width="3"/>
+  <line x1="225" y1="240" x2="285" y2="240" stroke="#8C876F" stroke-width="3"/>
+  <text x="255" y="288" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B">CLUTCH</text>
+  <text x="255" y="306" text-anchor="middle" font-size="11" fill="#5A5748">CONNECT /</text>
+  <text x="255" y="320" text-anchor="middle" font-size="11" fill="#5A5748">DISCONNECT</text>
+</g>
+
+<line x1="300" y1="220" x2="365" y2="220" stroke="#22252B" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+
+<!-- GEARBOX -->
+<g>
+  <rect x="375" y="180" width="90" height="80" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="405" cy="205" r="14" fill="none" stroke="#22252B" stroke-width="2"/>
+  <circle cx="405" cy="205" r="4" fill="#22252B"/>
+  <circle cx="435" cy="235" r="20" fill="none" stroke="#22252B" stroke-width="2"/>
+  <circle cx="435" cy="235" r="4" fill="#22252B"/>
+  <text x="420" y="288" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B">GEARBOX</text>
+  <text x="420" y="306" text-anchor="middle" font-size="11" fill="#5A5748">SELECTS THE</text>
+  <text x="420" y="320" text-anchor="middle" font-size="11" fill="#5A5748">RATIO IN USE</text>
+</g>
+
+<line x1="465" y1="220" x2="530" y2="220" stroke="#22252B" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+
+<!-- FINAL DRIVE -->
+<g>
+  <circle cx="565" cy="215" r="16" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <circle cx="605" cy="228" r="26" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <path d="M580,205 L590,220 M550,225 L560,240" stroke="#8C876F" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <line x1="565" y1="199" x2="605" y2="202" stroke="#22252B" stroke-width="2"/>
+  <line x1="565" y1="231" x2="605" y2="254" stroke="#22252B" stroke-width="2"/>
+  <text x="585" y="288" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B">FINAL DRIVE</text>
+  <text x="585" y="306" text-anchor="middle" font-size="11" fill="#5A5748">ONE MORE FIXED</text>
+  <text x="585" y="320" text-anchor="middle" font-size="11" fill="#5A5748">REDUCTION</text>
+</g>
+
+<line x1="640" y1="220" x2="695" y2="220" stroke="#22252B" stroke-width="2.5" marker-end="url(#arrowInk)"/>
+
+<!-- REAR WHEEL -->
+<g>
+  <circle cx="730" cy="220" r="50" fill="none" stroke="#22252B" stroke-width="3"/>
+  <circle cx="730" cy="220" r="8" fill="#22252B"/>
+  <line x1="730" y1="220" x2="730" y2="174" stroke="#8C876F" stroke-width="1.5"/>
+  <line x1="730" y1="220" x2="768" y2="244" stroke="#8C876F" stroke-width="1.5"/>
+  <line x1="730" y1="220" x2="692" y2="244" stroke="#8C876F" stroke-width="1.5"/>
+  <path d="M730,182 A38,38 0 0 1 763,238" fill="none" stroke="#AE3527" stroke-width="2.5" marker-end="url(#arrowSignal)"/>
+  <text x="730" y="288" text-anchor="middle" font-size="15" font-weight="700" fill="#22252B">REAR WHEEL</text>
+  <text x="730" y="306" text-anchor="middle" font-size="11" fill="#5A5748">LOW RPM</text>
+  <text x="730" y="320" text-anchor="middle" font-size="11" fill="#5A5748">HIGH TORQUE</text>
+</g>
+
+<!-- Bottom axis: torque vs speed gradient callouts -->
+<line x1="70" y1="400" x2="760" y2="400" stroke="#33505E" stroke-width="2"/>
+<polygon points="760,394 760,406 772,400" fill="#33505E"/>
+<text x="72" y="392" font-size="12.5" font-weight="700" fill="#33505E">SPEED FALLS &#8594;</text>
+<text x="620" y="392" text-anchor="end" font-size="12.5" font-weight="700" fill="#AE3527">&#8592; TORQUE RISES</text>
+
+<text x="400" y="440" text-anchor="middle" font-size="14" font-weight="600" fill="#6B5A22">ONE TORQUE CURVE, RESHAPED AT EVERY STAGE</text>
+<text x="400" y="462" text-anchor="middle" font-size="12" fill="#5A5748">No stage adds power — each one trades speed for torque, or torque for speed</text>
+</svg>

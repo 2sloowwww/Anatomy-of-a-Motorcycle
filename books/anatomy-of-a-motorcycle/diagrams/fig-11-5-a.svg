@@ -1,0 +1,48 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">THREE DISTINCT DRIVETRAIN FAULTS</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- Column 1: Slip -->
+  <text x="150" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">CLUTCH SLIP</text>
+  <rect x="90" y="95" width="120" height="16" fill="#8C876F"/>
+  <rect x="90" y="115" width="120" height="16" fill="#22252B"/>
+  <line x1="150" y1="131" x2="150" y2="150" stroke="#AE3527" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="150" y="145" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">GAP UNDER LOAD</text>
+  <text x="150" y="185" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">LEVER RELEASED,</text>
+  <text x="150" y="197" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">REVS RISE, SPEED DOESN'T</text>
+
+  <!-- Column 2: Drag -->
+  <text x="400" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">CLUTCH DRAG</text>
+  <rect x="340" y="95" width="120" height="16" fill="#8C876F"/>
+  <rect x="340" y="113" width="120" height="16" fill="#22252B"/>
+  <text x="400" y="145" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#AE3527">STILL TOUCHING</text>
+  <text x="400" y="185" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">LEVER PULLED IN,</text>
+  <text x="400" y="197" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">CAN'T FIND NEUTRAL</text>
+
+  <!-- Column 3: Gear jump -->
+  <text x="650" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#22252B">GEAR JUMPS OUT</text>
+  <circle cx="650" cy="118" r="26" fill="none" stroke="#22252B" stroke-width="2"/>
+  <g stroke="#22252B" stroke-width="2">
+    <line x1="650" y1="92" x2="650" y2="86"/>
+    <line x1="676" y1="118" x2="682" y2="118"/>
+    <line x1="650" y1="144" x2="650" y2="150"/>
+    <line x1="624" y1="118" x2="618" y2="118"/>
+  </g>
+  <path d="M 660 108 L 668 100" stroke="#AE3527" stroke-width="2.5"/>
+  <path d="M 664 96 L 668 100 L 664 104" fill="none" stroke="#AE3527" stroke-width="2"/>
+  <text x="650" y="185" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">HAPPENS REGARDLESS</text>
+  <text x="650" y="197" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#5A5748">OF CLUTCH POSITION</text>
+
+  <line x1="270" y1="70" x2="270" y2="220" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="530" y1="70" x2="530" y2="220" stroke="#33505E" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">THREE MECHANICALLY DISTINCT FAULTS — THREE DIFFERENT REPAIRS</text>
+</svg>

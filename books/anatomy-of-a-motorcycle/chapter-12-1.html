@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>12.1 — Building a Basic Tool Kit | Anatomy of a Motorcycle</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-xii">Part XII — Tools &amp; Workshop</a>
+    <span class="sep">/</span>
+    <span class="current">12.1</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">Anatomy of a Motorcycle</a>
+      <span class="vol">Vol. I — The Machine</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">12.1</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Twelve, Section One</div>
+        <h1>Building a Basic Tool Kit</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">XII of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Foundational</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">121 / 150</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv"><a class="fv" href="chapter-11-11.html">Ch. 11.11</a></span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~6 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">Chapter 11.10 walked through bleeding a brake line, adjusting chain slack, and replacing a fuse without once naming what those repairs actually require in a rider's hands. Every one of them needs specific tools, matched to what a motorcycle's fasteners actually are, and a basic kit built around that match does more useful work than a much larger generic set ever will.</p>
+
+    <p>Chapter 11.11 closed Part XI by pointing here: a diagnosis is only useful once a rider is actually equipped to act on it. This chapter starts with the tools themselves.</p>
+
+    <h2 class="section">Metric Fasteners, Almost Universally</h2>
+
+    <p>Nearly every motorcycle sold anywhere in the world today uses metric fasteners, regardless of where it's manufactured or sold — a genuine convenience compared to some older machines and vehicles that mixed metric and imperial hardware on the same assembly. A basic kit built around metric sockets, wrenches, and hex keys covers the overwhelming majority of fasteners a rider will actually encounter, which makes a mixed metric-and-imperial set mostly wasted weight and clutter rather than added capability.</p>
+
+    <h2 class="section">The Core Kit: Sockets, Wrenches, and Hex Keys</h2>
+
+    <p>A small range of socket and wrench sizes, typically running from around 8mm to 17mm, covers the great majority of fasteners on a typical motorcycle — axle nuts, engine covers, bodywork fasteners, and the caliper bolts Chapter 11.10's bleeding procedure needs access to. A set of hex keys in similarly common sizes handles fasteners a socket can't reach, particularly on fairings and smaller covers, and a couple of screwdrivers, Phillips and flathead, round out what fits in a genuinely compact kit rather than a full mechanic's rolling chest.</p>
+
+    <div class="pull"><p>Nearly every motorcycle on the road uses metric fasteners, and a basic kit built specifically around that fact — rather than a generic mixed-standard set — covers the overwhelming majority of what a rider will actually need to turn.</p></div>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 12.1-A</span>
+      <img src="diagrams/fig-12-1-a.webp" alt="A mechanic's socket and wrench set laid out in its case, showing the range of socket sizes, ratchets, extensions, and drive adapters a basic kit is built around." class="diagram-img">
+      <p>A mechanic's socket and wrench set laid out in its case — the same range of sizes, ratchets, and extensions a basic motorcycle kit is built around, scaled down to what actually fits a compact case. <em>Photo: J.C. Fields, CC BY-SA 3.0, via Wikimedia Commons.</em></p>
+    </div>
+
+    <h2 class="section">Motorcycle-Specific Additions</h2>
+
+    <p>A few items go beyond what a generic automotive kit assumes, because they answer needs specific to what this book has already covered. Chapter 6.5 established tyre pressure as the cheapest, most consequential adjustment on the entire machine, which makes an accurate tyre pressure gauge worth carrying even before a torque wrench. Chapter 11.10's brake-bleeding procedure needs a length of clear tubing and a small catch bottle, neither of which appears in most general-purpose kits. Pliers, both standard and needle-nose, handle the cotter pins, clips, and cable ends a motorcycle uses more of than most cars do.</p>
+
+    <h2 class="section">A Common Misconception, Cleared Up Early</h2>
+
+    <p>It's a common instinct to buy the largest tool set available, on the assumption that more sizes and more pieces mean fewer situations where the right tool is missing. A two-hundred-piece set built for general automotive work buries the dozen or so sizes a motorcycle actually uses among dozens that will likely never come out of the case, making the specific tool needed harder to find quickly rather than easier. A smaller kit, deliberately matched to metric motorcycle fasteners, is both more portable and faster to use than a much larger one built for a different kind of vehicle.</p>
+
+    <h2 class="section">Where This Leads</h2>
+
+    <p>Having the right tool is only half the job; using it correctly on a fastener matters just as much. Chapter 12.2 turns to torque wrenches next, and to why "tight" isn't something a hand should be trusted to judge alone.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Nearly every motorcycle uses metric fasteners, which makes a metric-focused kit far more useful than a generic mixed-standard set.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          A small range of socket, wrench, and hex-key sizes covers the great majority of fasteners on a typical motorcycle.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          A larger, generic tool set isn't automatically more useful — a smaller kit matched to a motorcycle's actual fasteners is faster to use.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-11-10.html">← Ch. 11.10</a></td>
+          <td class="note">Described bleeding a brake line, adjusting chain slack, and replacing a fuse; this chapter names the specific tools each of those repairs actually requires.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-6-5.html">← Ch. 6.5</a></td>
+          <td class="note">Established tyre pressure as the cheapest, most consequential adjustment available; this chapter includes an accurate gauge as an essential kit item because of it.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-12-2.html">→ Ch. 12.2</a></td>
+          <td class="note">Covers torque wrenches and why tightness by feel alone can't be trusted.</td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a href="chapter-11-11.html">
+      <span class="dir">← Previous Chapter</span>
+      <span class="ttl">11.11 — Diagnosis and Repair as Part of the System</span>
+    </a>
+    <a href="chapter-12-2.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">12.2 — Torque Wrenches and Why Tightness Isn't a Feeling</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">Anatomy of a Motorcycle — Sheet 121 / 150</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

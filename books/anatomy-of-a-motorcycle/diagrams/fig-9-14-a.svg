@@ -1,0 +1,49 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="36" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="19" font-weight="700" fill="#22252B">ROAD VS. OFF-ROAD BRAKE EMPHASIS</text>
+  <line x1="50" y1="52" x2="750" y2="52" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- LEFT: road split -->
+  <text x="200" y="82" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#22252B">ROAD (HARD STOP)</text>
+  <rect x="130" y="110" width="140" height="30" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="130" y="110" width="112" height="30" fill="#AE3527"/>
+  <text x="130" y="160" font-family="JetBrains Mono, monospace" font-size="11" fill="#AE3527" font-weight="700">FRONT ~80%</text>
+  <rect x="130" y="175" width="140" height="30" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="130" y="175" width="28" height="30" fill="#33505E"/>
+  <text x="130" y="222" font-family="JetBrains Mono, monospace" font-size="11" fill="#33505E" font-weight="700">REAR ~20%</text>
+
+  <!-- divider -->
+  <line x1="400" y1="70" x2="400" y2="300" stroke="#8C876F" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- RIGHT: off-road split -->
+  <text x="600" y="82" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#22252B">OFF-ROAD (LOOSE SURFACE)</text>
+  <rect x="530" y="110" width="140" height="30" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="530" y="110" width="56" height="30" fill="#AE3527"/>
+  <text x="530" y="160" font-family="JetBrains Mono, monospace" font-size="11" fill="#AE3527" font-weight="700">FRONT ~40%</text>
+  <rect x="530" y="175" width="140" height="30" fill="none" stroke="#8C876F" stroke-width="1.5"/>
+  <rect x="530" y="175" width="84" height="30" fill="#33505E"/>
+  <text x="530" y="222" font-family="JetBrains Mono, monospace" font-size="11" fill="#33505E" font-weight="700">REAR ~60%</text>
+
+  <!-- lower half: chassis stability with throttle -->
+  <line x1="50" y1="260" x2="750" y2="260" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="290" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" fill="#22252B">STEADY THROTTLE KEEPS CHASSIS SETTLED</text>
+
+  <!-- rough terrain profile -->
+  <path d="M 100 400 L 200 360 L 260 410 L 340 350 L 420 400 L 500 355 L 580 405 L 660 360 L 720 400" fill="none" stroke="#8C876F" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <!-- motorcycle riding level above the bumps, weight pressed rear -->
+  <ellipse cx="420" cy="330" rx="24" ry="10" fill="none" stroke="#22252B" stroke-width="2.5"/>
+  <line x1="410" y1="320" x2="460" y2="300" stroke="#22252B" stroke-width="3"/>
+  <polygon points="460,300 448,300 452,312" fill="#AE3527"/>
+  <text x="500" y="300" font-family="JetBrains Mono, monospace" font-size="11" fill="#AE3527">STEADY THROTTLE →</text>
+  <text x="500" y="315" font-family="JetBrains Mono, monospace" font-size="11" fill="#5A5748">WEIGHT PRESSED REARWARD</text>
+
+  <line x1="50" y1="450" x2="750" y2="450" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="470" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">DIFFERENT DISTRIBUTION, NOT SIMPLY GENTLER INPUTS</text>
+</svg>

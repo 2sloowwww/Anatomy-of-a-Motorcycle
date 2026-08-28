@@ -1,0 +1,62 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono', monospace">
+<rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+<!-- Title -->
+<text x="400" y="40" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B">OVERSQUARE vs UNDERSQUARE</text>
+<text x="400" y="61" text-anchor="middle" font-size="13" fill="#5A5748">SAME DISPLACEMENT &#8212; TWO DIFFERENT BORE / STROKE RATIOS</text>
+
+<defs>
+  <marker id="arrBp8" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#33505E"/>
+  </marker>
+</defs>
+
+<!-- ============ LEFT: OVERSQUARE ============ -->
+<text x="200" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">OVERSQUARE</text>
+
+<!-- bore dimension top -->
+<line x1="110" y1="150" x2="290" y2="150" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4" marker-start="url(#arrBp8)" marker-end="url(#arrBp8)"/>
+<text x="200" y="140" text-anchor="middle" font-size="12" font-weight="600" fill="#6B5A22">BORE 100mm</text>
+
+<!-- cylinder -->
+<rect x="110" y="270" width="180" height="110" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+<rect x="130" y="300" width="140" height="40" fill="#EEE8DA" stroke="#22252B" stroke-width="2"/>
+<text x="200" y="325" text-anchor="middle" font-size="11" font-weight="700" fill="#22252B">PISTON</text>
+
+<!-- stroke dimension -->
+<line x1="330" y1="270" x2="330" y2="380" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4" marker-start="url(#arrBp8)" marker-end="url(#arrBp8)"/>
+<text x="345" y="330" font-size="12" font-weight="600" fill="#6B5A22">STROKE</text>
+<text x="345" y="346" font-size="12" font-weight="600" fill="#6B5A22">61mm</text>
+
+<text x="200" y="415" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">WIDE &amp; SHALLOW</text>
+<text x="200" y="434" text-anchor="middle" font-size="12" fill="#5A5748">shorter stroke &#8594; higher rev ceiling</text>
+
+<!-- ============ RIGHT: UNDERSQUARE ============ -->
+<text x="600" y="112" text-anchor="middle" font-size="16" font-weight="700" fill="#22252B">UNDERSQUARE</text>
+
+<!-- bore dimension top -->
+<line x1="530" y1="150" x2="670" y2="150" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4" marker-start="url(#arrBp8)" marker-end="url(#arrBp8)"/>
+<text x="600" y="140" text-anchor="middle" font-size="12" font-weight="600" fill="#6B5A22">BORE 78mm</text>
+
+<!-- cylinder -->
+<rect x="530" y="200" width="140" height="180" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
+<rect x="545" y="255" width="110" height="40" fill="#EEE8DA" stroke="#22252B" stroke-width="2"/>
+<text x="600" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#22252B">PISTON</text>
+
+<!-- stroke dimension -->
+<line x1="695" y1="200" x2="695" y2="380" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4" marker-start="url(#arrBp8)" marker-end="url(#arrBp8)"/>
+<text x="710" y="285" font-size="12" font-weight="600" fill="#6B5A22">STROKE</text>
+<text x="710" y="301" font-size="12" font-weight="600" fill="#6B5A22">100mm</text>
+
+<text x="600" y="415" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">NARROW &amp; DEEP</text>
+<text x="600" y="434" text-anchor="middle" font-size="12" fill="#5A5748">longer throw &#8594; more low-end torque</text>
+
+<!-- Equal displacement callout -->
+<rect x="330" y="450" width="140" height="34" fill="#EEE8DA" stroke="#AE3527" stroke-width="1.8"/>
+<text x="400" y="472" text-anchor="middle" font-size="13" font-weight="700" fill="#AE3527">SAME DISPLACEMENT</text>
+</svg>

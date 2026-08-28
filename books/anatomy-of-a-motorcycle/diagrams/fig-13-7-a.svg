@@ -1,0 +1,45 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700" fill="#22252B">THREE SEPARATE LEGAL CHECKS</text>
+  <line x1="50" y1="50" x2="750" y2="50" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <rect x="300" y="70" width="200" height="40" rx="6" fill="#22252B"/>
+  <text x="400" y="95" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#EEE8DA">MODIFICATION INSTALLED</text>
+
+  <line x1="400" y1="110" x2="150" y2="150" stroke="#8C876F" stroke-width="1.4"/>
+  <line x1="400" y1="110" x2="400" y2="150" stroke="#8C876F" stroke-width="1.4"/>
+  <line x1="400" y1="110" x2="650" y2="150" stroke="#8C876F" stroke-width="1.4"/>
+
+  <rect x="60" y="150" width="180" height="55" rx="6" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.3"/>
+  <text x="150" y="172" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">WARRANTY</text>
+  <text x="150" y="188" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">Manufacturer must show</text>
+  <text x="150" y="199" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">mod caused the failure</text>
+
+  <rect x="310" y="150" width="180" height="55" rx="6" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.3"/>
+  <text x="400" y="172" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">EMISSIONS / NOISE</text>
+  <text x="400" y="188" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">Enforced independently,</text>
+  <text x="400" y="199" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">regardless of warranty</text>
+
+  <rect x="560" y="150" width="180" height="55" rx="6" fill="#E2D9C3" stroke="#8C876F" stroke-width="1.3"/>
+  <text x="650" y="172" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#22252B">ROADWORTHINESS</text>
+  <text x="650" y="188" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">Legal requirement,</text>
+  <text x="650" y="199" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5A5748">not a performance one</text>
+
+  <!-- convergence: technically sound but still can fail -->
+  <line x1="150" y1="205" x2="150" y2="250" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+  <line x1="400" y1="205" x2="400" y2="250" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+  <line x1="650" y1="205" x2="650" y2="250" stroke="#33505E" stroke-width="1.3" stroke-dasharray="3 2"/>
+
+  <rect x="200" y="260" width="400" height="60" rx="8" fill="#AE3527"/>
+  <text x="400" y="285" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#EEE8DA">MECHANICALLY SOUND ≠ LEGAL</text>
+  <text x="400" y="303" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#EEE8DA">Each check must pass on its own terms</text>
+
+  <line x1="50" y1="420" x2="750" y2="420" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A FLAWLESS INSTALL DOESN'T ANSWER ANY OF THESE THREE QUESTIONS</text>
+</svg>
