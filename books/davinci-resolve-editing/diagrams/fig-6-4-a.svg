@@ -1,0 +1,39 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">INDEPENDENT AUDIO ACROSS VIDEO CUTS</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="100" font-size="12.5" fill="#8C876F" letter-spacing="1">VIDEO — SWITCHES ANGLE FREELY</text>
+    <rect x="70" y="114" width="640" height="70" fill="none" stroke="#22252B" stroke-width="1.4"/>
+    <rect x="70" y="114" width="180" height="70" fill="#33505E" opacity="0.7"/>
+    <rect x="250" y="114" width="130" height="70" fill="#6B5A22" opacity="0.7"/>
+    <rect x="380" y="114" width="220" height="70" fill="#33505E" opacity="0.5"/>
+    <rect x="600" y="114" width="110" height="70" fill="#6B5A22" opacity="0.5"/>
+    <line x1="250" y1="104" x2="250" y2="194" stroke="#22252B" stroke-width="1"/>
+    <line x1="380" y1="104" x2="380" y2="194" stroke="#22252B" stroke-width="1"/>
+    <line x1="600" y1="104" x2="600" y2="194" stroke="#22252B" stroke-width="1"/>
+    <text x="150" y="154" text-anchor="middle" font-size="10.5" fill="#EEE8DA" font-weight="700">WIDE</text>
+    <text x="315" y="154" text-anchor="middle" font-size="10.5" fill="#EEE8DA" font-weight="700">CLOSE A</text>
+    <text x="490" y="154" text-anchor="middle" font-size="10.5" fill="#EEE8DA" font-weight="700">CLOSE B</text>
+    <text x="655" y="154" text-anchor="middle" font-size="10.5" fill="#EEE8DA" font-weight="700">WIDE</text>
+
+    <text x="70" y="222" font-size="12.5" fill="#8C876F" letter-spacing="1">AUDIO — ONE CONTINUOUS SOURCE</text>
+    <rect x="70" y="236" width="640" height="46" fill="#AE3527" opacity="0.75" stroke="#22252B" stroke-width="1.4"/>
+    <path d="M80 259 L100 249 L120 267 L140 251 L160 265 L180 253 L200 263 L220 249 L240 267 L260 255 L280 261 L300 251 L320 265 L340 253 L360 263 L380 249 L400 267 L420 255 L440 261 L460 251 L480 265 L500 253 L520 263 L540 249 L560 267 L580 255 L600 261 L620 251 L640 265 L660 253 L680 263 L700 251" fill="none" stroke="#EEE8DA" stroke-width="1.3" opacity="0.85"/>
+    <text x="390" y="300" text-anchor="middle" font-size="10.5" fill="#5A5748">Lavalier mic — unbroken across every video switch above</text>
+  </g>
+
+  <line x1="70" y1="330" x2="710" y2="330" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="365" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">VIDEO CUTS AS OFTEN AS THE EDIT WANTS</text>
+  <text x="400" y="387" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">Audio locked to one clean source never has to follow — no level jump at any switch.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 6.4-A</text>
+</svg>
