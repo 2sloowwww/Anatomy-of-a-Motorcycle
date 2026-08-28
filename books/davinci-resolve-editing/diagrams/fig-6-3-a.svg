@@ -1,0 +1,64 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">CUTTING A MULTICAM TIMELINE</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="88" font-size="12.5" fill="#8C876F" letter-spacing="1">MULTICAM VIEWER — ALL ANGLES PLAY IN SYNC</text>
+
+    <!-- Angle 1 - active -->
+    <rect x="70" y="102" width="160" height="100" fill="#E2D9C3" stroke="#AE3527" stroke-width="3"/>
+    <text x="80" y="122" font-size="11" fill="#22252B" font-weight="700">ANGLE 1 — WIDE</text>
+    <text x="80" y="140" font-size="9.5" fill="#5A5748">ACTIVE</text>
+    <circle cx="212" cy="114" r="6" fill="#AE3527"/>
+
+    <!-- Angle 2 -->
+    <rect x="240" y="102" width="160" height="100" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="250" y="122" font-size="11" fill="#22252B">ANGLE 2 — CLOSE A</text>
+
+    <!-- Angle 3 -->
+    <rect x="70" y="212" width="160" height="100" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="80" y="232" font-size="11" fill="#22252B">ANGLE 3 — CLOSE B</text>
+
+    <!-- Angle 4 -->
+    <rect x="240" y="212" width="160" height="100" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="250" y="232" font-size="11" fill="#22252B">ANGLE 4 — WIDE B</text>
+  </g>
+
+  <line x1="420" y1="180" x2="470" y2="180" stroke="#6B5A22" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <text x="445" y="170" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#6B5A22">FEEDS</text>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="480" y="88" font-size="12.5" fill="#8C876F" letter-spacing="1">TIMELINE — AFTER A LIVE SWITCHING PASS</text>
+    <rect x="480" y="140" width="230" height="60" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+    <rect x="480" y="140" width="70" height="60" fill="#AE3527" opacity="0.75"/>
+    <rect x="550" y="140" width="45" height="60" fill="#33505E" opacity="0.75"/>
+    <rect x="595" y="140" width="60" height="60" fill="#6B5A22" opacity="0.75"/>
+    <rect x="655" y="140" width="55" height="60" fill="#AE3527" opacity="0.5"/>
+
+    <line x1="550" y1="130" x2="550" y2="210" stroke="#22252B" stroke-width="1"/>
+    <line x1="595" y1="130" x2="595" y2="210" stroke="#22252B" stroke-width="1"/>
+    <line x1="655" y1="130" x2="655" y2="210" stroke="#22252B" stroke-width="1"/>
+
+    <text x="480" y="222" font-size="9" fill="#5A5748">1</text>
+    <text x="550" y="222" font-size="9" fill="#5A5748">2</text>
+    <text x="595" y="222" font-size="9" fill="#5A5748">3</text>
+    <text x="655" y="222" font-size="9" fill="#5A5748">1</text>
+
+    <text x="480" y="248" font-size="9.5" fill="#5A5748">Each color = one recorded angle switch.</text>
+  </g>
+
+  <line x1="70" y1="345" x2="710" y2="345" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="380" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">ONE PLAYTHROUGH, TAPPING ANGLES AS THEY PLAY, BECOMES A COMPLETE ROUGH CUT</text>
+  <text x="400" y="402" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">Still needs Part V's trim tools afterward — a live pass is a fast structure, not a finished sequence.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 6.3-A</text>
+</svg>
