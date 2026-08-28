@@ -1,4 +1,4 @@
-<svg viewBox="0 0 1410 2250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Resolve Field Manual — book cover, showing a timeline, node graph, and color wheels in blueprint line art.">
+<svg viewBox="0 0 1410 2250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Language of Editing — book cover, showing a timeline, node graph, and color wheels in blueprint line art.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#1B2A31"/>
@@ -22,8 +22,8 @@
 
   <text x="705" y="215" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="26" letter-spacing="7" fill="#7FA6B8">A FIELD MANUAL FOR EDITORS</text>
 
-  <text x="705" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="118" fill="#EDE7D8">THE RESOLVE</text>
-  <text x="705" y="450" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="118" fill="#EDE7D8">FIELD MANUAL</text>
+  <text x="705" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="118" fill="#EDE7D8">THE LANGUAGE</text>
+  <text x="705" y="450" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="118" fill="#EDE7D8">OF EDITING</text>
 
   <line x1="330" y1="510" x2="1080" y2="510" stroke="#D2AC3E" stroke-width="2" opacity="0.7"/>
 
