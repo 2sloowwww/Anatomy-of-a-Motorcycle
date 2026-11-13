@@ -48,6 +48,43 @@ any SVG whose root is `class="dg"` so it picks up the site's fonts, dark mode an
 on Netlify. To release a book, delete its lines from `_redirects`, restore its card on the landing page and add its
 pages back to `sitemap.xml`.
 
+## Marketing automation
+
+`tools/build_marketing.py` turns the book into promotion assets so none of it is made by hand:
+
+```bash
+python tools/build_marketing.py all      # cards -> render -> meta -> posts
+python tools/build_marketing.py posts    # only rebuild the captions + calendar
+```
+
+- A 1200x630 link-preview image per chapter goes to `assets/share/<book>/` (published) and each chapter's
+  `og:image` / `twitter:image` is pointed at it.
+- An Instagram post (1080x1350) and Pinterest pin (1000x1500) per diagram go to `marketing-out/` (git-ignored).
+- `marketing-out/calendar.csv` lists one post per day with caption, tracked link (UTM) and image path.
+- Rendering uses the Edge/Chrome already installed (set `BROWSER_PATH` to override) and installs `puppeteer-core`
+  into `tools/render/` on first run. Unchanged cards are skipped; add `--force` to redo everything.
+- Only books listed in `BOOKS` inside the script get assets, so locked books stay out until you add them.
+
+### Instagram posting (automatic, one diagram a day)
+
+`.github/workflows/instagram.yml` runs `tools/post_instagram.py` daily. It posts the next unposted item from
+`social/instagram-queue.csv`, records it in `social/posted.json` (so nothing posts twice), and checks the image is
+live on the site first. Refresh the queue and its public images with `python tools/build_marketing.py queue`.
+
+One-time setup (needs your own accounts, so it can't be done for you):
+1. Switch the Instagram account to **Professional** (Creator or Business) and link it to a Facebook Page.
+2. At developers.facebook.com create an app, add **Instagram Graph API**, and generate a long-lived or
+   system-user access token with `instagram_content_publish`. Note the Instagram account's numeric id.
+3. In the GitHub repo: Settings → Secrets and variables → Actions → add `IG_ACCESS_TOKEN` and `IG_USER_ID`.
+4. Deploy (so the images under `assets/social/instagram/` are live), then run the workflow once from the Actions tab
+   with **Dry run** ticked, then once without.
+
+Pause any time by adding an empty file `social/PAUSED`. Captions say "link in bio", so keep knowbase.xyz in the bio.
+User tokens expire (about 60 days) unless they are system-user tokens — if posts start failing, replace the secret.
+
+Email signups are collected by Netlify Forms (`knowbase-signup`); analytics switch on by setting `PLAUSIBLE_DOMAIN`
+in `reader-aids.js`.
+
 ## Author photo
 
 Save a square-ish portrait (600px+) as `assets/author.jpg`. It appears automatically on the landing page and in both books.

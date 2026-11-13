@@ -1,0 +1,50 @@
+name: Post to Instagram
+
+# One diagram a day from social/instagram-queue.csv. Safe to leave enabled before the secrets exist:
+# the script just says "not configured" and exits. Pause any time by adding a file called social/PAUSED.
+on:
+  schedule:
+    - cron: "30 13 * * *"   # daily, 13:30 UTC — change the hour to suit your audience
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (show what would be posted, post nothing)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # lets the job save social/posted.json so nothing is ever posted twice
+
+concurrency:
+  group: instagram-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Post the next diagram
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python3 tools/post_instagram.py --dry-run
+          else
+            python3 tools/post_instagram.py
+          fi
+
+      - name: Save what was posted
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain social/posted.json)" ]; then
+            git config user.name "knowbase-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add social/posted.json
+            git commit -m "Instagram: record posted diagram [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

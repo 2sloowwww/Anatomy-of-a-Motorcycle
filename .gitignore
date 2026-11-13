@@ -13,3 +13,7 @@ Desktop.ini
 
 # Local tooling
 .claude/
+
+# Marketing automation
+node_modules/
+marketing-out/

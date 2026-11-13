@@ -27,7 +27,9 @@
     return location.pathname;
   }
   function currentMeta(){
-    var t = document.title.replace(/ \| [^|]+$/, "");
+    // Built from the page itself (not <title>, which is SEO-shortened): "4.5 — Countersteering"
+    var num = document.querySelector(".tb-numeral"), h1 = document.querySelector("h1");
+    var t = (num && h1) ? num.textContent.trim() + " — " + h1.textContent.trim() : document.title.replace(/ [|—] [^|—]+$/, "");
     return { slug: currentHref(), title: t, href: currentHref() };
   }
 
@@ -506,4 +508,69 @@
     setTimeout(checkDone, 600);
   }
   document.addEventListener("DOMContentLoaded", initEngage);
+})();
+
+
+/* ==========================================================================
+   Knowbase audience layer — email signup (Netlify Forms) + optional analytics.
+   Any <form class="kb-signup"> on the site is wired up here; chapters get one
+   automatically. The static form in index.html registers "knowbase-signup"
+   with Netlify at deploy time.
+   ========================================================================== */
+(function(){
+  /* Privacy-friendly analytics: set to your Plausible site domain (e.g. "knowbase.xyz") to switch on. */
+  var PLAUSIBLE_DOMAIN = "";
+  if(PLAUSIBLE_DOMAIN){
+    var ps = document.createElement("script");
+    ps.defer = true; ps.setAttribute("data-domain", PLAUSIBLE_DOMAIN); ps.src = "https://plausible.io/js/script.js";
+    document.head.appendChild(ps);
+  }
+
+  function isSubscribed(){ try{ return localStorage.getItem("kb_subscribed") === "1"; }catch(e){ return false; } }
+
+  function bind(form){
+    if(form.__kb) return; form.__kb = true;
+    var msg = form.querySelector(".kb-su-msg"), btn = form.querySelector("button[type=submit]");
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var email = (form.elements.email.value || "").trim();
+      if(!/^\S+@\S+\.\S+$/.test(email)){ msg.textContent = "That email doesn’t look right — mind checking it?"; msg.className = "kb-su-msg err"; return; }
+      btn.disabled = true; msg.textContent = "Adding you…"; msg.className = "kb-su-msg";
+      fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(new FormData(form)).toString() })
+        .then(function(r){ if(!r.ok) throw new Error("bad"); })
+        .then(function(){
+          try{ localStorage.setItem("kb_subscribed", "1"); }catch(e){}
+          form.classList.add("done");
+          msg.textContent = "You’re on the list ✓ I’ll email you when the next manual opens.";
+          msg.className = "kb-su-msg ok";
+        })
+        .catch(function(){ btn.disabled = false; msg.textContent = "Couldn’t save that just now — please try again in a moment."; msg.className = "kb-su-msg err"; });
+    });
+  }
+
+  function chapterBlock(){
+    var share = document.querySelector(".share-row");
+    if(!share || !document.querySelector(".tb-numeral") || isSubscribed()) return;
+    var sec = document.createElement("section");
+    sec.className = "kb-su-card";
+    sec.innerHTML =
+      '<div class="kb-su-copy"><b>Get the next manual first.</b><span>One email when a new Knowbase manual opens &mdash; and now and then a diagram worth keeping. No spam, unsubscribe any time.</span></div>' +
+      '<form class="kb-signup" name="knowbase-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">' +
+        '<input type="hidden" name="form-name" value="knowbase-signup">' +
+        '<input type="hidden" name="source" value="' + location.pathname.replace(/"/g, "") + '">' +
+        '<p class="kb-hp"><label>Skip this <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>' +
+        '<div class="kb-su-row"><input type="email" name="email" placeholder="you@email.com" required autocomplete="email" aria-label="Email address"><button type="submit">Notify me</button></div>' +
+        '<div class="kb-su-msg" role="status" aria-live="polite"></div>' +
+      '</form>';
+    share.parentNode.insertBefore(sec, share);
+    bind(sec.querySelector("form"));
+  }
+
+  document.addEventListener("DOMContentLoaded", function(){
+    chapterBlock();
+    document.querySelectorAll("form.kb-signup").forEach(function(f){
+      if(isSubscribed()){ f.classList.add("done"); var m = f.querySelector(".kb-su-msg"); if(m){ m.textContent = "You’re already on the list ✓"; m.className = "kb-su-msg ok"; } }
+      bind(f);
+    });
+  });
 })();

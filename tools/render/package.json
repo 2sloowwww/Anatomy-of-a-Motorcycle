@@ -1,0 +1,8 @@
+{
+  "name": "knowbase-render",
+  "private": true,
+  "description": "Screenshots marketing cards with the browser already installed. Used by tools/build_marketing.py.",
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

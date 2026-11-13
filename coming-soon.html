@@ -45,6 +45,14 @@ function toggleTheme(){
         <h1 id="soonTitle">The Sony a6700 Field Manual</h1>
         <p id="soonBlurb">This manual is still being written.</p>
         <p class="soon-note">While you wait, <b>Anatomy of a Motorcycle</b> is complete &mdash; 150 chapters, free to read right now.</p>
+        <form class="kb-signup kb-su-inline" name="knowbase-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="knowbase-signup">
+          <input type="hidden" name="source" value="coming-soon">
+          <input type="hidden" name="interest" id="soonInterest" value="a6700">
+          <p class="kb-hp"><label>Skip this <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="kb-su-row"><input type="email" name="email" placeholder="you@email.com" required autocomplete="email" aria-label="Email address"><button type="submit">Notify me when it opens</button></div>
+          <div class="kb-su-msg" role="status" aria-live="polite"></div>
+        </form>
         <div class="soon-actions">
           <a class="ac-btn primary" href="/books/anatomy-of-a-motorcycle/index.html">Read Anatomy of a Motorcycle &rarr;</a>
           <a class="ac-btn" href="https://instagram.com/2sloowwww" target="_blank" rel="noopener">Follow progress &middot; @2sloowwww</a>
@@ -54,6 +62,7 @@ function toggleTheme(){
   </div>
 </main>
 
+<script src="/reader-aids.js" defer></script>
 <script>
 (function(){
   var books = {
@@ -68,6 +77,7 @@ function toggleTheme(){
   document.title = b.title + " — Coming Soon · Knowbase";
   document.getElementById("soonTitle").textContent = b.title;
   document.getElementById("soonBlurb").textContent = b.blurb;
+  document.getElementById("soonInterest").value = key;
   var img = document.getElementById("soonCover"); img.src = b.cover; img.alt = b.title + " — cover";
 })();
 </script>
