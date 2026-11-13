@@ -226,6 +226,7 @@ function toggleTheme(){
         <a class="bp-btn" href="https://instagram.com/2sloowwww" target="_blank" rel="noopener">Follow progress &rarr;</a>
       </article>
     </div>
+    <div class="reveal" data-share-row data-title="Know a rider? Send them the free manual." style="margin-top:28px"></div>
     <p class="offer-fine"><span class="sale-live-only">All prices in US dollars. Free access to Anatomy of a Motorcycle closes at 11:59 pm <span data-sale-tz>IST</span> on <span data-sale-end>Sunday 20 December</span>; after that the full manual is $19. No account needed to read.</span><span class="sale-over-only">All prices in US dollars.</span></p>
   </section>
 
@@ -303,10 +304,18 @@ function toggleTheme(){
     <a href="#paths">Start here</a>
     <a href="#about">About the author</a>
     <a href="/books/anatomy-of-a-motorcycle/index.html">Anatomy of a Motorcycle</a>
+    <a href="/press.html">Press &amp; sharing kit</a>
     <a href="https://instagram.com/2sloowwww" target="_blank" rel="noopener">Instagram</a>
   </div>
   Written by Jitendra Kulkarni
 </footer>
+
+<!-- Netlify detects this form at deploy time; reader-aids.js posts chapter feedback to it -->
+<form name="chapter-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="chapter-feedback">
+  <input name="chapter"><input name="path"><input name="helpful"><textarea name="comment"></textarea>
+  <input name="name"><input name="quote_ok"><input name="bot-field">
+</form>
 
 <script src="/reader-aids.js" defer></script>
 <script>

@@ -613,3 +613,94 @@
   }
   document.addEventListener("DOMContentLoaded", function(){ render(); setInterval(render, 1000); });
 })();
+
+
+/* ==========================================================================
+   Knowbase growth layer — site-wide share row + chapter feedback (real proof, with permission).
+   Feedback goes to Netlify Forms ("chapter-feedback"; the static form lives in index.html).
+   ========================================================================== */
+(function(){
+  var SITE = "https://knowbase.xyz/";
+  var TEXT = "A free 150-chapter manual on how motorcycles actually work — 132 diagrams drawn to teach, not decorate.";
+  function el(tag, cls, html){ var n = document.createElement(tag); if(cls) n.className = cls; if(html != null) n.innerHTML = html; return n; }
+  function enc(s){ return encodeURIComponent(s); }
+  function tracked(ch){ return SITE + "?utm_source=" + ch + "&utm_medium=share&utm_campaign=site"; }
+
+  /* any <div data-share-row> becomes a share row */
+  function shareRows(){
+    document.querySelectorAll("[data-share-row]").forEach(function(box){
+      if(box.__kb) return; box.__kb = true;
+      var head = box.getAttribute("data-title") || "Know a rider? Send them the free manual.";
+      var t = enc(TEXT);
+      box.className = (box.className + " share-row").trim();
+      box.innerHTML =
+        '<div class="sr-copy"><b>' + head + '</b><span>It takes one tap, and it is the best thing you can do for a small project.</span></div>' +
+        '<div class="sr-actions">' +
+          '<a class="sr-btn" target="_blank" rel="noopener" href="https://wa.me/?text=' + t + '%20' + enc(tracked("whatsapp")) + '">WhatsApp</a>' +
+          '<a class="sr-btn" target="_blank" rel="noopener" href="https://www.reddit.com/submit?url=' + enc(tracked("reddit")) + '&amp;title=' + t + '">Reddit</a>' +
+          '<a class="sr-btn" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + t + '&amp;url=' + enc(tracked("x")) + '">X</a>' +
+          '<a class="sr-btn" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + enc(tracked("facebook")) + '">Facebook</a>' +
+          '<a class="sr-btn" target="_blank" rel="noopener" href="https://t.me/share/url?url=' + enc(tracked("telegram")) + '&amp;text=' + t + '">Telegram</a>' +
+          '<a class="sr-btn" target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url=' + enc(tracked("linkedin")) + '">LinkedIn</a>' +
+          '<a class="sr-btn" href="mailto:?subject=' + enc("A free manual on how motorcycles work") + '&amp;body=' + t + '%20' + enc(tracked("email")) + '">Email</a>' +
+          '<button type="button" class="sr-btn" data-copy-site>Copy link</button>' +
+        '</div>';
+      var c = box.querySelector("[data-copy-site]");
+      c.addEventListener("click", function(){
+        var url = tracked("copy");
+        function ok(){ c.textContent = "Copied ✓"; setTimeout(function(){ c.textContent = "Copy link"; }, 1800); }
+        if(navigator.share && /Mobi|Android/i.test(navigator.userAgent)){ navigator.share({ title: "Knowbase", text: TEXT, url: url }).catch(function(){}); return; }
+        if(navigator.clipboard){ navigator.clipboard.writeText(url).then(ok, function(){ window.prompt("Copy this link:", url); }); }
+        else { window.prompt("Copy this link:", url); }
+      });
+    });
+  }
+
+  /* chapter feedback */
+  function post(data){
+    return fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(data).toString() });
+  }
+  function feedbackBlock(){
+    var share = document.querySelector(".share-row");
+    var num = document.querySelector(".tb-numeral"), h1 = document.querySelector("h1");
+    if(!share || !num || !h1) return;
+    var key = "kb_fb_" + location.pathname, done = false;
+    try{ done = localStorage.getItem(key) === "1"; }catch(e){}
+    var chapter = num.textContent.trim() + " " + h1.textContent.trim();
+    var sec = el("section", "kb-fb");
+    sec.innerHTML =
+      '<div class="kb-fb-q"><b>Did this chapter help?</b><span>One tap tells me what to write next.</span></div>' +
+      '<div class="kb-fb-btns"><button type="button" data-v="yes">Yes, it helped</button><button type="button" data-v="no">Not quite</button></div>' +
+      '<form class="kb-fb-form" hidden>' +
+        '<textarea name="comment" rows="3" maxlength="800" placeholder="What helped? (optional)" aria-label="Your feedback"></textarea>' +
+        '<div class="kb-fb-row"><input type="text" name="name" maxlength="60" placeholder="First name (optional)" aria-label="First name">' +
+        '<label class="kb-fb-ok"><input type="checkbox" name="quote_ok"> You may quote this on the site</label></div>' +
+        '<button type="submit" class="kb-fb-send">Send</button>' +
+      '</form>' +
+      '<div class="kb-fb-done" role="status" aria-live="polite" hidden>Thank you — that genuinely shapes what I write next.</div>';
+    var anchor = document.querySelector(".kb-su-card") || share;   // ask "did this help?" before asking for an email
+    anchor.parentNode.insertBefore(sec, anchor);
+    var btns = sec.querySelector(".kb-fb-btns"), form = sec.querySelector(".kb-fb-form"), thanks = sec.querySelector(".kb-fb-done");
+    var vote = "";
+    function finish(){ form.hidden = true; btns.hidden = true; thanks.hidden = false; try{ localStorage.setItem(key, "1"); }catch(e){} }
+    if(done){ btns.hidden = true; thanks.hidden = false; return; }
+    btns.addEventListener("click", function(e){
+      var b = e.target.closest("button[data-v]"); if(!b) return;
+      vote = b.getAttribute("data-v");
+      post({ "form-name": "chapter-feedback", chapter: chapter, path: location.pathname, helpful: vote, comment: "", name: "", quote_ok: "no", "bot-field": "" }).catch(function(){});
+      form.querySelector("textarea").placeholder = vote === "yes" ? "What helped? (optional)" : "What was missing or unclear? (optional)";
+      form.querySelector(".kb-fb-ok").hidden = vote !== "yes";
+      btns.hidden = true; form.hidden = false; form.querySelector("textarea").focus();
+    });
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var f = form.elements;
+      if(!f.comment.value.trim()){ finish(); return; }
+      post({ "form-name": "chapter-feedback", chapter: chapter, path: location.pathname, helpful: vote, comment: f.comment.value.trim(),
+             name: f.name.value.trim(), quote_ok: f.quote_ok.checked ? "yes" : "no", "bot-field": "" }).catch(function(){});
+      finish();
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function(){ shareRows(); feedbackBlock(); });
+})();
