@@ -87,12 +87,16 @@ function toggleTheme(){
   <!-- ===== HERO SHEET ===== -->
   <section class="bp-hero" id="top">
     <div class="bp-copy">
-      <span class="bp-eyebrow">Field manuals &middot; <span class="launch-pill">Launch sale &middot; Free</span></span>
+      <span class="bp-eyebrow">Field manuals &middot; <span class="launch-pill"><span class="sale-live-only">Free until <span data-sale-short>20 Dec</span></span><span class="sale-over-only">Now $19</span></span></span>
       <h1><span class="w">Understand</span> <span class="w">the</span> <span class="w">machine.</span></h1>
       <p class="bp-lede">Technical manuals that explain how things work by showing how their parts talk to each other &mdash; with diagrams drawn to teach, not decorate. Start with the motorcycle.</p>
       <div class="bp-cta-row">
-        <a class="bp-btn primary magnetic" href="/books/anatomy-of-a-motorcycle/index.html">Start reading &mdash; it&rsquo;s free &rarr;</a>
+        <a class="bp-btn primary magnetic" href="/books/anatomy-of-a-motorcycle/index.html"><span class="sale-live-only">Read it free before <span data-sale-short>20 Dec</span> &rarr;</span><span class="sale-over-only">Read Anatomy of a Motorcycle &rarr;</span></a>
         <a class="bp-btn" href="#diagrams">See the diagrams</a>
+      </div>
+      <div class="offer-line sale-live-only" aria-label="Launch offer">
+        <div class="ol-price"><s>$19</s><b>Free</b></div>
+        <div class="ol-txt"><span>Free access closes in</span><b data-cd="inline">00d 00h 00m 00s</b></div>
       </div>
       <div class="bp-facts">
         <span><b class="count-up" data-count="150">0</b>chapters</span>
@@ -109,7 +113,8 @@ function toggleTheme(){
       </div>
       <a class="bp-book main" href="/books/anatomy-of-a-motorcycle/index.html" data-book="anatomy-of-a-motorcycle">
         <img src="/books/anatomy-of-a-motorcycle/cover.webp" alt="Anatomy of a Motorcycle — book cover, showing a sportbike and a dirt bike in blueprint line art. By Jitendra Kulkarni.">
-        <span class="tag">Read now &middot; Free</span>
+        <span class="price-seal sale-live-only" aria-hidden="true"><i>Free</i><em>then $19</em></span>
+        <span class="tag"><span class="sale-live-only">Read now &middot; Free</span><span class="sale-over-only">Read now &middot; $19</span></span>
       </a>
       <div class="bp-book side r locked" aria-label="The Sony a6700 Field Manual — coming soon">
         <img src="/assets/cover-a6700.svg" alt="The Sony a6700 Field Manual — cover, coming soon">
@@ -121,7 +126,7 @@ function toggleTheme(){
       <div><span class="k">Project</span><span class="v">Knowbase field manuals</span></div>
       <div><span class="k">On the shelf</span><span class="v">1 complete &middot; 2 coming soon</span></div>
       <div><span class="k">Written by</span><span class="v">Jitendra Kulkarni</span></div>
-      <div><span class="k">Access</span><span class="v">Free &middot; launch sale</span></div>
+      <div><span class="k">Price (USD)</span><span class="v"><span class="sale-live-only">Free until <span data-sale-short>20 Dec</span> &middot; then $19</span><span class="sale-over-only">$19</span></span></div>
     </div>
   </section>
 
@@ -172,19 +177,67 @@ function toggleTheme(){
   </section>
 
   <!-- ===== LAUNCH ===== -->
-  <div class="launch-strip reveal" id="launch">
-    <div><b>Launch sale &mdash; every chapter free.</b><span>No account &middot; no card &middot; no catch</span></div>
-    <a href="/books/anatomy-of-a-motorcycle/index.html">Read Anatomy of a Motorcycle &rarr;</a>
-  </div>
+  <section class="bp-section offer" id="offer">
+    <span class="bp-kicker reveal">The shelf</span>
+    <h2 class="bp-h2 reveal">Read the first one free. For now.</h2>
+    <p class="bp-sub reveal"><span class="sale-live-only">Anatomy of a Motorcycle is open to everyone until <b data-sale-end>Sunday 20 December</b>. After that, the full manual is $19.</span><span class="sale-over-only">The launch period has ended. Anatomy of a Motorcycle is now $19.</span></p>
+
+    <div class="cd-sheet sale-live-only reveal">
+      <span class="cd-k">Free access<br>closes in</span>
+      <div class="cd-boxes" role="timer" aria-label="Time left in the free launch period">
+        <div class="cd-box"><span class="cd-n" data-u="d">00</span><span class="cd-l">Days</span></div>
+        <div class="cd-box"><span class="cd-n" data-u="h">00</span><span class="cd-l">Hours</span></div>
+        <div class="cd-box"><span class="cd-n" data-u="m">00</span><span class="cd-l">Minutes</span></div>
+        <div class="cd-box"><span class="cd-n" data-u="s">00</span><span class="cd-l">Seconds</span></div>
+      </div>
+    </div>
+
+    <div class="offer-grid reveal">
+      <article class="offer-card feat">
+        <span class="oc-flag sale-live-only">Launch access</span>
+        <span class="oc-state">Available now &middot; Complete</span>
+        <h3>Anatomy of a Motorcycle</h3>
+        <div class="oc-price"><s class="sale-live-only">$19</s><b><span class="sale-live-only">Free</span><span class="sale-over-only">$19</span></b><small>US dollars</small></div>
+        <p class="oc-sub"><span class="sale-live-only">Free until <span data-sale-end>Sunday 20 December</span> &middot; then $19</span><span class="sale-over-only">One-time price</span></p>
+        <ul>
+          <li>All 150 chapters across 16 parts, complete</li>
+          <li>132 original diagrams, drawn to teach</li>
+          <li>Every chapter cross-referenced to what it depends on</li>
+          <li>Bookmarks, reading progress and dark mode built in</li>
+        </ul>
+        <a class="bp-btn inv magnetic" data-buy href="/books/anatomy-of-a-motorcycle/index.html"><span class="sale-live-only">Start reading &mdash; free &rarr;</span><span class="sale-over-only">Read Anatomy of a Motorcycle &rarr;</span></a>
+      </article>
+
+      <article class="offer-card">
+        <span class="oc-state">Opening soon</span>
+        <h3>The Language of Editing</h3>
+        <div class="oc-price"><b>$19</b><small>Launch price</small></div>
+        <p class="oc-sub">Then $29 &middot; US dollars</p>
+        <p class="oc-note">Ninety-five chapters on cutting, color and sound, taught through DaVinci Resolve. The launch price runs for the first 10 days after it opens.</p>
+        <a class="bp-btn" href="#notify">Join the waitlist &rarr;</a>
+      </article>
+
+      <article class="offer-card">
+        <span class="oc-state">In production</span>
+        <h3>The Sony a6700 Field Manual</h3>
+        <div class="oc-price"><b>TBA</b></div>
+        <p class="oc-sub">Price announced at launch</p>
+        <p class="oc-note">A field manual for shooters: how the camera really works, explained by how its parts talk to each other.</p>
+        <a class="bp-btn" href="https://instagram.com/2sloowwww" target="_blank" rel="noopener">Follow progress &rarr;</a>
+      </article>
+    </div>
+    <p class="offer-fine"><span class="sale-live-only">All prices in US dollars. Free access to Anatomy of a Motorcycle closes at 11:59 pm <span data-sale-tz>IST</span> on <span data-sale-end>Sunday 20 December</span>; after that the full manual is $19. No account needed to read.</span><span class="sale-over-only">All prices in US dollars.</span></p>
+  </section>
 
   <!-- ===== EMAIL SIGNUP ===== -->
   <section class="bp-section" id="notify">
-    <span class="bp-kicker reveal">The next manuals</span>
-    <h2 class="bp-h2 reveal">Be first through the door.</h2>
-    <p class="bp-sub reveal">Two more manuals are on the way &mdash; one for editors, one for shooters. Leave your email and I&rsquo;ll send one note when each opens, plus the odd diagram worth keeping. No spam.</p>
+    <span class="bp-kicker reveal">Waitlist</span>
+    <h2 class="bp-h2 reveal">Be there the day it opens.</h2>
+    <p class="bp-sub reveal">The Language of Editing opens at a $19 launch price for its first 10 days, then $29. Leave your email and I&rsquo;ll send one note the day it opens &mdash; plus the odd diagram worth keeping. No spam, unsubscribe any time.</p>
     <form class="kb-signup kb-su-inline reveal" name="knowbase-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="knowbase-signup">
       <input type="hidden" name="source" value="landing">
+      <input type="hidden" name="interest" value="editing">
       <p class="kb-hp"><label>Skip this <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
       <div class="kb-su-row"><input type="email" name="email" placeholder="you@email.com" required autocomplete="email" aria-label="Email address"><button type="submit">Notify me</button></div>
       <div class="kb-su-msg" role="status" aria-live="polite"></div>
@@ -217,7 +270,15 @@ function toggleTheme(){
     <div class="faq-list">
       <details class="faq-item reveal">
         <summary>Is it really free?<span class="faq-plus" aria-hidden="true"></span></summary>
-        <p>Yes. It&rsquo;s the launch sale: every chapter of Anatomy of a Motorcycle (150 chapters, complete) is free to read right now. Two more manuals are on the way.</p>
+        <p>Yes, for now. All 150 chapters of Anatomy of a Motorcycle are free to read until <span data-sale-end>Sunday 20 December</span>. After that the full manual is $19 (US dollars).</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Why is it free right now?<span class="faq-plus" aria-hidden="true"></span></summary>
+        <p>A new shelf has no readers yet, and I&rsquo;d rather you judge the book than the pitch. Read as much as you like, and if it helps, tell one person who rides.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>How much will the other manuals cost?<span class="faq-plus" aria-hidden="true"></span></summary>
+        <p>The Language of Editing opens at a $19 launch price for its first 10 days, then $29. The Sony a6700 Field Manual&rsquo;s price will be announced when it launches. All prices are in US dollars.</p>
       </details>
       <details class="faq-item reveal">
         <summary>What&rsquo;s coming next?<span class="faq-plus" aria-hidden="true"></span></summary>

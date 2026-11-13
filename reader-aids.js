@@ -574,3 +574,42 @@
     });
   });
 })();
+
+
+/* ==========================================================================
+   Knowbase launch offer — ONE place to change the deadline.
+   Everything on the site that shows the countdown, the "free until" date or the
+   post-sale state reads from here. Prices (US dollars) are written in the HTML.
+   ========================================================================== */
+(function(){
+  var SALE = window.KB_SALE = {
+    end: "2026-12-20T23:59:59+05:30",   // when free access to Anatomy of a Motorcycle closes (IST)
+    tzLabel: "IST",
+    checkoutUrl: ""                      // set to the payment page once it exists; [data-buy] links use it
+  };
+  var endMs = Date.parse(SALE.end);
+  var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  // Date parts are read straight from the deadline string, so they never shift with the visitor's time zone.
+  var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(SALE.end);
+  var endDate = m ? new Date(Date.UTC(+m[1], +m[2] - 1, +m[3])) : new Date(endMs);
+  var longLabel = DAYS[endDate.getUTCDay()] + " " + endDate.getUTCDate() + " " + MONTHS[endDate.getUTCMonth()];
+  var shortLabel = endDate.getUTCDate() + " " + MONTHS[endDate.getUTCMonth()].slice(0, 3);
+
+  function pad(n){ return n < 10 ? "0" + n : "" + n; }
+  function render(){
+    if(!document.body) return;
+    var ms = Math.max(0, endMs - Date.now()), s = Math.floor(ms / 1000);
+    var d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), mi = Math.floor(s % 3600 / 60), sec = s % 60;
+    document.body.classList.toggle("sale-over", ms <= 0);
+    document.querySelectorAll('[data-cd="inline"]').forEach(function(n){ n.textContent = d + "d " + pad(h) + "h " + pad(mi) + "m " + pad(sec) + "s"; });
+    document.querySelectorAll("[data-u]").forEach(function(n){
+      var u = n.getAttribute("data-u"); n.textContent = pad(u === "d" ? d : u === "h" ? h : u === "m" ? mi : sec);
+    });
+    document.querySelectorAll("[data-sale-end]").forEach(function(n){ n.textContent = longLabel; });
+    document.querySelectorAll("[data-sale-short]").forEach(function(n){ n.textContent = shortLabel; });
+    document.querySelectorAll("[data-sale-tz]").forEach(function(n){ n.textContent = SALE.tzLabel; });
+    if(SALE.checkoutUrl){ document.querySelectorAll("[data-buy]").forEach(function(a){ a.setAttribute("href", SALE.checkoutUrl); }); }
+  }
+  document.addEventListener("DOMContentLoaded", function(){ render(); setInterval(render, 1000); });
+})();

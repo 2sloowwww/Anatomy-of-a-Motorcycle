@@ -2745,3 +2745,98 @@ a.upnext:hover .un-go i{ transform: translateX(8px); animation: none; }
   .kb-su-row{ flex-direction: column; }
 }
 @media print{ .kb-su-card{ display: none !important; } }
+
+
+/* ==========================================================================
+   LAUNCH OFFER — price, deadline, premium offer section
+   (deadline lives in reader-aids.js -> KB_SALE; prices are written in the HTML, US dollars)
+   ========================================================================== */
+.launch-pill{ white-space: nowrap; }
+.sale-over-only{ display: none !important; }
+body.sale-over .sale-live-only{ display: none !important; }
+body.sale-over .sale-over-only{ display: inline !important; }
+
+/* hero: seal on the cover */
+.price-seal{
+  position: absolute; z-index: 5; top: -30px; right: -38px; width: 96px; height: 96px; border-radius: 50%;
+  display: grid; place-content: center; text-align: center; gap: 1px;
+  background: var(--signal); color: #FFF6E4; transform: rotate(9deg);
+  box-shadow: 0 14px 28px -10px rgba(20,18,14,.55);
+  outline: 1.5px dashed rgba(255,246,228,.6); outline-offset: -7px;
+  animation: sealIn .7s .9s cubic-bezier(.2,.9,.3,1.3) both;
+}
+.price-seal i{ font: 900 1.75rem/1 "Big Shoulders Display", sans-serif; text-transform: uppercase; font-style: normal; letter-spacing: .01em; }
+.price-seal em{ font: 600 .5rem/1.2 "JetBrains Mono", monospace; letter-spacing: .14em; text-transform: uppercase; font-style: normal; opacity: .92; }
+@keyframes sealIn{ from{ opacity: 0; transform: rotate(-14deg) scale(.4); } to{ opacity: 1; transform: rotate(9deg) scale(1); } }
+
+/* hero: price + countdown strip */
+.offer-line{
+  display: flex; flex-wrap: wrap; align-items: stretch; margin-top: 22px; max-width: 600px;
+  border: 1.5px solid var(--ink); background: color-mix(in srgb, var(--paper) 70%, transparent);
+}
+.offer-line .ol-price{ display: flex; align-items: baseline; gap: 10px; padding: 11px 20px; border-right: 1px solid var(--rule); }
+.offer-line .ol-price s{ font: 700 1.5rem/1 "Big Shoulders Display", sans-serif; color: var(--ink-faint); text-decoration-thickness: 2px; text-decoration-color: var(--signal); }
+.offer-line .ol-price b{ font: 900 2.1rem/1 "Big Shoulders Display", sans-serif; text-transform: uppercase; color: var(--signal); }
+.offer-line .ol-txt{ flex: 1; min-width: 200px; display: flex; flex-direction: column; justify-content: center; gap: 3px; padding: 10px 20px;
+  font: 500 .66rem/1.3 "JetBrains Mono", monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
+.offer-line .ol-txt b{ font-weight: 700; font-size: .95rem; letter-spacing: .06em; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* offer section */
+.cd-sheet{ display: flex; flex-wrap: wrap; align-items: center; gap: 18px 34px; margin: 0 0 34px; }
+.cd-sheet .cd-k{ font: 500 .7rem/1.4 "JetBrains Mono", monospace; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); max-width: 15em; }
+.cd-boxes{ display: flex; gap: 10px; }
+.cd-box{ min-width: 92px; padding: 12px 14px 10px; text-align: center; border: 1.5px solid var(--ink); background: color-mix(in srgb, var(--paper) 70%, transparent); }
+.cd-box .cd-n{ display: block; font: 900 clamp(2.2rem, 5.4vw, 3.3rem)/1 "Big Shoulders Display", sans-serif; color: var(--ink); font-variant-numeric: tabular-nums; }
+.cd-box .cd-l{ display: block; margin-top: 3px; font: 500 .56rem/1 "JetBrains Mono", monospace; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-faint); }
+
+.offer-grid{ display: grid; grid-template-columns: 1.2fr 1fr 1fr; border: 1.5px solid var(--ink); }
+.offer-card{ position: relative; padding: 32px 30px 30px; display: flex; flex-direction: column; border-right: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--paper) 82%, transparent); }
+.offer-card:last-child{ border-right: 0; }
+.offer-card .oc-state{ font: 600 .64rem/1 "JetBrains Mono", monospace; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); }
+.offer-card h3{ margin: 12px 0 18px; font: 900 clamp(1.7rem, 2.6vw, 2.3rem)/.98 "Big Shoulders Display", sans-serif; text-transform: uppercase; color: var(--ink); }
+.offer-card .oc-price{ display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 4px; }
+.offer-card .oc-price b{ font: 900 clamp(3rem, 5vw, 4.2rem)/.9 "Big Shoulders Display", sans-serif; color: var(--ink); text-transform: uppercase; }
+.offer-card .oc-price s{ font: 700 1.7rem/1 "Big Shoulders Display", sans-serif; color: var(--ink-faint); text-decoration-thickness: 2px; text-decoration-color: var(--signal); }
+.offer-card .oc-price small{ font: 500 .66rem/1.3 "JetBrains Mono", monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
+.offer-card .oc-sub{ margin: 0 0 20px; font: 600 .68rem/1.5 "JetBrains Mono", monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--signal); }
+.offer-card ul{ list-style: none; margin: 0 0 26px; padding: 0; display: grid; gap: 9px; }
+.offer-card li{ position: relative; padding-left: 20px; font-size: 1.02rem; line-height: 1.45; color: var(--ink-soft); }
+.offer-card li::before{ content: ""; position: absolute; left: 0; top: .5em; width: 8px; height: 8px; background: var(--signal); }
+.offer-card .oc-note{ margin: 0 0 26px; font-size: 1.02rem; line-height: 1.55; color: var(--ink-soft); }
+.offer-card .bp-btn{ margin-top: auto; text-align: center; }
+
+/* featured card: inverted, so the first thing the eye lands on is the offer */
+.offer-card.feat{ background: var(--ink); color: var(--paper); border-right-color: var(--ink); }
+.offer-card.feat .oc-state{ color: color-mix(in srgb, var(--paper) 60%, transparent); }
+.offer-card.feat h3, .offer-card.feat .oc-price b{ color: var(--paper); }
+.offer-card.feat .oc-price s{ color: color-mix(in srgb, var(--paper) 50%, transparent); }
+.offer-card.feat .oc-price small, .offer-card.feat li, .offer-card.feat .oc-note{ color: color-mix(in srgb, var(--paper) 74%, transparent); }
+.offer-card.feat .oc-sub{ color: color-mix(in srgb, var(--paper) 92%, transparent); }
+.offer-card.feat .oc-flag{ position: absolute; top: 0; right: 24px; transform: translateY(-50%); padding: 6px 12px; background: var(--signal); color: #FFF6E4;
+  font: 700 .6rem/1 "JetBrains Mono", monospace; letter-spacing: .16em; text-transform: uppercase; }
+.bp-btn.inv{ background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.bp-btn.inv:hover{ box-shadow: 5px 5px 0 var(--signal); }
+.offer-fine{ margin: 16px 0 0; max-width: 62em; font: 500 .64rem/1.7 "JetBrains Mono", monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); }
+
+/* coming-soon price line */
+.soon-price{ margin: 14px 0 0; padding: 10px 14px; border-left: 3px solid var(--signal); background: color-mix(in srgb, var(--paper-deep) 60%, transparent);
+  font: 600 .74rem/1.5 "JetBrains Mono", monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
+
+@media (max-width: 900px){
+  .offer-grid{ grid-template-columns: 1fr; }
+  .offer-card{ border-right: 0; border-bottom: 1px solid var(--rule); }
+  .offer-card:last-child{ border-bottom: 0; }
+  .offer-card.feat{ border-bottom-color: var(--ink); }
+}
+@media (max-width: 560px){
+  .price-seal{ width: 80px; height: 80px; top: -28px; right: -30px; }
+  .bp-eyebrow{ flex-wrap: wrap; row-gap: 8px; }
+  .price-seal i{ font-size: 1.45rem; }
+  .cd-box{ min-width: 0; flex: 1; padding: 10px 6px 8px; }
+  .cd-boxes{ width: 100%; }
+  .offer-line .ol-price{ border-right: 0; border-bottom: 1px solid var(--rule); width: 100%; }
+  .offer-card{ padding: 26px 22px 24px; }
+}
+@media (prefers-reduced-motion: reduce){ .price-seal{ animation: none; } }
+@media print{ .offer-line, .cd-sheet, .price-seal{ display: none !important; } }

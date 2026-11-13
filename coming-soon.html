@@ -44,6 +44,7 @@ function toggleTheme(){
         <span class="soon-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> Coming soon</span>
         <h1 id="soonTitle">The Sony a6700 Field Manual</h1>
         <p id="soonBlurb">This manual is still being written.</p>
+        <p class="soon-price" id="soonPrice">Price announced at launch</p>
         <p class="soon-note">While you wait, <b>Anatomy of a Motorcycle</b> is complete &mdash; 150 chapters, free to read right now.</p>
         <form class="kb-signup kb-su-inline" name="knowbase-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="knowbase-signup">
@@ -67,7 +68,8 @@ function toggleTheme(){
 (function(){
   var books = {
     editing: { title: "The Language of Editing", cover: "/assets/cover-editing.svg",
-      blurb: "Ninety-five chapters on cutting, color and sound, taught through DaVinci Resolve. It is written, and now being refined before release." },
+      blurb: "Ninety-five chapters on cutting, color and sound, taught through DaVinci Resolve. It is written, and now being refined before release.",
+      price: "Launch price $19 for the first 10 days &middot; then $29 &middot; US dollars" },
     a6700: { title: "The Sony a6700 Field Manual", cover: "/assets/cover-a6700.svg",
       blurb: "A field manual for shooters: how the a6700 really works, explained by how its parts talk to each other. In the works." }
   };
@@ -77,6 +79,7 @@ function toggleTheme(){
   document.title = b.title + " — Coming Soon · Knowbase";
   document.getElementById("soonTitle").textContent = b.title;
   document.getElementById("soonBlurb").textContent = b.blurb;
+  if(b.price){ document.getElementById("soonPrice").innerHTML = b.price; }
   document.getElementById("soonInterest").value = key;
   var img = document.getElementById("soonCover"); img.src = b.cover; img.alt = b.title + " — cover";
 })();
