@@ -1,0 +1,41 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">THE EXPOSURE TRIANGLE</text>
+  <line x1="230" y1="54" x2="570" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace" stroke="#22252B" stroke-width="2" fill="none">
+    <path d="M400 95 L560 340 L240 340 Z"/>
+  </g>
+
+  <g font-family="JetBrains Mono, monospace">
+    <circle cx="400" cy="95" r="6" fill="#AE3527"/>
+    <text x="400" y="78" text-anchor="middle" font-size="13" fill="#AE3527" font-weight="600">APERTURE</text>
+    <text x="400" y="63" text-anchor="middle" font-size="10" fill="#5A5748">controls light + depth of field</text>
+
+    <circle cx="560" cy="340" r="6" fill="#33505E"/>
+    <text x="620" y="340" text-anchor="middle" font-size="13" fill="#33505E" font-weight="600">SHUTTER</text>
+    <text x="620" y="356" text-anchor="middle" font-size="10" fill="#5A5748">SPEED</text>
+    <text x="620" y="372" text-anchor="middle" font-size="10" fill="#5A5748">controls light + motion</text>
+
+    <circle cx="240" cy="340" r="6" fill="#6B5A22"/>
+    <text x="180" y="340" text-anchor="middle" font-size="13" fill="#6B5A22" font-weight="600">ISO</text>
+    <text x="180" y="356" text-anchor="middle" font-size="10" fill="#5A5748">controls signal gain</text>
+    <text x="180" y="372" text-anchor="middle" font-size="10" fill="#5A5748">+ visible noise</text>
+
+    <text x="400" y="240" text-anchor="middle" font-size="13" fill="#22252B" font-weight="600">EXPOSURE</text>
+    <text x="400" y="258" text-anchor="middle" font-size="10" fill="#5A5748">one target, three</text>
+    <text x="400" y="274" text-anchor="middle" font-size="10" fill="#5A5748">interchangeable levers</text>
+  </g>
+
+  <line x1="70" y1="410" x2="730" y2="410" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">CHANGE ANY ONE CORNER, AND ANOTHER MUST MOVE TO KEEP EXPOSURE EQUAL</text>
+  <text x="400" y="463" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">Each corner also carries a side effect the other two don't — that's the real decision.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 4.1-A</text>
+</svg>

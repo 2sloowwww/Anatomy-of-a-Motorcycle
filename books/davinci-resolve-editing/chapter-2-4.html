@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jitendra Kulkarni">
 <title>2.4 — Metadata, Clip Attributes, and Smart Bins | The Language of Editing</title>
+<meta name="description" content="Chapter 2.2 promised that smart bins would come back once you understood how to build the metadata they search against. This chapter delivers on that —…">
+<link rel="canonical" href="https://knowbase.xyz/books/davinci-resolve-editing/chapter-2-4.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Knowbase">
+<meta property="og:title" content="2.4 — Metadata, Clip Attributes, and Smart Bins">
+<meta property="og:description" content="Chapter 2.2 promised that smart bins would come back once you understood how to build the metadata they search against. This chapter delivers on that —…">
+<meta property="og:url" content="https://knowbase.xyz/books/davinci-resolve-editing/chapter-2-4.html">
+<meta property="og:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2.4 — Metadata, Clip Attributes, and Smart Bins">
+<meta name="twitter:description" content="Chapter 2.2 promised that smart bins would come back once you understood how to build the metadata they search against. This chapter delivers on that —…">
+<meta name="twitter:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,6 +129,13 @@ function toggleTheme(){
     <p>With flags, ratings, and keyword metadata actually applied to your footage, smart bins from Chapter 2.2 stop being an abstract feature and become a genuinely fast way to work. A smart bin searching for "flag = select" surfaces your entire team's flagged footage across every day and every camera, automatically, the moment anyone applies that flag — no manual sorting required. A smart bin searching a keyword field for a character or location name does the same for content-based organization that a folder structure alone could never express cleanly, since a single clip might reasonably belong to more than one such category at once.</p>
 
     <p>The practical habit worth building is this: decide, before a shoot or an ingest session starts, on a small, consistent vocabulary for flags and keywords — not an elaborate taxonomy, just enough shared language that everyone tagging footage uses the same terms. A "select" flag that means the same thing to every logger is worth far more than an elaborate metadata scheme nobody applies consistently.</p>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 2.4-A</span>
+      <img src="diagrams/fig-2-4-a.svg" alt="Diagram showing a single clip with hand-added metadata fields — a select flag, a star rating, a scene number, and a keyword — next to a Media Pool where a Smart Bin automatically collects only the clips matching a flag = select rule." class="diagram-img">
+      <p>A smart bin isn't watching your bin — it's re-running its rule against it, every time.</p>
+    </div>
 
     <h2 class="section">Where This Leaves the Media Pool</h2>
 

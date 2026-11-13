@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>8.6 — ADR, Foley, and Sound Replacement Workflow | The Language of Editing</title>
+<meta name="description" content="Chapter 8.5 closed on an honest limit: some dialogue can't be salvaged no matter how carefully noise reduction and EQ are applied. A location too loud to…">
+<link rel="canonical" href="https://knowbase.xyz/books/davinci-resolve-editing/chapter-8-6.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Knowbase">
+<meta property="og:title" content="8.6 — ADR, Foley, and Sound Replacement Workflow">
+<meta property="og:description" content="Chapter 8.5 closed on an honest limit: some dialogue can't be salvaged no matter how carefully noise reduction and EQ are applied. A location too loud to…">
+<meta property="og:url" content="https://knowbase.xyz/books/davinci-resolve-editing/chapter-8-6.html">
+<meta property="og:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="8.6 — ADR, Foley, and Sound Replacement Workflow">
+<meta name="twitter:description" content="Chapter 8.5 closed on an honest limit: some dialogue can't be salvaged no matter how carefully noise reduction and EQ are applied. A location too loud to…">
+<meta name="twitter:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-viii">Part VIII — Audio Editing &amp; Fairlight</a>
+    <span class="sep">/</span>
+    <span class="current">8.6</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">The Language of Editing</a>
+      <span class="vol">Vol. I — The Pages</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">8.6</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Eight, Section Six</div>
+        <h1>ADR, Foley, and Sound Replacement Workflow</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">VIII of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Practical</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">049 / 095</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv">8.5</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~6 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">Chapter 8.5 closed on an honest limit: some dialogue can't be salvaged no matter how carefully noise reduction and EQ are applied. A location too loud to work with, a performance that needs a different reading entirely, or a shot that never had usable sound in the first place all call for the same answer — replace the sound rather than repair it. This chapter covers the two disciplines built for exactly that: ADR for dialogue, and Foley for everything a scene needs to sound like that a microphone on set never actually captured.</p>
+
+    <h2 class="section">ADR: Re-Recording Dialogue Against Picture</h2>
+
+    <p>ADR — Automated Dialogue Replacement, sometimes called looping — is the process of re-recording an actor's lines in a controlled studio environment while they watch the original picture, matching their new performance to the timing and lip movement already locked on screen. It's a heavier undertaking than a quick pickup line recorded on set: dedicated time, a quiet room, and an actor genuinely re-performing rather than simply repeating words. The reasons to reach for it are correspondingly serious — unsalvageable production noise, a line that needs to change after the shoot, or dialogue that was never captured cleanly to begin with, not a minor imperfection cleanup could have handled.</p>
+
+    <h2 class="section">Fairlight's ADR Tool: Cueing the Actor, Not Just Recording Them</h2>
+
+    <p>Fairlight includes dedicated ADR tooling built around the actual mechanics of a session rather than treating it as ordinary recording. It can cue an actor with a visual and audible countdown timed to the original line, loop a short section of picture repeatedly for multiple takes without manual re-cueing each time, and automatically lay down each new take on its own pass so a session can move quickly through many lines without losing track of which take belongs where. None of this changes what ADR fundamentally is — a new performance recorded against picture — but it removes a meaningful amount of the manual overhead that used to make ADR sessions slow.</p>
+
+    <div class="pull"><p>ADR isn't a patch over bad production sound — it's a genuinely new performance, timed against picture that's already locked. Treating it as anything less usually shows in how unconvincing the sync ends up feeling.</p></div>
+
+    <h2 class="section">Foley: Building Sound That Was Never Recorded</h2>
+
+    <p>Foley solves a related but different problem. Where ADR replaces dialogue that exists but is unusable, Foley creates sound effects that were often never recorded at all — footsteps, cloth movement, hand props, the small physical sounds a scene needs to feel grounded but that a production sound mixer, focused on capturing clean dialogue, typically didn't prioritize or couldn't isolate cleanly. A Foley artist performs these sounds live against picture, in a controlled space with props built specifically to produce convincing versions of ordinary physical sound, and the results are recorded, synced, and placed as their own tracks in the mix.</p>
+
+    <h2 class="section">Integrating Replaced Sound With What's Already There</h2>
+
+    <p>The real craft in both ADR and Foley shows up after recording, in how convincingly the new material blends with everything original that surrounds it. Freshly recorded ADR, captured in an acoustically dead studio, naturally lacks the room tone and ambient character of the original location — which is exactly why Chapter 8.7's layering of ambience and room tone underneath dialogue matters as much for replaced lines as for original production sound. The same routing and bus structure from Chapter 8.3 applies here without modification: ADR and Foley tracks feed into the same dialogue and effects busses as everything else, so they're leveled and processed as part of one coherent mix rather than sitting apart from it as obviously separate elements.</p>
+
+    <h2 class="section">Deciding When Replacement Is Actually Worth It</h2>
+
+    <p>Neither ADR nor Foley is free — both cost real studio time, and both carry a real risk of sounding replaced if the match to the original isn't handled with care. The practical judgment call, closing out this chapter: reach for cleanup, from Chapter 8.5, whenever it can plausibly get a track usable, and reserve full replacement for the cases genuinely beyond that reach. Most projects need far more cleanup than replacement; knowing which category a given problem actually belongs in is the skill this chapter and the last one, taken together, are meant to build.</p>
+
+    <p>With dialogue clean or convincingly replaced, the mix has its foundation. Chapter 8.7 builds outward from there, covering how music and sound design layer underneath and around that dialogue without burying it.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          ADR re-records dialogue against locked picture — a genuinely new performance, not a fix applied to the original take.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Fairlight's ADR tools cue, loop, and organize takes automatically, speeding up the session without changing what ADR fundamentally is.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Foley builds physical sound effects that were often never captured on set, performed live against picture by a Foley artist.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Replacement is a last resort after cleanup, not a first move — most dialogue problems belong to Chapter 8.5's toolkit, not this one.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References Forward</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-8-7.html">→ Ch. 8.7</a></td>
+          <td class="note">Music and Sound Design Layering — building the ambience and score around dialogue that's now clean or convincingly replaced.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-8-5.html">→ Ch. 8.5</a></td>
+          <td class="note">Revisit noise reduction and EQ, the cleanup pass to exhaust before reaching for full replacement.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-8-3.html">→ Ch. 8.3</a></td>
+          <td class="note">Revisit bus routing, the structure that folds ADR and Foley tracks into the mix alongside everything else.</td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a class="prev" href="chapter-8-5.html">
+      <span class="dir">← Previous</span>
+      <span class="ttl">8.5 — Cleaning Dialogue: Noise Reduction and EQ</span>
+    </a>
+    <a class="next" href="chapter-8-7.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">8.7 — Music and Sound Design Layering</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">The Language of Editing — Sheet 049 / 095</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

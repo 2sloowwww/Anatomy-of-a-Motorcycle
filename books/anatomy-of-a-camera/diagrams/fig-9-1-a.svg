@@ -1,0 +1,55 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="19" fill="#6B5A22" letter-spacing="0.5">SHUTTER MECHANISM — MECHANICAL VS. ELECTRONIC</text>
+  <line x1="110" y1="54" x2="690" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="200" y="82" text-anchor="middle" font-size="12" fill="#8C876F" letter-spacing="1">TWO CURTAINS, A TRAVELING SLIT</text>
+
+    <rect x="90" y="100" width="220" height="150" fill="none" stroke="#22252B" stroke-width="1.6"/>
+    <rect x="90" y="100" width="70" height="150" fill="#33505E" opacity="0.85"/>
+    <rect x="255" y="100" width="55" height="150" fill="#33505E" opacity="0.85"/>
+    <rect x="160" y="100" width="95" height="150" fill="#E2D9C3"/>
+    <text x="207" y="180" text-anchor="middle" font-size="10" fill="#22252B">SLIT</text>
+
+    <path d="M160,265 l30,10 l-30,10" fill="none" stroke="#AE3527" stroke-width="1.6"/>
+    <path d="M255,265 l30,10 l-30,10" fill="none" stroke="#AE3527" stroke-width="1.6"/>
+    <text x="140" y="292" font-size="9" fill="#AE3527">curtain 1</text>
+    <text x="235" y="292" font-size="9" fill="#AE3527">curtain 2</text>
+    <text x="200" y="312" text-anchor="middle" font-size="9" fill="#5A5748">both travel the same direction, a beat apart</text>
+  </g>
+
+  <line x1="400" y1="90" x2="400" y2="330" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="600" y="82" text-anchor="middle" font-size="12" fill="#8C876F" letter-spacing="1">ROW-BY-ROW SENSOR READOUT</text>
+
+    <rect x="490" y="100" width="220" height="150" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <line x1="490" y1="115" x2="710" y2="115" stroke="#22252B" stroke-width="0.6" opacity="0.4"/>
+    <line x1="490" y1="135" x2="710" y2="135" stroke="#22252B" stroke-width="0.6" opacity="0.4"/>
+    <line x1="490" y1="155" x2="710" y2="155" stroke="#22252B" stroke-width="0.6" opacity="0.4"/>
+    <line x1="490" y1="175" x2="710" y2="175" stroke="#22252B" stroke-width="0.6" opacity="0.4"/>
+    <line x1="490" y1="195" x2="710" y2="195" stroke="#22252B" stroke-width="0.6" opacity="0.4"/>
+    <line x1="490" y1="215" x2="710" y2="215" stroke="#22252B" stroke-width="0.6" opacity="0.4"/>
+    <line x1="490" y1="235" x2="710" y2="235" stroke="#22252B" stroke-width="0.6" opacity="0.4"/>
+    <rect x="490" y="155" width="220" height="8" fill="#AE3527" opacity="0.8"/>
+    <text x="720" y="163" font-size="9" fill="#AE3527">read line</text>
+
+    <path d="M540,110 L595,110 L590,240 L525,240 Z" fill="none" stroke="#33505E" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <text x="600" y="270" font-size="9" fill="#5A5748">fast motion, skewed by</text>
+    <text x="600" y="282" font-size="9" fill="#5A5748">sequential row timing</text>
+  </g>
+
+  <line x1="70" y1="345" x2="730" y2="345" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="380" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">BOTH CREATE A MOVING &quot;NOW&quot; ACROSS THE FRAME</text>
+  <text x="400" y="402" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A physical slit versus a scanned line — read speed decides how visible the distortion is.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 9.1-A</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">A TRANSITION IS BUILT FROM OVERLAP</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">TWO CLIPS, EACH WITH UNUSED HANDLE PAST THE CUT</text>
+
+    <!-- Clip A -->
+    <rect x="70" y="110" width="330" height="70" fill="#33505E" opacity="0.75" stroke="#22252B" stroke-width="1.4"/>
+    <text x="80" y="135" font-size="11" fill="#EEE8DA" font-weight="700">CLIP A — USED RANGE</text>
+    <rect x="330" y="110" width="70" height="70" fill="#33505E" opacity="0.3" stroke="#22252B" stroke-width="1" stroke-dasharray="3 3"/>
+    <text x="335" y="150" font-size="9" fill="#5A5748">HANDLE</text>
+
+    <!-- Clip B -->
+    <rect x="400" y="110" width="70" height="70" fill="#6B5A22" opacity="0.3" stroke="#22252B" stroke-width="1" stroke-dasharray="3 3"/>
+    <text x="405" y="150" font-size="9" fill="#5A5748">HANDLE</text>
+    <rect x="470" y="110" width="330" height="70" fill="#6B5A22" opacity="0.55" stroke="#22252B" stroke-width="1.4"/>
+    <text x="480" y="135" font-size="11" fill="#22252B" font-weight="700">CLIP B — USED RANGE</text>
+
+    <line x1="400" y1="100" x2="400" y2="190" stroke="#AE3527" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <text x="404" y="105" font-size="9" fill="#AE3527">CUT POINT</text>
+  </g>
+
+  <path d="M400 200 L400 240 L470 240" fill="none" stroke="#6B5A22" stroke-width="1.4"/>
+  <path d="M330 200 L330 240 L400 240" fill="none" stroke="#6B5A22" stroke-width="1.4"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="270" font-size="12.5" fill="#8C876F" letter-spacing="1">THE OVERLAP — WHERE THE TRANSITION ACTUALLY LIVES</text>
+    <rect x="70" y="284" width="660" height="90" fill="none" stroke="#22252B" stroke-width="1.4"/>
+    <rect x="70" y="284" width="295" height="90" fill="#33505E" opacity="0.5"/>
+    <rect x="365" y="284" width="70" height="90" fill="#AE3527" opacity="0.55"/>
+    <rect x="435" y="284" width="295" height="90" fill="#6B5A22" opacity="0.4"/>
+    <text x="200" y="333" text-anchor="middle" font-size="11" fill="#EEE8DA" font-weight="700">A CONTINUES</text>
+    <text x="400" y="325" text-anchor="middle" font-size="9.5" fill="#EEE8DA" font-weight="700">CROSS</text>
+    <text x="400" y="338" text-anchor="middle" font-size="9.5" fill="#EEE8DA" font-weight="700">DISSOLVE</text>
+    <text x="580" y="333" text-anchor="middle" font-size="11" fill="#22252B" font-weight="700">B CONTINUES</text>
+  </g>
+
+  <line x1="70" y1="400" x2="710" y2="400" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="430" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">NO HANDLE ON EITHER SIDE MEANS NO ROOM FOR THE OVERLAP</text>
+  <text x="400" y="452" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A transition is drawn from trimmed-away frames — the same reserve a ripple trim uses.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 7.1-A</text>
+</svg>

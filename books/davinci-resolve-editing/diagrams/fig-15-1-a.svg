@@ -1,0 +1,49 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">TRIAGE: MEDIA, PROJECT, OR SYSTEM?</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <rect x="300" y="76" width="200" height="44" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="400" y="103" text-anchor="middle" font-size="12.5" fill="#22252B" font-weight="700">SOMETHING IS WRONG</text>
+
+    <path d="M400 120 V 140" fill="none" stroke="#6B5A22" stroke-width="1.6"/>
+    <path d="M140 140 H 660" fill="none" stroke="#6B5A22" stroke-width="1.6"/>
+    <path d="M140 140 V 160" fill="none" stroke="#6B5A22" stroke-width="1.6"/>
+    <path d="M400 140 V 160" fill="none" stroke="#6B5A22" stroke-width="1.6"/>
+    <path d="M660 140 V 160" fill="none" stroke="#6B5A22" stroke-width="1.6"/>
+  </g>
+
+  <g font-family="JetBrains Mono, monospace">
+    <rect x="60" y="160" width="160" height="40" fill="none" stroke="#33505E" stroke-width="1.6"/>
+    <text x="140" y="185" text-anchor="middle" font-size="12" fill="#33505E" font-weight="700">MEDIA</text>
+    <text x="70" y="222" font-size="9" fill="#5A5748">Wrong file, wrong</text>
+    <text x="70" y="234" font-size="9" fill="#5A5748">frame rate, broken</text>
+    <text x="70" y="246" font-size="9" fill="#5A5748">or missing link.</text>
+
+    <rect x="320" y="160" width="160" height="40" fill="none" stroke="#33505E" stroke-width="1.6"/>
+    <text x="400" y="185" text-anchor="middle" font-size="12" fill="#33505E" font-weight="700">PROJECT</text>
+    <text x="330" y="222" font-size="9" fill="#5A5748">Database, settings,</text>
+    <text x="330" y="234" font-size="9" fill="#5A5748">or timeline structure</text>
+    <text x="330" y="246" font-size="9" fill="#5A5748">itself is the fault.</text>
+
+    <rect x="580" y="160" width="160" height="40" fill="none" stroke="#AE3527" stroke-width="1.6"/>
+    <text x="660" y="185" text-anchor="middle" font-size="12" fill="#AE3527" font-weight="700">SYSTEM</text>
+    <text x="590" y="222" font-size="9" fill="#5A5748">GPU, storage, cache,</text>
+    <text x="590" y="234" font-size="9" fill="#5A5748">or the machine itself</text>
+    <text x="590" y="246" font-size="9" fill="#5A5748">is the bottleneck.</text>
+  </g>
+
+  <line x1="60" y1="280" x2="740" y2="280" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="312" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">ISOLATE THE CATEGORY BEFORE TOUCHING ANYTHING</text>
+  <text x="400" y="334" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A fix aimed at the wrong category doesn't just fail — it can hide what the real problem actually was.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 15.1-A</text>
+</svg>

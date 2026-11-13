@@ -1,0 +1,61 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">FROM LIGHT TO IMAGE: THE EXPOSURE LINK</text>
+  <line x1="130" y1="54" x2="670" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <circle cx="105" cy="150" r="34" fill="none" stroke="#AE3527" stroke-width="2"/>
+    <line x1="105" y1="82" x2="105" y2="100" stroke="#AE3527" stroke-width="1.6"/>
+    <line x1="105" y1="200" x2="105" y2="218" stroke="#AE3527" stroke-width="1.6"/>
+    <line x1="55" y1="100" x2="68" y2="115" stroke="#AE3527" stroke-width="1.6"/>
+    <line x1="155" y1="100" x2="142" y2="115" stroke="#AE3527" stroke-width="1.6"/>
+    <line x1="55" y1="200" x2="68" y2="185" stroke="#AE3527" stroke-width="1.6"/>
+    <line x1="155" y1="200" x2="142" y2="185" stroke="#AE3527" stroke-width="1.6"/>
+    <text x="105" y="240" text-anchor="middle" font-size="11" fill="#5A5748">SCENE / LIGHT</text>
+
+    <line x1="150" y1="150" x2="255" y2="150" stroke="#22252B" stroke-width="1.6"/>
+    <path d="M245 143 L258 150 L245 157" fill="none" stroke="#22252B" stroke-width="1.6"/>
+
+    <ellipse cx="300" cy="150" rx="20" ry="42" fill="none" stroke="#33505E" stroke-width="2.2"/>
+    <ellipse cx="330" cy="150" rx="20" ry="42" fill="none" stroke="#33505E" stroke-width="2.2"/>
+    <text x="315" y="212" text-anchor="middle" font-size="11" fill="#5A5748">LENS + IRIS</text>
+
+    <line x1="352" y1="150" x2="440" y2="150" stroke="#22252B" stroke-width="1.6"/>
+    <path d="M430 143 L443 150 L430 157" fill="none" stroke="#22252B" stroke-width="1.6"/>
+
+    <rect x="450" y="115" width="60" height="70" fill="none" stroke="#22252B" stroke-width="1.6"/>
+    <line x1="465" y1="115" x2="465" y2="185" stroke="#8C876F" stroke-width="0.8"/>
+    <line x1="480" y1="115" x2="480" y2="185" stroke="#8C876F" stroke-width="0.8"/>
+    <line x1="495" y1="115" x2="495" y2="185" stroke="#8C876F" stroke-width="0.8"/>
+    <line x1="450" y1="133" x2="510" y2="133" stroke="#8C876F" stroke-width="0.8"/>
+    <line x1="450" y1="150" x2="510" y2="150" stroke="#8C876F" stroke-width="0.8"/>
+    <line x1="450" y1="167" x2="510" y2="167" stroke="#8C876F" stroke-width="0.8"/>
+    <text x="480" y="212" text-anchor="middle" font-size="11" fill="#5A5748">SENSOR</text>
+
+    <line x1="512" y1="150" x2="600" y2="150" stroke="#22252B" stroke-width="1.6"/>
+    <path d="M590 143 L603 150 L590 157" fill="none" stroke="#22252B" stroke-width="1.6"/>
+
+    <rect x="615" y="110" width="90" height="80" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <rect x="627" y="122" width="66" height="20" fill="#8C876F" opacity="0.5"/>
+    <rect x="627" y="146" width="66" height="20" fill="#5A5748" opacity="0.5"/>
+    <rect x="627" y="170" width="30" height="10" fill="#22252B" opacity="0.4"/>
+    <text x="660" y="212" text-anchor="middle" font-size="11" fill="#5A5748">RECORDED IMAGE</text>
+  </g>
+
+  <line x1="70" y1="290" x2="730" y2="290" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="325" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">EXPOSURE = HOW MUCH LIGHT REACHES THE SENSOR, AND FOR HOW LONG</text>
+  <text x="400" y="352" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">Every control on a camera exists to manage one or both halves of that sentence.</text>
+
+  <line x1="70" y1="380" x2="730" y2="380" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="413" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#22252B">Too little light reaching the sensor: an underexposed, dark image with lost shadow detail.</text>
+  <text x="400" y="436" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#22252B">Too much: an overexposed, bright image with lost highlight detail. Exposure is the balance between.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 1.3-A</text>
+</svg>

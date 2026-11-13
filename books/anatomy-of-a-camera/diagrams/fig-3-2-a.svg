@@ -1,0 +1,41 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">SENSOR SIZE COMPARISON, TO SCALE</text>
+  <line x1="180" y1="54" x2="620" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace" transform="translate(220,240)">
+    <rect x="-180" y="-90" width="360" height="240" fill="none" stroke="#33505E" stroke-width="2.2"/>
+    <text x="-176" y="-98" font-size="12" fill="#33505E">FULL FRAME — 36 × 24mm</text>
+
+    <rect x="-120" y="-60" width="240" height="160" fill="none" stroke="#AE3527" stroke-width="2.2"/>
+    <text x="-116" y="-68" font-size="11.5" fill="#AE3527">APS-C — 23.5 × 15.6mm</text>
+
+    <rect x="-86" y="-45" width="173" height="115" fill="none" stroke="#6B5A22" stroke-width="2.2"/>
+    <text x="-83" y="82" font-size="11" fill="#6B5A22">MICRO FOUR THIRDS</text>
+    <text x="-83" y="97" font-size="10" fill="#6B5A22">17.3 × 13mm</text>
+  </g>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="560" y="150" font-size="12" fill="#22252B">Larger sensor →</text>
+    <text x="560" y="172" font-size="11" fill="#5A5748">larger photosites at</text>
+    <text x="560" y="190" font-size="11" fill="#5A5748">equal resolution</text>
+    <text x="560" y="222" font-size="11" fill="#5A5748">→ more light gathered</text>
+    <text x="560" y="240" font-size="11" fill="#5A5748">per photosite</text>
+    <text x="560" y="272" font-size="11" fill="#5A5748">→ better high-ISO</text>
+    <text x="560" y="290" font-size="11" fill="#5A5748">noise performance</text>
+    <text x="560" y="322" font-size="11" fill="#5A5748">→ shallower depth of</text>
+    <text x="560" y="340" font-size="11" fill="#5A5748">field at equal framing</text>
+  </g>
+
+  <line x1="70" y1="400" x2="730" y2="400" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="430" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">MEGAPIXELS COUNT PHOTOSITES. SENSOR SIZE DETERMINES HOW BIG EACH ONE IS.</text>
+  <text x="400" y="453" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">Two sensors with equal megapixels but different areas are not equivalent instruments.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 3.2-A</text>
+</svg>

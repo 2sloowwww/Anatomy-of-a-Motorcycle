@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>14.1 — Narrative and Scripted Editing Workflow | The Language of Editing</title>
+<meta name="description" content="Chapter 13.5 closed the last part by treating stutters and dropped frames strictly as a system problem, separate from anything creative — a machine that…">
+<link rel="canonical" href="https://knowbase.xyz/books/davinci-resolve-editing/chapter-14-1.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Knowbase">
+<meta property="og:title" content="14.1 — Narrative and Scripted Editing Workflow">
+<meta property="og:description" content="Chapter 13.5 closed the last part by treating stutters and dropped frames strictly as a system problem, separate from anything creative — a machine that…">
+<meta property="og:url" content="https://knowbase.xyz/books/davinci-resolve-editing/chapter-14-1.html">
+<meta property="og:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="14.1 — Narrative and Scripted Editing Workflow">
+<meta name="twitter:description" content="Chapter 13.5 closed the last part by treating stutters and dropped frames strictly as a system problem, separate from anything creative — a machine that…">
+<meta name="twitter:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-xiv">Part XIV — Genre &amp; Format Workflows</a>
+    <span class="sep">/</span>
+    <span class="current">14.1</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">The Language of Editing</a>
+      <span class="vol">Vol. I — The Pages</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">14.1</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Fourteen, Section One</div>
+        <h1>Narrative and Scripted Editing Workflow</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">XIV of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Practical</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">082 / 095</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv">13.5</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~7 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">Chapter 13.5 closed the last part by treating stutters and dropped frames strictly as a system problem, separate from anything creative — a machine that plays back cleanly, full stop. With that foundation settled, this book turns from mechanics to craft. Part XIV asks a different kind of question than everything before it: not what a given tool does in isolation, but which combination of tools actually serves a specific kind of project. It opens with the format most editors picture first when they hear the word "editing": a scripted, narrative scene, built from planned coverage rather than material found and shaped after the fact.</p>
+
+    <h2 class="section">Coverage Is Built to Be Chosen From</h2>
+
+    <p>Narrative footage arrives differently than almost anything else this book has discussed. A scripted scene is shot deliberately as coverage — a wide master, a handful of close singles, maybe an over-the-shoulder or an insert — with the explicit intention that an editor will later choose among these options for every beat of the scene. This is closer to Chapter 6.5's Group Clips than to Part VI's multicam proper: the different setups aren't simultaneous angles of one continuous take, they're related alternatives of the same scripted moment, shot one after another, and the editorial job is choosing which alternative serves each line rather than switching live between angles that happened at once.</p>
+
+    <h2 class="section">Bins Built Around Scenes, Not Just Cameras</h2>
+
+    <p>Chapter 2.2 introduced bins as a genuinely structured alternative to folders, and Chapter 2.4 added metadata and Smart Bins on top of that. Scripted projects are where that structure earns its keep most visibly: organizing the Media Pool by scene and setup, rather than by camera card or import date, keeps a project with dozens of scenes and hundreds of takes navigable in a way flat organization never stays. A Smart Bin built around a scene-number metadata field, populated during import, turns "find every take of scene fourteen" from a search into a single click.</p>
+
+    <h2 class="section">The Selects Pass, Before Anything Is Cut</h2>
+
+    <p>Before a scene gets built, it gets watched — every take of every setup, reviewed for the option that actually carries the performance. Chapter 3.2's Source Tape is the right tool for this stage specifically because it's built for exactly this kind of fast, sequential review: scrubbing through take after take of the same line without the overhead of opening and closing individual clips. Marking selects here, before committing to a structure, keeps the actual cutting stage from doubling as a review stage — the two are different kinds of attention, and conflating them slows both down.</p>
+
+    <div class="pull"><p>Coverage is not the finished scene — it's the set of options a scripted shoot deliberately gives you. Editing a narrative scene is the discipline of choosing well among those options, not the discipline of using all of them.</p></div>
+
+    <h2 class="section">Cutting for Performance, Not Just Coverage</h2>
+
+    <p>Once selects are marked, the actual assembly leans on tools Part V spent seven chapters building. Four-point editing from Chapter 5.5 is particularly suited to scripted work: locking a dialogue track's in and out points while swapping which picture angle covers it lets performance and coverage be adjusted independently, which is close to how scripted scenes actually get refined — the line reading is settled well before the exact cutaway pattern is. Ripple and roll trims from Chapter 5.3 do the finer work after that, nudging a cut a few frames earlier or later until a reaction lands where it should.</p>
+
+    <h2 class="section">Where a Transition Actually Belongs</h2>
+
+    <p>Scripted, narrative editing is overwhelmingly a hard-cut medium. Chapter 7.2 already made the case that a dissolve signals a shift in time or place, not just a softer edit — and a scene playing out in one continuous dramatic beat has no such shift to signal. The discipline worth carrying into narrative work specifically is restraint: reaching for a dissolve only at the actual boundaries between scenes, and trusting a clean cut to carry everything within one.</p>
+
+    <p>That's the shape of scripted, narrative editing: planned coverage, scene-based organization, a disciplined selects pass, and performance-driven trimming, all leaning on tools this book has already built. Chapter 14.2 turns to a genre where almost none of that certainty holds — documentary work, where the footage arrives unplanned, in volumes a scripted shoot never produces, and the structure of the piece is often still unknown at the point editing begins.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Narrative coverage is related alternatives of the same scripted moment, not simultaneous multicam angles — closer to Chapter 6.5's Group Clips than to Part VI's live switching.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Scene- and setup-based Media Pool organization, using bins and Smart Bins from Chapters 2.2 and 2.4, keeps large scripted projects navigable.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          A dedicated selects pass using Source Tape, done before cutting begins, keeps reviewing and assembling from slowing each other down.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Four-point editing lets performance and picture coverage be adjusted independently, matching how scripted scenes are actually refined.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References Forward</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-14-2.html">→ Ch. 14.2</a></td>
+          <td class="note">Documentary Editing at Scale — where planned coverage gives way to volume, uncertainty, and a structure discovered rather than shot.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-6-5.html">→ Ch. 6.5</a></td>
+          <td class="note">Revisit Group Clips, the closer analogue to narrative coverage than full multicam grouping.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-5-5.html">→ Ch. 5.5</a></td>
+          <td class="note">Revisit three-point and four-point editing, the logic behind adjusting performance and coverage independently.</td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a class="prev" href="chapter-13-5.html">
+      <span class="dir">← Previous</span>
+      <span class="ttl">13.5 — Troubleshooting Playback Stutters</span>
+    </a>
+    <a class="next" href="chapter-14-2.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">14.2 — Documentary Editing at Scale</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">The Language of Editing — Sheet 082 / 095</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

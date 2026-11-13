@@ -1,0 +1,52 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">BIN LOCKING — WHO OWNS WHAT, RIGHT NOW</text>
+  <line x1="130" y1="54" x2="670" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <rect x="70" y="90" width="300" height="140" fill="#E2D9C3" stroke="#AE3527" stroke-width="2"/>
+    <text x="220" y="116" text-anchor="middle" font-size="13.5" fill="#AE3527" font-weight="700">SCENE 4 BIN</text>
+
+    <rect x="200" y="130" width="40" height="30" rx="3" fill="none" stroke="#AE3527" stroke-width="2"/>
+    <path d="M208,130 V118 a12,12 0 0 1 24,0 V130" fill="none" stroke="#AE3527" stroke-width="2"/>
+    <circle cx="220" cy="145" r="3" fill="#AE3527"/>
+
+    <text x="220" y="186" text-anchor="middle" font-size="10.5" fill="#22252B">LOCKED BY</text>
+    <text x="220" y="200" text-anchor="middle" font-size="10.5" fill="#22252B">J. PATEL — COLOR</text>
+    <text x="220" y="216" text-anchor="middle" font-size="9.5" fill="#5A5748">read-only to everyone else</text>
+
+    <rect x="430" y="90" width="300" height="140" fill="#E2D9C3" stroke="#33505E" stroke-width="2"/>
+    <text x="580" y="116" text-anchor="middle" font-size="13.5" fill="#33505E" font-weight="700">SCENE 5 BIN</text>
+
+    <rect x="560" y="138" width="40" height="24" rx="3" fill="none" stroke="#33505E" stroke-width="2"/>
+    <path d="M568,138 V128 a12,12 0 0 1 24,0" fill="none" stroke="#33505E" stroke-width="2"/>
+    <circle cx="580" cy="150" r="3" fill="#33505E"/>
+
+    <text x="580" y="186" text-anchor="middle" font-size="10.5" fill="#22252B">NO ACTIVE LOCK</text>
+    <text x="580" y="200" text-anchor="middle" font-size="10.5" fill="#22252B">AVAILABLE TO EDIT</text>
+    <text x="580" y="216" text-anchor="middle" font-size="9.5" fill="#5A5748">open padlock, open bin</text>
+
+    <circle cx="400" cy="280" r="24" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="400" y="286" text-anchor="middle" font-size="14" fill="#22252B" font-weight="700">B</text>
+    <text x="400" y="320" text-anchor="middle" font-size="10.5" fill="#5A5748">EDITOR B, ARRIVING NOW</text>
+
+    <line x1="382" y1="264" x2="240" y2="232" stroke="#AE3527" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <text x="290" y="252" text-anchor="middle" font-size="9.5" fill="#AE3527">blocked</text>
+
+    <line x1="418" y1="264" x2="560" y2="232" stroke="#33505E" stroke-width="1.8"/>
+    <text x="510" y="252" text-anchor="middle" font-size="9.5" fill="#33505E">allowed</text>
+  </g>
+
+  <line x1="70" y1="356" x2="730" y2="356" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="388" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">A LOCK APPLIES TO THE WHOLE BIN, NOT A SINGLE CLIP</text>
+  <text x="400" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">Working in separate bins, not one shared bin, is what actually keeps two editors from colliding.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 12.3-A</text>
+</svg>

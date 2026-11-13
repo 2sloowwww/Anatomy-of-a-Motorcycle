@@ -1,0 +1,75 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">THE INTERFACE, ZONE BY ZONE</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="70" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#8C876F" letter-spacing="1">EVERY PAGE REUSES THIS SAME LAYOUT GRAMMAR</text>
+
+  <g font-family="JetBrains Mono, monospace">
+    <!-- page frame -->
+    <rect x="70" y="82" width="660" height="280" fill="none" stroke="#22252B" stroke-width="1.6"/>
+
+    <!-- toolbar -->
+    <rect x="70" y="82" width="660" height="30" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="400" y="102" text-anchor="middle" font-size="12" font-weight="700" fill="#22252B">TOOLBAR — SAME LOCATION, DIFFERENT TOOLS PER PAGE</text>
+
+    <!-- left panel: media pool -->
+    <rect x="70" y="112" width="100" height="250" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="120" y="233" text-anchor="middle" font-size="11.5" font-weight="700" fill="#22252B">MEDIA</text>
+    <text x="120" y="249" text-anchor="middle" font-size="11.5" font-weight="700" fill="#22252B">POOL /</text>
+    <text x="120" y="265" text-anchor="middle" font-size="11.5" font-weight="700" fill="#22252B">BINS</text>
+    <text x="120" y="286" text-anchor="middle" font-size="8.5" fill="#5A5748">most pages</text>
+
+    <!-- right panel: inspector -->
+    <rect x="630" y="112" width="100" height="250" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="680" y="233" text-anchor="middle" font-size="10.5" font-weight="700" fill="#22252B">INSPECTOR</text>
+    <text x="680" y="249" text-anchor="middle" font-size="10.5" font-weight="700" fill="#22252B">/ DETAIL</text>
+    <text x="680" y="265" text-anchor="middle" font-size="10.5" font-weight="700" fill="#22252B">PANEL</text>
+    <text x="680" y="286" text-anchor="middle" font-size="8" fill="#5A5748">selection-driven</text>
+
+    <!-- viewers -->
+    <rect x="170" y="112" width="225" height="100" fill="#E2D9C3" stroke="#33505E" stroke-width="1.6"/>
+    <text x="282.5" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#33505E">SOURCE VIEWER</text>
+    <text x="282.5" y="163" text-anchor="middle" font-size="9.5" fill="#5A5748">unplaced clip from a bin</text>
+    <text x="282.5" y="180" text-anchor="middle" font-size="8.5" fill="#8C876F">(only some pages split viewers)</text>
+
+    <rect x="405" y="112" width="225" height="100" fill="#E2D9C3" stroke="#33505E" stroke-width="1.6"/>
+    <text x="517.5" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#33505E">TIMELINE VIEWER</text>
+    <text x="517.5" y="163" text-anchor="middle" font-size="9.5" fill="#5A5748">the sequence itself</text>
+
+    <!-- working area -->
+    <rect x="170" y="222" width="460" height="140" fill="none" stroke="#22252B" stroke-width="1.4" stroke-dasharray="6 4"/>
+    <text x="400" y="275" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">WORKING AREA</text>
+    <text x="400" y="293" text-anchor="middle" font-size="10" fill="#5A5748">timeline · node graph · mixer — changes per page</text>
+    <text x="400" y="309" text-anchor="middle" font-size="9.5" fill="#5A5748">the toolbar above controls what happens here</text>
+    <text x="400" y="325" text-anchor="middle" font-size="9.5" fill="#5A5748">selecting something here feeds the inspector</text>
+
+    <!-- page switcher -->
+    <text x="400" y="374" text-anchor="middle" font-size="11" fill="#8C876F" letter-spacing="1">PAGE SWITCHER — FIXED, NEVER MOVES</text>
+    <rect x="70" y="378" width="660" height="40" fill="none" stroke="#22252B" stroke-width="1.6"/>
+    <line x1="164" y1="378" x2="164" y2="418" stroke="#22252B" stroke-width="1"/>
+    <line x1="258" y1="378" x2="258" y2="418" stroke="#22252B" stroke-width="1"/>
+    <line x1="352" y1="378" x2="352" y2="418" stroke="#22252B" stroke-width="1"/>
+    <line x1="446" y1="378" x2="446" y2="418" stroke="#22252B" stroke-width="1"/>
+    <line x1="540" y1="378" x2="540" y2="418" stroke="#22252B" stroke-width="1"/>
+    <line x1="634" y1="378" x2="634" y2="418" stroke="#22252B" stroke-width="1"/>
+    <text x="117" y="402" text-anchor="middle" font-size="9.5" font-weight="700" fill="#22252B">MEDIA</text>
+    <text x="211" y="402" text-anchor="middle" font-size="9.5" font-weight="700" fill="#22252B">CUT</text>
+    <text x="305" y="402" text-anchor="middle" font-size="9.5" font-weight="700" fill="#22252B">EDIT</text>
+    <text x="399" y="402" text-anchor="middle" font-size="9.5" font-weight="700" fill="#22252B">FUSION</text>
+    <text x="493" y="402" text-anchor="middle" font-size="9.5" font-weight="700" fill="#22252B">COLOR</text>
+    <text x="587" y="402" text-anchor="middle" font-size="9" font-weight="700" fill="#22252B">FAIRLIGHT</text>
+    <text x="682" y="402" text-anchor="middle" font-size="9.5" font-weight="700" fill="#22252B">DELIVER</text>
+  </g>
+
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">SAME ZONES, DIFFERENT JOB PER PAGE</text>
+  <text x="400" y="460" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">Learn the layout once — only the tools inside each zone change page to page.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 1.5-A</text>
+</svg>

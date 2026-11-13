@@ -1,0 +1,51 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">LOUDNESS TARGETS BY DELIVERY STANDARD</text>
+  <line x1="140" y1="54" x2="660" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="355" y="94" text-anchor="middle" font-size="10" fill="#AE3527" font-weight="700">-23 LUFS</text>
+    <rect x="250" y="100" width="450" height="30" fill="none" stroke="#22252B" stroke-width="1.4"/>
+    <rect x="250" y="100" width="105" height="30" fill="#6B5A22" fill-opacity="0.35"/>
+    <line x1="355" y1="94" x2="355" y2="136" stroke="#AE3527" stroke-width="2.2"/>
+    <text x="60" y="120" font-size="11.5" fill="#22252B">EBU R128 — EU BROADCAST</text>
+    <text x="475" y="146" text-anchor="middle" font-size="9.5" fill="#5A5748">True peak ceiling: -1 dBTP</text>
+
+    <text x="340" y="184" text-anchor="middle" font-size="10" fill="#AE3527" font-weight="700">-24 LUFS</text>
+    <rect x="250" y="190" width="450" height="30" fill="none" stroke="#22252B" stroke-width="1.4"/>
+    <rect x="250" y="190" width="90" height="30" fill="#6B5A22" fill-opacity="0.35"/>
+    <line x1="340" y1="184" x2="340" y2="226" stroke="#AE3527" stroke-width="2.2"/>
+    <text x="60" y="210" font-size="11.5" fill="#22252B">ATSC A/85 — US BROADCAST</text>
+    <text x="475" y="236" text-anchor="middle" font-size="9.5" fill="#5A5748">True peak ceiling: -2 dBTP</text>
+
+    <text x="490" y="274" text-anchor="middle" font-size="10" fill="#AE3527" font-weight="700">-14 LUFS</text>
+    <rect x="250" y="280" width="450" height="30" fill="none" stroke="#22252B" stroke-width="1.4"/>
+    <rect x="250" y="280" width="240" height="30" fill="#6B5A22" fill-opacity="0.35"/>
+    <line x1="490" y1="274" x2="490" y2="316" stroke="#AE3527" stroke-width="2.2"/>
+    <text x="60" y="300" font-size="11.5" fill="#22252B">STREAMING / ONLINE</text>
+    <text x="475" y="326" text-anchor="middle" font-size="9.5" fill="#5A5748">True peak ceiling: -1 dBTP (platform-dependent)</text>
+
+    <line x1="250" y1="345" x2="700" y2="345" stroke="#22252B" stroke-width="1.4"/>
+    <line x1="250" y1="345" x2="250" y2="351" stroke="#22252B" stroke-width="1.2"/>
+    <line x1="400" y1="345" x2="400" y2="351" stroke="#22252B" stroke-width="1.2"/>
+    <line x1="550" y1="345" x2="550" y2="351" stroke="#22252B" stroke-width="1.2"/>
+    <line x1="700" y1="345" x2="700" y2="351" stroke="#22252B" stroke-width="1.2"/>
+    <text x="250" y="364" text-anchor="middle" font-size="10" fill="#5A5748">-30</text>
+    <text x="400" y="364" text-anchor="middle" font-size="10" fill="#5A5748">-20</text>
+    <text x="550" y="364" text-anchor="middle" font-size="10" fill="#5A5748">-10</text>
+    <text x="700" y="364" text-anchor="middle" font-size="10" fill="#5A5748">0</text>
+    <text x="475" y="382" text-anchor="middle" font-size="10.5" fill="#8C876F" letter-spacing="1">INTEGRATED LOUDNESS (LUFS)</text>
+  </g>
+
+  <line x1="60" y1="402" x2="750" y2="402" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="424" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12.5" fill="#22252B" font-weight="600">BROADCAST TARGETS ARE STRICTER AND MORE UNIFORM THAN STREAMING TARGETS</text>
+  <text x="400" y="446" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">Fairlight's loudness meter can check a mix against any of these targets directly.</text>
+
+  <text x="770" y="478" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 8.4-A</text>
+</svg>

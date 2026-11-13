@@ -10,3 +10,6 @@ Desktop.ini
 
 # Logs
 *.log
+
+# Local tooling
+.claude/

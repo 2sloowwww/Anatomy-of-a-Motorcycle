@@ -1,0 +1,45 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="19" fill="#6B5A22" letter-spacing="0.5">A CONTAINER WRAPS. A CODEC COMPRESSES.</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <rect x="90" y="90" width="620" height="270" fill="none" stroke="#22252B" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <text x="110" y="114" font-size="12.5" fill="#22252B" font-weight="700">CONTAINER — .MOV / .MXF / .MP4</text>
+    <text x="110" y="130" font-size="9.5" fill="#5A5748">the wrapper. packages the pieces below into one file.</text>
+
+    <rect x="120" y="150" width="220" height="80" fill="#DCE6E6" stroke="#33505E" stroke-width="1.6"/>
+    <text x="230" y="182" text-anchor="middle" font-size="12" fill="#33505E" font-weight="700">VIDEO CODEC</text>
+    <text x="230" y="200" text-anchor="middle" font-size="9.5" fill="#33505E">ProRes · DNx · H.264 · H.265</text>
+    <text x="230" y="216" text-anchor="middle" font-size="9.5" fill="#33505E">how the image is compressed</text>
+
+    <rect x="370" y="150" width="180" height="80" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="460" y="182" text-anchor="middle" font-size="12" fill="#22252B" font-weight="700">AUDIO CODEC</text>
+    <text x="460" y="200" text-anchor="middle" font-size="9.5" fill="#5A5748">PCM · AAC</text>
+    <text x="460" y="216" text-anchor="middle" font-size="9.5" fill="#5A5748">how the sound is compressed</text>
+
+    <rect x="580" y="150" width="110" height="80" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="635" y="182" text-anchor="middle" font-size="11" fill="#22252B" font-weight="700">METADATA</text>
+    <text x="635" y="200" text-anchor="middle" font-size="9" fill="#5A5748">timecode,</text>
+    <text x="635" y="214" text-anchor="middle" font-size="9" fill="#5A5748">captions, LUTs</text>
+
+    <text x="110" y="258" font-size="11" fill="#AE3527">Same container, different codec inside:</text>
+    <text x="130" y="278" font-size="10.5" fill="#5A5748">a ProRes .MOV and an H.264 .MOV are structurally similar files</text>
+    <text x="130" y="294" font-size="10.5" fill="#5A5748">with almost nothing in common about how the video decodes.</text>
+
+    <text x="110" y="322" font-size="11" fill="#AE3527">Same codec, different container:</text>
+    <text x="130" y="342" font-size="10.5" fill="#5A5748">ProRes plays equally well wrapped in .MOV or .MXF — the codec</text>
+    <text x="130" y="358" font-size="10.5" fill="#5A5748">doesn't change; only the packaging around it does.</text>
+  </g>
+
+  <line x1="70" y1="382" x2="730" y2="382" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12.5" fill="#22252B" font-weight="600">WHEN A DELIVERABLE FAILS QC, THE QUESTION IS ALMOST ALWAYS ABOUT THE CODEC</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 11.2-A</text>
+</svg>

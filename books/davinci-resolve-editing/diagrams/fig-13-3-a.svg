@@ -1,0 +1,67 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowRed13" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#AE3527"/>
+    </marker>
+    <marker id="arrowBlue13" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#33505E"/>
+    </marker>
+    <marker id="arrowBrass13" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#6B5A22"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">CACHE AND PROXIES — ONE PERFORMANCE PIPELINE</text>
+  <line x1="120" y1="54" x2="680" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <rect x="120" y="86" width="220" height="66" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.8"/>
+    <text x="230" y="112" text-anchor="middle" font-size="12.5" fill="#AE3527" font-weight="700">CAMERA ORIGINAL</text>
+    <text x="230" y="129" text-anchor="middle" font-size="9.5" fill="#5A5748">heavy — grading + delivery</text>
+    <text x="230" y="143" text-anchor="middle" font-size="9.5" fill="#5A5748">only</text>
+
+    <rect x="460" y="86" width="220" height="66" fill="#E2D9C3" stroke="#33505E" stroke-width="1.8"/>
+    <text x="570" y="112" text-anchor="middle" font-size="12.5" fill="#33505E" font-weight="700">PROXY / OPTIMIZED</text>
+    <text x="570" y="129" text-anchor="middle" font-size="9.5" fill="#5A5748">light — decodes fast,</text>
+    <text x="570" y="143" text-anchor="middle" font-size="9.5" fill="#5A5748">used while editing (Ch. 2.5)</text>
+
+    <line x1="340" y1="119" x2="460" y2="119" stroke="#6B5A22" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <text x="400" y="112" text-anchor="middle" font-size="9.5" fill="#6B5A22">linked by</text>
+    <text x="400" y="124" text-anchor="middle" font-size="9.5" fill="#6B5A22">same clip ID</text>
+
+    <line x1="570" y1="152" x2="410" y2="222" stroke="#33505E" stroke-width="2" marker-end="url(#arrowBlue13)"/>
+    <line x1="230" y1="152" x2="270" y2="222" stroke="#AE3527" stroke-width="2" stroke-dasharray="3 3" marker-end="url(#arrowRed13)"/>
+    <text x="400" y="192" text-anchor="middle" font-size="10.5" fill="#5A5748">edit mode plays the light file — render/grade mode pulls the original</text>
+
+    <rect x="120" y="228" width="560" height="58" fill="none" stroke="#22252B" stroke-width="1.6"/>
+    <text x="400" y="252" text-anchor="middle" font-size="13" fill="#22252B" font-weight="600">TIMELINE — NODES, EFFECTS, AND TRANSITIONS APPLIED</text>
+    <text x="400" y="270" text-anchor="middle" font-size="10.5" fill="#5A5748">decode weight is lighter, but the GPU still has to render every effect</text>
+
+    <line x1="365" y1="286" x2="365" y2="326" stroke="#6B5A22" stroke-width="2" marker-end="url(#arrowBrass13)"/>
+    <text x="300" y="304" text-anchor="middle" font-size="9.5" fill="#6B5A22">first pass:</text>
+    <text x="300" y="316" text-anchor="middle" font-size="9.5" fill="#6B5A22">compute</text>
+
+    <line x1="435" y1="326" x2="435" y2="286" stroke="#6B5A22" stroke-width="2" marker-end="url(#arrowBrass13)"/>
+    <text x="500" y="304" text-anchor="middle" font-size="9.5" fill="#6B5A22">after: replay</text>
+    <text x="500" y="316" text-anchor="middle" font-size="9.5" fill="#6B5A22">from cache</text>
+
+    <rect x="260" y="328" width="280" height="58" fill="#E2D9C3" stroke="#6B5A22" stroke-width="1.8"/>
+    <text x="400" y="352" text-anchor="middle" font-size="12.5" fill="#6B5A22" font-weight="700">RENDER CACHE</text>
+    <text x="400" y="369" text-anchor="middle" font-size="9.5" fill="#5A5748">rendered frames stored on fast local disk</text>
+    <text x="400" y="381" text-anchor="middle" font-size="9.5" fill="#5A5748">skips re-rendering on every replay</text>
+  </g>
+
+  <line x1="70" y1="408" x2="730" y2="408" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="436" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">TWO DIFFERENT LEVERS, NOT ONE SETTING</text>
+  <text x="400" y="458" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">Proxies lighten what has to be decoded; cache skips redoing rendering work already done once.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 13.3-A</text>
+</svg>

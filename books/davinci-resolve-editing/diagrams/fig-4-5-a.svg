@@ -1,0 +1,69 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">MARKERS — WAYPOINTS ON THE TIMELINE</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="88" font-size="12.5" fill="#8C876F" letter-spacing="1">A LONG TIMELINE, FLAGGED FOR FAST NAVIGATION</text>
+
+    <!-- playhead -->
+    <line x1="400" y1="112" x2="400" y2="286" stroke="#22252B" stroke-width="1.3" stroke-dasharray="4 3" opacity="0.55"/>
+    <path d="M394,106 H406 L400,116 Z" fill="#22252B"/>
+    <text x="400" y="100" text-anchor="middle" font-size="9.5" fill="#5A5748">PLAYHEAD</text>
+
+    <!-- marker 1: FIX -->
+    <text x="150" y="120" text-anchor="middle" font-size="10.5" fill="#AE3527" font-weight="700">FIX</text>
+    <path d="M150,132 L158,140 L150,148 L142,140 Z" fill="#AE3527" stroke="#22252B" stroke-width="1"/>
+    <line x1="150" y1="148" x2="150" y2="230" stroke="#AE3527" stroke-width="1.8"/>
+
+    <!-- marker 2: FEEDBACK -->
+    <text x="320" y="120" text-anchor="middle" font-size="10.5" fill="#33505E" font-weight="700">FEEDBACK</text>
+    <path d="M320,132 L328,140 L320,148 L312,140 Z" fill="#33505E" stroke="#22252B" stroke-width="1"/>
+    <line x1="320" y1="148" x2="320" y2="230" stroke="#33505E" stroke-width="1.8"/>
+
+    <!-- arc: jump from marker 1 to marker 2 -->
+    <path d="M158,138 Q235,178 312,138" fill="none" stroke="#6B5A22" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <path d="M312,138 L302,134 L304,143 Z" fill="#6B5A22"/>
+    <text x="235" y="192" text-anchor="middle" font-size="9" fill="#6B5A22">JUMPS DIRECTLY TO NEXT MARKER</text>
+
+    <!-- marker 3: SYNC -->
+    <text x="480" y="120" text-anchor="middle" font-size="10.5" fill="#6B5A22" font-weight="700">SYNC</text>
+    <path d="M480,132 L488,140 L480,148 L472,140 Z" fill="#6B5A22" stroke="#22252B" stroke-width="1"/>
+    <line x1="480" y1="148" x2="480" y2="230" stroke="#6B5A22" stroke-width="1.8"/>
+
+    <!-- marker 4: FIX -->
+    <text x="630" y="120" text-anchor="middle" font-size="10.5" fill="#AE3527" font-weight="700">FIX</text>
+    <path d="M630,132 L638,140 L630,148 L622,140 Z" fill="#AE3527" stroke="#22252B" stroke-width="1"/>
+    <line x1="630" y1="148" x2="630" y2="230" stroke="#AE3527" stroke-width="1.8"/>
+
+    <!-- timeline -->
+    <rect x="70" y="230" width="660" height="56" fill="#E2D9C3" stroke="#22252B" stroke-width="1.5"/>
+    <line x1="260" y1="230" x2="260" y2="286" stroke="#22252B" stroke-width="1" opacity="0.4"/>
+    <line x1="430" y1="230" x2="430" y2="286" stroke="#22252B" stroke-width="1" opacity="0.4"/>
+    <line x1="590" y1="230" x2="590" y2="286" stroke="#22252B" stroke-width="1" opacity="0.4"/>
+
+    <text x="150" y="264" text-anchor="middle" font-size="9" fill="#5A5748">04:12</text>
+    <text x="320" y="264" text-anchor="middle" font-size="9" fill="#5A5748">11:47</text>
+    <text x="480" y="264" text-anchor="middle" font-size="9" fill="#5A5748">18:05</text>
+    <text x="630" y="264" text-anchor="middle" font-size="9" fill="#5A5748">24:30</text>
+
+    <!-- legend -->
+    <rect x="220" y="326" width="14" height="14" fill="#AE3527" stroke="#22252B" stroke-width="1"/>
+    <text x="240" y="337" font-size="10" fill="#22252B">needs a fix</text>
+    <rect x="380" y="326" width="14" height="14" fill="#33505E" stroke="#22252B" stroke-width="1"/>
+    <text x="400" y="337" font-size="10" fill="#22252B">needs feedback</text>
+    <rect x="560" y="326" width="14" height="14" fill="#6B5A22" stroke="#22252B" stroke-width="1"/>
+    <text x="580" y="337" font-size="10" fill="#22252B">sync check</text>
+  </g>
+
+  <text x="400" y="420" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">MARKERS ARE ANNOTATION, NOT PART OF THE SEQUENCE'S STRUCTURE</text>
+  <text x="400" y="442" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">a consistent color code makes them readable at a glance, across a whole project</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 4.5-A</text>
+</svg>

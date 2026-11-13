@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jitendra Kulkarni">
 <title>3.2 — Source Tape and Finding Footage Fast | The Language of Editing</title>
+<meta name="description" content="Before you can place a shot quickly, you have to find it quickly, and finding it is often the slower half of the job on a footage-heavy project. Opening clip…">
+<link rel="canonical" href="https://knowbase.xyz/books/davinci-resolve-editing/chapter-3-2.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Knowbase">
+<meta property="og:title" content="3.2 — Source Tape and Finding Footage Fast">
+<meta property="og:description" content="Before you can place a shot quickly, you have to find it quickly, and finding it is often the slower half of the job on a footage-heavy project. Opening clip…">
+<meta property="og:url" content="https://knowbase.xyz/books/davinci-resolve-editing/chapter-3-2.html">
+<meta property="og:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="3.2 — Source Tape and Finding Footage Fast">
+<meta name="twitter:description" content="Before you can place a shot quickly, you have to find it quickly, and finding it is often the slower half of the job on a footage-heavy project. Opening clip…">
+<meta name="twitter:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,6 +113,13 @@ function toggleTheme(){
     <p>Normally, browsing a bin means opening one clip at a time into a source viewer, watching or scrubbing through it, closing it, and opening the next. Source Tape changes the unit you're browsing: instead of one clip, it concatenates every clip in a selected bin — in bin order — into a single, continuous virtual tape you can scrub across as if it were one long recording. Reaching the end of one clip on that tape simply continues into the next, with no need to close anything and open something else.</p>
 
     <p>This mirrors, deliberately, how editors used to work with actual videotape decks — shuttling across a long reel to find a moment, rather than jumping between discrete files. The metaphor is intentional: scrubbing continuously across footage is often simply a faster way for a human eye to scan for a specific moment than repeatedly opening and closing individual clips, especially when you're not entirely sure which specific clip contains what you're looking for.</p>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 3.2-A</span>
+      <img src="diagrams/fig-3-2-a.svg" alt="Diagram showing five separate bin clips concatenated in order into one continuous Source Tape strip, with an in and out point marked across three clip boundaries as if it were a single long clip." class="diagram-img">
+      <p>The bin doesn't change — only how much of it you can see at once without stopping to open anything.</p>
+    </div>
 
     <div class="pull"><p>Source Tape doesn't make any single clip easier to review. It makes an entire bin behave like one long recording — trading the overhead of opening clips one by one for a single, continuous scrub across everything at once.</p></div>
 

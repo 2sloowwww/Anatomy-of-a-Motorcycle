@@ -1,0 +1,78 @@
+<svg viewBox="0 0 1410 2250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Guitar Field Manual — book cover, showing a guitar body outline, string vibration waveform, and fretboard grid in blueprint line art.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1E24"/>
+      <stop offset="100%" stop-color="#0D0F13"/>
+    </linearGradient>
+    <pattern id="grid" width="47" height="47" patternUnits="userSpaceOnUse">
+      <path d="M47 0H0V47" fill="none" stroke="#6E8FA6" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1410" height="2250" fill="url(#bg)"/>
+  <rect width="1410" height="2250" fill="url(#grid)"/>
+
+  <rect x="56" y="56" width="1298" height="2138" fill="none" stroke="#6E8FA6" stroke-opacity="0.35" stroke-width="2"/>
+  <g stroke="#D2AC3E" stroke-width="2" opacity="0.9">
+    <path d="M56 110 H110 M56 56 V110" fill="none"/>
+    <path d="M1354 110 H1300 M1354 56 V110" fill="none"/>
+    <path d="M56 2140 H110 M56 2194 V2140" fill="none"/>
+    <path d="M1354 2140 H1300 M1354 2194 V2140" fill="none"/>
+  </g>
+
+  <text x="705" y="215" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="24" letter-spacing="6" fill="#7FA6B8">A FIELD MANUAL FOR UNDERSTANDING SOUND</text>
+
+  <text x="705" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="114" fill="#EDE7D8">THE GUITAR</text>
+  <text x="705" y="450" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="114" fill="#EDE7D8">FIELD MANUAL</text>
+
+  <line x1="330" y1="510" x2="1080" y2="510" stroke="#D2AC3E" stroke-width="2" opacity="0.7"/>
+
+  <!-- String vibration waveform -->
+  <g transform="translate(180,730)">
+    <text x="0" y="-24" font-family="'JetBrains Mono', monospace" font-size="20" fill="#7FA6B8" letter-spacing="3">STRING VIBRATION — WHY PITCH FOLLOWS TENSION</text>
+    <line x1="0" y1="90" x2="1050" y2="90" stroke="#8C876F" stroke-opacity="0.4" stroke-width="1.4"/>
+    <path d="M0 90 Q 65 10, 130 90 T 260 90 T 390 90 T 520 90 T 650 90 T 780 90 T 910 90 T 1040 90" fill="none" stroke="#E2574A" stroke-width="2.4"/>
+    <circle cx="0" cy="90" r="5" fill="#D2AC3E"/>
+    <circle cx="1040" cy="90" r="5" fill="#D2AC3E"/>
+  </g>
+
+  <!-- Fretboard grid -->
+  <g transform="translate(180,1000)">
+    <text x="0" y="-24" font-family="'JetBrains Mono', monospace" font-size="20" fill="#7FA6B8" letter-spacing="3">THE FRETBOARD AS A GRID, NOT A MYSTERY</text>
+    <rect x="0" y="0" width="1050" height="180" fill="none" stroke="#EDE7D8" stroke-width="2"/>
+    <g stroke="#8C876F" stroke-opacity="0.5" stroke-width="1.4">
+      <line x1="150" y1="0" x2="150" y2="180"/>
+      <line x1="300" y1="0" x2="300" y2="180"/>
+      <line x1="450" y1="0" x2="450" y2="180"/>
+      <line x1="600" y1="0" x2="600" y2="180"/>
+      <line x1="750" y1="0" x2="750" y2="180"/>
+      <line x1="900" y1="0" x2="900" y2="180"/>
+    </g>
+    <g stroke="#7FA6B8" stroke-opacity="0.6" stroke-width="1.2">
+      <line x1="0" y1="30" x2="1050" y2="30"/>
+      <line x1="0" y1="60" x2="1050" y2="60"/>
+      <line x1="0" y1="90" x2="1050" y2="90"/>
+      <line x1="0" y1="120" x2="1050" y2="120"/>
+      <line x1="0" y1="150" x2="1050" y2="150"/>
+    </g>
+    <circle cx="300" cy="90" r="9" fill="#E2574A"/>
+    <circle cx="600" cy="60" r="9" fill="#D2AC3E"/>
+    <circle cx="750" cy="120" r="9" fill="#D2AC3E"/>
+  </g>
+
+  <!-- Signal chain triangle -->
+  <g transform="translate(180,1290)" stroke="#EDE7D8" stroke-width="2" fill="none">
+    <text x="0" y="-24" font-family="'JetBrains Mono', monospace" font-size="20" fill="#7FA6B8" letter-spacing="3">GUITAR · AMP · EFFECTS</text>
+    <path d="M85 20 L170 170 L0 170 Z"/>
+    <circle cx="85" cy="20" r="5" fill="#E2574A" stroke="none"/>
+    <circle cx="170" cy="170" r="5" fill="#D2AC3E" stroke="none"/>
+    <circle cx="0" cy="170" r="5" fill="#7FA6B8" stroke="none"/>
+  </g>
+
+  <line x1="330" y1="1720" x2="1080" y2="1720" stroke="#D2AC3E" stroke-width="2" opacity="0.7"/>
+
+  <text x="705" y="1790" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="22" letter-spacing="5" fill="#B9B3A0">STRINGS · PICKUPS · AMPS · THEORY</text>
+  <text x="705" y="1826" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="22" letter-spacing="5" fill="#B9B3A0">TECHNIQUE · RECORDING · CARE</text>
+
+  <text x="705" y="2110" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#EDE7D8">Jitendra Kulkarni</text>
+</svg>

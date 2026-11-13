@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jitendra Kulkarni">
 <title>4.7 — Nested Timelines | The Language of Editing</title>
+<meta name="description" content="Chapter 4.6 closed with compound clips: several clips merged into one reusable object. This closing chapter of Part IV takes that same underlying idea and…">
+<link rel="canonical" href="https://knowbase.xyz/books/davinci-resolve-editing/chapter-4-7.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Knowbase">
+<meta property="og:title" content="4.7 — Nested Timelines">
+<meta property="og:description" content="Chapter 4.6 closed with compound clips: several clips merged into one reusable object. This closing chapter of Part IV takes that same underlying idea and…">
+<meta property="og:url" content="https://knowbase.xyz/books/davinci-resolve-editing/chapter-4-7.html">
+<meta property="og:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="4.7 — Nested Timelines">
+<meta name="twitter:description" content="Chapter 4.6 closed with compound clips: several clips merged into one reusable object. This closing chapter of Part IV takes that same underlying idea and…">
+<meta name="twitter:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,6 +113,13 @@ function toggleTheme(){
     <p>Recall from Chapter 4.1 that a project can hold multiple independent timelines, each its own full object in the Media Pool alongside your bins and clips. A nested timeline is simply one of those timelines placed as a clip inside another timeline — dragged in from the Media Pool exactly the way you'd drag in any other clip, and behaving, from the outside, like a single block: one thing to select, move, and trim on the parent timeline, even though it internally contains a complete, independently editable sequence of its own.</p>
 
     <p>This is genuinely different from a compound clip in one important respect worth being precise about: a nested timeline remains a full, independent timeline in its own right, with its own settings and its own place in the Media Pool, editable on its own terms at any time — not a container created specifically to bundle a handful of clips. A compound clip is typically built from the clips it contains and exists mainly to represent that bundle; a nested timeline is a complete sequence that happens to also be usable as a building block inside a larger one.</p>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 4.7-A</span>
+      <img src="diagrams/fig-4-7-a.svg" alt="Diagram showing a full, multi-clip child timeline collapsing into a single clip that sits inside a parent timeline, alongside the parent's other ordinary clips." class="diagram-img">
+      <p>From the outside it's one block; open it, and the whole original sequence is still there.</p>
+    </div>
 
     <div class="pull"><p>A compound clip is a bundle you created to hold some clips together. A nested timeline is a whole sequence that was already a complete thing on its own — and simply gets reused, unchanged, as a piece of something bigger.</p></div>
 

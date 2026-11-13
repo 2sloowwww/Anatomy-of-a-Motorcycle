@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jitendra Kulkarni">
 <title>2.6 — Camera Formats and Codecs, Explained for Editors | The Language of Editing</title>
+<meta name="description" content="This isn't a chapter for camera engineers, and it isn't trying to make you one. It's the small, practical slice of codec knowledge an editor actually needs —…">
+<link rel="canonical" href="https://knowbase.xyz/books/davinci-resolve-editing/chapter-2-6.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Knowbase">
+<meta property="og:title" content="2.6 — Camera Formats and Codecs, Explained for Editors">
+<meta property="og:description" content="This isn't a chapter for camera engineers, and it isn't trying to make you one. It's the small, practical slice of codec knowledge an editor actually needs —…">
+<meta property="og:url" content="https://knowbase.xyz/books/davinci-resolve-editing/chapter-2-6.html">
+<meta property="og:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2.6 — Camera Formats and Codecs, Explained for Editors">
+<meta name="twitter:description" content="This isn't a chapter for camera engineers, and it isn't trying to make you one. It's the small, practical slice of codec knowledge an editor actually needs —…">
+<meta name="twitter:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,6 +119,13 @@ function toggleTheme(){
     <div class="pull"><p>Long-GOP compresses beautifully and looks great on delivery. Intra-frame scrubs beautifully and edits beautifully. Cameras optimize for the first job. Editing needs the second.</p></div>
 
     <p>Long-GOP is excellent at achieving small file sizes for good visual quality, which is exactly why cameras favor it for recording — storage is limited and expensive on set. But it's genuinely harder to decode quickly for arbitrary, non-sequential playback, because reconstructing an arbitrary frame in the middle of a Group of Pictures may require decoding several neighboring frames first, rather than that one frame alone. This is a large part of why editing directly on long-GOP camera originals often feels sluggish, while an intra-frame proxy of the exact same footage scrubs smoothly — it's not a quality difference you're feeling, it's a decode-complexity difference, and it's precisely the problem Chapter 2.5's proxies exist to solve.</p>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 2.6-A</span>
+      <img src="diagrams/fig-2-6-a.svg" alt="Blueprint comparing intra-frame and long-GOP frame structures, alongside relative file size and scrubbing performance bars, showing that intra-frame footage is both heavier and smoother while long-GOP footage is both lighter and harder to scrub." class="diagram-img">
+      <p>The two axes move together, not against each other — that's the whole reason proxies exist.</p>
+    </div>
 
     <h2 class="section">RAW: A Different Kind of Heavy</h2>
 

@@ -1,0 +1,52 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="19" fill="#6B5A22" letter-spacing="0.5">RENDER-IN-PLACE: SAME CLIP, LESS WORK</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="86" font-size="12.5" fill="#8C876F" letter-spacing="1">BEFORE — LIVE COMPOSITE ON THE TIMELINE</text>
+    <rect x="70" y="100" width="300" height="130" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <circle cx="130" cy="140" r="14" fill="none" stroke="#33505E" stroke-width="1.6"/>
+    <circle cx="130" cy="140" r="4" fill="#33505E"/>
+    <line x1="130" y1="126" x2="130" y2="118" stroke="#33505E" stroke-width="1.6"/>
+    <line x1="130" y1="154" x2="130" y2="162" stroke="#33505E" stroke-width="1.6"/>
+    <line x1="116" y1="140" x2="108" y2="140" stroke="#33505E" stroke-width="1.6"/>
+    <line x1="144" y1="140" x2="152" y2="140" stroke="#33505E" stroke-width="1.6"/>
+    <text x="170" y="136" font-size="10.5" fill="#22252B">Fusion composite</text>
+    <text x="170" y="152" font-size="10.5" fill="#22252B">recalculated live</text>
+    <text x="82" y="196" font-size="9.5" fill="#5A5748">Every playback frame re-runs</text>
+    <text x="82" y="210" font-size="9.5" fill="#5A5748">the keyer, tracker, and merge.</text>
+  </g>
+
+  <path d="M380 165 L 440 165" fill="none" stroke="#AE3527" stroke-width="1.8"/>
+  <text x="410" y="150" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#AE3527">render</text>
+  <text x="410" y="188" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#AE3527">in place</text>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="450" y="86" font-size="12.5" fill="#8C876F" letter-spacing="1">AFTER — ONE FLATTENED FILE, SAME SPOT</text>
+    <rect x="450" y="100" width="300" height="130" fill="#DCE6E6" stroke="#33505E" stroke-width="1.8"/>
+    <rect x="500" y="126" width="36" height="28" fill="none" stroke="#33505E" stroke-width="1.6"/>
+    <path d="M500 126 L 518 140 L 536 126" fill="none" stroke="#33505E" stroke-width="1.4"/>
+    <text x="550" y="136" font-size="10.5" fill="#22252B">Fixed media file</text>
+    <text x="550" y="152" font-size="10.5" fill="#22252B">plays like any clip</text>
+    <text x="462" y="196" font-size="9.5" fill="#5A5748">Same duration, same position —</text>
+    <text x="462" y="210" font-size="9.5" fill="#5A5748">nothing recalculates anymore.</text>
+  </g>
+
+  <line x1="70" y1="260" x2="750" y2="260" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="292" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">THE TIMELINE ITSELF DOESN'T CHANGE</text>
+  <text x="400" y="316" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">Same in and out points, same track position — only what has to be</text>
+  <text x="400" y="336" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">computed on every playback pass changes.</text>
+
+  <line x1="70" y1="368" x2="750" y2="368" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="396" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#22252B" font-weight="600">The original composite isn't gone — it's one click from being restored.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 11.4-A</text>
+</svg>

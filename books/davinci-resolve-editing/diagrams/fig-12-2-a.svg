@@ -1,0 +1,51 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">COLLABORATION MODE — ONE SHARED DATABASE</text>
+  <line x1="120" y1="54" x2="680" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <rect x="290" y="106" width="220" height="78" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.8"/>
+    <text x="400" y="132" text-anchor="middle" font-size="13" fill="#AE3527" font-weight="700">PROJECT SERVER</text>
+    <text x="400" y="151" text-anchor="middle" font-size="10" fill="#5A5748">Shared PostgreSQL Database</text>
+    <text x="400" y="167" text-anchor="middle" font-size="10" fill="#5A5748">one live copy of the project</text>
+
+    <line x1="360" y1="184" x2="130" y2="228" stroke="#33505E" stroke-width="1.5"/>
+    <line x1="390" y1="184" x2="310" y2="228" stroke="#33505E" stroke-width="1.5"/>
+    <line x1="410" y1="184" x2="490" y2="228" stroke="#33505E" stroke-width="1.5"/>
+    <line x1="440" y1="184" x2="670" y2="228" stroke="#33505E" stroke-width="1.5"/>
+
+    <rect x="50" y="228" width="160" height="62" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="130" y="252" text-anchor="middle" font-size="11.5" fill="#22252B" font-weight="600">EDITOR</text>
+    <text x="130" y="270" text-anchor="middle" font-size="9.5" fill="#5A5748">Edit Page</text>
+    <text x="130" y="283" text-anchor="middle" font-size="9.5" fill="#5A5748">building the timeline</text>
+
+    <rect x="230" y="228" width="160" height="62" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="310" y="252" text-anchor="middle" font-size="11.5" fill="#22252B" font-weight="600">COLORIST</text>
+    <text x="310" y="270" text-anchor="middle" font-size="9.5" fill="#5A5748">Color Page</text>
+    <text x="310" y="283" text-anchor="middle" font-size="9.5" fill="#5A5748">grading in parallel</text>
+
+    <rect x="410" y="228" width="160" height="62" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="490" y="252" text-anchor="middle" font-size="11.5" fill="#22252B" font-weight="600">SOUND</text>
+    <text x="490" y="270" text-anchor="middle" font-size="9.5" fill="#5A5748">Fairlight Page</text>
+    <text x="490" y="283" text-anchor="middle" font-size="9.5" fill="#5A5748">mixing in parallel</text>
+
+    <rect x="590" y="228" width="160" height="62" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="670" y="252" text-anchor="middle" font-size="11.5" fill="#22252B" font-weight="600">ASSISTANT</text>
+    <text x="670" y="270" text-anchor="middle" font-size="9.5" fill="#5A5748">Media Pool</text>
+    <text x="670" y="283" text-anchor="middle" font-size="9.5" fill="#5A5748">ingesting new footage</text>
+  </g>
+
+  <line x1="70" y1="330" x2="730" y2="330" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="362" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">FOUR SEATS, ONE DATABASE, NO SEPARATE PROJECT FILES</text>
+  <text x="400" y="386" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">Every save pushes to the shared database — no seat is ever working from a stale local copy.</text>
+  <text x="400" y="408" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">What stops two seats editing the same bin at once is covered next, in Chapter 12.3.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 12.2-A</text>
+</svg>

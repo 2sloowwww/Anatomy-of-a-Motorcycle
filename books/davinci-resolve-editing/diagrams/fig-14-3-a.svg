@@ -1,0 +1,43 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">REFRAMING 16:9 SOURCE FOR 9:16 DELIVERY</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">SOURCE — 16:9, TWO CROP KEYFRAMES</text>
+    <rect x="70" y="104" width="460" height="220" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+    <rect x="100" y="118" width="120" height="192" fill="none" stroke="#33505E" stroke-width="1.8" stroke-dasharray="5 4"/>
+    <circle cx="160" cy="118" r="4.5" fill="#33505E"/>
+    <text x="100" y="330" font-size="9" fill="#33505E">CROP — KEYFRAME 1</text>
+
+    <rect x="380" y="118" width="120" height="192" fill="none" stroke="#AE3527" stroke-width="1.8" stroke-dasharray="5 4"/>
+    <circle cx="440" cy="118" r="4.5" fill="#AE3527"/>
+    <text x="380" y="330" font-size="9" fill="#AE3527">CROP — KEYFRAME 2</text>
+
+    <path d="M160 118 C 260 90, 340 90, 440 118" fill="none" stroke="#6B5A22" stroke-width="1.6" stroke-dasharray="3 3"/>
+  </g>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="600" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">OUTPUT</text>
+    <rect x="600" y="104" width="120" height="220" fill="none" stroke="#33505E" stroke-width="1.6"/>
+    <text x="610" y="128" font-size="9.5" fill="#33505E">9:16</text>
+    <text x="610" y="142" font-size="9.5" fill="#33505E">DELIVERY</text>
+    <line x1="610" y1="200" x2="710" y2="200" stroke="#8C876F" stroke-width="1" stroke-dasharray="2 3"/>
+    <text x="610" y="216" font-size="8.5" fill="#5A5748">CROP FOLLOWS</text>
+    <text x="610" y="228" font-size="8.5" fill="#5A5748">THE SUBJECT</text>
+  </g>
+
+  <line x1="70" y1="352" x2="730" y2="352" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="382" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">THE CROP WINDOW MOVES — THE SOURCE FRAME DOES NOT</text>
+  <text x="400" y="404" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">Keyframed position and scale turn one 16:9 master into several vertical deliverables without a second shoot.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 14.3-A</text>
+</svg>

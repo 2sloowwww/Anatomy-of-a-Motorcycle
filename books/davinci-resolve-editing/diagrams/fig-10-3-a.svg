@@ -1,0 +1,60 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="19" fill="#6B5A22" letter-spacing="0.5">THE KEYING PIPELINE, STAGE BY STAGE</text>
+  <line x1="170" y1="54" x2="630" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <rect x="50" y="110" width="150" height="100" fill="#DDE8D4" stroke="#22252B" stroke-width="1.4"/>
+    <text x="125" y="150" text-anchor="middle" font-size="11" fill="#22252B" font-weight="700">GREEN</text>
+    <text x="125" y="166" text-anchor="middle" font-size="11" fill="#22252B" font-weight="700">SCREEN</text>
+    <text x="125" y="184" text-anchor="middle" font-size="9" fill="#5A5748">source plate</text>
+
+    <path d="M200 160 L 240 160" stroke="#AE3527" stroke-width="1.6"/>
+
+    <rect x="240" y="110" width="150" height="100" fill="#E2D9C3" stroke="#33505E" stroke-width="1.6"/>
+    <text x="315" y="150" text-anchor="middle" font-size="11" fill="#33505E" font-weight="700">KEYER</text>
+    <text x="315" y="166" text-anchor="middle" font-size="9" fill="#5A5748">isolates by</text>
+    <text x="315" y="180" text-anchor="middle" font-size="9" fill="#5A5748">chroma difference</text>
+
+    <path d="M390 160 L 430 160" stroke="#AE3527" stroke-width="1.6"/>
+
+    <rect x="430" y="110" width="150" height="100" fill="#22252B" stroke="#22252B" stroke-width="1.4"/>
+    <rect x="450" y="130" width="60" height="60" fill="#EEE8DA"/>
+    <text x="505" y="150" font-size="9" fill="#EEE8DA">ALPHA</text>
+    <text x="505" y="164" font-size="9" fill="#EEE8DA">MATTE</text>
+    <text x="475" y="200" text-anchor="middle" font-size="9" fill="#EEE8DA">white = keep</text>
+
+    <path d="M580 160 L 620 160" stroke="#AE3527" stroke-width="1.6"/>
+
+    <rect x="620" y="110" width="130" height="100" fill="#DCE6E6" stroke="#33505E" stroke-width="1.8"/>
+    <text x="685" y="150" text-anchor="middle" font-size="11" fill="#33505E" font-weight="700">COMPOSITED</text>
+    <text x="685" y="166" text-anchor="middle" font-size="11" fill="#33505E" font-weight="700">RESULT</text>
+    <text x="685" y="184" text-anchor="middle" font-size="9" fill="#5A5748">over new plate</text>
+  </g>
+
+  <line x1="50" y1="250" x2="750" y2="250" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="278" font-size="11.5" fill="#8C876F" letter-spacing="1">WHAT COMMONLY BREAKS THIS CHAIN</text>
+
+    <circle cx="80" cy="308" r="3.5" fill="#AE3527"/>
+    <text x="94" y="313" font-size="11.5" fill="#22252B">Uneven lighting on the green screen — the keyer sees several different "greens," not one.</text>
+
+    <circle cx="80" cy="336" r="3.5" fill="#AE3527"/>
+    <text x="94" y="341" font-size="11.5" fill="#22252B">Heavy chroma subsampling (Ch. 2.6) — not enough color data left to draw a clean edge.</text>
+
+    <circle cx="80" cy="364" r="3.5" fill="#AE3527"/>
+    <text x="94" y="369" font-size="11.5" fill="#22252B">Fine detail — flyaway hair, motion blur — that no single alpha value describes well.</text>
+  </g>
+
+  <line x1="50" y1="400" x2="750" y2="400" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="428" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12.5" fill="#22252B" font-weight="600">A CLEAN KEY IS SHOT ON SET, NOT FIXED IN THE KEYER</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 10.3-A</text>
+</svg>

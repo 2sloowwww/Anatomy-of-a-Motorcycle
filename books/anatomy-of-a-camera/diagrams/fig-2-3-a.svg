@@ -1,0 +1,35 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">APERTURE — THE IRIS OF THE LENS</text>
+  <line x1="170" y1="54" x2="630" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">f/2.8 — WIDE OPEN</text>
+    <circle cx="220" cy="200" r="95" fill="none" stroke="#8C876F" stroke-opacity="0.4" stroke-width="1.4"/>
+    <path d="M220 108 L296 152 L296 248 L220 292 L144 248 L144 152 Z" fill="none" stroke="#33505E" stroke-width="2"/>
+    <circle cx="220" cy="200" r="72" fill="#EEE8DA" stroke="#AE3527" stroke-width="2.2"/>
+    <text x="220" y="330" text-anchor="middle" font-size="12" fill="#22252B" font-weight="600">LARGE OPENING</text>
+    <text x="220" y="350" text-anchor="middle" font-size="10.5" fill="#5A5748">more light, shallow DOF</text>
+
+    <line x1="400" y1="60" x2="400" y2="410" stroke="#8C876F" stroke-width="1"/>
+
+    <text x="470" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">f/16 — STOPPED DOWN</text>
+    <circle cx="600" cy="200" r="95" fill="none" stroke="#8C876F" stroke-opacity="0.4" stroke-width="1.4"/>
+    <path d="M600 108 L676 152 L676 248 L600 292 L524 248 L524 152 Z" fill="none" stroke="#33505E" stroke-width="2"/>
+    <circle cx="600" cy="200" r="20" fill="#EEE8DA" stroke="#AE3527" stroke-width="2.2"/>
+    <text x="600" y="330" text-anchor="middle" font-size="12" fill="#22252B" font-weight="600">SMALL OPENING</text>
+    <text x="600" y="350" text-anchor="middle" font-size="10.5" fill="#5A5748">less light, deep DOF</text>
+  </g>
+
+  <line x1="70" y1="380" x2="730" y2="380" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">A LOWER F-NUMBER MEANS A WIDER OPENING, NOT A SMALLER ONE</text>
+  <text x="400" y="433" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">f/2.8 lets in roughly 32× more light than f/16 — each full stop doubles or halves that amount.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 2.3-A</text>
+</svg>

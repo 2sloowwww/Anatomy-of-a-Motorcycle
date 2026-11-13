@@ -1,0 +1,53 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">LIFT, GAMMA, GAIN — THREE ZONES</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace" text-anchor="middle">
+    <text x="170" y="90" font-size="11.5" fill="#8C876F" letter-spacing="1">LIFT — SHADOWS</text>
+    <circle cx="170" cy="172" r="66" fill="none" stroke="#22252B" stroke-width="1.4"/>
+    <line x1="112" y1="172" x2="228" y2="172" stroke="#8C876F" stroke-width="0.8" stroke-dasharray="2 3"/>
+    <line x1="170" y1="114" x2="170" y2="230" stroke="#8C876F" stroke-width="0.8" stroke-dasharray="2 3"/>
+    <circle cx="170" cy="172" r="3" fill="#22252B"/>
+    <circle cx="186" cy="158" r="6" fill="#33505E"/>
+    <rect x="100" y="252" width="140" height="8" fill="none" stroke="#22252B" stroke-width="1.2"/>
+    <circle cx="150" cy="256" r="5" fill="#22252B"/>
+
+    <text x="400" y="90" font-size="11.5" fill="#8C876F" letter-spacing="1">GAMMA — MIDTONES</text>
+    <circle cx="400" cy="172" r="66" fill="none" stroke="#22252B" stroke-width="1.4"/>
+    <line x1="342" y1="172" x2="458" y2="172" stroke="#8C876F" stroke-width="0.8" stroke-dasharray="2 3"/>
+    <line x1="400" y1="114" x2="400" y2="230" stroke="#8C876F" stroke-width="0.8" stroke-dasharray="2 3"/>
+    <circle cx="400" cy="172" r="3" fill="#22252B"/>
+    <circle cx="416" cy="186" r="6" fill="#6B5A22"/>
+    <rect x="330" y="252" width="140" height="8" fill="none" stroke="#22252B" stroke-width="1.2"/>
+    <circle cx="400" cy="256" r="5" fill="#22252B"/>
+
+    <text x="630" y="90" font-size="11.5" fill="#8C876F" letter-spacing="1">GAIN — HIGHLIGHTS</text>
+    <circle cx="630" cy="172" r="66" fill="none" stroke="#22252B" stroke-width="1.4"/>
+    <line x1="572" y1="172" x2="688" y2="172" stroke="#8C876F" stroke-width="0.8" stroke-dasharray="2 3"/>
+    <line x1="630" y1="114" x2="630" y2="230" stroke="#8C876F" stroke-width="0.8" stroke-dasharray="2 3"/>
+    <circle cx="630" cy="172" r="3" fill="#22252B"/>
+    <circle cx="614" cy="150" r="6" fill="#AE3527"/>
+    <rect x="560" y="252" width="140" height="8" fill="none" stroke="#22252B" stroke-width="1.2"/>
+    <circle cx="672" cy="256" r="5" fill="#22252B"/>
+  </g>
+
+  <line x1="70" y1="300" x2="730" y2="300" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="220" y="325" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#22252B" font-weight="600">Trim dot: a cool cast in the shadows</text>
+  <text x="450" y="325" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#22252B" font-weight="600">Trim dot: a warm cast in the mids</text>
+  <text x="670" y="325" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#22252B" font-weight="600">Trim dot: a red cast in the highlights</text>
+
+  <line x1="70" y1="355" x2="730" y2="355" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="390" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">ONE TOOL, SPLIT BY TONAL ZONE</text>
+  <text x="400" y="412" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">The zones overlap smoothly — watch the waveform, not the wheel, to know when to stop.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 9.4-A</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowRed24" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0.5,1 L9,5 L0.5,9 L2.6,5 Z" fill="#AE3527"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">METADATA TAGS DRIVE THE SMART BIN</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <line x1="400" y1="80" x2="400" y2="380" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="205" y="88" text-anchor="middle" font-size="12" fill="#8C876F" letter-spacing="1">ONE CLIP, TAGGED BY HAND</text>
+
+    <rect x="105" y="100" width="200" height="58" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="205" y="124" text-anchor="middle" font-size="12.5" font-weight="700" fill="#22252B">A0042.MOV</text>
+    <text x="205" y="142" text-anchor="middle" font-size="9.5" fill="#5A5748">captured: 4096×2160 · 23.98p</text>
+
+    <line x1="150" y1="158" x2="90" y2="192" stroke="#6B5A22" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <line x1="205" y1="158" x2="215" y2="192" stroke="#6B5A22" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <line x1="150" y1="158" x2="90" y2="242" stroke="#6B5A22" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <line x1="255" y1="158" x2="325" y2="192" stroke="#6B5A22" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+    <rect x="45" y="192" width="130" height="38" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.5"/>
+    <text x="110" y="211" text-anchor="middle" font-size="10" font-weight="700" fill="#AE3527">FLAG · SELECT</text>
+    <text x="110" y="223" text-anchor="middle" font-size="8" fill="#8C876F">added by hand</text>
+
+    <rect x="215" y="192" width="120" height="38" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="275" y="211" text-anchor="middle" font-size="10" font-weight="700" fill="#22252B">RATING · ★★★★</text>
+    <text x="275" y="223" text-anchor="middle" font-size="8" fill="#8C876F">added by hand</text>
+
+    <rect x="45" y="242" width="130" height="38" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="110" y="261" text-anchor="middle" font-size="10" font-weight="700" fill="#22252B">SCENE · 14A</text>
+    <text x="110" y="273" text-anchor="middle" font-size="8" fill="#8C876F">added by hand</text>
+
+    <rect x="185" y="242" width="150" height="38" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="260" y="261" text-anchor="middle" font-size="10" font-weight="700" fill="#22252B">KEYWORD · KITCHEN</text>
+    <text x="260" y="273" text-anchor="middle" font-size="8" fill="#8C876F">added by hand</text>
+
+    <text x="205" y="330" text-anchor="middle" font-size="11.5" fill="#22252B" font-weight="600">CAPTURED METADATA DESCRIBES THE FILE.</text>
+    <text x="205" y="348" text-anchor="middle" font-size="11.5" fill="#22252B" font-weight="600">ADDED METADATA DESCRIBES THE CONTENT.</text>
+  </g>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="590" y="88" text-anchor="middle" font-size="12" fill="#8C876F" letter-spacing="1">A RULE COLLECTS MATCHES AUTOMATICALLY</text>
+
+    <text x="480" y="105" text-anchor="middle" font-size="9.5" fill="#8C876F">MEDIA POOL</text>
+    <rect x="450" y="112" width="58" height="34" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.6"/>
+    <text x="479" y="133" text-anchor="middle" font-size="8.5" fill="#AE3527">select</text>
+    <rect x="516" y="112" width="58" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="1.2" opacity="0.5"/>
+    <text x="545" y="133" text-anchor="middle" font-size="8.5" fill="#5A5748">—</text>
+    <rect x="450" y="154" width="58" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="1.2" opacity="0.5"/>
+    <text x="479" y="175" text-anchor="middle" font-size="8.5" fill="#5A5748">—</text>
+    <rect x="516" y="154" width="58" height="34" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.6"/>
+    <text x="545" y="175" text-anchor="middle" font-size="8.5" fill="#AE3527">select</text>
+    <rect x="450" y="196" width="58" height="34" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.6"/>
+    <text x="479" y="217" text-anchor="middle" font-size="8.5" fill="#AE3527">select</text>
+    <rect x="516" y="196" width="58" height="34" fill="#E2D9C3" stroke="#22252B" stroke-width="1.2" opacity="0.5"/>
+    <text x="545" y="217" text-anchor="middle" font-size="8.5" fill="#5A5748">—</text>
+
+    <line x1="479" y1="146" x2="620" y2="182" stroke="#AE3527" stroke-width="1.4" marker-end="url(#arrowRed24)"/>
+    <line x1="545" y1="188" x2="625" y2="197" stroke="#AE3527" stroke-width="1.4" marker-end="url(#arrowRed24)"/>
+    <line x1="479" y1="230" x2="620" y2="218" stroke="#AE3527" stroke-width="1.4" marker-end="url(#arrowRed24)"/>
+
+    <rect x="630" y="150" width="120" height="100" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.8"/>
+    <text x="690" y="180" text-anchor="middle" font-size="12" font-weight="700" fill="#AE3527">SMART BIN</text>
+    <text x="690" y="198" text-anchor="middle" font-size="9" fill="#5A5748">rule:</text>
+    <text x="690" y="212" text-anchor="middle" font-size="9" fill="#5A5748">flag = select</text>
+    <text x="690" y="234" text-anchor="middle" font-size="7.5" fill="#8C876F">updates as flags change</text>
+
+    <text x="590" y="330" text-anchor="middle" font-size="11.5" fill="#22252B" font-weight="600">NOT A FOLDER — A LIVE SEARCH.</text>
+    <text x="590" y="348" text-anchor="middle" font-size="11.5" fill="#22252B" font-weight="600">RE-COLLECTS MATCHES EVERY TIME.</text>
+  </g>
+
+  <text x="400" y="410" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">TAG ONCE, FIND FOREVER</text>
+  <text x="400" y="432" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A smart bin doesn't hold clips — it searches for whatever currently matches its rule.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 2.4-A</text>
+</svg>

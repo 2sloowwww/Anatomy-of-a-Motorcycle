@@ -1,0 +1,43 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="19" fill="#6B5A22" letter-spacing="0.5">TRACKING VS. STABILIZATION</text>
+  <line x1="200" y1="54" x2="600" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="86" font-size="12.5" fill="#8C876F" letter-spacing="1">TRACKING — FOLLOW MOTION, ATTACH TO IT</text>
+    <rect x="70" y="100" width="300" height="160" fill="none" stroke="#22252B" stroke-width="1.4"/>
+    <path d="M100 220 C 150 180, 200 200, 250 150 S 320 130, 340 130" fill="none" stroke="#33505E" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <circle cx="100" cy="220" r="4" fill="#AE3527"/>
+    <circle cx="180" cy="192" r="4" fill="#AE3527"/>
+    <circle cx="250" cy="150" r="4" fill="#AE3527"/>
+    <circle cx="340" cy="130" r="4" fill="#AE3527"/>
+    <rect x="325" y="115" width="30" height="30" fill="none" stroke="#6B5A22" stroke-width="1.6"/>
+    <text x="80" y="248" font-size="9.5" fill="#5A5748">tracked point — a graphic rides this path</text>
+  </g>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="430" y="86" font-size="12.5" fill="#8C876F" letter-spacing="1">STABILIZATION — REMOVE MOTION</text>
+    <rect x="430" y="100" width="300" height="160" fill="none" stroke="#22252B" stroke-width="1.4"/>
+    <path d="M450 220 Q 490 130, 530 210 T 610 190 T 690 195" fill="none" stroke="#AE3527" stroke-width="1.6"/>
+    <text x="450" y="240" font-size="9.5" fill="#AE3527">raw shake — tracked, then measured</text>
+    <line x1="450" y1="190" x2="710" y2="190" stroke="#33505E" stroke-width="2.2"/>
+    <text x="450" y="180" font-size="9.5" fill="#33505E">smoothed result — the same shot, held steady</text>
+  </g>
+
+  <line x1="70" y1="290" x2="730" y2="290" stroke="#8C876F" stroke-width="1"/>
+
+  <text x="400" y="322" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">SAME TRACKING DATA, TWO OPPOSITE USES</text>
+  <text x="400" y="346" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">Tracking measures motion so something else can follow it.</text>
+  <text x="400" y="366" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#5A5748">Stabilization measures motion so it can be subtracted out.</text>
+
+  <line x1="70" y1="398" x2="730" y2="398" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="426" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#22252B" font-weight="600">Both start with the identical first step: finding the motion at all.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 10.4-A</text>
+</svg>

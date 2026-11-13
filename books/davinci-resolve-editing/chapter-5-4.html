@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jitendra Kulkarni">
 <title>5.4 — Match Frame and Finding Context | The Language of Editing</title>
+<meta name="description" content="A clip on the timeline is only ever a window into a larger source recording — a point Chapter 1.1 established at the very start of this book, and one Chapter…">
+<link rel="canonical" href="https://knowbase.xyz/books/davinci-resolve-editing/chapter-5-4.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Knowbase">
+<meta property="og:title" content="5.4 — Match Frame and Finding Context">
+<meta property="og:description" content="A clip on the timeline is only ever a window into a larger source recording — a point Chapter 1.1 established at the very start of this book, and one Chapter…">
+<meta property="og:url" content="https://knowbase.xyz/books/davinci-resolve-editing/chapter-5-4.html">
+<meta property="og:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5.4 — Match Frame and Finding Context">
+<meta name="twitter:description" content="A clip on the timeline is only ever a window into a larger source recording — a point Chapter 1.1 established at the very start of this book, and one Chapter…">
+<meta name="twitter:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,6 +111,13 @@ function toggleTheme(){
     <h2 class="section">Jumping From Timeline to Source, Instantly</h2>
 
     <p>Match Frame takes whatever frame the playhead is currently sitting on, on the timeline, and jumps you directly to that exact same frame within the clip's original source file — opened fresh, with the source's full original range available, not just the narrow range currently used on the timeline. This is a direct, immediate jump, not a search: you don't need to remember which bin the clip came from or scrub through Source Tape to relocate it, as Chapter 3.2 might otherwise require. Match Frame goes straight from a specific timeline moment back to that moment's exact place of origin.</p>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 5.4-A</span>
+      <img src="diagrams/fig-5-4-a.svg" alt="Diagram of a frame selected on the timeline jumping directly to that exact same frame within the clip's full original source range, showing how much unused source material sits outside the range currently placed on the timeline." class="diagram-img">
+      <p>One keystroke answers the question a search through bins would otherwise take minutes to settle.</p>
+    </div>
 
     <h2 class="section">Why This Matters for Trimming Specifically</h2>
 

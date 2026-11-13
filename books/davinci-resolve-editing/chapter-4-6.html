@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jitendra Kulkarni">
 <title>4.6 — Linking, Grouping, and Compound Clips | The Language of Editing</title>
+<meta name="description" content="So far, this part has treated clips mostly as individual objects — one clip, one track, one set of edits. Real sequences quickly need something more: a video…">
+<link rel="canonical" href="https://knowbase.xyz/books/davinci-resolve-editing/chapter-4-6.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Knowbase">
+<meta property="og:title" content="4.6 — Linking, Grouping, and Compound Clips">
+<meta property="og:description" content="So far, this part has treated clips mostly as individual objects — one clip, one track, one set of edits. Real sequences quickly need something more: a video…">
+<meta property="og:url" content="https://knowbase.xyz/books/davinci-resolve-editing/chapter-4-6.html">
+<meta property="og:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="4.6 — Linking, Grouping, and Compound Clips">
+<meta name="twitter:description" content="So far, this part has treated clips mostly as individual objects — one clip, one track, one set of edits. Real sequences quickly need something more: a video…">
+<meta name="twitter:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,6 +127,13 @@ function toggleTheme(){
     <p>Compound clips go further than grouping, and it's worth being precise about the difference. Selecting several clips and creating a compound clip from them bundles them into a genuinely new, single clip — one that appears in your Media Pool as its own item, with its own thumbnail, and behaves on the timeline like any other single clip: one block, one set of trim handles, one thing to select and move. Internally, that compound clip still contains its original multiple clips and their relative timing, editable by opening the compound clip itself, but from the outside, on the timeline where it's placed, it presents as one unified object.</p>
 
     <p>This is the right tool once a cluster of clips has stopped being "several related things I'm still arranging" and become "one finished unit I want to treat as a single building block" — a fully assembled lower-third graphic made of several layered elements, for instance, that you now want to drop into multiple places across a sequence, or move around as easily as a single clip, without the burden of every internal element being independently selectable every time you touch it.</p>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 4.6-A</span>
+      <img src="diagrams/fig-4-6-a.svg" alt="Diagram contrasting a linked video and audio clip, which trim and move together automatically, against a compound clip, where several separate clips are merged into one new object with hidden internal boundaries." class="diagram-img">
+      <p>Linking is a default relationship you rarely set up; a compound clip is a deliberate, permanent merge.</p>
+    </div>
 
     <h2 class="section">Choosing Between the Three</h2>
 

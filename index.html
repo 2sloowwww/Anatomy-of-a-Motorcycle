@@ -19,6 +19,20 @@
 <meta name="twitter:description" content="A growing shelf of technical field manuals, including Anatomy of a Motorcycle and The Language of Editing.">
 <meta name="twitter:image" content="https://knowbase.xyz/books/anatomy-of-a-motorcycle/cover.webp">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Knowbase",
+  "url": "https://knowbase.xyz/",
+  "description": "A growing shelf of technical field manuals, including Anatomy of a Motorcycle and The Language of Editing.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Jitendra Kulkarni"
+  }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -49,6 +63,8 @@ function toggleTheme(){
 </head>
 <body class="landing-page">
 
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
 <div class="ambient-bg" aria-hidden="true">
   <span class="blob blob-a"></span>
   <span class="blob blob-b"></span>
@@ -60,10 +76,16 @@ function toggleTheme(){
     <span class="brand-mark" aria-hidden="true"></span>
     <span class="brand-word">Know<span class="brand-accent">base</span></span>
   </a>
-  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
-    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
-    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
-  </button>
+  <div class="glass-nav-links">
+    <a class="glass-nav-link" href="#why">Why Knowbase</a>
+    <a class="glass-nav-link" href="#shelf">The Shelf</a>
+    <a class="glass-nav-link" href="#faq">Questions</a>
+    <a class="glass-nav-cta magnetic" href="/books/anatomy-of-a-motorcycle/index.html">Start Reading</a>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
 </header>
 
 <main class="landing">
@@ -74,29 +96,48 @@ function toggleTheme(){
       <h1>Understand<br>the Machine.</h1>
       <p class="hero-lede">A growing shelf of technical field manuals, each built the same way: understand the parts, then understand how they talk to each other.</p>
       <div class="hero-cta-row">
-        <a class="hero-cta" href="/books/anatomy-of-a-motorcycle/index.html">Start Reading &rarr;</a>
+        <a class="hero-cta magnetic" href="/books/anatomy-of-a-motorcycle/index.html">Start Reading &rarr;</a>
         <div class="hero-stats">
           <div>
-            <span class="hs-num">150</span>
+            <span class="hs-num count-up" data-count="150">0</span>
             <span class="hs-label">Chapters</span>
           </div>
           <div>
-            <span class="hs-num">16</span>
+            <span class="hs-num count-up" data-count="16">0</span>
             <span class="hs-label">Parts</span>
           </div>
           <div>
-            <span class="hs-num">2</span>
+            <span class="hs-num count-up" data-count="2">0</span>
             <span class="hs-label">Books on Shelf</span>
           </div>
         </div>
       </div>
     </div>
-    <div class="hero-cover-stage">
+    <div class="hero-cover-stage parallax-layer" data-speed="-0.08">
       <div class="cover-tilt" id="coverTilt">
         <img src="/books/anatomy-of-a-motorcycle/cover.webp" alt="Anatomy of a Motorcycle — book cover, showing a sportbike and a dirt bike in blueprint line art. By Jitendra Kulkarni.">
       </div>
     </div>
   </section>
+
+  <div class="stat-ticker reveal">
+    <div class="stat-ticker-item">
+      <span class="st-num count-up" data-count="245">0</span>
+      <span class="st-label">Total Chapters</span>
+    </div>
+    <div class="stat-ticker-item">
+      <span class="st-num count-up" data-count="49">0</span>
+      <span class="st-label">Original Diagrams</span>
+    </div>
+    <div class="stat-ticker-item">
+      <span class="st-num count-up" data-count="32">0</span>
+      <span class="st-label">Parts, Both Books</span>
+    </div>
+    <div class="stat-ticker-item">
+      <span class="st-num">100<span style="font-size:0.5em;">%</span></span>
+      <span class="st-label">Complete, Not Ongoing</span>
+    </div>
+  </div>
 
   <div class="continue-banner glass-panel" id="continueBanner">
     <div class="cb-text">
@@ -106,9 +147,80 @@ function toggleTheme(){
     <a class="cb-btn" id="continueLink" href="#">Resume &rarr;</a>
   </div>
 
-  <section class="shelf-section">
+  <section class="value-section" id="why">
+    <h2 class="shelf-heading reveal">Why Knowbase</h2>
+    <p class="shelf-sub reveal" style="transition-delay:0.05s">Not documentation. Not a course. A field manual, built to be read start to finish.</p>
+
+    <div class="value-grid">
+      <div class="value-card reveal" style="transition-delay:0.05s">
+        <span class="value-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+        </span>
+        <h3>Written, Not Generated</h3>
+        <p>Every chapter is authored and structured deliberately, one idea building on the last — not templated or auto-assembled.</p>
+      </div>
+      <div class="value-card reveal" style="transition-delay:0.1s">
+        <span class="value-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 4v16"/></svg>
+        </span>
+        <h3>Engineered, Not Loose</h3>
+        <p>Numbered parts and sections, explicit dependencies, and cross-references throughout — read in order, or jump straight to what you need.</p>
+      </div>
+      <div class="value-card reveal" style="transition-delay:0.15s">
+        <span class="value-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </span>
+        <h3>Complete, Not Abandoned</h3>
+        <p>Finished titles stay finished, cover to cover — no half-written series left hanging after chapter three. Anything still in progress is labeled that way, honestly.</p>
+      </div>
+      <div class="value-card reveal" style="transition-delay:0.2s">
+        <span class="value-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 6h6M9 18h.01"/></svg>
+        </span>
+        <h3>Read Anywhere</h3>
+        <p>Bookmarks, reading progress, and dark mode built in — no app to install, no account required to read.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="showcase-section">
+    <div class="showcase-row">
+      <div class="showcase-visual reveal parallax-layer" data-speed="0.06">
+        <img src="/books/davinci-resolve-editing/diagrams/fig-9-3-a.svg" alt="A five-node color grade diagram, showing serial and parallel node branches from source to output.">
+      </div>
+      <div class="showcase-text reveal" style="transition-delay:0.08s">
+        <span class="showcase-num">01 — Original Diagrams</span>
+        <h3>Every Diagram Drawn to Explain, Not Decorate.</h3>
+        <p>49 original technical diagrams across both books, each one built for a single specific concept — a node graph, a trim overlap, a signal path — not stock art dropped in to break up text.</p>
+      </div>
+    </div>
+
+    <div class="showcase-row reverse">
+      <div class="showcase-visual reveal parallax-layer" data-speed="0.06">
+        <img src="/books/anatomy-of-a-motorcycle/diagrams/fig-4-4-a.svg" alt="Diagram of a motorcycle's front-end geometry showing steering axis, rake angle, and trail.">
+      </div>
+      <div class="showcase-text reveal" style="transition-delay:0.08s">
+        <span class="showcase-num">02 — Cross-Referenced Throughout</span>
+        <h3>Nothing Explained in Isolation.</h3>
+        <p>Every chapter states what it depends on and what depends on it. Read start to finish, or jump straight to the one chapter you need — the cross-references make sure you land with the right context either way.</p>
+      </div>
+    </div>
+
+    <div class="showcase-row">
+      <div class="showcase-visual reveal parallax-layer" data-speed="0.06">
+        <img src="/books/davinci-resolve-editing/diagrams/fig-7-5-a.svg" alt="Diagram comparing linear and eased keyframe interpolation curves.">
+      </div>
+      <div class="showcase-text reveal" style="transition-delay:0.08s">
+        <span class="showcase-num">03 — Two Complete Manuals</span>
+        <h3>Finished, Cover to Cover.</h3>
+        <p>150 chapters on motorcycles, 95 on editing in DaVinci Resolve — both fully published, not ongoing series. Every chapter is free to read, cover to cover.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="shelf-section" id="shelf">
     <h2 class="shelf-heading reveal">The Shelf</h2>
-    <p class="shelf-sub reveal" style="transition-delay:0.05s">Two titles on the shelf. More on the way.</p>
+    <p class="shelf-sub reveal" style="transition-delay:0.05s">Two complete titles on the shelf. More on the way.</p>
 
     <div class="library-shelf">
 
@@ -124,9 +236,10 @@ function toggleTheme(){
         <img src="/books/davinci-resolve-editing/cover.svg" alt="The Language of Editing — book cover, showing a timeline, node graph, and color wheels in blueprint line art. By Jitendra Kulkarni.">
         <span class="spine"></span>
         <span class="jacket">
-          <span class="book-status">37 of 95 · In Progress</span>
+          <span class="book-status">95 of 95 · Complete</span>
         </span>
       </a>
+
 
     </div>
   </section>
@@ -170,9 +283,41 @@ function toggleTheme(){
     </div>
   </section>
 
+  <section class="faq-section" id="faq">
+    <h2 class="shelf-heading reveal">Questions</h2>
+    <p class="shelf-sub reveal" style="transition-delay:0.05s">The short answers.</p>
+
+    <div class="faq-list">
+      <details class="faq-item reveal" style="transition-delay:0.05s">
+        <summary>Is it really free?<span class="faq-plus" aria-hidden="true"></span></summary>
+        <p>Yes. Every chapter of every book on the shelf is free to read — currently Anatomy of a Motorcycle (150 chapters) and The Language of Editing (95 chapters), both complete.</p>
+      </details>
+      <details class="faq-item reveal" style="transition-delay:0.1s">
+        <summary>Do I need to create an account?<span class="faq-plus" aria-hidden="true"></span></summary>
+        <p>No account, no login. Bookmarks and reading progress are saved in your own browser.</p>
+      </details>
+      <details class="faq-item reveal" style="transition-delay:0.15s">
+        <summary>Where should I start?<span class="faq-plus" aria-hidden="true"></span></summary>
+        <p>At Part I of either book. Each chapter builds on the one before it, but every chapter also lists what it depends on, so you can jump straight to the one you need.</p>
+      </details>
+      <details class="faq-item reveal" style="transition-delay:0.2s">
+        <summary>Who writes these?<span class="faq-plus" aria-hidden="true"></span></summary>
+        <p>I do — Jitendra Kulkarni. More motorcycle content lives on Instagram at <a href="https://instagram.com/2sloowwww" target="_blank" rel="noopener">@2sloowwww</a>.</p>
+      </details>
+    </div>
+  </section>
+
 </main>
 
-<footer class="landing-footer">Curated by Jitendra Kulkarni</footer>
+<footer class="landing-footer">
+  <div class="footer-links">
+    <a href="#why">Why Knowbase</a>
+    <a href="#faq">Questions</a>
+    <a href="/books/anatomy-of-a-motorcycle/index.html">Anatomy of a Motorcycle</a>
+    <a href="/books/davinci-resolve-editing/index.html">The Language of Editing</a>
+  </div>
+  Curated by Jitendra Kulkarni
+</footer>
 
 <script src="/reader-aids.js" defer></script>
 <script>
@@ -209,6 +354,86 @@ function toggleTheme(){
     targets.forEach(function(t){ t.classList.add("in-view"); });
   }
 })();
+
+(function(){
+  var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // scroll progress bar
+  var progress = document.getElementById("scrollProgress");
+  var nav = document.querySelector(".glass-nav");
+  var parallaxLayers = Array.prototype.slice.call(document.querySelectorAll(".parallax-layer"));
+  var ticking = false;
+
+  function onScroll(){
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if(progress) progress.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + "%";
+    if(nav) nav.classList.toggle("is-scrolled", scrollTop > 40);
+    if(!reduced){
+      parallaxLayers.forEach(function(el){
+        var speed = parseFloat(el.getAttribute("data-speed")) || 0;
+        el.style.transform = "translateY(" + (scrollTop * speed * -1) + "px)";
+      });
+    }
+    ticking = false;
+  }
+  window.addEventListener("scroll", function(){
+    if(!ticking){
+      window.requestAnimationFrame(onScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+  onScroll();
+
+  // animated counters
+  var counters = document.querySelectorAll(".count-up");
+  if(counters.length){
+    var animateCount = function(el){
+      var target = parseInt(el.getAttribute("data-count"), 10) || 0;
+      if(reduced){ el.textContent = target; return; }
+      var start = null;
+      var duration = 1100;
+      function step(ts){
+        if(!start) start = ts;
+        var progressRatio = Math.min((ts - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progressRatio, 3);
+        el.textContent = Math.round(eased * target);
+        if(progressRatio < 1) window.requestAnimationFrame(step);
+        else el.textContent = target;
+      }
+      window.requestAnimationFrame(step);
+    };
+    if("IntersectionObserver" in window){
+      var cio = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            animateCount(entry.target);
+            cio.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.6 });
+      counters.forEach(function(c){ cio.observe(c); });
+    } else {
+      counters.forEach(function(c){ c.textContent = c.getAttribute("data-count"); });
+    }
+  }
+
+  // magnetic buttons — subtle cursor-follow on primary CTAs
+  if(!reduced && window.matchMedia("(pointer: fine)").matches){
+    document.querySelectorAll(".magnetic").forEach(function(btn){
+      btn.addEventListener("mousemove", function(e){
+        var r = btn.getBoundingClientRect();
+        var mx = (e.clientX - r.left - r.width / 2) * 0.25;
+        var my = (e.clientY - r.top - r.height / 2) * 0.35;
+        btn.style.transform = "translate(" + mx + "px," + my + "px)";
+      });
+      btn.addEventListener("mouseleave", function(){
+        btn.style.transform = "";
+      });
+    });
+  }
+})();
+
 </script>
 </body>
 </html>

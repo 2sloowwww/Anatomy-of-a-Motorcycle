@@ -1,0 +1,68 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">THE BAYER FILTER — HOW COLOR IS BUILT</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">RAW MOSAIC — ONE COLOR PER PHOTOSITE</text>
+    <g transform="translate(90,110)">
+      <!-- 4x4 bayer grid RGGB -->
+      <g font-size="9" text-anchor="middle">
+        <!-- row helper via loop unrolled -->
+        <rect x="0" y="0" width="40" height="40" fill="#AE3527" opacity="0.55"/><text x="20" y="24" fill="#22252B">R</text>
+        <rect x="40" y="0" width="40" height="40" fill="#4E7A4E" opacity="0.55"/><text x="60" y="24" fill="#22252B">G</text>
+        <rect x="80" y="0" width="40" height="40" fill="#AE3527" opacity="0.55"/><text x="100" y="24" fill="#22252B">R</text>
+        <rect x="120" y="0" width="40" height="40" fill="#4E7A4E" opacity="0.55"/><text x="140" y="24" fill="#22252B">G</text>
+
+        <rect x="0" y="40" width="40" height="40" fill="#4E7A4E" opacity="0.55"/><text x="20" y="64" fill="#22252B">G</text>
+        <rect x="40" y="40" width="40" height="40" fill="#33505E" opacity="0.55"/><text x="60" y="64" fill="#22252B">B</text>
+        <rect x="80" y="40" width="40" height="40" fill="#4E7A4E" opacity="0.55"/><text x="100" y="64" fill="#22252B">G</text>
+        <rect x="120" y="40" width="40" height="40" fill="#33505E" opacity="0.55"/><text x="140" y="64" fill="#22252B">B</text>
+
+        <rect x="0" y="80" width="40" height="40" fill="#AE3527" opacity="0.55"/><text x="20" y="104" fill="#22252B">R</text>
+        <rect x="40" y="80" width="40" height="40" fill="#4E7A4E" opacity="0.55"/><text x="60" y="104" fill="#22252B">G</text>
+        <rect x="80" y="80" width="40" height="40" fill="#AE3527" opacity="0.55"/><text x="100" y="104" fill="#22252B">R</text>
+        <rect x="120" y="80" width="40" height="40" fill="#4E7A4E" opacity="0.55"/><text x="140" y="104" fill="#22252B">G</text>
+
+        <rect x="0" y="120" width="40" height="40" fill="#4E7A4E" opacity="0.55"/><text x="20" y="144" fill="#22252B">G</text>
+        <rect x="40" y="120" width="40" height="40" fill="#33505E" opacity="0.55"/><text x="60" y="144" fill="#22252B">B</text>
+        <rect x="80" y="120" width="40" height="40" fill="#4E7A4E" opacity="0.55"/><text x="100" y="144" fill="#22252B">G</text>
+        <rect x="120" y="120" width="40" height="40" fill="#33505E" opacity="0.55"/><text x="140" y="144" fill="#22252B">B</text>
+      </g>
+      <rect x="0" y="0" width="160" height="160" fill="none" stroke="#22252B" stroke-width="1.6"/>
+    </g>
+    <text x="90" y="300" font-size="10.5" fill="#5A5748">2 green photosites for every</text>
+    <text x="90" y="316" font-size="10.5" fill="#5A5748">1 red and 1 blue — matches</text>
+    <text x="90" y="332" font-size="10.5" fill="#5A5748">the eye's green sensitivity</text>
+
+    <line x1="270" y1="130" x2="330" y2="190" stroke="#6B5A22" stroke-width="1.8"/>
+    <path d="M318 187 L332 191 L327 178" fill="#6B5A22"/>
+    <text x="285" y="165" font-size="10" fill="#6B5A22">DEMOSAIC</text>
+
+    <text x="470" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">DEMOSAICED — FULL COLOR PER PIXEL</text>
+    <g transform="translate(490,110)">
+      <rect x="0" y="0" width="160" height="160" fill="none" stroke="#22252B" stroke-width="1.6"/>
+      <rect x="8" y="8" width="144" height="144" fill="#E2D9C3"/>
+      <rect x="20" y="20" width="40" height="40" fill="#C8776C" opacity="0.7"/>
+      <rect x="70" y="20" width="40" height="40" fill="#7FA07A" opacity="0.7"/>
+      <rect x="20" y="70" width="40" height="40" fill="#6E8FA0" opacity="0.7"/>
+      <rect x="70" y="70" width="40" height="40" fill="#B99A5E" opacity="0.7"/>
+      <rect x="20" y="120" width="90" height="20" fill="#8C876F" opacity="0.5"/>
+    </g>
+    <text x="490" y="300" font-size="10.5" fill="#5A5748">each pixel's missing two</text>
+    <text x="490" y="316" font-size="10.5" fill="#5A5748">colors are interpolated from</text>
+    <text x="490" y="332" font-size="10.5" fill="#5A5748">its neighbors' readings</text>
+  </g>
+
+  <line x1="70" y1="365" x2="730" y2="365" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="395" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">NO PHOTOSITE EVER RECORDS MORE THAN ONE COLOR</text>
+  <text x="400" y="418" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">Every full-color pixel you see has been reconstructed, not directly captured.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 3.3-A</text>
+</svg>

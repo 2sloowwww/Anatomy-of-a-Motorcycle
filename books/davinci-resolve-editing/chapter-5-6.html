@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jitendra Kulkarni">
 <title>5.6 — Dynamic Trim Mode | The Language of Editing</title>
+<meta name="description" content="Every trim covered so far in this part — ripple, roll, slip, slide — has been described as a static adjustment: pause, drag or nudge an edit point, check the…">
+<link rel="canonical" href="https://knowbase.xyz/books/davinci-resolve-editing/chapter-5-6.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Knowbase">
+<meta property="og:title" content="5.6 — Dynamic Trim Mode">
+<meta property="og:description" content="Every trim covered so far in this part — ripple, roll, slip, slide — has been described as a static adjustment: pause, drag or nudge an edit point, check the…">
+<meta property="og:url" content="https://knowbase.xyz/books/davinci-resolve-editing/chapter-5-6.html">
+<meta property="og:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5.6 — Dynamic Trim Mode">
+<meta name="twitter:description" content="Every trim covered so far in this part — ripple, roll, slip, slide — has been described as a static adjustment: pause, drag or nudge an edit point, check the…">
+<meta name="twitter:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,6 +111,13 @@ function toggleTheme(){
     <h2 class="section">Trimming While Watching, Not While Paused</h2>
 
     <p>Entering Dynamic Trim mode near an edit point puts the timeline into a state where playback continues — using the JKL logic from Chapter 5.2 — while the edit point itself responds live to your input, moving in real time as you adjust it during playback rather than requiring you to pause, drag, release, and check. This mirrors, closely, the way Chapter 5.1 described trimming by feel: playing a section, judging in the moment whether a cut feels right, adjusting immediately without breaking the flow of playback to do so.</p>
+
+    <div class="diagram">
+      <span class="c2"></span>
+      <span class="dtag">Fig. 5.6-A</span>
+      <img src="diagrams/fig-5-6-a.svg" alt="Diagram of an edit point between two clips with live preview zones on either side — the outgoing clip's last frames on the left and the incoming clip's first frames on the right — updating as the edit point moves during playback." class="diagram-img">
+      <p>The point moves while both previews keep playing — you're judging the cut as it will actually run, not a frozen guess at it.</p>
+    </div>
 
     <div class="pull"><p>Static trimming asks "does this look right, frozen, at this frame." Dynamic Trim asks "does this feel right, in motion, as it's actually going to play." For rhythm and pacing decisions specifically, the second question is often the more honest one.</p></div>
 

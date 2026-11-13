@@ -1,0 +1,37 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">DEPTH OF FIELD AND APERTURE</text>
+  <line x1="200" y1="54" x2="600" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">WIDE APERTURE — f/2.8 — NARROW ZONE OF SHARPNESS</text>
+    <line x1="90" y1="160" x2="90" y2="220" stroke="#22252B" stroke-width="2"/>
+    <text x="90" y="240" text-anchor="middle" font-size="9.5" fill="#5A5748">LENS</text>
+    <path d="M90 165 L330 145 L330 235 L90 215 Z" fill="#AE3527" opacity="0.28"/>
+    <line x1="330" y1="120" x2="330" y2="260" stroke="#33505E" stroke-width="2"/>
+    <text x="330" y="278" text-anchor="middle" font-size="9.5" fill="#5A5748">FOCUS PLANE</text>
+    <text x="180" y="205" font-size="9.5" fill="#AE3527">thin wedge in focus</text>
+
+    <line x1="400" y1="60" x2="400" y2="410" stroke="#8C876F" stroke-width="1"/>
+
+    <text x="440" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">NARROW APERTURE — f/16 — WIDE ZONE OF SHARPNESS</text>
+    <line x1="460" y1="185" x2="460" y2="195" stroke="#22252B" stroke-width="2"/>
+    <text x="460" y="240" text-anchor="middle" font-size="9.5" fill="#5A5748">LENS</text>
+    <path d="M460 188 L700 90 L700 290 L460 192 Z" fill="#33505E" opacity="0.22"/>
+    <line x1="700" y1="120" x2="700" y2="260" stroke="#33505E" stroke-width="2"/>
+    <text x="700" y="278" text-anchor="middle" font-size="9.5" fill="#5A5748">FOCUS PLANE</text>
+    <text x="530" y="130" font-size="9.5" fill="#33505E">wide wedge in focus</text>
+  </g>
+
+  <line x1="70" y1="330" x2="730" y2="330" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="360" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">THE OPENING THAT CONTROLS LIGHT ALSO SHAPES THE CONE OF LIGHT REACHING THE SENSOR</text>
+  <text x="400" y="383" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">A wider cone blurs out-of-focus points faster — a narrower cone keeps more of the scene acceptably sharp.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 4.2-A</text>
+</svg>

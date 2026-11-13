@@ -1,0 +1,39 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">FOCAL LENGTH AND ANGLE OF VIEW</text>
+  <line x1="160" y1="54" x2="640" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">SHORT FOCAL LENGTH — WIDE ANGLE OF VIEW</text>
+    <rect x="80" y="220" width="14" height="30" fill="#33505E"/>
+    <line x1="94" y1="235" x2="330" y2="115" stroke="#AE3527" stroke-width="1.6"/>
+    <line x1="94" y1="235" x2="330" y2="355" stroke="#AE3527" stroke-width="1.6"/>
+    <line x1="94" y1="235" x2="330" y2="235" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 3"/>
+    <path d="M120 210 A 60 60 0 0 1 120 260" fill="none" stroke="#6B5A22" stroke-width="1.4"/>
+    <text x="150" y="200" font-size="10" fill="#6B5A22">WIDE ANGLE</text>
+    <text x="94" y="270" font-size="9.5" fill="#5A5748">e.g. 24mm</text>
+
+    <line x1="330" y1="60" x2="330" y2="410" stroke="#8C876F" stroke-width="1"/>
+
+    <text x="440" y="90" font-size="12.5" fill="#8C876F" letter-spacing="1">LONG FOCAL LENGTH — NARROW ANGLE OF VIEW</text>
+    <rect x="450" y="228" width="14" height="14" fill="#33505E"/>
+    <line x1="464" y1="235" x2="700" y2="200" stroke="#AE3527" stroke-width="1.6"/>
+    <line x1="464" y1="235" x2="700" y2="270" stroke="#AE3527" stroke-width="1.6"/>
+    <line x1="464" y1="235" x2="700" y2="235" stroke="#8C876F" stroke-width="1" stroke-dasharray="3 3"/>
+    <path d="M482 225 A 20 20 0 0 1 482 245" fill="none" stroke="#6B5A22" stroke-width="1.4"/>
+    <text x="500" y="215" font-size="10" fill="#6B5A22">NARROW ANGLE</text>
+    <text x="464" y="260" font-size="9.5" fill="#5A5748">e.g. 200mm</text>
+  </g>
+
+  <line x1="70" y1="410" x2="730" y2="410" stroke="#8C876F" stroke-width="1"/>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#22252B" font-weight="600">SAME SUBJECT DISTANCE, DIFFERENT FOCAL LENGTH, DIFFERENT SLICE OF THE SCENE</text>
+  <text x="400" y="463" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">Focal length doesn't zoom the world closer — it narrows how much of it the sensor sees.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 2.2-A</text>
+</svg>

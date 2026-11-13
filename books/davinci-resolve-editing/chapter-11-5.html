@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<title>11.5 — Delivering for Broadcast, Streaming, and Social | The Language of Editing</title>
+<meta name="description" content="Chapter 11.1 opened this part with the claim that one finished timeline routinely becomes several distinct deliverables. This chapter is where that claim…">
+<link rel="canonical" href="https://knowbase.xyz/books/davinci-resolve-editing/chapter-11-5.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Knowbase">
+<meta property="og:title" content="11.5 — Delivering for Broadcast, Streaming, and Social">
+<meta property="og:description" content="Chapter 11.1 opened this part with the claim that one finished timeline routinely becomes several distinct deliverables. This chapter is where that claim…">
+<meta property="og:url" content="https://knowbase.xyz/books/davinci-resolve-editing/chapter-11-5.html">
+<meta property="og:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="11.5 — Delivering for Broadcast, Streaming, and Social">
+<meta name="twitter:description" content="Chapter 11.1 opened this part with the claim that one finished timeline routinely becomes several distinct deliverables. This chapter is where that claim…">
+<meta name="twitter:image" content="https://knowbase.xyz/books/davinci-resolve-editing/cover.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){
+    document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("theme","light"); }catch(e){}
+  } else {
+    document.documentElement.setAttribute("data-theme","dark");
+    try{ localStorage.setItem("theme","dark"); }catch(e){}
+  }
+}
+</script>
+<script src="/reader-aids.js" defer></script>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+<button class="bookmark-toggle" onclick="aoamToggleBookmark()" aria-label="Bookmark this chapter" title="Bookmark this chapter">
+  <svg class="bm-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+  <svg class="bm-fill" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3.5h12a1 1 0 0 1 1 1V21l-7-4.2L5 21V4.5a1 1 0 0 1 1-1Z"/></svg>
+</button>
+<div class="page-ribbon" aria-hidden="true"></div>
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">/</span>
+    <a href="index.html#part-xi">Part XI — The Deliver Page</a>
+    <span class="sep">/</span>
+    <span class="current">11.5</span>
+  </div>
+
+  <div class="title-block">
+    <div class="tb-top">
+      <a class="series" href="index.html">The Language of Editing</a>
+      <span class="vol">Vol. I — The Pages</span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-numeral">11.5</div>
+      <div class="tb-titlewrap">
+        <div class="eyebrow">Chapter Eleven, Section Five</div>
+        <h1>Delivering for Broadcast, Streaming, and Social</h1>
+      </div>
+    </div>
+    <div class="tb-fields">
+      <div class="tb-field">
+        <span class="fk">Part</span>
+        <span class="fv">XI of XVI</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Category</span>
+        <span class="fv">Practical</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Sheet</span>
+        <span class="fv">070 / 095</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Depends On</span>
+        <span class="fv">11.4</span>
+      </div>
+      <div class="tb-field">
+        <span class="fk">Read Time</span>
+        <span class="fv">~7 Min</span>
+      </div>
+    </div>
+  </div>
+
+  <article>
+
+    <p class="lede">Chapter 11.1 opened this part with the claim that one finished timeline routinely becomes several distinct deliverables. This chapter is where that claim gets specific. Broadcast, streaming, and social destinations don't just differ in codec preference — they answer to genuinely different standards, audiences, and technical gatekeepers, and treating them as interchangeable variations on the same export is where deliveries most often go wrong.</p>
+
+    <h2 class="section">Broadcast: Strict Specs, Formal Quality Control</h2>
+
+    <p>Broadcast delivery is the most rigid of the three, and deliberately so — a network or broadcaster typically mandates an exact codec, container, resolution, and frame rate, along with formal loudness and technical standards a delivery must pass before it airs at all. This isn't a suggestion to weigh against convenience; a broadcast QC process exists specifically to catch deviations from spec before they become an on-air problem, and a delivery that fails it is sent back, not aired with an asterisk. Audio compliance in particular is exacting here — loudness levels held to a specific, mandated standard, not just kept generally reasonable.</p>
+
+    <h2 class="section">Streaming: Defined, but More Forgiving</h2>
+
+    <p>Streaming platforms sit between broadcast's rigidity and social media's looseness. Major platforms publish real, specific technical delivery specs of their own — sometimes down to exact codec profiles and container structures — but the review process around them tends to be less formally adversarial than broadcast QC, and the range of acceptable input formats is often somewhat wider. The practical discipline is the same either way: check the actual, current spec for the specific platform rather than assuming a broadcast-grade or general-purpose render will simply be accepted as-is.</p>
+
+    <div class="pull"><p>Three destinations, three different relationships to the word "correct." Broadcast enforces it formally before anything airs. Streaming defines it and expects you to meet it. Social barely defines it at all — and quietly punishes a file that doesn't fit anyway.</p></div>
+
+    <h2 class="section">Social: Loosest Formal Rules, Most Practical Constraints</h2>
+
+    <p>Social platforms are, on paper, the least formally strict of the three — there's rarely a QC process rejecting a file outright. In practice, they carry the most real-world constraints on how a video actually needs to be built to perform well: vertical or square aspect ratios rather than traditional widescreen framing, captions frequently burned in or otherwise embedded since so much social viewing happens muted, shorter overall durations, and aggressive platform-side compression that rewards a delivery already reasonably efficient going in. None of this is enforced by a rejection message the way broadcast QC is — it's enforced by how well or poorly the finished video actually performs once it's live, which is arguably a higher bar to guess right on the first attempt.</p>
+
+    <h2 class="section">One Master, Many Outputs — In Practice</h2>
+
+    <p>This is where Chapter 11.1's opening idea and Chapter 11.3's presets meet in a real workflow. A single graded, composited timeline commonly becomes a full-resolution broadcast or archival master, a platform-compliant streaming render, and one or more reframed, captioned social cutdowns — each one a distinct render job from the render queue, each ideally driven by its own saved preset rather than manually reconfigured from scratch. The timeline underneath all of them is identical; what differs, deliberately and by design, is everything Chapter 11.2 and this chapter have covered, tuned to each specific destination.</p>
+
+    <h2 class="section">Color Space Deserves a Specific Mention Here</h2>
+
+    <p>Chapter 1.4 introduced color management as a concept worth understanding before touching any specific tool, and destination delivery is exactly where that concept becomes unavoidable in practice. Broadcast specs commonly mandate a specific color space and gamma curve; streaming platforms increasingly support wider gamuts and high dynamic range as legitimate, separate deliverables; social platforms are generally far less particular, but still assume a standard, compatible color space by default. A render that's technically flawless in every other respect but delivered in the wrong color space can still look visibly wrong the moment it reaches its destination — a reminder that Part IX's grading work and Part XI's delivery work are connected all the way through to the final file.</p>
+
+    <p>With destination-specific delivery covered, the last piece of Part XI isn't about producing a file at all — it's about handing the project itself off to someone else. Chapter 11.6 closes both this part and this book's tour of Resolve's pages with exactly that.</p>
+
+    <div class="bolt-divider">
+      <div class="ln"></div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" stroke="#6B5A22" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3.2" stroke="#6B5A22" stroke-width="1.4"/>
+      </svg>
+      <div class="ln"></div>
+    </div>
+
+    <div class="plate">
+      <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+      <h3>Key Concepts to Remember</h3>
+      <ul>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Broadcast enforces exact specs and loudness standards through a formal QC process before anything airs.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Streaming platforms define real specs of their own, with a somewhat less rigid review process than broadcast.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          Social platforms enforce almost nothing formally, but punish a poorly framed, uncaptioned, or inefficient delivery through performance instead.
+        </li>
+        <li>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="#6B5A22"/></svg>
+          One graded, composited timeline routinely becomes several destination-specific renders, each driven by its own preset.
+        </li>
+      </ul>
+    </div>
+
+    <div class="refs">
+      <h3>Cross-References Forward</h3>
+      <table class="ref-table">
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-11-6.html">→ Ch. 11.6</a></td>
+          <td class="note">Handing Off a Project to Someone Else — closes Part XI once a destination-correct file is no longer the only possible deliverable.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-11-4.html">→ Ch. 11.4</a></td>
+          <td class="note">Revisit render-in-place and range delivery, tools that support producing several destination-specific outputs efficiently.</td>
+        </tr>
+        <tr>
+          <td class="code"><a class="ref-link" href="chapter-1-4.html">→ Ch. 1.4</a></td>
+          <td class="note">Revisit color management as a concept, directly relevant once a destination's required color space enters the picture.</td>
+        </tr>
+      </table>
+    </div>
+
+  </article>
+
+  <div class="chapter-nav">
+    <a class="prev" href="chapter-11-4.html">
+      <span class="dir">← Previous</span>
+      <span class="ttl">11.4 — Render-in-Place and Individual Clip Delivery</span>
+    </a>
+    <a class="next" href="chapter-11-6.html">
+      <span class="dir">Next Chapter →</span>
+      <span class="ttl">11.6 — Handing Off a Project to Someone Else</span>
+    </a>
+  </div>
+
+  <div class="sheet-footer">
+    <a href="index.html">The Language of Editing — Sheet 070 / 095</a>
+    <span>Do Not Scale From Drawing</span>
+  </div>
+
+</div>
+</body>
+</html>

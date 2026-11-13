@@ -1,0 +1,77 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
+  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
+  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
+
+  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-weight="700" font-size="20" fill="#6B5A22" letter-spacing="0.5">INTRA-FRAME VS. LONG-GOP</text>
+  <line x1="150" y1="54" x2="650" y2="54" stroke="#8C876F" stroke-width="1"/>
+
+  <g font-family="JetBrains Mono, monospace">
+    <text x="70" y="88" font-size="11" fill="#8C876F" letter-spacing="0.5">INTRA-FRAME — EVERY FRAME COMPLETE ON ITS OWN</text>
+    <rect x="70" y="96" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="97" y="119" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">I</text>
+    <rect x="130" y="96" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="157" y="119" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">I</text>
+    <rect x="190" y="96" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="217" y="119" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">I</text>
+    <rect x="250" y="96" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="277" y="119" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">I</text>
+    <rect x="310" y="96" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="337" y="119" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">I</text>
+    <rect x="370" y="96" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="397" y="119" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">I</text>
+    <rect x="430" y="96" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="457" y="119" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">I</text>
+    <rect x="490" y="96" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1.4"/>
+    <text x="517" y="119" text-anchor="middle" font-size="13" font-weight="700" fill="#22252B">I</text>
+    <text x="608" y="119" font-size="9.5" fill="#5A5748">decode any single</text>
+    <text x="608" y="132" font-size="9.5" fill="#5A5748">frame in isolation</text>
+
+    <text x="70" y="152" font-size="11" fill="#8C876F" letter-spacing="0.5">LONG-GOP — ONLY SOME FRAMES STORED IN FULL</text>
+    <rect x="70" y="160" width="54" height="36" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.8"/>
+    <text x="97" y="183" text-anchor="middle" font-size="13" font-weight="700" fill="#AE3527">I</text>
+    <rect x="130" y="160" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1" opacity="0.75"/>
+    <text x="157" y="183" text-anchor="middle" font-size="11" fill="#5A5748">B</text>
+    <rect x="190" y="160" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1" opacity="0.75"/>
+    <text x="217" y="183" text-anchor="middle" font-size="11" fill="#5A5748">B</text>
+    <rect x="250" y="160" width="54" height="36" fill="#E2D9C3" stroke="#33505E" stroke-width="1.5"/>
+    <text x="277" y="183" text-anchor="middle" font-size="12" font-weight="700" fill="#33505E">P</text>
+    <rect x="310" y="160" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1" opacity="0.75"/>
+    <text x="337" y="183" text-anchor="middle" font-size="11" fill="#5A5748">B</text>
+    <rect x="370" y="160" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1" opacity="0.75"/>
+    <text x="397" y="183" text-anchor="middle" font-size="11" fill="#5A5748">B</text>
+    <rect x="430" y="160" width="54" height="36" fill="#E2D9C3" stroke="#33505E" stroke-width="1.5"/>
+    <text x="457" y="183" text-anchor="middle" font-size="12" font-weight="700" fill="#33505E">P</text>
+    <rect x="490" y="160" width="54" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="1" opacity="0.75"/>
+    <text x="517" y="183" text-anchor="middle" font-size="11" fill="#5A5748">B</text>
+    <text x="608" y="176" font-size="9.5" fill="#5A5748">B/P frames need</text>
+    <text x="608" y="189" font-size="9.5" fill="#5A5748">their neighbors too</text>
+
+    <path d="M70,204 V210 H544 V204" fill="none" stroke="#6B5A22" stroke-width="1.2"/>
+    <text x="307" y="230" text-anchor="middle" font-size="10.5" fill="#6B5A22">ONE GROUP OF PICTURES (GOP) — A MIDDLE FRAME MAY NEED ITS NEIGHBORS TO DECODE</text>
+
+    <text x="400" y="252" text-anchor="middle" font-size="12.5" fill="#8C876F" letter-spacing="0.5">RELATIVE FILE SIZE (PER MINUTE RECORDED)</text>
+    <rect x="220" y="258" width="480" height="22" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="75" y="273" font-size="10.5" font-weight="700" fill="#22252B">INTRA-FRAME</text>
+    <text x="710" y="273" font-size="10" fill="#AE3527">≈5–10× larger</text>
+    <rect x="220" y="286" width="140" height="22" fill="#E2D9C3" stroke="#33505E" stroke-width="1.6"/>
+    <text x="75" y="301" font-size="10.5" font-weight="700" fill="#22252B">LONG-GOP</text>
+    <text x="370" y="301" font-size="10" fill="#33505E">smaller, camera-friendly</text>
+
+    <text x="400" y="336" text-anchor="middle" font-size="12.5" fill="#8C876F" letter-spacing="0.5">SCRUBBING / REAL-TIME EDIT PERFORMANCE</text>
+    <rect x="220" y="342" width="480" height="22" fill="#E2D9C3" stroke="#22252B" stroke-width="1.6"/>
+    <text x="75" y="357" font-size="10.5" font-weight="700" fill="#22252B">INTRA-FRAME</text>
+    <text x="710" y="357" font-size="10" fill="#22252B">smooth, scrubs cleanly</text>
+    <rect x="220" y="370" width="140" height="22" fill="#E2D9C3" stroke="#AE3527" stroke-width="1.6"/>
+    <text x="75" y="385" font-size="10.5" font-weight="700" fill="#22252B">LONG-GOP</text>
+    <text x="370" y="385" font-size="10" fill="#AE3527">sluggish — wants a proxy</text>
+  </g>
+
+  <text x="400" y="420" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13.5" fill="#22252B" font-weight="600">SIZE AND SPEED MOVE TOGETHER, NOT AGAINST EACH OTHER</text>
+  <text x="400" y="440" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">Heavier files scrub easily; small camera files often don't — which is exactly why proxies exist.</text>
+
+  <text x="770" y="482" text-anchor="end" font-size="10" fill="#8C876F" letter-spacing="0.5">FIG. 2.6-A</text>
+</svg>
