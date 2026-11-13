@@ -1,0 +1,7 @@
+# Locked books: served as "Coming soon" on the live site until they are released.
+# The trailing ! forces the rewrite even though real files exist at these paths.
+/books/davinci-resolve-editing        /coming-soon.html  200!
+/books/davinci-resolve-editing/       /coming-soon.html  200!
+/books/davinci-resolve-editing/*      /coming-soon.html  200!
+/books/sony-a6700-manual              /coming-soon.html  200!
+/books/sony-a6700-manual/*            /coming-soon.html  200!

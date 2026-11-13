@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jitendra Kulkarni">
+<meta name="robots" content="noindex">
+<title>Coming Soon — Knowbase</title>
+<meta name="description" content="This Knowbase manual is still being written. Anatomy of a Motorcycle is complete and free to read now.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Text:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>
+(function(){
+  var theme = "light";
+  try{
+    var saved = localStorage.getItem("theme");
+    theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  }catch(e){ theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; }
+  if(theme === "dark"){ document.documentElement.setAttribute("data-theme","dark"); }
+})();
+function toggleTheme(){
+  var isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  if(isDark){ document.documentElement.removeAttribute("data-theme"); try{ localStorage.setItem("theme","light"); }catch(e){} }
+  else { document.documentElement.setAttribute("data-theme","dark"); try{ localStorage.setItem("theme","dark"); }catch(e){} }
+}
+</script>
+</head>
+<body class="soon-page">
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+</button>
+
+<main class="soon">
+  <div class="sheet-frame">
+    <span class="sf-corner tl"></span><span class="sf-corner tr"></span><span class="sf-corner bl"></span><span class="sf-corner br"></span>
+    <a class="library-back" href="/index.html">&larr; Knowbase</a>
+    <div class="soon-grid">
+      <div class="soon-cover"><img id="soonCover" src="/assets/cover-a6700.svg" alt="Book cover"></div>
+      <div class="soon-copy">
+        <span class="soon-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg> Coming soon</span>
+        <h1 id="soonTitle">The Sony a6700 Field Manual</h1>
+        <p id="soonBlurb">This manual is still being written.</p>
+        <p class="soon-note">While you wait, <b>Anatomy of a Motorcycle</b> is complete &mdash; 150 chapters, free to read right now.</p>
+        <div class="soon-actions">
+          <a class="ac-btn primary" href="/books/anatomy-of-a-motorcycle/index.html">Read Anatomy of a Motorcycle &rarr;</a>
+          <a class="ac-btn" href="https://instagram.com/2sloowwww" target="_blank" rel="noopener">Follow progress &middot; @2sloowwww</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+(function(){
+  var books = {
+    editing: { title: "The Language of Editing", cover: "/assets/cover-editing.svg",
+      blurb: "Ninety-five chapters on cutting, color and sound, taught through DaVinci Resolve. It is written, and now being refined before release." },
+    a6700: { title: "The Sony a6700 Field Manual", cover: "/assets/cover-a6700.svg",
+      blurb: "A field manual for shooters: how the a6700 really works, explained by how its parts talk to each other. In the works." }
+  };
+  var q = (location.search.match(/book=([a-z0-9]+)/) || [])[1];
+  var key = q || (/davinci|editing/i.test(location.pathname) ? "editing" : "a6700");
+  var b = books[key] || books.a6700;
+  document.title = b.title + " — Coming Soon · Knowbase";
+  document.getElementById("soonTitle").textContent = b.title;
+  document.getElementById("soonBlurb").textContent = b.blurb;
+  var img = document.getElementById("soonCover"); img.src = b.cover; img.alt = b.title + " — cover";
+})();
+</script>
+</body>
+</html>

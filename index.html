@@ -4,20 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Jitendra Kulkarni">
-<title>Knowbase</title>
-<meta name="description" content="Knowbase — a growing shelf of technical field manuals, including Anatomy of a Motorcycle and The Language of Editing.">
+<title>Knowbase — Field Manuals You Can Actually Understand</title>
+<meta name="description" content="Knowbase is a shelf of technical field manuals that explain how things work by showing how their parts talk to each other. Anatomy of a Motorcycle — 150 chapters, 130+ original diagrams — is complete and free to read.">
 <link rel="canonical" href="https://knowbase.xyz/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Knowbase">
-<meta property="og:title" content="Knowbase — Workshop Manuals & Field Guides">
-<meta property="og:description" content="A growing shelf of technical field manuals, including Anatomy of a Motorcycle and The Language of Editing.">
+<meta property="og:title" content="Knowbase — Field Manuals You Can Actually Understand">
+<meta property="og:description" content="Anatomy of a Motorcycle: 150 chapters, 130+ original diagrams. Complete and free to read. More manuals coming soon.">
 <meta property="og:url" content="https://knowbase.xyz/">
-<meta property="og:image" content="https://knowbase.xyz/books/anatomy-of-a-motorcycle/cover.webp">
+<meta property="og:image" content="https://knowbase.xyz/assets/og-site.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Knowbase — Workshop Manuals & Field Guides">
-<meta name="twitter:description" content="A growing shelf of technical field manuals, including Anatomy of a Motorcycle and The Language of Editing.">
-<meta name="twitter:image" content="https://knowbase.xyz/books/anatomy-of-a-motorcycle/cover.webp">
+<meta name="twitter:title" content="Knowbase — Field Manuals You Can Actually Understand">
+<meta name="twitter:description" content="Anatomy of a Motorcycle: 150 chapters, 130+ original diagrams. Complete and free to read.">
+<meta name="twitter:image" content="https://knowbase.xyz/assets/og-site.png">
 
 <script type="application/ld+json">
 {
@@ -25,11 +27,8 @@
   "@type": "WebSite",
   "name": "Knowbase",
   "url": "https://knowbase.xyz/",
-  "description": "A growing shelf of technical field manuals, including Anatomy of a Motorcycle and The Language of Editing.",
-  "publisher": {
-    "@type": "Person",
-    "name": "Jitendra Kulkarni"
-  }
+  "description": "A shelf of technical field manuals, starting with Anatomy of a Motorcycle.",
+  "publisher": { "@type": "Person", "name": "Jitendra Kulkarni" }
 }
 </script>
 
@@ -61,15 +60,9 @@ function toggleTheme(){
 }
 </script>
 </head>
-<body class="landing-page">
+<body class="landing-page bp">
 
 <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
-<div class="ambient-bg" aria-hidden="true">
-  <span class="blob blob-a"></span>
-  <span class="blob blob-b"></span>
-  <span class="blob blob-c"></span>
-</div>
 
 <header class="glass-nav">
   <a class="glass-nav-brand" href="/index.html">
@@ -77,8 +70,9 @@ function toggleTheme(){
     <span class="brand-word">Know<span class="brand-accent">base</span></span>
   </a>
   <div class="glass-nav-links">
-    <a class="glass-nav-link" href="#why">Why Knowbase</a>
-    <a class="glass-nav-link" href="#shelf">The Shelf</a>
+    <a class="glass-nav-link" href="#diagrams">Diagrams</a>
+    <a class="glass-nav-link" href="#paths">Start Here</a>
+    <a class="glass-nav-link" href="#about">About</a>
     <a class="glass-nav-link" href="#faq">Questions</a>
     <a class="glass-nav-cta magnetic" href="/books/anatomy-of-a-motorcycle/index.html">Start Reading</a>
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
@@ -90,219 +84,138 @@ function toggleTheme(){
 
 <main class="landing">
 
-  <section class="landing-hero">
-    <div class="hero-copy">
-      <span class="hero-eyebrow">Workshop Manuals &amp; Field Guides</span>
-      <h1>Understand<br>the Machine.</h1>
-      <p class="hero-lede">A growing shelf of technical field manuals, each built the same way: understand the parts, then understand how they talk to each other.</p>
-      <div class="hero-cta-row">
-        <a class="hero-cta magnetic" href="/books/anatomy-of-a-motorcycle/index.html">Start Reading &rarr;</a>
-        <div class="hero-stats">
-          <div>
-            <span class="hs-num count-up" data-count="150">0</span>
-            <span class="hs-label">Chapters</span>
-          </div>
-          <div>
-            <span class="hs-num count-up" data-count="16">0</span>
-            <span class="hs-label">Parts</span>
-          </div>
-          <div>
-            <span class="hs-num count-up" data-count="2">0</span>
-            <span class="hs-label">Books on Shelf</span>
-          </div>
+  <!-- ===== HERO SHEET ===== -->
+  <section class="bp-hero" id="top">
+    <div class="bp-copy">
+      <span class="bp-eyebrow">Field manuals &middot; <span class="launch-pill">Launch sale &middot; Free</span></span>
+      <h1><span class="w">Understand</span> <span class="w">the</span> <span class="w">machine.</span></h1>
+      <p class="bp-lede">Technical manuals that explain how things work by showing how their parts talk to each other &mdash; with diagrams drawn to teach, not decorate. Start with the motorcycle.</p>
+      <div class="bp-cta-row">
+        <a class="bp-btn primary magnetic" href="/books/anatomy-of-a-motorcycle/index.html">Start reading &mdash; it&rsquo;s free &rarr;</a>
+        <a class="bp-btn" href="#diagrams">See the diagrams</a>
+      </div>
+      <div class="bp-facts">
+        <span><b class="count-up" data-count="150">0</b>chapters</span>
+        <span><b class="count-up" data-count="132">0</b>original diagrams</span>
+        <span><b class="count-up" data-count="16">0</b>parts</span>
+        <span><b>0</b>accounts needed</span>
+      </div>
+    </div>
+
+    <div class="bp-shelf" aria-label="The shelf">
+      <div class="bp-book side l locked" aria-label="The Language of Editing — coming soon">
+        <img src="/assets/cover-editing.svg" alt="The Language of Editing — cover, coming soon">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Coming soon</span>
+      </div>
+      <a class="bp-book main" href="/books/anatomy-of-a-motorcycle/index.html" data-book="anatomy-of-a-motorcycle">
+        <img src="/books/anatomy-of-a-motorcycle/cover.webp" alt="Anatomy of a Motorcycle — book cover, showing a sportbike and a dirt bike in blueprint line art. By Jitendra Kulkarni.">
+        <span class="tag">Read now &middot; Free</span>
+      </a>
+      <div class="bp-book side r locked" aria-label="The Sony a6700 Field Manual — coming soon">
+        <img src="/assets/cover-a6700.svg" alt="The Sony a6700 Field Manual — cover, coming soon">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Coming soon</span>
+      </div>
+    </div>
+
+    <div class="bp-titleblock">
+      <div><span class="k">Project</span><span class="v">Knowbase field manuals</span></div>
+      <div><span class="k">On the shelf</span><span class="v">1 complete &middot; 2 coming soon</span></div>
+      <div><span class="k">Written by</span><span class="v">Jitendra Kulkarni</span></div>
+      <div><span class="k">Access</span><span class="v">Free &middot; launch sale</span></div>
+    </div>
+  </section>
+
+  <!-- ===== LIVING DIAGRAMS ===== -->
+  <section class="bp-section" id="diagrams">
+    <span class="bp-kicker reveal">Drawn to explain</span>
+    <h2 class="bp-h2 reveal">Watch the idea draw itself.</h2>
+    <p class="bp-sub reveal">Every diagram in the manual is built around one concept and redrawn until it&rsquo;s obvious. Pick one &mdash; each is taken straight from a chapter.</p>
+
+    <div class="stage reveal" id="stage">
+      <div class="stage-tabs" role="tablist" aria-label="Featured diagrams">
+        <button class="stage-tab on" role="tab" data-i="0"><span class="n">01 &middot; Engine</span><span class="t">The four-stroke cycle</span><span class="bar"></span></button>
+        <button class="stage-tab" role="tab" data-i="1"><span class="n">02 &middot; Chassis</span><span class="t">Rake &amp; trail</span><span class="bar"></span></button>
+        <button class="stage-tab" role="tab" data-i="2"><span class="n">03 &middot; Physics</span><span class="t">Lean &amp; grip</span><span class="bar"></span></button>
+        <button class="stage-tab" role="tab" data-i="3"><span class="n">04 &middot; Brakes</span><span class="t">Leverage &amp; torque</span><span class="bar"></span></button>
+      </div>
+      <div class="stage-view">
+        <div class="stage-canvas" id="stageCanvas" aria-live="polite"></div>
+        <div class="stage-cap"><p id="stageCap"></p><a id="stageLink" href="#">Read the chapter &rarr;</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY IT READS DIFFERENTLY ===== -->
+  <section class="bp-section" id="why">
+    <span class="bp-kicker reveal">Built to be read</span>
+    <h2 class="bp-h2 reveal">Not documentation. Not a course.</h2>
+    <p class="bp-sub reveal">A field manual, structured so you always know what to read next &mdash; and why.</p>
+    <div class="bp-qual reveal">
+      <div><span class="num">01</span><h3>Written, not generated</h3><p>Every chapter is authored deliberately, one idea building on the last.</p></div>
+      <div><span class="num">02</span><h3>Cross-referenced</h3><p>Each chapter says what it depends on and what depends on it. Nothing floats alone.</p></div>
+      <div><span class="num">03</span><h3>Complete</h3><p>Finished titles stay finished. Anything still in progress is labelled honestly.</p></div>
+      <div><span class="num">04</span><h3>Reads anywhere</h3><p>Bookmarks, progress and dark mode built in. No account, no app, no card.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== START HERE ===== -->
+  <section class="bp-section" id="paths">
+    <span class="bp-kicker reveal">Start here</span>
+    <h2 class="bp-h2 reveal">Don&rsquo;t know where to begin?</h2>
+    <p class="bp-sub reveal">Pick the question that sounds most like yours. Each opens the exact chapter that answers it.</p>
+    <div class="paths">
+      <a class="path reveal" href="/books/anatomy-of-a-motorcycle/chapter-1-1.html"><span class="q">I&rsquo;m new to bikes</span><span class="d">What a motorcycle actually is, and why it asks more of you than a car.</span><span class="go">Ch. 1.1 &rarr;</span></a>
+      <a class="path reveal" style="transition-delay:.06s" href="/books/anatomy-of-a-motorcycle/chapter-4-5.html"><span class="q">Why does it lean to turn?</span><span class="d">Countersteering, explained once and properly.</span><span class="go">Ch. 4.5 &rarr;</span></a>
+      <a class="path reveal" style="transition-delay:.12s" href="/books/anatomy-of-a-motorcycle/chapter-11-3.html"><span class="q">Mine won&rsquo;t start</span><span class="d">A calm way to find the fault: symptom, cause, test, confirm.</span><span class="go">Ch. 11.3 &rarr;</span></a>
+      <a class="path reveal" style="transition-delay:.18s" href="/books/anatomy-of-a-motorcycle/chapter-15-1.html"><span class="q">Which bike should I buy?</span><span class="d">Define how you&rsquo;ll really use it before you look at a single spec sheet.</span><span class="go">Ch. 15.1 &rarr;</span></a>
+    </div>
+  </section>
+
+  <!-- ===== LAUNCH ===== -->
+  <div class="launch-strip reveal" id="launch">
+    <div><b>Launch sale &mdash; every chapter free.</b><span>No account &middot; no card &middot; no catch</span></div>
+    <a href="/books/anatomy-of-a-motorcycle/index.html">Read Anatomy of a Motorcycle &rarr;</a>
+  </div>
+
+  <!-- ===== AUTHOR ===== -->
+  <section class="bp-section" id="about">
+    <div class="author-card reveal">
+      <div class="author-photo"><span class="ap-mono" aria-hidden="true">JK</span><img src="/assets/author.jpg" alt="Portrait of Jitendra Kulkarni" width="380" height="380" loading="lazy" onerror="this.remove()"></div>
+      <div>
+        <span class="ac-eyebrow">The author</span>
+        <h2>Hi, I&rsquo;m Jitendra.</h2>
+        <p>I&rsquo;m Jitendra Kulkarni &mdash; the person behind Knowbase, and the one who wrote every chapter in these manuals.</p>
+        <p>I didn&rsquo;t set out to write textbooks. I set out to write the kind of book I&rsquo;d want in my own hands: one that explains a thing by showing how its parts talk to each other, and never makes you feel slow for asking.</p>
+        <p>These books are for everyone still finding their footing &mdash; especially the lost souls trying to find comfort on two wheels. If a chapter helped you, I&rsquo;d love to hear about it.</p>
+        <div class="ac-sign">&mdash; Jitendra</div>
+        <div class="ac-actions">
+          <a class="ac-btn primary" href="https://instagram.com/2sloowwww" target="_blank" rel="noopener">Say hi on Instagram &middot; @2sloowwww</a>
+          <a class="ac-btn" href="/books/anatomy-of-a-motorcycle/index.html">Read the book</a>
         </div>
       </div>
     </div>
-    <div class="hero-cover-stage parallax-layer" data-speed="-0.08">
-      <div class="cover-tilt" id="coverTilt">
-        <img src="/books/anatomy-of-a-motorcycle/cover.webp" alt="Anatomy of a Motorcycle — book cover, showing a sportbike and a dirt bike in blueprint line art. By Jitendra Kulkarni.">
-      </div>
-    </div>
   </section>
 
-  <div class="stat-ticker reveal">
-    <div class="stat-ticker-item">
-      <span class="st-num count-up" data-count="245">0</span>
-      <span class="st-label">Total Chapters</span>
-    </div>
-    <div class="stat-ticker-item">
-      <span class="st-num count-up" data-count="49">0</span>
-      <span class="st-label">Original Diagrams</span>
-    </div>
-    <div class="stat-ticker-item">
-      <span class="st-num count-up" data-count="32">0</span>
-      <span class="st-label">Parts, Both Books</span>
-    </div>
-    <div class="stat-ticker-item">
-      <span class="st-num">100<span style="font-size:0.5em;">%</span></span>
-      <span class="st-label">Complete, Not Ongoing</span>
-    </div>
-  </div>
-
-  <div class="continue-banner glass-panel" id="continueBanner">
-    <div class="cb-text">
-      <span class="cb-label">Continue Reading</span>
-      <span class="cb-title" id="continueTitle"></span>
-    </div>
-    <a class="cb-btn" id="continueLink" href="#">Resume &rarr;</a>
-  </div>
-
-  <section class="value-section" id="why">
-    <h2 class="shelf-heading reveal">Why Knowbase</h2>
-    <p class="shelf-sub reveal" style="transition-delay:0.05s">Not documentation. Not a course. A field manual, built to be read start to finish.</p>
-
-    <div class="value-grid">
-      <div class="value-card reveal" style="transition-delay:0.05s">
-        <span class="value-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
-        </span>
-        <h3>Written, Not Generated</h3>
-        <p>Every chapter is authored and structured deliberately, one idea building on the last — not templated or auto-assembled.</p>
-      </div>
-      <div class="value-card reveal" style="transition-delay:0.1s">
-        <span class="value-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 4v16"/></svg>
-        </span>
-        <h3>Engineered, Not Loose</h3>
-        <p>Numbered parts and sections, explicit dependencies, and cross-references throughout — read in order, or jump straight to what you need.</p>
-      </div>
-      <div class="value-card reveal" style="transition-delay:0.15s">
-        <span class="value-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-        </span>
-        <h3>Complete, Not Abandoned</h3>
-        <p>Finished titles stay finished, cover to cover — no half-written series left hanging after chapter three. Anything still in progress is labeled that way, honestly.</p>
-      </div>
-      <div class="value-card reveal" style="transition-delay:0.2s">
-        <span class="value-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 6h6M9 18h.01"/></svg>
-        </span>
-        <h3>Read Anywhere</h3>
-        <p>Bookmarks, reading progress, and dark mode built in — no app to install, no account required to read.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="showcase-section">
-    <div class="showcase-row">
-      <div class="showcase-visual reveal parallax-layer" data-speed="0.06">
-        <img src="/books/davinci-resolve-editing/diagrams/fig-9-3-a.svg" alt="A five-node color grade diagram, showing serial and parallel node branches from source to output.">
-      </div>
-      <div class="showcase-text reveal" style="transition-delay:0.08s">
-        <span class="showcase-num">01 — Original Diagrams</span>
-        <h3>Every Diagram Drawn to Explain, Not Decorate.</h3>
-        <p>49 original technical diagrams across both books, each one built for a single specific concept — a node graph, a trim overlap, a signal path — not stock art dropped in to break up text.</p>
-      </div>
-    </div>
-
-    <div class="showcase-row reverse">
-      <div class="showcase-visual reveal parallax-layer" data-speed="0.06">
-        <img src="/books/anatomy-of-a-motorcycle/diagrams/fig-4-4-a.svg" alt="Diagram of a motorcycle's front-end geometry showing steering axis, rake angle, and trail.">
-      </div>
-      <div class="showcase-text reveal" style="transition-delay:0.08s">
-        <span class="showcase-num">02 — Cross-Referenced Throughout</span>
-        <h3>Nothing Explained in Isolation.</h3>
-        <p>Every chapter states what it depends on and what depends on it. Read start to finish, or jump straight to the one chapter you need — the cross-references make sure you land with the right context either way.</p>
-      </div>
-    </div>
-
-    <div class="showcase-row">
-      <div class="showcase-visual reveal parallax-layer" data-speed="0.06">
-        <img src="/books/davinci-resolve-editing/diagrams/fig-7-5-a.svg" alt="Diagram comparing linear and eased keyframe interpolation curves.">
-      </div>
-      <div class="showcase-text reveal" style="transition-delay:0.08s">
-        <span class="showcase-num">03 — Two Complete Manuals</span>
-        <h3>Finished, Cover to Cover.</h3>
-        <p>150 chapters on motorcycles, 95 on editing in DaVinci Resolve — both fully published, not ongoing series. Every chapter is free to read, cover to cover.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="shelf-section" id="shelf">
-    <h2 class="shelf-heading reveal">The Shelf</h2>
-    <p class="shelf-sub reveal" style="transition-delay:0.05s">Two complete titles on the shelf. More on the way.</p>
-
-    <div class="library-shelf">
-
-      <a class="book-card reveal" href="/books/anatomy-of-a-motorcycle/index.html" data-book="anatomy-of-a-motorcycle" style="transition-delay:0.1s">
-        <img src="/books/anatomy-of-a-motorcycle/cover.webp" alt="Anatomy of a Motorcycle — book cover, showing a sportbike and a dirt bike in blueprint line art. By Jitendra Kulkarni.">
-        <span class="spine"></span>
-        <span class="jacket">
-          <span class="book-status">150 of 150 · Complete</span>
-        </span>
-      </a>
-
-      <a class="book-card reveal" href="/books/davinci-resolve-editing/index.html" data-book="davinci-resolve-editing" style="transition-delay:0.18s">
-        <img src="/books/davinci-resolve-editing/cover.svg" alt="The Language of Editing — book cover, showing a timeline, node graph, and color wheels in blueprint line art. By Jitendra Kulkarni.">
-        <span class="spine"></span>
-        <span class="jacket">
-          <span class="book-status">95 of 95 · Complete</span>
-        </span>
-      </a>
-
-
-    </div>
-  </section>
-
-  <section class="peek-section">
-    <h2 class="shelf-heading reveal">A Look Inside</h2>
-    <p class="shelf-sub reveal" style="transition-delay:0.05s">Three pages, pulled straight from the manual.</p>
-
-    <div class="peek-grid">
-
-      <a class="peek-card reveal" href="/books/anatomy-of-a-motorcycle/chapter-4-4.html" style="transition-delay:0.1s">
-        <span class="peek-media peek-media-diagram">
-          <img src="/books/anatomy-of-a-motorcycle/diagrams/fig-4-4-a.svg" alt="Diagram of a motorcycle's front-end geometry showing steering axis, rake angle, and trail.">
-        </span>
-        <span class="peek-body">
-          <span class="peek-tag">Ch. 4.4 — Rake and Trail</span>
-          <span class="peek-teaser">Why a leaned motorcycle steers itself straight, explained in one diagram.</span>
-        </span>
-      </a>
-
-      <a class="peek-card reveal" href="/books/anatomy-of-a-motorcycle/chapter-9-12.html" style="transition-delay:0.18s">
-        <span class="peek-media">
-          <img src="/books/anatomy-of-a-motorcycle/diagrams/fig-9-12-a.webp" alt="A motorcycle headlight cutting through darkness on a night road.">
-        </span>
-        <span class="peek-body">
-          <span class="peek-tag">Ch. 9.12 — Riding at Night</span>
-          <span class="peek-teaser">When the road ends exactly where your headlight does.</span>
-        </span>
-      </a>
-
-      <a class="peek-card reveal" href="/books/anatomy-of-a-motorcycle/chapter-12-1.html" style="transition-delay:0.26s">
-        <span class="peek-media">
-          <img src="/books/anatomy-of-a-motorcycle/diagrams/fig-12-1-a.webp" alt="A basic motorcycle mechanic's tool kit laid out on a workbench.">
-        </span>
-        <span class="peek-body">
-          <span class="peek-tag">Ch. 12.1 — The Basic Tool Kit</span>
-          <span class="peek-teaser">The tools a motorcycle's fasteners actually call for.</span>
-        </span>
-      </a>
-
-    </div>
-  </section>
-
+  <!-- ===== FAQ ===== -->
   <section class="faq-section" id="faq">
-    <h2 class="shelf-heading reveal">Questions</h2>
-    <p class="shelf-sub reveal" style="transition-delay:0.05s">The short answers.</p>
-
+    <span class="bp-kicker reveal">Questions</span>
+    <h2 class="bp-h2 reveal">The short answers.</h2>
     <div class="faq-list">
-      <details class="faq-item reveal" style="transition-delay:0.05s">
+      <details class="faq-item reveal">
         <summary>Is it really free?<span class="faq-plus" aria-hidden="true"></span></summary>
-        <p>Yes. Every chapter of every book on the shelf is free to read — currently Anatomy of a Motorcycle (150 chapters) and The Language of Editing (95 chapters), both complete.</p>
+        <p>Yes. It&rsquo;s the launch sale: every chapter of Anatomy of a Motorcycle (150 chapters, complete) is free to read right now. Two more manuals are on the way.</p>
       </details>
-      <details class="faq-item reveal" style="transition-delay:0.1s">
-        <summary>Do I need to create an account?<span class="faq-plus" aria-hidden="true"></span></summary>
+      <details class="faq-item reveal">
+        <summary>What&rsquo;s coming next?<span class="faq-plus" aria-hidden="true"></span></summary>
+        <p>The Language of Editing, a manual on cutting, color and sound through DaVinci Resolve, and The Sony a6700 Field Manual for shooters. Both are in progress and shown as coming soon.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Do I need an account?<span class="faq-plus" aria-hidden="true"></span></summary>
         <p>No account, no login. Bookmarks and reading progress are saved in your own browser.</p>
       </details>
-      <details class="faq-item reveal" style="transition-delay:0.15s">
+      <details class="faq-item reveal">
         <summary>Where should I start?<span class="faq-plus" aria-hidden="true"></span></summary>
-        <p>At Part I of either book. Each chapter builds on the one before it, but every chapter also lists what it depends on, so you can jump straight to the one you need.</p>
-      </details>
-      <details class="faq-item reveal" style="transition-delay:0.2s">
-        <summary>Who writes these?<span class="faq-plus" aria-hidden="true"></span></summary>
-        <p>I do — Jitendra Kulkarni. More motorcycle content lives on Instagram at <a href="https://instagram.com/2sloowwww" target="_blank" rel="noopener">@2sloowwww</a>.</p>
+        <p>At Part I, or use the &ldquo;Start here&rdquo; questions above. Every chapter lists what it depends on, so you can jump straight to the one you need.</p>
       </details>
     </div>
   </section>
@@ -311,129 +224,76 @@ function toggleTheme(){
 
 <footer class="landing-footer">
   <div class="footer-links">
-    <a href="#why">Why Knowbase</a>
-    <a href="#faq">Questions</a>
+    <a href="#diagrams">Diagrams</a>
+    <a href="#paths">Start here</a>
+    <a href="#about">About the author</a>
     <a href="/books/anatomy-of-a-motorcycle/index.html">Anatomy of a Motorcycle</a>
-    <a href="/books/davinci-resolve-editing/index.html">The Language of Editing</a>
+    <a href="https://instagram.com/2sloowwww" target="_blank" rel="noopener">Instagram</a>
   </div>
-  Curated by Jitendra Kulkarni
+  Written by Jitendra Kulkarni
 </footer>
 
 <script src="/reader-aids.js" defer></script>
 <script>
 (function(){
-  // 3D cover tilt following the pointer, disabled for reduced-motion users
-  var stage = document.querySelector(".hero-cover-stage");
-  var tilt = document.getElementById("coverTilt");
   var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if(stage && tilt && !reduced && window.matchMedia("(pointer: fine)").matches){
-    stage.addEventListener("mousemove", function(e){
-      var r = stage.getBoundingClientRect();
-      var px = (e.clientX - r.left) / r.width - 0.5;
-      var py = (e.clientY - r.top) / r.height - 0.5;
-      tilt.style.transform = "rotateY(" + (-14 + px * 22) + "deg) rotateX(" + (4 - py * 16) + "deg)";
-    });
-    stage.addEventListener("mouseleave", function(){
-      tilt.style.transform = "";
-    });
-  }
 
-  // scroll reveal
+  /* scroll reveal */
   var targets = document.querySelectorAll(".reveal");
-  if("IntersectionObserver" in window && targets.length){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(entry.isIntersecting){
-          entry.target.classList.add("in-view");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in-view"); io.unobserve(e.target); } }); }, { threshold: 0.12 });
     targets.forEach(function(t){ io.observe(t); });
-  } else {
-    targets.forEach(function(t){ t.classList.add("in-view"); });
-  }
-})();
+  } else { targets.forEach(function(t){ t.classList.add("in-view"); }); }
 
-(function(){
-  var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  // scroll progress bar
-  var progress = document.getElementById("scrollProgress");
-  var nav = document.querySelector(".glass-nav");
-  var parallaxLayers = Array.prototype.slice.call(document.querySelectorAll(".parallax-layer"));
-  var ticking = false;
-
+  /* progress bar + nav state */
+  var progress = document.getElementById("scrollProgress"), nav = document.querySelector(".glass-nav"), tick = false;
   function onScroll(){
-    var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    if(progress) progress.style.width = (docHeight > 0 ? (scrollTop / docHeight) * 100 : 0) + "%";
-    if(nav) nav.classList.toggle("is-scrolled", scrollTop > 40);
-    if(!reduced){
-      parallaxLayers.forEach(function(el){
-        var speed = parseFloat(el.getAttribute("data-speed")) || 0;
-        el.style.transform = "translateY(" + (scrollTop * speed * -1) + "px)";
-      });
-    }
-    ticking = false;
+    var y = window.scrollY, h = document.documentElement.scrollHeight - innerHeight;
+    if(progress) progress.style.width = (h > 0 ? y / h * 100 : 0) + "%";
+    if(nav) nav.classList.toggle("is-scrolled", y > 40);
+    tick = false;
   }
-  window.addEventListener("scroll", function(){
-    if(!ticking){
-      window.requestAnimationFrame(onScroll);
-      ticking = true;
-    }
-  }, { passive: true });
+  addEventListener("scroll", function(){ if(!tick){ tick = true; requestAnimationFrame(onScroll); } }, { passive: true });
   onScroll();
 
-  // animated counters
+  /* counters */
   var counters = document.querySelectorAll(".count-up");
-  if(counters.length){
-    var animateCount = function(el){
-      var target = parseInt(el.getAttribute("data-count"), 10) || 0;
-      if(reduced){ el.textContent = target; return; }
-      var start = null;
-      var duration = 1100;
-      function step(ts){
-        if(!start) start = ts;
-        var progressRatio = Math.min((ts - start) / duration, 1);
-        var eased = 1 - Math.pow(1 - progressRatio, 3);
-        el.textContent = Math.round(eased * target);
-        if(progressRatio < 1) window.requestAnimationFrame(step);
-        else el.textContent = target;
-      }
-      window.requestAnimationFrame(step);
-    };
-    if("IntersectionObserver" in window){
-      var cio = new IntersectionObserver(function(entries){
-        entries.forEach(function(entry){
-          if(entry.isIntersecting){
-            animateCount(entry.target);
-            cio.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.6 });
-      counters.forEach(function(c){ cio.observe(c); });
-    } else {
-      counters.forEach(function(c){ c.textContent = c.getAttribute("data-count"); });
+  function run(el){
+    var t = +el.getAttribute("data-count") || 0; if(reduced){ el.textContent = t; return; }
+    var s = null; (function step(ts){ if(!s) s = ts; var p = Math.min((ts - s) / 1100, 1); el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * t); if(p < 1) requestAnimationFrame(step); })(performance.now());
+  }
+  setTimeout(function(){ counters.forEach(run); }, 500);
+
+  /* living-diagram stage */
+  var items = [
+    { src: "/books/anatomy-of-a-motorcycle/diagrams/fig-2-2-a.svg", href: "/books/anatomy-of-a-motorcycle/chapter-2-2.html", cap: "Four strokes, two crank revolutions, one power stroke: 720 degrees." },
+    { src: "/books/anatomy-of-a-motorcycle/diagrams/fig-4-4-a.svg", href: "/books/anatomy-of-a-motorcycle/chapter-4-4.html", cap: "Why a leaned bike steers itself straight: the contact patch trails the steering axis." },
+    { src: "/books/anatomy-of-a-motorcycle/diagrams/fig-8-3-a.svg", href: "/books/anatomy-of-a-motorcycle/chapter-8-3.html", cap: "Lean angle is what balances gravity against cornering force at the contact patch." },
+    { src: "/books/anatomy-of-a-motorcycle/diagrams/fig-7-2-a.svg", href: "/books/anatomy-of-a-motorcycle/chapter-7-2.html", cap: "A bigger disc brakes harder through leverage, not through more friction." }
+  ];
+  var stage = document.getElementById("stage"), canvas = document.getElementById("stageCanvas"), cap = document.getElementById("stageCap"), link = document.getElementById("stageLink");
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".stage-tab")), cur = -1, timer = null, cache = {};
+  function show(i){
+    cur = i;
+    tabs.forEach(function(t, k){ t.classList.toggle("on", k === i); t.setAttribute("aria-selected", k === i ? "true" : "false"); });
+    cap.textContent = items[i].cap; link.href = items[i].href;
+    function mount(txt){
+      if(window.KBDiagram){ window.KBDiagram.mount(canvas, txt, items[i].cap); }
+      else { canvas.innerHTML = txt; }
     }
+    if(cache[i]) return mount(cache[i]);
+    fetch(items[i].src).then(function(r){ return r.text(); }).then(function(t){ cache[i] = t; if(cur === i) mount(t); })
+      .catch(function(){ canvas.innerHTML = '<img src="' + items[i].src + '" alt="' + items[i].cap + '" style="max-width:100%">'; });
   }
-
-  // magnetic buttons — subtle cursor-follow on primary CTAs
-  if(!reduced && window.matchMedia("(pointer: fine)").matches){
-    document.querySelectorAll(".magnetic").forEach(function(btn){
-      btn.addEventListener("mousemove", function(e){
-        var r = btn.getBoundingClientRect();
-        var mx = (e.clientX - r.left - r.width / 2) * 0.25;
-        var my = (e.clientY - r.top - r.height / 2) * 0.35;
-        btn.style.transform = "translate(" + mx + "px," + my + "px)";
-      });
-      btn.addEventListener("mouseleave", function(){
-        btn.style.transform = "";
-      });
-    });
-  }
+  function auto(){ clearTimeout(timer); if(stage.classList.contains("paused") || reduced) return; timer = setTimeout(function(){ show((cur + 1) % items.length); auto(); }, 9000); }
+  tabs.forEach(function(t){ t.addEventListener("click", function(){ stage.classList.add("paused"); clearTimeout(timer); show(+t.getAttribute("data-i")); }); });
+  stage.addEventListener("mouseenter", function(){ stage.classList.add("paused"); clearTimeout(timer); });
+  var started = false;
+  function startStage(){ if(started) return; started = true; show(0); auto(); }
+  if("IntersectionObserver" in window){
+    new IntersectionObserver(function(es, o){ if(es[0].isIntersecting){ startStage(); o.disconnect(); } }, { threshold: 0.2 }).observe(stage);
+  } else { startStage(); }
 })();
-
 </script>
 </body>
 </html>

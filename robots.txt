@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /books/davinci-resolve-editing/
+Disallow: /coming-soon.html
 
 Sitemap: https://knowbase.xyz/sitemap.xml

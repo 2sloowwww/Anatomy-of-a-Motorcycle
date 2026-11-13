@@ -1,0 +1,101 @@
+<svg viewBox="0 0 1410 2250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Sony a6700 Field Manual — book cover with a blueprint front elevation of a mirrorless camera.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1F1B1E"/>
+      <stop offset="100%" stop-color="#110F12"/>
+    </linearGradient>
+    <pattern id="grid" width="47" height="47" patternUnits="userSpaceOnUse">
+      <path d="M47 0H0V47" fill="none" stroke="#D2AC3E" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="46%" r="42%">
+      <stop offset="0%" stop-color="#E2574A" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#E2574A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1410" height="2250" fill="url(#bg)"/>
+  <rect width="1410" height="2250" fill="url(#grid)"/>
+  <rect width="1410" height="2250" fill="url(#glow)"/>
+
+  <rect x="56" y="56" width="1298" height="2138" fill="none" stroke="#EDE7D8" stroke-opacity="0.28" stroke-width="2"/>
+  <g stroke="#D2AC3E" stroke-width="2.5">
+    <path d="M56 116 V56 H116"/><path d="M1354 116 V56 H1294"/>
+    <path d="M56 2134 V2194 H116"/><path d="M1354 2134 V2194 H1294"/>
+  </g>
+
+  <text x="705" y="206" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="26" letter-spacing="8" fill="#D2AC3E">A FIELD MANUAL FOR SHOOTERS</text>
+  <text x="705" y="338" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="124" fill="#EDE7D8">THE SONY a6700</text>
+  <text x="705" y="458" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="124" fill="#EDE7D8">FIELD MANUAL</text>
+  <line x1="330" y1="520" x2="1080" y2="520" stroke="#E2574A" stroke-width="3"/>
+
+  <!-- ===== camera, front elevation ===== -->
+  <g fill="none" stroke="#EDE7D8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- grip (viewer-left) -->
+    <path d="M300 900 C 215 905 168 960 168 1050 L168 1200 C 168 1270 215 1316 290 1316 L330 1316"/>
+    <!-- main body -->
+    <rect x="260" y="880" width="940" height="436" rx="46"/>
+    <!-- top plate line -->
+    <path d="M300 940 H1160" stroke-opacity="0.45" stroke-width="2"/>
+    <!-- EVF hump (viewer-right) -->
+    <path d="M880 880 V836 C 880 806 902 786 932 786 H1088 C 1118 786 1140 806 1140 836 V880"/>
+    <!-- hot shoe -->
+    <rect x="620" y="842" width="172" height="38" rx="8"/>
+    <path d="M640 842 V880 M772 842 V880" stroke-width="2"/>
+    <!-- mode dial -->
+    <rect x="388" y="820" width="132" height="60" rx="10"/>
+    <path d="M410 822 V878 M430 822 V878 M450 822 V878 M470 822 V878 M490 822 V878 M508 822 V878" stroke-width="1.6" stroke-opacity="0.6"/>
+    <!-- shutter + front dial on grip -->
+    <rect x="232" y="856" width="96" height="26" rx="8"/>
+    <rect x="252" y="836" width="56" height="22" rx="8"/>
+    <!-- strap lugs -->
+    <circle cx="288" cy="950" r="15"/><circle cx="1172" cy="950" r="15"/>
+    <!-- lens mount rings -->
+    <circle cx="715" cy="1100" r="196"/>
+    <circle cx="715" cy="1100" r="160" stroke-opacity="0.7"/>
+    <circle cx="715" cy="1100" r="124"/>
+    <circle cx="715" cy="1100" r="84" stroke="#7FA6B8"/>
+    <circle cx="715" cy="1100" r="40" stroke="#7FA6B8" stroke-opacity="0.6"/>
+    <!-- bayonet tabs -->
+    <path d="M715 904 V930 M715 1270 V1296 M519 1100 H545 M885 1100 H911" stroke-width="3"/>
+    <!-- lens release, AF lamp -->
+    <circle cx="942" cy="1262" r="22"/>
+    <circle cx="410" cy="1010" r="15" stroke="#E2574A"/>
+    <!-- grip texture -->
+    <path d="M214 1010 V1230 M236 1010 V1230" stroke-opacity="0.4" stroke-width="2"/>
+  </g>
+  <circle cx="410" cy="1010" r="6" fill="#E2574A"/>
+  <circle cx="715" cy="1100" r="20" fill="#E2574A" fill-opacity="0.75"/>
+
+  <!-- ===== callouts ===== -->
+  <g font-family="'JetBrains Mono', monospace" font-size="22" letter-spacing="3" fill="#B9B3A0">
+    <g stroke="#D2AC3E" stroke-width="2" fill="none">
+      <path d="M452 820 L452 740 H370"/>
+      <path d="M706 842 L706 720 H640"/>
+      <path d="M1010 786 L1010 706 H1100"/>
+      <path d="M232 1316 V1400 H300"/>
+      <path d="M715 1296 V1380 H800"/>
+    </g>
+    <text x="362" y="748" text-anchor="end">MODE DIAL</text>
+    <text x="632" y="728" text-anchor="end">HOT SHOE</text>
+    <text x="1108" y="714">EVF</text>
+    <text x="312" y="1408">GRIP</text>
+    <text x="810" y="1388">E-MOUNT</text>
+  </g>
+  <text x="705" y="1490" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="20" letter-spacing="6" fill="#7FA6B8">FRONT ELEVATION</text>
+  <line x1="150" y1="1520" x2="1260" y2="1520" stroke="#EDE7D8" stroke-opacity="0.18" stroke-width="2"/>
+
+  <!-- ===== exposure triangle ===== -->
+  <g fill="none" stroke="#EDE7D8" stroke-width="3" stroke-linejoin="round">
+    <path d="M705 1620 L860 1890 H550 Z"/>
+    <path d="M705 1620 L705 1700" stroke="#D2AC3E" stroke-width="2"/>
+  </g>
+  <g fill="#E2574A"><circle cx="705" cy="1620" r="9"/><circle cx="860" cy="1890" r="9"/><circle cx="550" cy="1890" r="9"/></g>
+  <g font-family="'JetBrains Mono', monospace" font-size="22" letter-spacing="4" fill="#EDE7D8">
+    <text x="705" y="1588" text-anchor="middle">APERTURE</text>
+    <text x="890" y="1906">SHUTTER</text>
+    <text x="520" y="1906" text-anchor="end">ISO</text>
+  </g>
+
+  <text x="705" y="2020" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="22" letter-spacing="6" fill="#B9B3A0">APS-C  ·  E-MOUNT  ·  STILLS AND VIDEO</text>
+  <text x="705" y="2118" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#EDE7D8">Jitendra Kulkarni</text>
+</svg>

@@ -1,114 +1,145 @@
-<svg viewBox="0 0 800 500" width="800" height="500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
-  <defs>
-    <marker id="arrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#22252B"/>
-    </marker>
-    <marker id="arrowSignal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#AE3527"/>
-    </marker>
-    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#33505E"/>
-    </marker>
-  </defs>
-
-  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
-  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
-  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
-  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
-  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
-  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
-
-  <text x="400" y="34" text-anchor="middle" font-size="21" font-weight="700" fill="#22252B" letter-spacing="0.5">720&#176; = ONE FULL CYCLE</text>
-  <text x="400" y="55" text-anchor="middle" font-size="13.5" font-style="italic" fill="#5A5748">Two crankshaft revolutions for every intake-compression-power-exhaust sequence</text>
-
-  <!-- ===== PANEL 1: 0deg INTAKE BEGINS (TDC, IN open, EX closed) ===== -->
-  <g>
-    <text x="100" y="90" text-anchor="middle" font-size="18" font-weight="700" fill="#6B5A22">0&#176;</text>
-    <rect x="50" y="100" width="100" height="150" fill="none" stroke="#22252B" stroke-width="2"/>
-    <!-- head: intake open (left gap), exhaust closed (right, solid) -->
-    <line x1="50" y1="100" x2="83" y2="100" stroke="#22252B" stroke-width="2.5"/>
-    <line x1="117" y1="100" x2="150" y2="100" stroke="#22252B" stroke-width="2.5"/>
-    <line x1="100" y1="88" x2="100" y2="106" stroke="#22252B" stroke-width="3"/>
-    <polygon points="90,106 110,106 100,113" fill="#22252B"/>
-    <line x1="100" y1="78" x2="100" y2="118" stroke="#33505E" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrowBlue)"/>
-    <!-- piston at TDC -->
-    <rect x="55" y="106" width="90" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
-    <text x="100" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#22252B">INTAKE BEGINS</text>
-    <text x="100" y="288" text-anchor="middle" font-size="11.5" fill="#5A5748">Piston at TDC</text>
-    <text x="100" y="303" text-anchor="middle" font-size="11.5" fill="#5A5748">IN open &#183; EX closed</text>
-  </g>
-
-  <!-- ===== PANEL 2: 180deg COMPRESSION BEGINS (BDC, both closed) ===== -->
-  <g>
-    <text x="300" y="90" text-anchor="middle" font-size="18" font-weight="700" fill="#6B5A22">180&#176;</text>
-    <rect x="250" y="100" width="100" height="150" fill="none" stroke="#22252B" stroke-width="2"/>
-    <line x1="250" y1="100" x2="350" y2="100" stroke="#22252B" stroke-width="2.5"/>
-    <!-- piston at BDC -->
-    <rect x="255" y="214" width="90" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
-    <text x="300" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#22252B">COMPRESSION BEGINS</text>
-    <text x="300" y="288" text-anchor="middle" font-size="11.5" fill="#5A5748">Piston at BDC</text>
-    <text x="300" y="303" text-anchor="middle" font-size="11.5" fill="#5A5748">IN closed &#183; EX closed</text>
-  </g>
-
-  <!-- ===== PANEL 3: 360deg POWER BEGINS (TDC, spark fires, both closed) ===== -->
-  <g>
-    <rect x="440" y="80" width="120" height="230" fill="#AE3527" fill-opacity="0.06"/>
-    <text x="500" y="90" text-anchor="middle" font-size="18" font-weight="700" fill="#AE3527">360&#176;</text>
-    <rect x="450" y="100" width="100" height="150" fill="none" stroke="#22252B" stroke-width="2.5"/>
-    <line x1="450" y1="100" x2="550" y2="100" stroke="#22252B" stroke-width="3"/>
-    <!-- flame -->
-    <g stroke="#AE3527" stroke-width="2">
-      <line x1="500" y1="96" x2="500" y2="82"/>
-      <line x1="487" y1="100" x2="478" y2="90"/>
-      <line x1="513" y1="100" x2="522" y2="90"/>
-    </g>
-    <circle cx="500" cy="102" r="7" fill="#AE3527"/>
-    <!-- piston at TDC -->
-    <rect x="455" y="106" width="90" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="2.5"/>
-    <text x="500" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#AE3527">POWER BEGINS</text>
-    <text x="500" y="288" text-anchor="middle" font-size="11.5" fill="#5A5748">Spark fires near TDC</text>
-    <text x="500" y="303" text-anchor="middle" font-size="11.5" fill="#5A5748">IN closed &#183; EX closed</text>
-  </g>
-
-  <!-- ===== PANEL 4: 540deg EXHAUST BEGINS (BDC, EX open, IN closed) ===== -->
-  <g>
-    <text x="700" y="90" text-anchor="middle" font-size="18" font-weight="700" fill="#6B5A22">540&#176;</text>
-    <rect x="650" y="100" width="100" height="150" fill="none" stroke="#22252B" stroke-width="2"/>
-    <line x1="650" y1="100" x2="683" y2="100" stroke="#22252B" stroke-width="2.5"/>
-    <line x1="717" y1="100" x2="750" y2="100" stroke="#22252B" stroke-width="2.5"/>
-    <line x1="700" y1="88" x2="700" y2="106" stroke="#22252B" stroke-width="3"/>
-    <polygon points="690,106 710,106 700,113" fill="#22252B"/>
-    <line x1="700" y1="118" x2="700" y2="70" stroke="#33505E" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrowBlue)"/>
-    <!-- piston at BDC -->
-    <rect x="655" y="214" width="90" height="36" fill="#E2D9C3" stroke="#22252B" stroke-width="2"/>
-    <text x="700" y="270" text-anchor="middle" font-size="14" font-weight="700" fill="#22252B">EXHAUST BEGINS</text>
-    <text x="700" y="288" text-anchor="middle" font-size="11.5" fill="#5A5748">Piston at BDC</text>
-    <text x="700" y="303" text-anchor="middle" font-size="11.5" fill="#5A5748">IN closed &#183; EX open</text>
-  </g>
-
-  <!-- ===== crank-degree axis ===== -->
-  <line x1="40" y1="370" x2="760" y2="370" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
-  <g fill="#33505E">
-    <line x1="100" y1="364" x2="100" y2="376" stroke="#33505E" stroke-width="2"/>
-    <line x1="300" y1="364" x2="300" y2="376" stroke="#33505E" stroke-width="2"/>
-    <line x1="500" y1="364" x2="500" y2="376" stroke="#33505E" stroke-width="2"/>
-    <line x1="700" y1="364" x2="700" y2="376" stroke="#33505E" stroke-width="2"/>
-  </g>
-  <line x1="100" y1="320" x2="100" y2="370" stroke="#33505E" stroke-width="1.5" stroke-dasharray="3 3"/>
-  <line x1="300" y1="320" x2="300" y2="370" stroke="#33505E" stroke-width="1.5" stroke-dasharray="3 3"/>
-  <line x1="500" y1="320" x2="500" y2="370" stroke="#33505E" stroke-width="1.5" stroke-dasharray="3 3"/>
-  <line x1="700" y1="320" x2="700" y2="370" stroke="#33505E" stroke-width="1.5" stroke-dasharray="3 3"/>
-
-  <!-- revolution brackets -->
-  <line x1="100" y1="392" x2="500" y2="392" stroke="#8C876F" stroke-width="1.5"/>
-  <line x1="100" y1="386" x2="100" y2="392" stroke="#8C876F" stroke-width="1.5"/>
-  <line x1="500" y1="386" x2="500" y2="392" stroke="#8C876F" stroke-width="1.5"/>
-  <text x="300" y="408" text-anchor="middle" font-size="12.5" font-weight="600" fill="#5A5748">REVOLUTION 1 &#8212; CRANKSHAFT TURNS 360&#176;</text>
-
-  <line x1="500" y1="392" x2="760" y2="392" stroke="#8C876F" stroke-width="1.5"/>
-  <line x1="500" y1="386" x2="500" y2="392" stroke="#8C876F" stroke-width="1.5"/>
-  <line x1="760" y1="386" x2="760" y2="392" stroke="#8C876F" stroke-width="1.5"/>
-  <text x="630" y="408" text-anchor="middle" font-size="12.5" font-weight="600" fill="#5A5748">REVOLUTION 2</text>
-
-  <text x="400" y="470" text-anchor="middle" font-size="14" fill="#6B5A22" font-weight="600">4 STROKES &#183; 2 CRANK REVOLUTIONS &#183; 720&#176; TOTAL</text>
+<svg class="dg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="t d">
+<title id="t">The four-stroke cycle: intake, compression, power and exhaust.</title><desc id="d">Four cylinders side by side show piston position, valve state and gas flow for intake, compression, power and exhaust, with a small crank icon under each showing which half-turn of the crankshaft it takes. Only the power stroke makes work.</desc>
+<style>
+svg.dg{--c-ink:var(--ink,#22252B);--c-soft:var(--ink-soft,#5A5748);--c-faint:var(--ink-faint,#8C876F);--c-sig:var(--signal,#AE3527);--c-blu:var(--blueprint,#33505E);--c-brs:var(--brass,#6B5A22);--c-paper:var(--paper,#EEE8DA);--c-deep:var(--paper-deep,#E2D9C3);--c-line:var(--line,rgba(34,37,43,.22))}
+svg.dg .bgp{fill:var(--c-paper)}
+svg.dg .frm{fill:none;stroke:var(--c-ink);stroke-width:1.4}
+svg.dg .k,svg.dg .s,svg.dg .a,svg.dg .b,svg.dg .g,svg.dg .f,svg.dg .fk{fill:none;stroke-linecap:round;stroke-linejoin:round}
+svg.dg .k{stroke:var(--c-ink);stroke-width:2.8}
+svg.dg .s{stroke:var(--c-soft);stroke-width:1.8}
+svg.dg .a{stroke:var(--c-sig);stroke-width:3.4}
+svg.dg .b{stroke:var(--c-blu);stroke-width:2.6}
+svg.dg .g{stroke:var(--c-brs);stroke-width:3}
+svg.dg .f{stroke:var(--c-faint);stroke-width:1.5;stroke-dasharray:6 5}
+svg.dg .fb{stroke:var(--c-blu);stroke-width:1.5;stroke-dasharray:6 5;fill:none}
+svg.dg .thick{stroke-width:7}
+svg.dg .fill-d{fill:var(--c-deep)}
+svg.dg .fill-k{fill:var(--c-ink)}
+svg.dg .fill-a{fill:var(--c-sig)}
+svg.dg .fill-b{fill:var(--c-blu)}
+svg.dg .fill-g{fill:var(--c-brs)}
+svg.dg .fill-s{fill:var(--c-soft)}
+svg.dg .tint-a{fill:var(--c-sig);fill-opacity:.16}
+svg.dg .tint-a2{fill:var(--c-sig);fill-opacity:.34}
+svg.dg .tint-b{fill:var(--c-blu);fill-opacity:.16}
+svg.dg .tint-b2{fill:var(--c-blu);fill-opacity:.3}
+svg.dg .tint-g{fill:var(--c-brs);fill-opacity:.14}
+svg.dg .tint-k{fill:var(--c-ink);fill-opacity:.08}
+svg.dg text{paint-order:stroke;stroke:var(--c-paper);stroke-width:5px;stroke-linejoin:round}
+svg.dg .th{font:800 34px 'Big Shoulders Display','Arial Narrow',sans-serif;fill:var(--c-ink);text-transform:uppercase;letter-spacing:.01em}
+svg.dg .tm{font:500 14px 'JetBrains Mono',Consolas,monospace;fill:var(--c-soft);text-transform:uppercase;letter-spacing:.09em}
+svg.dg .tmb{font:700 14px 'JetBrains Mono',Consolas,monospace;fill:var(--c-ink);text-transform:uppercase;letter-spacing:.09em}
+svg.dg .t{font:600 21px 'Big Shoulders Text','Arial Narrow',sans-serif;fill:var(--c-ink)}
+svg.dg .tb{font:800 25px 'Big Shoulders Text','Arial Narrow',sans-serif;fill:var(--c-ink);text-transform:uppercase;letter-spacing:.02em}
+svg.dg .ts{font:italic 400 18px 'Source Serif 4',Georgia,serif;fill:var(--c-soft)}
+svg.dg .tsm{font:italic 400 16px 'Source Serif 4',Georgia,serif;fill:var(--c-soft)}
+svg.dg .ta{fill:var(--c-sig)}
+svg.dg .tbl{fill:var(--c-blu)}
+svg.dg .tg{fill:var(--c-brs)}
+svg.dg .mid{text-anchor:middle}
+svg.dg .end{text-anchor:end}
+svg.dg .fx{font:italic 600 30px 'Source Serif 4',Georgia,serif;fill:var(--c-ink)}
+</style>
+<rect class="bgp" width="900" height="560"/>
+<rect class="frm" x="10" y="10" width="880" height="540"/>
+<g class="frm"><path d="M10,30V10H30M870,10H890 V30M890,530V550H870 M30,550H10V530"/></g>
+<text class="th" x="40" y="58">The four-stroke cycle</text>
+<text class="tm tbl" x="40" y="84">720 degrees of crank rotation, one power stroke</text>
+<text class="tm end" x="868" y="534" style="stroke-width:0">FIG. 2.2-A</text>
+<rect class="tint-a fade" data-i="2" x="448" y="100" width="204" height="424" rx="8"/>
+<text class="tm end fade" data-i="1" x="860" y="84">= 2 crank turns</text>
+<path class="k draw" data-i="0" d="M84 150V300M176 150V300"/>
+<line class="k thick draw" data-i="0" x1="72" y1="150" x2="188" y2="150"/>
+<rect class="tint-b fade" data-i="1" x="86" y="152" width="88" height="62" rx="0"/>
+<rect class="fill-d k draw" data-i="1" x="86" y="214" width="88" height="30" rx="3"/>
+<line class="s draw" data-i="1" x1="86" y1="223" x2="174" y2="223"/>
+<line class="s draw" data-i="1" x1="86" y1="231" x2="174" y2="231"/>
+<line class="b draw" data-i="1" x1="106" y1="112" x2="106" y2="162"/>
+<rect class="fill-b fade" data-i="1" x="92" y="162" width="28" height="6" rx="2"/>
+<line class="k draw" data-i="1" x1="154" y1="112" x2="154" y2="148"/>
+<rect class="fill-k fade" data-i="1" x="140" y="148" width="28" height="6" rx="2"/>
+<line class="b draw" data-i="2" x1="56" y1="120" x2="85.9" y2="136.5"/>
+<polygon class="fill-b pop" data-i="3" points="96,142 87.2,128.9 80.2,141.6"/>
+<line class="s draw" data-i="2" x1="200" y1="203" x2="200" y2="247.5"/>
+<polygon class="fill-s pop" data-i="3" points="200,259 207.3,245 192.7,245"/>
+<circle class="s draw" data-i="2" cx="130" cy="346" r="24"/>
+<path class="b draw" data-i="2" d="M130 322A24 24 0 0 1 130 370"/>
+<line class="b draw" data-i="2" x1="136" y1="370" x2="135" y2="370"/>
+<polygon class="fill-b pop" data-i="3" points="126,370 137,375.7 137,364.3"/>
+<text class="tm mid fade" data-i="2" x="130" y="398">STROKE 1</text>
+<text class="tb mid fade" data-i="2" x="130" y="424">Intake</text>
+<text class="tm mid fade" data-i="2" x="130" y="446">0° → 180°</text>
+<text class="tsm mid fade" data-i="3" x="130" y="474">Piston falls, intake</text>
+<text class="tsm mid fade" data-i="3" x="130" y="494">valve opens, mixture</text>
+<text class="tsm mid fade" data-i="3" x="130" y="514">is drawn in.</text>
+<path class="k draw" data-i="2" d="M294 150V300M386 150V300"/>
+<line class="k thick draw" data-i="2" x1="282" y1="150" x2="398" y2="150"/>
+<rect class="tint-b2 fade" data-i="3" x="296" y="152" width="88" height="74" rx="0"/>
+<rect class="fill-d k draw" data-i="3" x="296" y="226" width="88" height="30" rx="3"/>
+<line class="s draw" data-i="3" x1="296" y1="235" x2="384" y2="235"/>
+<line class="s draw" data-i="3" x1="296" y1="243" x2="384" y2="243"/>
+<line class="k draw" data-i="3" x1="316" y1="112" x2="316" y2="148"/>
+<rect class="fill-k fade" data-i="3" x="302" y="148" width="28" height="6" rx="2"/>
+<line class="k draw" data-i="3" x1="364" y1="112" x2="364" y2="148"/>
+<rect class="fill-k fade" data-i="3" x="350" y="148" width="28" height="6" rx="2"/>
+<line class="s draw" data-i="4" x1="410" y1="267" x2="410" y2="222.5"/>
+<polygon class="fill-s pop" data-i="5" points="410,211 402.7,225 417.3,225"/>
+<circle class="s draw" data-i="4" cx="340" cy="346" r="24"/>
+<path class="b draw" data-i="4" d="M340 370A24 24 0 0 1 340 322"/>
+<line class="b draw" data-i="4" x1="334" y1="322" x2="335" y2="322"/>
+<polygon class="fill-b pop" data-i="5" points="344,322 333,316.3 333,327.7"/>
+<text class="tm mid fade" data-i="4" x="340" y="398">STROKE 2</text>
+<text class="tb mid fade" data-i="4" x="340" y="424">Compression</text>
+<text class="tm mid fade" data-i="4" x="340" y="446">180° → 360°</text>
+<text class="tsm mid fade" data-i="5" x="340" y="474">Both valves shut.</text>
+<text class="tsm mid fade" data-i="5" x="340" y="494">The rising piston</text>
+<text class="tsm mid fade" data-i="5" x="340" y="514">squeezes the mixture.</text>
+<path class="k draw" data-i="4" d="M504 150V300M596 150V300"/>
+<line class="k thick draw" data-i="4" x1="492" y1="150" x2="608" y2="150"/>
+<rect class="tint-a2 fade" data-i="5" x="506" y="152" width="88" height="28" rx="0"/>
+<rect class="fill-d k draw" data-i="5" x="506" y="180" width="88" height="30" rx="3"/>
+<line class="s draw" data-i="5" x1="506" y1="189" x2="594" y2="189"/>
+<line class="s draw" data-i="5" x1="506" y1="197" x2="594" y2="197"/>
+<line class="k draw" data-i="5" x1="526" y1="112" x2="526" y2="148"/>
+<rect class="fill-k fade" data-i="5" x="512" y="148" width="28" height="6" rx="2"/>
+<line class="k draw" data-i="5" x1="574" y1="112" x2="574" y2="148"/>
+<rect class="fill-k fade" data-i="5" x="560" y="148" width="28" height="6" rx="2"/>
+<polyline class="a draw" data-i="5" points="542,112 554,126 546,130 558,146"/>
+<text class="tm ta fade" data-i="7" x="596" y="126">SPARK</text>
+<line class="g draw" data-i="6" x1="620" y1="169" x2="620" y2="213.5"/>
+<polygon class="fill-g pop" data-i="7" points="620,225 627.3,211 612.7,211"/>
+<circle class="s draw" data-i="6" cx="550" cy="346" r="24"/>
+<path class="g draw" data-i="6" d="M550 322A24 24 0 0 1 550 370"/>
+<line class="g draw" data-i="6" x1="556" y1="370" x2="555" y2="370"/>
+<polygon class="fill-g pop" data-i="7" points="546,370 557,375.7 557,364.3"/>
+<text class="tm mid fade" data-i="6" x="550" y="398">STROKE 3</text>
+<text class="tb mid ta fade" data-i="6" x="550" y="424">Power</text>
+<text class="tm mid fade" data-i="6" x="550" y="446">360° → 540°</text>
+<text class="tsm mid fade" data-i="7" x="550" y="474">Spark! The burn</text>
+<text class="tsm mid fade" data-i="7" x="550" y="494">shoves the piston down.</text>
+<text class="tsm mid fade" data-i="7" x="550" y="514">The only work done.</text>
+<path class="k draw" data-i="6" d="M714 150V300M806 150V300"/>
+<line class="k thick draw" data-i="6" x1="702" y1="150" x2="818" y2="150"/>
+<rect class="tint-k fade" data-i="7" x="716" y="152" width="88" height="74" rx="0"/>
+<rect class="fill-d k draw" data-i="7" x="716" y="226" width="88" height="30" rx="3"/>
+<line class="s draw" data-i="7" x1="716" y1="235" x2="804" y2="235"/>
+<line class="s draw" data-i="7" x1="716" y1="243" x2="804" y2="243"/>
+<line class="k draw" data-i="7" x1="736" y1="112" x2="736" y2="148"/>
+<rect class="fill-k fade" data-i="7" x="722" y="148" width="28" height="6" rx="2"/>
+<line class="a draw" data-i="7" x1="784" y1="112" x2="784" y2="162"/>
+<rect class="fill-a fade" data-i="7" x="770" y="162" width="28" height="6" rx="2"/>
+<line class="a draw" data-i="8" x1="794" y1="142" x2="823.9" y2="125.5"/>
+<polygon class="fill-a pop" data-i="9" points="834,120 818.2,120.4 825.2,133.1"/>
+<line class="s draw" data-i="8" x1="830" y1="267" x2="830" y2="222.5"/>
+<polygon class="fill-s pop" data-i="9" points="830,211 822.7,225 837.3,225"/>
+<circle class="s draw" data-i="8" cx="760" cy="346" r="24"/>
+<path class="b draw" data-i="8" d="M760 370A24 24 0 0 1 760 322"/>
+<line class="b draw" data-i="8" x1="754" y1="322" x2="755" y2="322"/>
+<polygon class="fill-b pop" data-i="9" points="764,322 753,316.3 753,327.7"/>
+<text class="tm mid fade" data-i="8" x="760" y="398">STROKE 4</text>
+<text class="tb mid fade" data-i="8" x="760" y="424">Exhaust</text>
+<text class="tm mid fade" data-i="8" x="760" y="446">540° → 720°</text>
+<text class="tsm mid fade" data-i="9" x="760" y="474">Exhaust valve opens,</text>
+<text class="tsm mid fade" data-i="9" x="760" y="494">the rising piston</text>
+<text class="tsm mid fade" data-i="9" x="760" y="514">pushes burnt gas out.</text>
 </svg>

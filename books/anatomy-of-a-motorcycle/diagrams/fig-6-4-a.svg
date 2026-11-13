@@ -1,42 +1,80 @@
-<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="800" height="500" fill="#EEE8DA"/>
-  <rect x="10" y="10" width="780" height="480" fill="none" stroke="#22252B" stroke-width="1.4"/>
-  <path d="M10,26 V10 H26" fill="none" stroke="#22252B" stroke-width="1.4"/>
-  <path d="M774,10 H790 V26" fill="none" stroke="#22252B" stroke-width="1.4"/>
-  <path d="M790,474 V490 H774" fill="none" stroke="#22252B" stroke-width="1.4"/>
-  <path d="M26,490 H10 V474" fill="none" stroke="#22252B" stroke-width="1.4"/>
-
-  <text x="400" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#22252B">THE FRICTION CIRCLE</text>
-  <line x1="60" y1="56" x2="740" y2="56" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
-
-  <!-- axes -->
-  <line x1="300" y1="90" x2="300" y2="410" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
-  <line x1="130" y1="250" x2="470" y2="250" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
-
-  <text x="300" y="80" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">BRAKING</text>
-  <text x="300" y="428" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">ACCELERATING</text>
-  <text x="120" y="254" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">CORNERING (L)</text>
-  <text x="480" y="254" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#5A5748">CORNERING (R)</text>
-
-  <!-- friction circle -- total available grip -->
-  <circle cx="300" cy="250" r="160" fill="none" stroke="#22252B" stroke-width="2.5"/>
-  <text x="300" y="115" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#8C876F">MAX AVAILABLE GRIP</text>
-
-  <!-- valid combined force vector (inside circle) -->
-  <line x1="300" y1="250" x2="410" y2="175" stroke="#33505E" stroke-width="3"/>
-  <polygon points="410,175 396,180 402,192" fill="#33505E"/>
-  <text x="425" y="165" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#33505E">WITHIN LIMIT</text>
-  <text x="425" y="182" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">(cornering + braking)</text>
-
-  <!-- exceeded vector (outside circle) -->
-  <line x1="300" y1="250" x2="440" y2="360" stroke="#AE3527" stroke-width="3"/>
-  <polygon points="440,360 424,352 428,368" fill="#AE3527"/>
-  <text x="452" y="378" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#AE3527">EXCEEDS LIMIT</text>
-  <text x="452" y="395" font-family="JetBrains Mono, monospace" font-size="12" fill="#5A5748">→ tyre slides</text>
-
-  <!-- center point -->
-  <circle cx="300" cy="250" r="4" fill="#22252B"/>
-
-  <line x1="60" y1="450" x2="740" y2="450" stroke="#33505E" stroke-width="1.5" stroke-dasharray="6 4"/>
-  <text x="400" y="470" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#5A5748">CORNERING AND BRAKING/ACCELERATING SHARE ONE FIXED TOTAL GRIP BUDGET</text>
+<svg class="dg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="t d">
+<title id="t">A circle whose axes are braking and cornering force. Any combination inside the circle is available; the edge is the limit of grip.</title><desc id="d">Braking force is plotted vertically and cornering force horizontally. The tyre can produce any combination inside the circle. Using all grip for braking leaves none for cornering, and trail braking shares it.</desc>
+<style>
+svg.dg{--c-ink:var(--ink,#22252B);--c-soft:var(--ink-soft,#5A5748);--c-faint:var(--ink-faint,#8C876F);--c-sig:var(--signal,#AE3527);--c-blu:var(--blueprint,#33505E);--c-brs:var(--brass,#6B5A22);--c-paper:var(--paper,#EEE8DA);--c-deep:var(--paper-deep,#E2D9C3);--c-line:var(--line,rgba(34,37,43,.22))}
+svg.dg .bgp{fill:var(--c-paper)}
+svg.dg .frm{fill:none;stroke:var(--c-ink);stroke-width:1.4}
+svg.dg .k,svg.dg .s,svg.dg .a,svg.dg .b,svg.dg .g,svg.dg .f,svg.dg .fk{fill:none;stroke-linecap:round;stroke-linejoin:round}
+svg.dg .k{stroke:var(--c-ink);stroke-width:2.8}
+svg.dg .s{stroke:var(--c-soft);stroke-width:1.8}
+svg.dg .a{stroke:var(--c-sig);stroke-width:3.4}
+svg.dg .b{stroke:var(--c-blu);stroke-width:2.6}
+svg.dg .g{stroke:var(--c-brs);stroke-width:3}
+svg.dg .f{stroke:var(--c-faint);stroke-width:1.5;stroke-dasharray:6 5}
+svg.dg .fb{stroke:var(--c-blu);stroke-width:1.5;stroke-dasharray:6 5;fill:none}
+svg.dg .thick{stroke-width:7}
+svg.dg .fill-d{fill:var(--c-deep)}
+svg.dg .fill-k{fill:var(--c-ink)}
+svg.dg .fill-a{fill:var(--c-sig)}
+svg.dg .fill-b{fill:var(--c-blu)}
+svg.dg .fill-g{fill:var(--c-brs)}
+svg.dg .fill-s{fill:var(--c-soft)}
+svg.dg .tint-a{fill:var(--c-sig);fill-opacity:.16}
+svg.dg .tint-a2{fill:var(--c-sig);fill-opacity:.34}
+svg.dg .tint-b{fill:var(--c-blu);fill-opacity:.16}
+svg.dg .tint-b2{fill:var(--c-blu);fill-opacity:.3}
+svg.dg .tint-g{fill:var(--c-brs);fill-opacity:.14}
+svg.dg .tint-k{fill:var(--c-ink);fill-opacity:.08}
+svg.dg text{paint-order:stroke;stroke:var(--c-paper);stroke-width:5px;stroke-linejoin:round}
+svg.dg .th{font:800 34px 'Big Shoulders Display','Arial Narrow',sans-serif;fill:var(--c-ink);text-transform:uppercase;letter-spacing:.01em}
+svg.dg .tm{font:500 14px 'JetBrains Mono',Consolas,monospace;fill:var(--c-soft);text-transform:uppercase;letter-spacing:.09em}
+svg.dg .tmb{font:700 14px 'JetBrains Mono',Consolas,monospace;fill:var(--c-ink);text-transform:uppercase;letter-spacing:.09em}
+svg.dg .t{font:600 21px 'Big Shoulders Text','Arial Narrow',sans-serif;fill:var(--c-ink)}
+svg.dg .tb{font:800 25px 'Big Shoulders Text','Arial Narrow',sans-serif;fill:var(--c-ink);text-transform:uppercase;letter-spacing:.02em}
+svg.dg .ts{font:italic 400 18px 'Source Serif 4',Georgia,serif;fill:var(--c-soft)}
+svg.dg .tsm{font:italic 400 16px 'Source Serif 4',Georgia,serif;fill:var(--c-soft)}
+svg.dg .ta{fill:var(--c-sig)}
+svg.dg .tbl{fill:var(--c-blu)}
+svg.dg .tg{fill:var(--c-brs)}
+svg.dg .mid{text-anchor:middle}
+svg.dg .end{text-anchor:end}
+svg.dg .fx{font:italic 600 30px 'Source Serif 4',Georgia,serif;fill:var(--c-ink)}
+</style>
+<rect class="bgp" width="900" height="560"/>
+<rect class="frm" x="10" y="10" width="880" height="540"/>
+<g class="frm"><path d="M10,30V10H30M870,10H890 V30M890,530V550H870 M30,550H10V530"/></g>
+<text class="th" x="40" y="58">The friction circle</text>
+<text class="tm tbl" x="40" y="84">Grip is one shared budget</text>
+<text class="tm end" x="868" y="534" style="stroke-width:0">FIG. 6.4-A</text>
+<circle class="tint-b fade" data-i="1" cx="330" cy="298" r="148"/>
+<circle class="b draw" data-i="0" cx="330" cy="298" r="148"/>
+<circle class="f fade" cx="330" cy="298" r="74"/>
+<line class="s draw" data-i="1" x1="330" y1="124" x2="330" y2="472"/>
+<line class="s draw" data-i="1" x1="156" y1="298" x2="504" y2="298"/>
+<text class="tmb mid fade" data-i="2" x="330" y="112">BRAKING</text>
+<text class="tmb mid fade" data-i="2" x="330" y="498">ACCELERATING</text>
+<text class="tmb fade" data-i="2" x="516" y="303">CORNERING</text>
+<text class="tmb end fade" data-i="2" x="144" y="303">CORNERING</text>
+<line class="fb fade" x1="434.7" y1="193.3" x2="434.7" y2="298"/>
+<line class="fb fade" x1="434.7" y1="193.3" x2="330" y2="193.3"/>
+<line class="g thick draw" data-i="3" x1="330" y1="298" x2="330" y2="193.3"/>
+<line class="g thick draw" data-i="3" x1="330" y1="298" x2="434.7" y2="298"/>
+<line class="a draw" data-i="3" x1="330" y1="298" x2="424.2" y2="203.8"/>
+<polygon class="fill-a pop" data-i="4" points="434.7,193.3 415.3,199.5 428.5,212.7"/>
+<circle class="fill-a pop" data-i="4" cx="434.7" cy="193.3" r="8"/>
+<circle class="fill-b pop" data-i="4" cx="330" cy="150" r="8"/>
+<circle class="fill-b pop" data-i="4" cx="478" cy="298" r="8"/>
+<text class="tm tbl fade" data-i="4" x="346" y="138">ALL BRAKING</text>
+<text class="tm tbl fade" data-i="4" x="492" y="284">ALL CORNERING</text>
+<text class="tmb ta fade" data-i="5" x="448.7" y="181.3">TRAIL BRAKING</text>
+<text class="tsm fade" data-i="5" x="448.7" y="201.3">shares the grip</text>
+<text class="tsm end fade" data-i="6" x="318" y="250.7">braking part</text>
+<text class="tsm mid fade" data-i="6" x="382.3" y="324">cornering part</text>
+<text class="tmb fade" data-i="7" x="650" y="168">INSIDE THE CIRCLE</text>
+<text class="ts fade" data-i="7" x="650" y="192">grip to spare</text>
+<text class="tmb tg fade" data-i="8" x="650" y="242">ON THE EDGE</text>
+<text class="ts fade" data-i="8" x="650" y="266">every bit of grip used</text>
+<text class="tmb ta fade" data-i="9" x="650" y="316">OUTSIDE</text>
+<text class="ts fade" data-i="9" x="650" y="340">the tyre slides</text>
+<text class="ts mid fade" data-i="10" x="450" y="530">Braking and cornering draw from the same budget.</text>
 </svg>
